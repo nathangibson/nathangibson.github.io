@@ -54,10 +54,10 @@
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
-      <div class="container">
+      <div class="container fade" id="fade1">
         <h1>nathan p. gibson</h1>
         <p>I'm testing Bootstrap on GitHub Pages.</p>
-        <img src="/img/portrait.jpg" class="img-responsive" alt="Nathan P. Gibson (Portrait)"/>
+        <img src="img/portrait.jpg" class="img-responsive" alt="Nathan P. Gibson (Portrait)"/>
         <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
       </div>
     </div>
@@ -65,17 +65,17 @@
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 fade" id="fade2">
           <h2>About</h2>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 fade" id="fade3">
           <h2>Publications</h2>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
        </div>
-        <div class="col-md-4">
+        <div class="col-md-4 fade" id="fade4">
           <h2>Projects</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
@@ -93,5 +93,15 @@
         <script src="js/vendor/bootstrap.min.js"></script>
 
         <script src="js/main.js"></script>
+        <!-- my custom effects -->
+        <script>
+          function fadeIn(id,timeout){
+            window.setTimeout(function(){$(id).addClass("in")},timeout)            
+          }
+          fadeIn("#fade1",500);
+          fadeIn("#fade2",1000);
+          fadeIn("#fade3",1500);
+          fadeIn("#fade4",2000);
+        </script>
     </body>
 </html>
