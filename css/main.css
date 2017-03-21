@@ -4,19 +4,100 @@
    Author's custom styles
    ========================================================================== */
 
+@font-face {
+    font-family: NewtSerif;
+    src: url(../fonts/NewtSerif.otf);
+}
 
+@font-face {
+    font-family: NewtSerifLight;
+    src: url(../fonts/NewtSerifLight.otf);
+}
 
+@font-face {
+    font-family: NewtSerifDemi;
+    src: url(../fonts/NewtSerifDemi.otf);
+}
 
+@font-face {
+    font-family: NewtSerifBold;
+    src: url(../fonts/NewtSerifBold.otf);
+}
 
+@font-face {
+    font-family: EncodeSans-Regular;
+    src: url(../fonts/EncodeSans-Regular.ttf);
+}
 
+@font-face {
+    font-family: EncodeSans-Light;
+    src: url(../fonts/EncodeSans-Light.ttf);
+}
 
+@font-face {
+    font-family: EncodeSansWide-Light;
+    src: url(../fonts/EncodeSansWide-Light.ttf);
+}
 
+@font-face {
+    font-family: EncodeSans-ExtraLight;
+    src: url(../fonts/EncodeSans-ExtraLight.ttf);
+}
 
+@font-face {
+    font-family: EncodeSansWide-ExtraLight;
+    src: url(../fonts/EncodeSansWide-ExtraLight.ttf);
+}
 
+@font-face {
+    font-family: EncodeSans-Thin;
+    src: url(../fonts/EncodeSans-Thin.ttf);
+}
 
+h1 {
+    font-family: "NewtSerifDemi";
+}
 
+h2 {
+    font-family: "NewtSerif";
+}
 
+h3 {
+    font-family: "NewtSerifLight";
+}
 
+body {
+    font-family: "EncodeSansWide-ExtraLight";
+    color: #262B20;
+}
 
+.jumbotron b {
+    font-family: "EncodeSans-Regular";
+    font-weight: inherit;
+}
 
+.btn-default > img {
+    background: transparent;
+    height: 14px;
+    line-height: 14px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+}
 
+.navbar-inverse {
+  background-image: -webkit-linear-gradient(top, #403936 0%, #34403C 100%);
+  background-image:      -o-linear-gradient(top, #403936 0%, #34403C 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#403936), to(#34403C));
+  background-image:         linear-gradient(to bottom, #403936 0%, #34403C 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff403936', endColorstr='#ff34403C', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-repeat: repeat-x;
+  border-bottom-color: #34403C;
+}
+
+/* POSSIBLE COLOR SCHEMES
+#34403C + #403936 + #3E3751
+OR
+#262B20 + #D4C598 OR #B3A896
+ */

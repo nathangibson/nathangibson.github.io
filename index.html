@@ -36,29 +36,24 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">Nathan P. Gibson</a>
+          <a class="navbar-brand" href="/">Test Site: Nathan P. Gibson</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
         </div><!--/.navbar-collapse -->
       </div>
     </nav>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
-      <div class="container fade">
-        <h1>nathan p. gibson</h1>
-        <p>I'm testing Bootstrap on GitHub Pages.</p>
-        <img src="img/portrait.jpg" class="img-responsive" alt="Nathan P. Gibson (Portrait)"/>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+      <div class="container">
+        <img src="img/portrait.jpg" class="img-responsive col-xs-6 pull-right fade" alt="Nathan P. Gibson (Portrait)"/>
+        <div class="fade">
+          <h1>nathan p. gibson</h1>
+          <p>historian of the <b>communities of the Middle East</b>, together with their <b>texts, ideas, and exchanges</b> that still influence today's world [<a href="#">examples</a>]</p>
+          <a class="badge" href="http://github.com/nathangibson">Github</a>
+          <a class="badge" href="https://vanderbilt.academia.edu/NathanGibson">Academia.edu</a>
+          <a class="badge" href="https://hcommons.org/members/nathanpgibson/">Humanities Commons</a>
+        </div>
       </div>
     </div>
 
@@ -66,12 +61,13 @@
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4 fade">
-          <img src="img/circle.jpg" class="img-circle img-responsive col-md-6"/>
-          <h2>about me</h2>          
+          <img src="img/circle.jpg" class="img-circle img-responsive col-md-4 col-sm-2 col-xs-4"/>
+          <h2>about me</h2>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
         <div class="col-md-4 fade">
+          <img src="img/al-jahiz.jpg" class="img-circle img-responsive col-md-4 col-sm-2 col-xs-4"/>
           <h2>publications</h2>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
@@ -99,21 +95,27 @@
           jQuery.expr.filters.onscreen = function(el) {
             var rect = el.getBoundingClientRect();
             return (
-                     (rect.x + rect.width) >= 0 
+                     (rect.x + rect.width) >= 0
                        && (rect.y + rect.height) >= 0
                        && (rect.x <= window.innerWidth && rect.y <= window.innerHeight)
                    );
           };
-          function fadeIn(el,timeout){
-                window.setTimeout(function(){$(el).addClass("in")},timeout)         
+
+          // Sets fade timing.
+          var timeout = 500;
+
+          // Turns CSS selector parameter into an array and cycles through it adding fade "in" class according to the timeout interval.
+          function fadeIn(el){
+            jQuery.each($(el), function(i, value) {
+              window.setTimeout(function(){$(value).addClass("in")},timeout * i);
+            });
           }
-          //fadeIn("#fade1",500);
-          fadeIn("div.fade:onscreen",400);
+          fadeIn(".fade:onscreen");
           $( window ).scroll(function() {
-            fadeIn("div.fade:onscreen",400);
+            fadeIn(".fade:onscreen");
           });
-          $( window ).scroll(function() {
-            fadeIn("div.fade:onscreen",400);
+          $( window ).resize(function() {
+            fadeIn(".fade:onscreen");
           });
         </script>
     </body>
