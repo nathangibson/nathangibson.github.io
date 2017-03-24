@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Nathan P. Gibson | Projects</title>
+        <title>Nathan P. Gibson | Publications</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="../apple-touch-icon.png">
@@ -51,33 +51,12 @@
         <div class="fade">
           <img src="../img/icons-syriaca-lg.png" class="img-responsive img-circle col-md-1"/>
           <div class="col-md-11">
-            <h2><a href="http://syriaca.org">Syriaca.org</a></h2>
-            <p>I'm part of a <a href="http://syriaca.org/project-team.html">fantastic team</a> working on developing digital resources for Syriac studies. 
-              More about that below.
-              <a class="badge" href="https://github.com/srophe">Github</a>            
+            <h2>Articles</h2>
+            <script src="http://bibbase.org/show?bib=https%3A%2F%2Fapi.zotero.org%2Fgroups%2F1114225%2Fitems%3Fkey%3Dc8dcHgjS2gVRdJMqXjAv9m26%26format%3Dbibtex%26limit%3D100&jsonp=1&filter=type:incollection|article"></script>           
             </p>
           </div>
-          
         </div>
-        <div class="fade">
-          <img src="../img/nhsl-banner.png" class="img-responsive img-circle col-md-1"/>
-          <div class="col-md-11">
-            <h2><a href="http://syriaca.org/nhsl">The New Handbook of Syriac Literature</a></h2>
-            <p>This is one of the Syriaca.org resources, which I'm editing 
-              together with <a href="http://divinity.vanderbilt.edu/people/bio/david-michelson">David A. Michelson</a>. 
-            We're seeking to ultimately provide a reference entry and digital identifier for every work of Syriac literature. We're doing this mostly by  
-            mining manuscript catalogues and cultivating thematic volumes produced by subject experts. For example, see the one on 
-              <a href="syriaca.org/bhse">hagiography</a>.</p>
-          </div>
-        </div>
-        <div class="fade">
-          <img src="../img/authors-banner.jpg" class="img-responsive img-circle col-md-1"/>
-          <div class="col-md-11">
-            <h2><a href="http://syriaca.org/authors">A Guide to Syriac Authors</a></h2>
-            <p>Another Syriaca.org resource, coedited with <a href="http://divinity.vanderbilt.edu/people/bio/david-michelson">David A. Michelson</a>.</p>
-          </div>
-        </div>
-      </div>
+      </div> 
     </div>
     
 
@@ -87,8 +66,14 @@
         <script src="../js/vendor/bootstrap.min.js"></script>
 
         <script src="../js/main.js"></script>
+        
         <!-- my custom effects -->
+        <!-- This works in Safari -->
         <script>
+          window.setTimeout(function(){$(".fade").addClass("in")},500);
+        </script>
+        <!-- This works only in FF -->
+        <!--<script>
           jQuery.expr.filters.onscreen = function(el) {
             var rect = el.getBoundingClientRect();
             return (
@@ -114,6 +99,6 @@
           $( window ).resize(function() {
             fadeIn(".fade:onscreen");
           });
-        </script>
+        </script>-->
     </body>
 </html>
