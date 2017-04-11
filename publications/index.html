@@ -51,18 +51,14 @@
       <div>
         <h1 class="fade">publications</h1>
         <div class="fade">
-          <img src="../img/icons-syriaca-lg.png" class="img-responsive img-circle col-md-1"/>
           <div class="col-md-11">
             <h2>Articles</h2>
-            <div id="articles"/>
-            <div id="titles"/>
+            <div id="articles">
+            </div>
+            
 <!--            <script src="http://bibbase.org/show?bib=https%3A%2F%2Fapi.zotero.org%2Fgroups%2F1114225%2Fitems%3Fkey%3Dc8dcHgjS2gVRdJMqXjAv9m26%26format%3Dbibtex%26limit%3D100&jsonp=1&filter=type:incollection|article"></script>           -->
-            </p>
-          </div>
-          <div id="demo">
-            <h1>The XMLHttpRequest Object</h1>
-            <button type="button" onclick="loadDoc()">Change Content</button>
-          </div>
+            
+          
         </div>
       </div> 
     </div>
@@ -74,8 +70,11 @@
         <script src="../js/vendor/bootstrap.min.js"></script>
 
         <script src="../js/main.js"></script>
+      
+      <script src="../js/jquery.xpath.js"></script>
         
         <!-- my custom effects -->
+      
         <!-- This works in Safari -->
         <script>
           window.setTimeout(function(){$(".fade").addClass("in")},500);
@@ -107,25 +106,6 @@
           $( window ).resize(function() {
             fadeIn(".fade:onscreen");
           });
-        </script>-->
-      
-        <!--<script> 
-            $(function(){
-            $("#articles").load("https://api.zotero.org/groups/1114225/items?v=3&format=bib"); 
-            });
-          </script>-->
-        <!--<script> 
-          <!-\-$(function(){
-            $("#titles").load("https://api.zotero.org/groups/1114225/items?v=3&format=tei"); 
-            });-\->
-          //how to load this file?
-            var $xmlContent = $(""),
-            xml = $(xmlContent).load("https://api.zotero.org/groups/1114225/items?v=3&format=atom&content=tei,bib"),
-            $xml = $(xmlContent),
-            $title = $xml.find( "title" );
-            $(function(){
-            $( "#titles" ).append( $title.text() );
-            });
         </script>-->
       <script src="publications.js"></script>
     </body>

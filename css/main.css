@@ -96,6 +96,10 @@ body {
   border-bottom-color: #34403C;
 }
 
+.badge-links {
+    padding-left: 2em;
+}
+
 /* POSSIBLE COLOR SCHEMES
 #34403C + #403936 + #3E3751
 OR
