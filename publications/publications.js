@@ -1,15 +1,12 @@
- /*DEPENDENCIES:
- https://github.com/ilinsky/jquery-xpath*/
+/* OPTIONS */
+var zoteroURL = 'https://api.zotero.org/groups/1114225/items?v=3&format=json&include=bib,tei,data,coins',
+    refreshCache = false ;
+    
+var addRandomParam = '';
 
-
-/*$.get( 'https://api.zotero.org/groups/1114225/items?v=3&format=atom&content=bib&t=' + Math.random(), "", function( data ) {
-              /\*var xmlDoc = $.parseXML( data );
-              var xml = $( xmlDoc );
-              var bib = xml.xpath("//entry/content");*\/
-              $( "#articles" ).append( "hello" );
-          }, "xml");*/
-          
-
+if ( refreshCache ) {
+    addRandomParam = '&t=' + Math.random();
+};
 
 function loadDoc(url, cFunction) {
     jQuery.get(url,"",cFunction(this),"")
@@ -37,7 +34,16 @@ function escapeHtml (string) {
   });
 }
 
-$.get( 'https://api.zotero.org/groups/1114225/items?v=3&format=json&include=bib,tei,data,coins&t=' + Math.random(), function( data ) {
+function escapeUnicode (string) {
+    var regex = new RegExp("\&\#([A-Za-z0-9]+)\;");
+    var replacement = String(string).replace(regex, function () {
+        parseInt("0$1");
+    });
+    return replacement;
+}
+
+function parseZoteroData ( zoteroURL ) {
+    $.get( zoteroURL + addRandomParam, function( data ) {
             for (x in data) {
             var item = data[x],
                 bib = item.bib,
@@ -46,26 +52,16 @@ $.get( 'https://api.zotero.org/groups/1114225/items?v=3&format=json&include=bib,
                 itemType = item.data.itemType,
                 tei = item.tei,
                 children = ""; 
-            
-          
-            
-                
-            
-/*            var up = item.links.up.href;*/
 
             var url = item.data.url;
             var title = item.data.title;
+            var bibEscaped = escapeUnicode ( bib ); //testing. For replacement will need to convert characters in bib, not title
             
-            /*if (up.length) {
-                $( "#articles" ).append( up );
-            } 
-            else {
-                $( "#articles" ).append( bib );
-            }*/
-            
-            var titleBold = '<b>' + title + '</b>';
+            var titleRegEx = new RegExp( '(' + escapeRegEx( escapeHtml ( title ) ) + ')' ,'gi');
             var link = '<a href=\"' + url + '\">' + url + '</a>';
-            var bibLinked = bib.replace(url, link) //.replace(title, titleBold);
+/*            This still doesn't properly escape special characters like in al-Jahiz title. */
+/*            Could make this span with class instead, so that user can style it. */
+            var bibLinked = bib.replace(url, link).replace( titleRegEx , "<b>$1</b>");
            
             //title replacement is not working bc bib uses unicode hex whereas title does not. Need to convert hex first? 
             //The following works for single characters -- perhaps use splice function to apply to multiple characters?
@@ -110,6 +106,7 @@ $.get( 'https://api.zotero.org/groups/1114225/items?v=3&format=json&include=bib,
                     '<img src="' + thumbnail + '" class="img-responsive img-circle col-md-1"/>\n'
                     + '<div class="col-md-11">' 
                     + bibLinked
+                    + bibEscaped //testing
                     + coins 
                     + '<div class="badge-links">' 
                     + childrenList 
@@ -140,6 +137,9 @@ $.get( 'https://api.zotero.org/groups/1114225/items?v=3&format=json&include=bib,
             }
               }
           }, "json" );
+};
+
+parseZoteroData ( zoteroURL ) ;
         
 /*function newWindow (content) {
     
