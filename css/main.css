@@ -91,3 +91,8 @@ body {
 div.content-section-heading > h2.mb-5, div.content-section-heading > h3.text-secondary {
     margin-bottom: .5rem !important;
 }
+
+.btn-logo {
+    background-color: inherit !important;
+    border-color: inherit !important;
+}
