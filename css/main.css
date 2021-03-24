@@ -13,6 +13,11 @@
 }
 
 @font-face {
+    font-family: NewtSerifLight-Italic;
+    src: url(../fonts/NewtSerifLight-Italic.otf);
+}
+
+@font-face {
     font-family: NewtSerifDemi;
     src: url(../fonts/NewtSerifDemi.otf);
 }
@@ -52,6 +57,10 @@
     src: url(../fonts/EncodeSans-Thin.ttf);
 }
 
+.navbar-brand {
+    text-transform: lowercase;
+}
+
 .masthead {
     background-position: top center;
 }
@@ -66,13 +75,19 @@ h2 {
 
 h3 {
     font-family: "NewtSerifLight";
+    font-weight: normal;
 }
 
 body {
     font-family: "EncodeSansWide-ExtraLight";
     color: #262B20;
+    position: relative;
 }
 .masthead h1 {
-    font-size: 5.5rem;
     font-size: 5.0rem;
+    text-transform: lowercase;
   }
+
+div.content-section-heading > h2.mb-5, div.content-section-heading > h3.text-secondary {
+    margin-bottom: .5rem !important;
+}
