@@ -1,10 +1,8 @@
-
-
 /* ==========================================================================
-   Author's custom styles
+   Custom styles
    ========================================================================== */
 
-@font-face {
+   @font-face {
     font-family: NewtSerif;
     src: url(../fonts/NewtSerif.otf);
 }
@@ -12,6 +10,11 @@
 @font-face {
     font-family: NewtSerifLight;
     src: url(../fonts/NewtSerifLight.otf);
+}
+
+@font-face {
+    font-family: NewtSerifLight-Italic;
+    src: url(../fonts/NewtSerifLight-Italic.otf);
 }
 
 @font-face {
@@ -54,6 +57,39 @@
     src: url(../fonts/EncodeSans-Thin.ttf);
 }
 
+.navbar-brand {
+    text-transform: lowercase;
+}
+
+.masthead {
+    background-position: top center;
+}
+
+.masthead > div > a {
+    text-decoration: none;
+}
+
+.masthead > div > a > i {
+    color: black;
+}
+
+.masthead > div > a > img {
+    vertical-align: text-bottom;
+}
+
+.icon {
+    background: black;
+    mask-size: cover;
+}
+
+.icon:hover, .icon:focus {
+    background: #155d74;
+}
+
+.icon-text:hover, .icon-text:focus {
+    color: #155d74;
+}
+
 h1 {
     font-family: "NewtSerifDemi";
 }
@@ -64,44 +100,24 @@ h2 {
 
 h3 {
     font-family: "NewtSerifLight";
+    font-weight: normal;
 }
 
 body {
     font-family: "EncodeSansWide-ExtraLight";
     color: #262B20;
+    position: relative;
+}
+.masthead h1 {
+    font-size: 5.0rem;
+    text-transform: lowercase;
+  }
+
+div.content-section-heading > h2.mb-5, div.content-section-heading > h3.text-secondary {
+    margin-bottom: .5rem !important;
 }
 
-.jumbotron b {
-    font-family: "EncodeSans-Regular";
-    font-weight: inherit;
+.btn-logo {
+    background-color: inherit !important;
+    border-color: inherit !important;
 }
-
-.btn-default > img {
-    background: transparent;
-    height: 14px;
-    line-height: 14px;
-    padding-left: 2px;
-    padding-right: 2px;
-    padding-bottom: 2px;
-}
-
-.navbar-inverse {
-  background-image: -webkit-linear-gradient(top, #403936 0%, #34403C 100%);
-  background-image:      -o-linear-gradient(top, #403936 0%, #34403C 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#403936), to(#34403C));
-  background-image:         linear-gradient(to bottom, #403936 0%, #34403C 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff403936', endColorstr='#ff34403C', GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-  background-repeat: repeat-x;
-  border-bottom-color: #34403C;
-}
-
-.badge-links {
-    padding-left: 2em;
-}
-
-/* POSSIBLE COLOR SCHEMES
-#34403C + #403936 + #3E3751
-OR
-#262B20 + #D4C598 OR #B3A896
- */
