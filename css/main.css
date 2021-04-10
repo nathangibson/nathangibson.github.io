@@ -65,6 +65,31 @@
     background-position: top center;
 }
 
+.masthead > div > a {
+    text-decoration: none;
+}
+
+.masthead > div > a > i {
+    color: black;
+}
+
+.masthead > div > a > img {
+    vertical-align: text-bottom;
+}
+
+.icon {
+    background: black;
+    mask-size: cover;
+}
+
+.icon:hover, .icon:focus {
+    background: #155d74;
+}
+
+.icon-text:hover, .icon-text:focus {
+    color: #155d74;
+}
+
 h1 {
     font-family: "NewtSerifDemi";
 }
