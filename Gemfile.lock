@@ -10,6 +10,7 @@ GEM
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
     ffi (1.16.3)
+    fortyone-jekyll-theme (1.2.3)
     forwardable-extended (2.6.0)
     google-protobuf (3.25.1-arm64-darwin)
     http_parser.rb (0.8.0)
@@ -72,6 +73,7 @@ PLATFORMS
   arm64-darwin-21
 
 DEPENDENCIES
+  fortyone-jekyll-theme (~> 1.2, >= 1.2.3)
   http_parser.rb (~> 0.6.0)
   jekyll (~> 4.3.2)
   jekyll-feed (~> 0.12)
