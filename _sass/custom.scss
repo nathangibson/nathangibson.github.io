@@ -2,6 +2,8 @@
 
 #banner {
     
+    background-position: center center; // main.js appears to be modifying this on scroll
+
     &:after {
         opacity: 0.5;
     }
