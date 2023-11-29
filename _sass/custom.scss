@@ -1,3 +1,10 @@
+/* Fonts */
+
+@font-face {
+    font-family: NewtSerifDemi;
+    src: url(../fonts/NewtSerifDemi.otf);
+}
+
 /* Banner */
 
 #banner {
@@ -17,6 +24,10 @@
                 &:after {
                     max-width: 60%;
                 }
+            }
+
+            h1 {
+                font-family: "NewtSerifDemi";
             }
         }
     }
