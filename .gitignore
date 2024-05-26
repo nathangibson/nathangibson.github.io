@@ -6,3 +6,5 @@ Gemfile.lock
 .jekyll-cache
 *.gem
 node_modules
+.jekyll-metadata
+vendor
