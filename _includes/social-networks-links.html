@@ -34,6 +34,16 @@
   </li>
   {%- endif -%}
 
+  {%- if network[0] == "academia" -%}
+  <li class="list-inline-item">
+    <a href="{{ network[1] }}" title="Academia.edu">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="ai ai-academia ai-2x icon-text"></i>
+      </span>
+      <span class="sr-only">Academia.edu</span>
+  </li>
+  {%- endif -%}
+
   {%- if network[0] == "rss" and network[1] and site.rss-description -%}
   <li class="list-inline-item">
     <a href="{{ '/feed.xml' | relative_url }}" title="RSS">
