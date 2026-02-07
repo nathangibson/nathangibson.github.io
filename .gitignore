@@ -10,6 +10,7 @@ Gemfile.lock
 .jekyll-cache
 *.gem
 node_modulesThumbs.db
+Thumbs.db
 ehthumbs.db
 
 Gemfile.lock
