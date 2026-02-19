@@ -24,7 +24,7 @@
       <div class="col-xl-8 col-lg-10 py-5">
         <div class="{{ include.type }}-heading text-left">
           {% if page.prefix %}
-              <span class="{{ include.type }}-subheading">{{ page.prefix | strip_html }}</span>
+              <h2 class="{{ include.type }}-subheading font-weight-bold">{{ page.prefix | strip_html }}</h2>
           {% endif %}
           <h1>{% if page.title %}{{ page.title | strip_html }}{% else %}<br/>{% endif %}</h1>
           {% if page.subtitle %}
