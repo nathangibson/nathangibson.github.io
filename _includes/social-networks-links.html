@@ -3,16 +3,6 @@
 
 {%- for network in site.social-network-links -%}
 
-  {%- if network[0] == "orcid" -%}
-  <li class="list-inline-item">
-    <a href="https://orcid.org/{{ network[1] }}" title="ORCID">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="ai ai-orcid ai-2x icon-text"></i>
-      </span>
-      <span class="sr-only">ORCID</span>
-  </li>
-  {%- endif -%}
-
   {%- if network[0] == "hcommons" -%}
   <li class="list-inline-item">
     <a href="https://hcommons.org/members/{{ network[1] }}" title="HCommons">

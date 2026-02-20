@@ -54,13 +54,12 @@ social-network-links:
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
 #  facebook: deanattali
   goethe: https://tinygu.de/ngibson
-  orcid: 0000-0003-0786-8075
+  ORCID: 0000-0003-0786-8075
   github: nathangibson
   hcommons: nathanpgibson
   youtube: "@TinyHistoryOf"
   bluesky: npgibson.com
-  ORCID: 0000-0003-0786-8075
-  google-scholar: https://scholar.google.com/citations?user=4d37cXgAAAAJ&hl=en
+  google-scholar: 4d37cXgAAAAJ
   academia: https://uni-frankfurt.academia.edu/NathanPGibson
 #  twitter: daattali
 #  patreon: DeanAttali
