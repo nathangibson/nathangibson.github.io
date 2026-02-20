@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: Nathan P. Gibson
+title: NPGibson.com
 
 # Your name to show in the footer
 author: Nathan P. Gibson
@@ -39,7 +39,7 @@ round-avatar: false
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
-title-img: "/img/logo.png"
+# title-img: "/img/logo.png"
 
 
 #####################################
