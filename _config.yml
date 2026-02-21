@@ -20,11 +20,15 @@ author: Nathan P. Gibson
 ###############################################
 
 navbar-links:
-#  About Me: "aboutme"
-#  Resources:
-#    - Beautiful Jekyll: "https://beautifuljekyll.com"
-#    - Learn markdown: "https://www.markdowntutorial.com/"
-#  Author's home: ""
+  Projects:
+    - Biblia Arabica: "https://biblia-arabica.org"
+    - Dynamiken des Religiöses: "https://dynamiken-des-religioesen.uni-frankfurt.de/"
+  Tiny History Of: "#tinyhistoryof"
+  Publications:
+    - Medieval Worlds 17: "https://doi.org/10.1553/medievalworlds_no17_2022"
+    - Medieval Worlds 18: "https://doi.org/10.1553/medievalworlds_no18_2023"
+    - RTL Text in Debates in DH: "https://dhdebates.gc.cuny.edu/read/debates-in-the-digital-humanities-2023/section/51ad75ab-76a4-43f3-81f8-0b31e350ca9c#ch03"
+    - Cross-Communal Scholarly Interactions: "https://doi.org/10.4324/9781315170718-65"
 
 ################
 # --- Logo --- #
