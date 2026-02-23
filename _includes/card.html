@@ -1,0 +1,25 @@
+{%- if include.page -%}
+{%- assign card = include.page -%}
+<div class="col {{ card.column-width-classes }} py-3">
+    <a href="{{ card.url }}" class="text-decoration-none text-light">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('{{ card.cover-img }}'); background-size: cover; background-position: {{ card.card-background-position | default: 'center top' }};">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">{{ card.title }}</h3>
+                {{ card.subtitle }}
+                {%- if card.jump-to-links %}
+                <div class="mt-3">
+                    <span class="btn btn-sm text-light mt-1 text-nowrap">Jump to:</span>
+                    {%- for link_item in card.jump-to-links %}
+                        {%- for pair in link_item %}
+                            {%- assign link_label = pair[0] -%}
+                            {%- assign link_url = pair[1] -%}
+                            <a href="{{ link_url }}" class="btn btn-sm btn-outline-light mt-1 text-nowrap">{{ link_label }}</a>
+                        {%- endfor %}
+                    {%- endfor %}
+                </div>
+                {%- endif %}
+            </div>
+        </div>
+    </a>
+</div>
+{%- endif -%}
