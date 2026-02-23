@@ -1,6 +1,6 @@
 ---
 layout: home
-cover-img: img/bnf-ar-12-cr-x1000.jpg
+cover-img: /img/bnf-ar-12-cr-x1000.jpg
 title: Projects
 subtitle: Things I'm doing with amazing colleagues
 full-width: true

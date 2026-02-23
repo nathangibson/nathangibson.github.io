@@ -9,42 +9,13 @@ full-width: true
 
 <div class="row g-4 py-5">
     {% assign projects_card = site.pages | where: "path", "projects.md" | first %}
-    {% include card.html page=projects_card %} 
-    <div class="col col-md-4 col-lg-4 py-3"> 
-        <a href="#tinyhistoryof" class="text-decoration-none text-light">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('/img/tiny-history-card-vertical.png'); background-size: cover; background-position: center top;">
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"> 
-                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Tiny History Of</h3>
-                    Video shorts channel
-                    <div class="mt-3">
-                        <span class="btn btn-sm text-light mt-1 text-nowrap">Jump to:</span>
-                        <a href="https://youtube.com/@tinyhistoryof" class="fab fa-youtube btn btn-sm btn-outline-light mt-1 text-nowrap"></a> 
-                        <a href="https://www.instagram.com/tinyhistoryof/" class="fab fa-instagram btn btn-sm btn-outline-light mt-1 text-nowrap"></a>
-                        <a href="https://www.youtube.com/shorts/1zYKhDHE9f4" class="btn btn-sm btn-outline-light mt-1 text-nowrap">Dots in Sacred Texts <i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
-                        <a href="https://www.youtube.com/shorts/gX6Ux9PTt4s" class="btn btn-sm btn-outline-light mt-1 text-nowrap">What does "Torah" mean in the Quran? <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        <a href="https://www.youtube.com/shorts/tNaKROFU-10" class="btn btn-sm btn-outline-light mt-1 text-nowrap">Why is religion so hard to define <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        <a href="#tinyhistoryof" class="btn btn-sm btn-outline-light mt-1 text-nowrap">more ...</a>
-                    </div>
-                </div> 
-            </div> 
-        </a>
-    </div>
-    <div class="col col-md-4 col-lg-3 py-3"> 
-        <a href="#publications" class="text-decoration-none text-light">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('/img/qalam.jpg'); background-size: cover; background-position: center top;">
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"> 
-                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Publications</h3>
-                    Stuff I've written
-                    <div class="mt-3"> 
-                        <span class="btn btn-sm text-light mt-1 text-nowrap">Jump to:</span>
-                        <a href="https://doi.org/10.1553/medievalworlds_no17_2022" class="btn btn-sm btn-outline-light mt-1 text-nowrap"><i>Medieval Worlds</i> 17 <i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
-                        <a href="https://doi.org/10.1553/medievalworlds_no18_2023" class="btn btn-sm btn-outline-light mt-1 text-nowrap"><i>Medieval Worlds</i> 18 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        <a href="https://dhdebates.gc.cuny.edu/read/debates-in-the-digital-humanities-2023/section/51ad75ab-76a4-43f3-81f8-0b31e350ca9c#ch03" class="btn btn-sm btn-outline-light mt-1 text-nowrap">"RTL Text" in <i>Debates in DH</i> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        <a href="https://doi.org/10.4324/9781315170718-65" class="btn btn-sm btn-outline-light mt-1 text-nowrap">"Cross-Communal Scholarly Interactions"  <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        <a href="#publications" class="btn btn-sm btn-outline-light mt-1 text-nowrap">more ...</a>
-                    </div>
-                </div> 
-            </div> 
-        </a>
-    </div> 
+    {% include card.html page=projects_card %}
+    {% assign tinyhistoryof_card = site.pages | where: "path", "tinyhistoryof.md" | first %}
+    {% include card.html page=tinyhistoryof_card %}
+    {% assign publications_card = site.pages | where: "path", "publications.md" | first %}
+    {% include card.html page=publications_card %}
+
+
+    
+    
  </div>
