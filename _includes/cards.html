@@ -1,0 +1,10 @@
+{%- if include.cards -%}
+  {%- assign card_names = include.cards | split: "," -%}
+  {%- for card_name in card_names -%}
+    {%- assign card_name_trimmed = card_name | strip -%}
+    {%- assign card_page = site.pages | where: "path", card_name_trimmed | first -%}
+    {%- if card_page -%}
+      {% include card.html page=card_page %}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}

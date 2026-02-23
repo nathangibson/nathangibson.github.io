@@ -8,14 +8,5 @@ full-width: true
 ---
 
 <div class="row g-4 py-5">
-    {% assign projects_card = site.pages | where: "path", "projects.md" | first %}
-    {% include card.html page=projects_card %}
-    {% assign tinyhistoryof_card = site.pages | where: "path", "tinyhistoryof.md" | first %}
-    {% include card.html page=tinyhistoryof_card %}
-    {% assign publications_card = site.pages | where: "path", "publications.md" | first %}
-    {% include card.html page=publications_card %}
-
-
-    
-    
- </div>
+    {% include cards.html cards="projects.md, tinyhistoryof.md, publications.md" %}
+</div>
