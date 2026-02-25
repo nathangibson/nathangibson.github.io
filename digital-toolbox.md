@@ -2,7 +2,7 @@
 layout: home
 cover-img: /img/tools.jpg
 title: Digital Toolbox
-subtitle: Some tools I use for my workflows (≠ endorsements)
+subtitle: Some tools I use for my workflows (not endorsements)
 full-width: true
 column-width-classes: "col-md-4 col-lg-4"
 card-background-position: "left top"
