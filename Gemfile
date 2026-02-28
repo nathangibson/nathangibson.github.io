@@ -14,3 +14,8 @@ gem "wdm", "~> 0.1", :platforms => [:mingw, :x64_mingw, :mswin]
   
 gemspec
 
+# Citation processing gems for publications list
+gem "citeproc", "~> 1.0"
+gem "csl", "~> 1.8"
+gem "csl-styles", "~> 1.0"
+
