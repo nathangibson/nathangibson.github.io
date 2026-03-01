@@ -26,23 +26,23 @@
 }
 
 /* Publication card styling */
-.publication-card {
+.publications-container .card {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   border: 1px solid #e0e0e0;
   background-color: #fff;
 }
 
-.publication-card:hover {
+.publications-container .card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15) !important;
 }
 
-.publication-card .card-body {
+.publications-container .card-body {
   padding: 1.5rem;
 }
 
 /* Publication type badge */
-.publication-card .badge {
+.publications-container .badge {
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
