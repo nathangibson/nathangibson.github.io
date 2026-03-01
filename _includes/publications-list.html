@@ -5,44 +5,130 @@
 <div class="publications-container">
   <!-- Filter buttons -->
   <div class="publications-filters d-flex gap-3 flex-wrap mb-4">
-    <button class="btn btn-outline-primary publication-filter fw-medium active" data-filter="all">All</button>
-    <button class="btn btn-outline-primary publication-filter fw-medium" data-filter="book">Books</button>
-    <button class="btn btn-outline-primary publication-filter fw-medium" data-filter="article-journal">Articles</button>
+    <button class="btn btn-outline-light publication-filter fw-medium active" data-filter="all">All</button>
+    <button class="btn btn-outline-light publication-filter fw-medium" data-filter="book">Books</button>
+    <button class="btn btn-outline-light publication-filter fw-medium" data-filter="article-journal">Articles</button>
   </div>
 
   <!-- Publications grid -->
   <div class="row g-4" id="pub-grid">
     {% for pub in site.data.publications.references %}
       {% if pub.type == "book" or pub.type == "article-journal" %}
-        <div class="col-12 col-md-6 col-lg-4 pub-item" data-type="{{ pub.type }}">
-          <div class="card h-100 shadow-sm">
+        <div class="pub-item col-12 col-md-6 col-lg-4 py-3" data-type="{{ pub.type }}">
+          <div class="card h-100 rounded-4 text-bg-dark shadow">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title">{{ pub.title }}</h5>
-              <p class="card-text small text-muted">
-                {% if pub.author %}
-                  {% assign first_author = pub.author[0] %}
-                  {{ first_author.family }}{% if pub.author.size > 1 %} et al.{% endif %}
-                {% endif %}
+              {%- capture pub_type -%}
+              {%- if pub.type == 'book' -%}Book{%- elsif pub.type == 'article-journal' -%}Journal Article{%- else -%}Publication{%- endif -%}
+              {%- endcapture -%}
+
+              <!-- Badge for publication type -->
+              <div class="mb-2">
+                <span class="badge bg-light text-dark">{{ pub_type | strip }}</span>
+              </div>
+
+              <!-- Publication title -->
+              <h5 class="card-title fw-bold">{{ pub.title }}</h5>
+
+              <!-- Authors -->
+              {%- if pub.author -%}
+              <p class="card-text text-light-emphasis fst-italic small mb-2">
+                {%- for author in pub.author -%}
+                  {%- if author.family and author.given -%}
+                    {{- author.family }}, {{ author.given -}}
+                  {%- elsif author.family -%}
+                    {{- author.family -}}
+                  {%- elsif author.literal -%}
+                    {{- author.literal -}}
+                  {%- endif -%}
+                  {%- unless forloop.last %}<br/>{%- endunless -%}
+                {%- endfor -%}
               </p>
-              {% if pub.issued and pub.issued[0] %}
-                <p class="card-text small">{{ pub.issued[0].literal }}</p>
-              {% endif %}
+              {%- endif -%}
 
-              <!-- Chicago Citation -->
-              {% if pub['chicago-bibliography'] %}
-              <details class="mt-2">
-                <summary class="cursor-pointer text-primary small fw-semibold">Citation</summary>
-                <p class="card-text small mt-2" style="font-family: monospace; font-size: 0.8rem; line-height: 1.5;">{{ pub['chicago-bibliography'] }}</p>
+              <!-- Publication year and container -->
+              <div class="text-light-emphasis small mb-3">
+                {%- if pub.issued -%}
+                  {%- if pub.issued['date-parts'] and pub.issued['date-parts'][0] -%}
+                    <span class="fw-bold">{{ pub.issued['date-parts'][0][0] }}</span>
+                  {%- elsif pub.issued.literal -%}
+                    <span class="fw-bold">{{ pub.issued.literal }}</span>
+                  {%- endif -%}
+                {%- endif -%}
+                {%- if pub['container-title'] -%}
+                  <span> • {{ pub['container-title'] }}</span>
+                {%- elsif pub.publisher -%}
+                  <span> • {{ pub.publisher }}</span>
+                {%- endif -%}
+              </div>
+
+              <!-- Abstract (optional, expandable) -->
+              {%- if pub.abstract -%}
+              <details class="publication-abstract mb-3">
+                <summary class="cursor-pointer text-info small fw-semibold outline-0 user-select-none">Abstract</summary>
+                <p class="card-text small mt-2">{{ pub.abstract }}</p>
               </details>
-              {% endif %}
+              {%- endif -%}
 
-              <!-- Links -->
-              {% if pub.DOI or pub.URL %}
-                <div class="mt-auto pt-3">
-                  {% if pub.DOI %}<a href="https://doi.org/{{ pub.DOI }}" class="btn btn-sm btn-outline-primary" target="_blank">DOI</a>{% endif %}
-                  {% if pub.URL %}<a href="{{ pub.URL }}" class="btn btn-sm btn-outline-primary" target="_blank">View</a>{% endif %}
+              <!-- Chicago Citations (expandable) -->
+              <details class="publication-citations mb-3">
+                <summary class="cursor-pointer text-info small fw-semibold outline-0 user-select-none">Citations</summary>
+                <div class="citation-formats mt-2 small">
+                  {%- if pub['chicago-bibliography'] -%}
+                  <details class="citation-item">
+                    <summary class="text-light outline-0 user-select-none">Bibliography</summary>
+                    <p class="citation-text mt-1">{{ pub['chicago-bibliography'] }}</p>
+                  </details>
+                  {%- endif -%}
+
+                  {%- if pub['chicago-note-full'] -%}
+                  <details class="citation-item">
+                    <summary class="text-light outline-0 user-select-none">Full Note</summary>
+                    <p class="citation-text mt-1">{{ pub['chicago-note-full'] }}</p>
+                  </details>
+                  {%- endif -%}
+
+                  {%- if pub['chicago-note-short'] -%}
+                  <details class="citation-item">
+                    <summary class="text-light outline-0 user-select-none">Short Note</summary>
+                    <p class="citation-text mt-1">{{ pub['chicago-note-short'] }}</p>
+                  </details>
+                  {%- endif -%}
                 </div>
-              {% endif %}
+              </details>
+
+              <!-- Attachments (links) -->
+              {%- if pub.attachments -%}
+              <div class="publication-attachments mt-auto pt-2 border-top border-light-subtle">
+                <p class="small text-light mb-2 fw-bold text-uppercase fs-7 letter-spacing">Resources:</p>
+                <div class="d-flex flex-wrap gap-2">
+                  {%- for attachment in pub.attachments -%}
+                  <a href="{{ attachment.url }}" class="btn btn-sm btn-outline-light" target="_blank" rel="noopener noreferrer">
+                    {%- if attachment.type == 'pdf' -%}
+                      📄 {{ attachment.title | default: 'PDF' }}
+                    {%- else -%}
+                      🔗 {{ attachment.title | default: 'Link' }}
+                    {%- endif -%}
+                  </a>
+                  {%- endfor -%}
+                </div>
+              </div>
+              {%- endif -%}
+
+              <!-- DOI/URL link if available -->
+              {%- if pub.DOI or pub.URL -%}
+              <div class="mt-2 pt-2 border-top border-light-subtle">
+                {%- if pub.DOI -%}
+                <a href="https://doi.org/{{ pub.DOI }}" class="btn btn-sm btn-link text-info ps-0" target="_blank" rel="noopener noreferrer">
+                  DOI: {{ pub.DOI }}
+                </a><br/>
+                {%- endif -%}
+                {%- if pub.URL -%}
+                <a href="{{ pub.URL }}" class="btn btn-sm btn-link text-info ps-0" target="_blank" rel="noopener noreferrer">
+                  View Online
+                </a>
+                {%- endif -%}
+              </div>
+              {%- endif -%}
             </div>
           </div>
         </div>

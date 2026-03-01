@@ -4,107 +4,50 @@
 .publications-container {
   margin-bottom: 2rem;
 
-  // Card with lifted hover effect
-  .card {
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    border: 1px solid #e0e0e0;
-    background-color: #fff;
-
-    &:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15) !important;
-    }
-
-    .card-body {
-      padding: 1.5rem;
-    }
-
-    .badge {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
+  // Expandable sections (abstract, citations)
+  details {
+    &[open] {
+      summary {
+        font-weight: 600;
+      }
     }
   }
 
-  // Publication title sizing
-  .publication-title {
-    margin-bottom: 0.75rem;
-    color: #1a1a1a;
-    line-height: 1.3;
-    font-size: 1.1rem;
-  }
-
-  // Expandable sections styling
-  .publication-abstract,
+  // Citation box styling
   .publication-citations {
-    &:not(.citation-item) {
-      padding: 0.5rem 0;
-      margin-bottom: 0.75rem;
-    }
-  }
-
-  // Abstract styling
-  .publication-abstract {
-    border-bottom: 1px solid #eee;
-    padding-bottom: 0.75rem;
-
-    p {
-      margin-top: 0.75rem;
-      margin-bottom: 0;
-      color: #333;
-      line-height: 1.6;
-    }
-  }
-
-  // Citation box with left border accent
-  .publication-citations {
-    padding: 0.75rem;
-    background-color: #f8f9fa;
-    border-radius: 0.275rem;
-    border-left: 3px solid #0d6efd;
-
     .citation-item {
       margin-top: 0.5rem;
-      margin-left: 1rem;
       padding-top: 0.5rem;
-      border-top: 1px solid #e0e0e0;
 
       &:first-child {
         margin-top: 0;
-        border-top: none;
         padding-top: 0;
-      }
-
-      summary {
-        font-size: 0.9rem;
       }
     }
 
     // Monospace citation text block
     .citation-text {
       font-family: 'Courier New', Courier, monospace;
-      background-color: #fff;
+      background-color: rgba(255, 255, 255, 0.1);
       padding: 0.75rem;
-      border: 1px solid #e0e0e0;
+      border: 1px solid rgba(255, 255, 255, 0.2);
       border-radius: 0.275rem;
       margin-top: 0.5rem;
       line-height: 1.6;
       word-wrap: break-word;
       overflow-wrap: break-word;
       font-size: 0.85rem;
-      color: #333;
+      color: inherit;
     }
   }
 
-  // Attachments section
-  .publication-attachments {
-    margin-top: 1rem;
-    padding-top: 1rem;
-    border-top: 1px solid #eee;
+  // Cursor styling for details elements
+  details > summary {
+    cursor: pointer;
   }
 }
 
-// Filter buttons with active state
+// Filter buttons styling
 .publications-filters {
   margin-bottom: 2rem;
 
@@ -113,18 +56,16 @@
     transition: all 0.2s ease;
 
     &.active {
-      background-color: #0d6efd;
-      color: white;
-      border-color: #0d6efd;
+      background-color: #fff;
+      color: #000;
+      border-color: #fff;
     }
   }
 }
 
 // Responsive design
 @media (max-width: 992px) {
-  .publications-container .publication-title {
-    font-size: 1rem;
-  }
+  // No additional adjustments needed with Bootstrap utilities
 }
 
 @media (max-width: 768px) {
@@ -137,32 +78,10 @@
       text-align: center;
     }
   }
-
-  .publications-container {
-    .card .card-body {
-      padding: 1rem;
-    }
-
-    .publication-title {
-      font-size: 1rem;
-    }
-  }
 }
 
 @media (max-width: 576px) {
-  .publications-container {
-    .card .card-body {
-      padding: 0.75rem;
-    }
-
-    .publication-title {
-      font-size: 0.95rem;
-    }
-
-    .publication-citations .citation-text {
-      font-size: 0.8rem;
-    }
-  }
+  // Bootstrap responsive classes handle sizing adjustments
 }
 
 // Print styles
@@ -178,16 +97,12 @@
       box-shadow: none;
       border: 1px solid #ddd;
       margin-bottom: 1.5rem;
-
-      &:hover {
-        transform: none;
-        box-shadow: none;
-      }
     }
 
-    .publication-citations {
+    .publication-citations .citation-text {
       background-color: #f0f0f0;
       border: 1px solid #ddd;
+      color: #333;
     }
 
     .citation-item,
@@ -205,3 +120,4 @@
     }
   }
 }
+
