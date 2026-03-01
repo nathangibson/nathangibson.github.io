@@ -26,46 +26,13 @@
                 <span class="badge bg-light text-dark">{{ pub_type | strip }}</span>
               </div>
 
-              <!-- Publication title -->
-              <h5 class="card-title fw-bold">{{ pub.title }}</h5>
-
-              <!-- Authors -->
-              {%- assign people = pub.author | default: [] -%}
-              {%- if pub.editor -%}
-              {%- assign people = people | concat: pub.editor -%}
+              {%- if pub['chicago-bibliography'] -%}
+              {%- capture title-period -%}{{ pub.title }}.{%- endcapture -%}
+              {%- capture title_wrapped -%}<h5 class="card-title fw-bold">{{ title-period }}</h5>{%- endcapture -%}
+              {%- capture bibliography_wrapped -%}{{ pub['chicago-bibliography'] | replace: title-period, title_wrapped }}{%- endcapture -%}
+              <p class="small mt-1 mb-2">{{ bibliography_wrapped | replace: '&#x201C;', '' | replace: '&#x201D;', '' }}</p>
               {%- endif -%}
-
-              {%- if people and people.size > 0 -%}
-              <p class="card-text text-light-emphasis fst-italic small my-2">
-              {%- for person in people -%}
-                {%- if person.family and person.given -%}
-                {{ person.given -}} &nbsp; {{- person.family }}
-                {%- elsif person.family -%}
-                {{- person.family -}}
-                {%- elsif person.literal -%}
-                {{- person.literal -}}
-                {%- endif -%}
-                {%- unless forloop.last %},&nbsp; {%- endunless -%}
-              {%- endfor -%}
-              </p>
-              {%- endif -%}
-
-              <!-- Publication year and container -->
-              <div class="text-light-emphasis small mb-3">
-                {%- if pub.issued -%}
-                  {%- if pub.issued['date-parts'] and pub.issued['date-parts'][0] -%}
-                    <span class="fw-bold">{{ pub.issued['date-parts'][0][0] }}</span>
-                  {%- elsif pub.issued.literal -%}
-                    <span class="fw-bold">{{ pub.issued.literal }}</span>
-                  {%- endif -%}
-                {%- endif -%}
-                {%- if pub['container-title'] -%}
-                  <span> • {{ pub['container-title'] }}</span>
-                {%- elsif pub.publisher -%}
-                  <span> • {{ pub.publisher }}</span>
-                {%- endif -%}
-              </div>
-
+              
               <!-- Abstract (optional, expandable) -->
               {%- if pub.abstract -%}
               <details class="publication-abstract mb-3">
@@ -74,37 +41,9 @@
               </details>
               {%- endif -%}
 
-              <!-- Chicago Citations (expandable) -->
-              <details class="publication-citations mb-3">
-                <summary class="cursor-pointer text-info small fw-semibold outline-0 user-select-none">Citations</summary>
-                <div class="citation-formats mt-2 small">
-                  {%- if pub['chicago-bibliography'] -%}
-                  <details class="citation-item">
-                    <summary class="text-light outline-0 user-select-none">Bibliography</summary>
-                    <p class="citation-text mt-1">{{ pub['chicago-bibliography'] }}</p>
-                  </details>
-                  {%- endif -%}
-
-                  {%- if pub['chicago-note-full'] -%}
-                  <details class="citation-item">
-                    <summary class="text-light outline-0 user-select-none">Full Note</summary>
-                    <p class="citation-text mt-1">{{ pub['chicago-note-full'] }}</p>
-                  </details>
-                  {%- endif -%}
-
-                  {%- if pub['chicago-note-short'] -%}
-                  <details class="citation-item">
-                    <summary class="text-light outline-0 user-select-none">Short Note</summary>
-                    <p class="citation-text mt-1">{{ pub['chicago-note-short'] }}</p>
-                  </details>
-                  {%- endif -%}
-                </div>
-              </details>
-
               <!-- Attachments (links) -->
               {%- if pub.attachments -%}
-              <div class="publication-attachments mt-auto pt-2 border-top border-light-subtle">
-                <p class="small text-light mb-2 fw-bold text-uppercase fs-7 letter-spacing">Resources:</p>
+              <div class="publication-attachments mt-auto pt-2">
                 <div class="d-flex flex-wrap gap-2">
                   {%- for attachment in pub.attachments -%}
                   <a href="{{ attachment.url }}" class="btn btn-sm btn-outline-light" target="_blank" rel="noopener noreferrer">
@@ -121,7 +60,7 @@
 
               <!-- DOI/URL link if available -->
               {%- if pub.DOI or pub.URL -%}
-              <div class="mt-2 pt-2 border-top border-light-subtle">
+              <div class="mt-2 pt-2">
                 {%- if pub.DOI -%}
                 <a href="https://doi.org/{{ pub.DOI }}" class="btn btn-sm btn-link text-info ps-0" target="_blank" rel="noopener noreferrer">
                   DOI: {{ pub.DOI }}
