@@ -16,6 +16,6 @@ gemspec
 
 # Citation processing gems for publications list
 gem "citeproc", "~> 1.0"
-gem "csl", "~> 1.8"
+gem "csl", "~> 1.5"
 gem "csl-styles", "~> 1.0"
 
