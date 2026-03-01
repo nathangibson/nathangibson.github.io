@@ -14,8 +14,8 @@
   <div class="row g-4" id="pub-grid">
     {% for pub in site.data.publications.references %}
       {% if pub.type == "book" or pub.type == "article-journal" %}
-        <div class="pub-item col-12 col-md-6 col-lg-4 py-3" data-type="{{ pub.type }}">
-          <div class="card h-100 rounded-4 text-bg-dark shadow">
+        <div class="pub-item col-12 py-3 text-light" data-type="{{ pub.type }}">
+          <div class="card h-100 rounded-4 text-bg-dark shadow" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('{{ card.cover-img | default: "/img/nhsl-banner.png" }}'); background-size: cover;">
             <div class="card-body d-flex flex-column">
               {%- capture pub_type -%}
               {%- if pub.type == 'book' -%}Book{%- elsif pub.type == 'article-journal' -%}Journal Article{%- else -%}Publication{%- endif -%}
@@ -30,18 +30,23 @@
               <h5 class="card-title fw-bold">{{ pub.title }}</h5>
 
               <!-- Authors -->
-              {%- if pub.author -%}
-              <p class="card-text text-light-emphasis fst-italic small mb-2">
-                {%- for author in pub.author -%}
-                  {%- if author.family and author.given -%}
-                    {{- author.family }}, {{ author.given -}}
-                  {%- elsif author.family -%}
-                    {{- author.family -}}
-                  {%- elsif author.literal -%}
-                    {{- author.literal -}}
-                  {%- endif -%}
-                  {%- unless forloop.last %}<br/>{%- endunless -%}
-                {%- endfor -%}
+              {%- assign people = pub.author | default: [] -%}
+              {%- if pub.editor -%}
+              {%- assign people = people | concat: pub.editor -%}
+              {%- endif -%}
+
+              {%- if people and people.size > 0 -%}
+              <p class="card-text text-light-emphasis fst-italic small my-2">
+              {%- for person in people -%}
+                {%- if person.family and person.given -%}
+                {{ person.given -}} &nbsp; {{- person.family }}
+                {%- elsif person.family -%}
+                {{- person.family -}}
+                {%- elsif person.literal -%}
+                {{- person.literal -}}
+                {%- endif -%}
+                {%- unless forloop.last %},&nbsp; {%- endunless -%}
+              {%- endfor -%}
               </p>
               {%- endif -%}
 
