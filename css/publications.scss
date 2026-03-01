@@ -1,10 +1,10 @@
-// Publication Cards - Bootstrap-based styling with minimal custom classes
-// Uses Bootstrap utilities and variables where possible
+// Publication Cards - Minimal custom styles using Bootstrap
+// Most styling delegated to Bootstrap utility classes in HTML
 
 .publications-container {
   margin-bottom: 2rem;
 
-  // Card container styling
+  // Card with lifted hover effect
   .card {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     border: 1px solid #e0e0e0;
@@ -19,69 +19,34 @@
       padding: 1.5rem;
     }
 
-    // Type badge styling
     .badge {
       font-size: 0.75rem;
-      font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 0.5px;
     }
   }
 
-  // Publication-specific typography
+  // Publication title sizing
   .publication-title {
     margin-bottom: 0.75rem;
     color: #1a1a1a;
     line-height: 1.3;
     font-size: 1.1rem;
-    font-weight: 600;
   }
 
-  .publication-authors {
-    margin-bottom: 0.5rem;
-    font-style: italic;
-    color: #666;
-    font-size: 0.95rem;
-    line-height: 1.4;
-  }
-
-  // Metadata (year, container, publisher)
-  .publication-meta {
-    margin-bottom: 1rem;
-    color: #666;
-    font-size: 0.9rem;
-
-    .pub-year {
-      font-weight: 600;
-      color: #333;
-    }
-
-    .pub-container,
-    .pub-publisher {
-      color: #666;
-    }
-  }
-
-  // Expandable sections (abstract, citations)
+  // Expandable sections styling
   .publication-abstract,
   .publication-citations {
-    summary {
-      outline: none;
-      cursor: pointer;
-      user-select: none;
-      padding: 0.25rem 0;
-
-      &:hover {
-        text-decoration: underline;
-      }
+    &:not(.citation-item) {
+      padding: 0.5rem 0;
+      margin-bottom: 0.75rem;
     }
   }
 
   // Abstract styling
   .publication-abstract {
-    padding: 0.5rem 0 0.75rem 0;
-    margin-bottom: 0.75rem;
     border-bottom: 1px solid #eee;
+    padding-bottom: 0.75rem;
 
     p {
       margin-top: 0.75rem;
@@ -91,19 +56,13 @@
     }
   }
 
-  // Citation box styling
+  // Citation box with left border accent
   .publication-citations {
     padding: 0.75rem;
-    margin-bottom: 1rem;
     background-color: #f8f9fa;
     border-radius: 0.275rem;
     border-left: 3px solid #0d6efd;
 
-    .citation-formats {
-      margin-top: 0.75rem;
-    }
-
-    // Nested citation format items
     .citation-item {
       margin-top: 0.5rem;
       margin-left: 1rem;
@@ -118,11 +77,10 @@
 
       summary {
         font-size: 0.9rem;
-        color: #6c757d;
       }
     }
 
-    // Citation text (monospace code block)
+    // Monospace citation text block
     .citation-text {
       font-family: 'Courier New', Courier, monospace;
       background-color: #fff;
@@ -143,61 +101,15 @@
     margin-top: 1rem;
     padding-top: 1rem;
     border-top: 1px solid #eee;
-
-    .text-secondary {
-      font-weight: 600;
-      text-transform: uppercase;
-      font-size: 0.8rem;
-      letter-spacing: 0.5px;
-    }
-
-    .attachment-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-top: 0.5rem;
-
-      .btn {
-        font-size: 0.85rem;
-        padding: 0.35rem 0.75rem;
-
-        &:hover {
-          background-color: #6c757d;
-          color: white;
-        }
-      }
-    }
-  }
-
-  // DOI/URL links
-  .publication-links {
-    margin-top: 1rem;
-    padding-top: 1rem;
-    border-top: 1px solid #eee;
-
-    .btn-link {
-      font-size: 0.9rem;
-      padding-left: 0 !important;
-      text-decoration: none;
-      color: #0d6efd;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
   }
 }
 
-// Filter buttons
+// Filter buttons with active state
 .publications-filters {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
   margin-bottom: 2rem;
 
   .publication-filter {
     cursor: pointer;
-    font-weight: 500;
     transition: all 0.2s ease;
 
     &.active {
@@ -234,10 +146,6 @@
     .publication-title {
       font-size: 1rem;
     }
-
-    .publication-authors {
-      font-size: 0.9rem;
-    }
   }
 }
 
@@ -253,14 +161,6 @@
 
     .publication-citations .citation-text {
       font-size: 0.8rem;
-    }
-
-    .publication-attachments .attachment-links {
-      flex-direction: column;
-
-      .btn {
-        width: 100%;
-      }
     }
   }
 }

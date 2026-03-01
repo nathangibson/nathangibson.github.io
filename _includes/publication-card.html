@@ -12,11 +12,11 @@
       </div>
 
       <!-- Publication title -->
-      <h5 class="card-title publication-title">{{ pub.title }}</h5>
+      <h5 class="card-title publication-title fw-bold">{{ pub.title }}</h5>
 
       <!-- Authors -->
       {%- if pub.author -%}
-      <p class="card-text text-muted publication-authors small">
+      <p class="card-text text-muted fst-italic small mb-2">
         {%- for author in pub.author -%}
           {%- if author.family and author.given -%}
             {{- author.family }}, {{ author.given -}}
@@ -31,50 +31,50 @@
       {%- endif -%}
 
       <!-- Publication year and container -->
-      <div class="publication-meta small text-muted mb-3">
+      <div class="text-muted small mb-3">
         {%- if pub.issued -%}
           {%- if pub.issued['date-parts'] and pub.issued['date-parts'][0] -%}
-            <span class="pub-year">{{ pub.issued['date-parts'][0][0] }}</span>
+            <span class="fw-bold">{{ pub.issued['date-parts'][0][0] }}</span>
           {%- elsif pub.issued.literal -%}
-            <span class="pub-year">{{ pub.issued.literal }}</span>
+            <span class="fw-bold">{{ pub.issued.literal }}</span>
           {%- endif -%}
         {%- endif -%}
         {%- if pub['container-title'] -%}
-          <span class="pub-container"> • {{ pub['container-title'] }}</span>
+          <span> • {{ pub['container-title'] }}</span>
         {%- elsif pub.publisher -%}
-          <span class="pub-publisher"> • {{ pub.publisher }}</span>
+          <span> • {{ pub.publisher }}</span>
         {%- endif -%}
       </div>
 
       <!-- Abstract (optional, expandable) -->
       {%- if pub.abstract -%}
       <details class="publication-abstract mb-3">
-        <summary class="cursor-pointer text-primary small fw-semibold">Abstract</summary>
+        <summary class="cursor-pointer text-primary small fw-semibold outline-0 user-select-none">Abstract</summary>
         <p class="card-text small mt-2">{{ pub.abstract }}</p>
       </details>
       {%- endif -%}
 
       <!-- Chicago Citations (expandable) -->
       <details class="publication-citations mb-3">
-        <summary class="cursor-pointer text-primary small fw-semibold">Citations</summary>
+        <summary class="cursor-pointer text-primary small fw-semibold outline-0 user-select-none">Citations</summary>
         <div class="citation-formats mt-2 small">
           {%- if pub['chicago-bibliography'] -%}
           <details class="citation-item">
-            <summary class="text-secondary">Bibliography</summary>
+            <summary class="text-secondary outline-0 user-select-none">Bibliography</summary>
             <p class="citation-text mt-1">{{ pub['chicago-bibliography'] }}</p>
           </details>
           {%- endif -%}
 
           {%- if pub['chicago-note-full'] -%}
           <details class="citation-item">
-            <summary class="text-secondary">Full Note</summary>
+            <summary class="text-secondary outline-0 user-select-none">Full Note</summary>
             <p class="citation-text mt-1">{{ pub['chicago-note-full'] }}</p>
           </details>
           {%- endif -%}
 
           {%- if pub['chicago-note-short'] -%}
           <details class="citation-item">
-            <summary class="text-secondary">Short Note</summary>
+            <summary class="text-secondary outline-0 user-select-none">Short Note</summary>
             <p class="citation-text mt-1">{{ pub['chicago-note-short'] }}</p>
           </details>
           {%- endif -%}
@@ -84,10 +84,10 @@
       <!-- Attachments (links) -->
       {%- if pub.attachments -%}
       <div class="publication-attachments mt-auto pt-2 border-top">
-        <p class="small text-secondary mb-2">Resources:</p>
-        <div class="attachment-links">
+        <p class="small text-secondary mb-2 fw-bold text-uppercase fs-7 letter-spacing">Resources:</p>
+        <div class="d-flex flex-wrap gap-2">
           {%- for attachment in pub.attachments -%}
-          <a href="{{ attachment.url }}" class="btn btn-sm btn-outline-secondary me-2 mb-2" target="_blank" rel="noopener noreferrer">
+          <a href="{{ attachment.url }}" class="btn btn-sm btn-outline-secondary" target="_blank" rel="noopener noreferrer">
             {%- if attachment.type == 'pdf' -%}
               📄 {{ attachment.title | default: 'PDF' }}
             {%- else -%}
@@ -101,7 +101,7 @@
 
       <!-- DOI/URL link if available -->
       {%- if pub.DOI or pub.URL -%}
-      <div class="publication-links mt-2 pt-2 border-top">
+      <div class="mt-2 pt-2 border-top">
         {%- if pub.DOI -%}
         <a href="https://doi.org/{{ pub.DOI }}" class="btn btn-sm btn-link ps-0" target="_blank" rel="noopener noreferrer">
           DOI: {{ pub.DOI }}
