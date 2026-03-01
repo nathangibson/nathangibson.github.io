@@ -14,6 +14,3 @@ gem "wdm", "~> 0.1", :platforms => [:mingw, :x64_mingw, :mswin]
   
 gemspec
 
-# Note: Citation formatting is handled by the Jekyll plugin
-# using built-in Ruby methods, no external dependencies needed
-
