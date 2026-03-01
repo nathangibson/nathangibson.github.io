@@ -1,0 +1,307 @@
+// Publication Cards - Bootstrap-based styling with minimal custom classes
+// Uses Bootstrap utilities and variables where possible
+
+.publications-container {
+  margin-bottom: 2rem;
+
+  // Card container styling
+  .card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15) !important;
+    }
+
+    .card-body {
+      padding: 1.5rem;
+    }
+
+    // Type badge styling
+    .badge {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  // Publication-specific typography
+  .publication-title {
+    margin-bottom: 0.75rem;
+    color: #1a1a1a;
+    line-height: 1.3;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .publication-authors {
+    margin-bottom: 0.5rem;
+    font-style: italic;
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  // Metadata (year, container, publisher)
+  .publication-meta {
+    margin-bottom: 1rem;
+    color: #666;
+    font-size: 0.9rem;
+
+    .pub-year {
+      font-weight: 600;
+      color: #333;
+    }
+
+    .pub-container,
+    .pub-publisher {
+      color: #666;
+    }
+  }
+
+  // Expandable sections (abstract, citations)
+  .publication-abstract,
+  .publication-citations {
+    summary {
+      outline: none;
+      cursor: pointer;
+      user-select: none;
+      padding: 0.25rem 0;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  // Abstract styling
+  .publication-abstract {
+    padding: 0.5rem 0 0.75rem 0;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid #eee;
+
+    p {
+      margin-top: 0.75rem;
+      margin-bottom: 0;
+      color: #333;
+      line-height: 1.6;
+    }
+  }
+
+  // Citation box styling
+  .publication-citations {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 0.275rem;
+    border-left: 3px solid #0d6efd;
+
+    .citation-formats {
+      margin-top: 0.75rem;
+    }
+
+    // Nested citation format items
+    .citation-item {
+      margin-top: 0.5rem;
+      margin-left: 1rem;
+      padding-top: 0.5rem;
+      border-top: 1px solid #e0e0e0;
+
+      &:first-child {
+        margin-top: 0;
+        border-top: none;
+        padding-top: 0;
+      }
+
+      summary {
+        font-size: 0.9rem;
+        color: #6c757d;
+      }
+    }
+
+    // Citation text (monospace code block)
+    .citation-text {
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #fff;
+      padding: 0.75rem;
+      border: 1px solid #e0e0e0;
+      border-radius: 0.275rem;
+      margin-top: 0.5rem;
+      line-height: 1.6;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      font-size: 0.85rem;
+      color: #333;
+    }
+  }
+
+  // Attachments section
+  .publication-attachments {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+
+    .text-secondary {
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      letter-spacing: 0.5px;
+    }
+
+    .attachment-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+
+      .btn {
+        font-size: 0.85rem;
+        padding: 0.35rem 0.75rem;
+
+        &:hover {
+          background-color: #6c757d;
+          color: white;
+        }
+      }
+    }
+  }
+
+  // DOI/URL links
+  .publication-links {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+
+    .btn-link {
+      font-size: 0.9rem;
+      padding-left: 0 !important;
+      text-decoration: none;
+      color: #0d6efd;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// Filter buttons
+.publications-filters {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+
+  .publication-filter {
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease;
+
+    &.active {
+      background-color: #0d6efd;
+      color: white;
+      border-color: #0d6efd;
+    }
+  }
+}
+
+// Responsive design
+@media (max-width: 992px) {
+  .publications-container .publication-title {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .publications-filters {
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .publication-filter {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .publications-container {
+    .card .card-body {
+      padding: 1rem;
+    }
+
+    .publication-title {
+      font-size: 1rem;
+    }
+
+    .publication-authors {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .publications-container {
+    .card .card-body {
+      padding: 0.75rem;
+    }
+
+    .publication-title {
+      font-size: 0.95rem;
+    }
+
+    .publication-citations .citation-text {
+      font-size: 0.8rem;
+    }
+
+    .publication-attachments .attachment-links {
+      flex-direction: column;
+
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// Print styles
+@media print {
+  .publications-filters {
+    display: none;
+  }
+
+  .publications-container {
+    .card {
+      break-inside: avoid;
+      page-break-inside: avoid;
+      box-shadow: none;
+      border: 1px solid #ddd;
+      margin-bottom: 1.5rem;
+
+      &:hover {
+        transform: none;
+        box-shadow: none;
+      }
+    }
+
+    .publication-citations {
+      background-color: #f0f0f0;
+      border: 1px solid #ddd;
+    }
+
+    .citation-item,
+    .publication-abstract,
+    .publication-attachments {
+      break-inside: avoid;
+    }
+
+    a {
+      color: #003d82;
+
+      &[href]:after {
+        content: " (" attr(href) ")";
+      }
+    }
+  }
+}
