@@ -41,10 +41,10 @@ references:
     für die Geschichtswissenschaften | Geschichte im Netz | History in the web
   type: webpage
   URL: https://www.hsozkult.de/conferencereport/id/fdkn-155043
-  chicago-bibliography: H-Soz-Kult. Kommunikation und Fachinformation f&#xFC;r die
-    Geschichtswissenschaften. &#x201C;Connecting Late Antiquities | H-Soz-Kult. Kommunikation
-    und Fachinformation f&#xFC;r die Geschichtswissenschaften | Geschichte im Netz
-    | History in the web.&#x201D; H-Soz-Kult, May 19, 2025. https://www.hsozkult.de/conferencereport/id/fdkn-155043.
+  chicago-bibliography: H-Soz-Kult. Kommunikation und Fachinformation für die Geschichtswissenschaften.
+    “Connecting Late Antiquities | H-Soz-Kult. Kommunikation und Fachinformation für
+    die Geschichtswissenschaften | Geschichte im Netz | History in the web.” H-Soz-Kult,
+    May 19, 2025. https://www.hsozkult.de/conferencereport/id/fdkn-155043.
 - id: duckerJeGrosserLiebe2023
   abstract: Neu am Fachbereich begrüßen wir Prof. Dr. Nathan Gibson als Professor
     für Religionswissenschaft mit dem Schwerpunkt „Jüdisch-Islamische Beziehungen“.
@@ -79,11 +79,10 @@ references:
   type: article-journal
   URL: http://publikationen.ub.uni-frankfurt.de/frontdoor/index/index/docId/80437
   volume: '3'
-  chicago-bibliography: 'D&#xFC;cker, Malte. &#x201C;&#x2018;Je gr&#xF6;&#xDF;er die
-    Liebe und N&#xE4;he (zwischen Nachbarn), desto mehr Hass und Entfremdung kann
-    es geben.&#x2019;&#x202F;: Interview zur Berufung von Prof. Dr. Nathan Gibson.&#x201D;
-    Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universit&#xE4;t Frankfurt
-    am Main 3 (2023): 32&#x2013;33. https://doi.org/10.21248/gups.80437.'
+  chicago-bibliography: 'Dücker, Malte. “‘Je größer die Liebe und Nähe (zwischen Nachbarn),
+    desto mehr Hass und Entfremdung kann es geben.’ : Interview zur Berufung von Prof.
+    Dr. Nathan Gibson.” Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universität
+    Frankfurt am Main 3 (2023): 32–33. https://doi.org/10.21248/gups.80437.'
 - id: ghorbaninejadRighttoLeftRTLText2023
   author:
   - family: Ghorbaninejad
@@ -113,10 +112,10 @@ references:
   type: chapter
   URL: https://dhdebates.gc.cuny.edu/read/debates-in-the-digital-humanities-2023/section/51ad75ab-76a4-43f3-81f8-0b31e350ca9c#ch03
   chicago-bibliography: 'Ghorbaninejad, Masoud, Nathan P. Gibson, and David Joseph
-    Wrisley. &#x201C;Right-to-Left (RTL) Text: Digital Humanists Plus Half a Billion
-    Users.&#x201D; In Debates in the Digital Humanities 2023, edited by Matthew K.
-    Gold and Lauren F. Klein, 47&#x2013;73. Debates in the Digital Humanities 9. Minneapolis:
-    University of Minnesota Press, 2023. https://dhdebates.gc.cuny.edu/read/debates-in-the-digital-humanities-2023/section/51ad75ab-76a4-43f3-81f8-0b31e350ca9c#ch03.'
+    Wrisley. “Right-to-Left (RTL) Text: Digital Humanists Plus Half a Billion Users.”
+    In Debates in the Digital Humanities 2023, edited by Matthew K. Gold and Lauren
+    F. Klein, 47–73. Debates in the Digital Humanities 9. Minneapolis: University
+    of Minnesota Press, 2023. https://dhdebates.gc.cuny.edu/read/debates-in-the-digital-humanities-2023/section/51ad75ab-76a4-43f3-81f8-0b31e350ca9c#ch03.'
 - id: gibsonAbrahamPointDeparture2012
   author:
   - family: Gibson
@@ -130,7 +129,8 @@ references:
   note: 'Presenters: _:n196'
   title: Abraham as a Point of Departure in the 'Monk of Bet Hale' Text
   type: speech
-  chicago-bibliography: "&#x201C;Balisage.&#x201D; Accessed March 31, 2017. http://www.balisage.net/Proceedings/vol16/html/Gibson01/BalisageVol16-Gibson01.html."
+  chicago-bibliography: "———. “Abraham as a Point of Departure in the ‘Monk of Bet
+    Hale’ Text.” July 16, 2012."
 - id: gibsonAlJahizDivineAdoption2022
   author:
   - family: Gibson
@@ -144,11 +144,11 @@ references:
     day: 18
   title: Al-Jāḥiẓ on Divine Adoption
   type: speech
-  chicago-bibliography: 'Gibson, Nathan P., and Ronny Vollandt. &#x201C;Cross-Communal
-    Scholarly Interactions.&#x201D; In Routledge Handbook on the Sciences in Islamicate
-    Societies: Practices from the 2nd/8th to the 13th/19th Centuries, edited by Sonja
-    Brentjes, Peter Barker, and Rana Brentjes, 723&#x2013;40. Routledge Handbooks.
-    London: Routledge, 2022. https://doi.org/10.4324/9781315170718-65.'
+  chicago-bibliography: 'Gibson, Nathan P., and Ronny Vollandt. “Cross-Communal Scholarly
+    Interactions.” In Routledge Handbook on the Sciences in Islamicate Societies:
+    Practices from the 2nd/8th to the 13th/19th Centuries, edited by Sonja Brentjes,
+    Peter Barker, and Rana Brentjes, 723–40. Routledge Handbooks. London: Routledge,
+    2022. https://doi.org/10.4324/9781315170718-65.'
 - id: gibsonArabicLiteraryPersonages2023
   author:
   - family: Gibson
@@ -163,11 +163,10 @@ references:
   language: en
   title: Arabic Literary Personages as Jewish Documentary Subjects
   type: speech
-  chicago-bibliography: 'D&#xFC;cker, Malte. &#x201C;&#x2018;Je gr&#xF6;&#xDF;er die
-    Liebe und N&#xE4;he (zwischen Nachbarn), desto mehr Hass und Entfremdung kann
-    es geben.&#x2019;&#x202F;: Interview zur Berufung von Prof. Dr. Nathan Gibson.&#x201D;
-    Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universit&#xE4;t Frankfurt
-    am Main 3 (2023): 32&#x2013;33. https://doi.org/10.21248/gups.80437.'
+  chicago-bibliography: 'Dücker, Malte. “‘Je größer die Liebe und Nähe (zwischen Nachbarn),
+    desto mehr Hass und Entfremdung kann es geben.’ : Interview zur Berufung von Prof.
+    Dr. Nathan Gibson.” Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universität
+    Frankfurt am Main 3 (2023): 32–33. https://doi.org/10.21248/gups.80437.'
 - id: gibsonAuthorityRecordsFrontiers2021
   author:
   - family: Gibson
@@ -185,9 +184,9 @@ references:
     Large Providers into their Workflows?'
   type: speech
   URL: http://npgibson.com/s/authority-frontiers
-  chicago-bibliography: "&#x2014;&#x2014;&#x2014;. &#x201C;Authority Records at the
-    Frontiers of Research: How Can Small Projects Incorporate Large Providers into
-    Their Workflows?&#x201D; October 28, 2021. http://npgibson.com/s/authority-frontiers."
+  chicago-bibliography: "———. “Authority Records at the Frontiers of Research: How
+    Can Small Projects Incorporate Large Providers into Their Workflows?” October
+    28, 2021. http://npgibson.com/s/authority-frontiers."
 - id: gibsonBibleArabicUpdate2018
   author:
   - family: Gibson
@@ -218,11 +217,10 @@ references:
   title: 'The Bible in Arabic: An Update on the State of Research'
   type: chapter
   URL: https://doi.org/10.5282/ubm/epub.49819
-  chicago-bibliography: 'D&#xFC;cker, Malte. &#x201C;&#x2018;Je gr&#xF6;&#xDF;er die
-    Liebe und N&#xE4;he (zwischen Nachbarn), desto mehr Hass und Entfremdung kann
-    es geben.&#x2019;&#x202F;: Interview zur Berufung von Prof. Dr. Nathan Gibson.&#x201D;
-    Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universit&#xE4;t Frankfurt
-    am Main 3 (2023): 32&#x2013;33. https://doi.org/10.21248/gups.80437.'
+  chicago-bibliography: 'Dücker, Malte. “‘Je größer die Liebe und Nähe (zwischen Nachbarn),
+    desto mehr Hass und Entfremdung kann es geben.’ : Interview zur Berufung von Prof.
+    Dr. Nathan Gibson.” Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universität
+    Frankfurt am Main 3 (2023): 32–33. https://doi.org/10.21248/gups.80437.'
 - id: gibsonChallengesPolyvalentInfrastructures2017
   author:
   - family: Gibson
@@ -240,7 +238,7 @@ references:
     Syriaca.org'
   type: speech
   URL: http://goo.gl/v6up1E
-  chicago-bibliography: "&#x201C;Balisage.&#x201D; Accessed March 31, 2017. http://www.balisage.net/Proceedings/vol16/html/Gibson01/BalisageVol16-Gibson01.html."
+  chicago-bibliography: "“Balisage.” Accessed March 31, 2017. http://www.balisage.net/Proceedings/vol16/html/Gibson01/BalisageVol16-Gibson01.html."
 - id: gibsonChristianOrientIslamic2017
   author:
   - family: Gibson
@@ -258,7 +256,7 @@ references:
     on the Digital Frontier'
   type: speech
   URL: https://tinyurl.com/gibson170919
-  chicago-bibliography: "&#x201C;Balisage.&#x201D; Accessed March 31, 2017. http://www.balisage.net/Proceedings/vol16/html/Gibson01/BalisageVol16-Gibson01.html."
+  chicago-bibliography: "“Balisage.” Accessed March 31, 2017. http://www.balisage.net/Proceedings/vol16/html/Gibson01/BalisageVol16-Gibson01.html."
 - id: gibsonCircumnavigatingJewishChristian2022
   author:
   - family: Gibson
@@ -274,9 +272,9 @@ references:
     Didn’t Want to Admit about His Society'
   type: speech
   URL: http://npgibson.com/s/circumnavigating
-  chicago-bibliography: "&#x2014;&#x2014;&#x2014;. &#x201C;Circumnavigating Jewish
-    and Christian Realities: What the Polemicist al-J&#x101;&#x1E25;i&#x1E93; Didn&#x2019;t
-    Want to Admit about His Society.&#x201D; November 11, 2022. http://npgibson.com/s/circumnavigating."
+  chicago-bibliography: "———. “Circumnavigating Jewish and Christian Realities: What
+    the Polemicist al-Jāḥiẓ Didn’t Want to Admit about His Society.” November 11,
+    2022. http://npgibson.com/s/circumnavigating."
 - id: gibsonClosestFriendshipAlJahiz2015
   abstract: Abbasid society in ninth-century Iraq faced the challenge of reconciling
     the role of its many non-Muslim citizens with Islamic norms and governance, as
@@ -339,7 +337,7 @@ references:
   title-short: Closest in Friendship?
   type: thesis
   URL: http://search.proquest.com/docview/1691345901
-  chicago-bibliography: "&#x201C;BibBase.&#x201D; Accessed March 5, 2019. https://bibbase.org/network/publication/gibson-closestinfriendshipaljahizprofileofchristiansinabbasidsocietyintherefutationofchristiansalraddalaalnasara-2015."
+  chicago-bibliography: "“BibBase.” Accessed March 5, 2019. https://bibbase.org/network/publication/gibson-closestinfriendshipaljahizprofileofchristiansinabbasidsocietyintherefutationofchristiansalraddalaalnasara-2015."
 - id: gibsonCommunitiesKnowledgeInterreligious2020
   citation-key: gibsonCommunitiesKnowledgeInterreligious2020
   contributor:
@@ -373,9 +371,9 @@ references:
     Usaybiʿa’s History of the Physicians'
   type: book
   URL: https://usaybia.net
-  chicago-bibliography: "&#x2014;&#x2014;&#x2014;, ed. Communities of Knowledge: Interreligious
-    Networks of Scholars in Ibn Abi Usaybi&#x2BF;a&#x2019;s History of the Physicians.
-    Version 0.4. Munich: Usaybia.net, 2020. https://doi.org/10.5281/zenodo.3975505."
+  chicago-bibliography: "———, ed. Communities of Knowledge: Interreligious Networks
+    of Scholars in Ibn Abi Usaybiʿa’s History of the Physicians. Version 0.4. Munich:
+    Usaybia.net, 2020. https://doi.org/10.5281/zenodo.3975505."
 - id: gibsonCommunitiesKnowledgeInterreligious2023a
   author:
   - family: Gibson
@@ -396,11 +394,10 @@ references:
   type: article-journal
   URL: https://doi.org/10.1553/medievalworlds_no18_2023s196
   volume: '18'
-  chicago-bibliography: 'D&#xFC;cker, Malte. &#x201C;&#x2018;Je gr&#xF6;&#xDF;er die
-    Liebe und N&#xE4;he (zwischen Nachbarn), desto mehr Hass und Entfremdung kann
-    es geben.&#x2019;&#x202F;: Interview zur Berufung von Prof. Dr. Nathan Gibson.&#x201D;
-    Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universit&#xE4;t Frankfurt
-    am Main 3 (2023): 32&#x2013;33. https://doi.org/10.21248/gups.80437.'
+  chicago-bibliography: 'Dücker, Malte. “‘Je größer die Liebe und Nähe (zwischen Nachbarn),
+    desto mehr Hass und Entfremdung kann es geben.’ : Interview zur Berufung von Prof.
+    Dr. Nathan Gibson.” Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universität
+    Frankfurt am Main 3 (2023): 32–33. https://doi.org/10.21248/gups.80437.'
 - id: gibsonCommunitiesKnowledgeUsaybianet2020
   author:
   - family: Gibson
@@ -417,8 +414,8 @@ references:
   note: 'Presenters: _:n86'
   title: 'Communities of Knowledge (Usaybia.net): Tagging, Prosopography, and Networks'
   type: speech
-  chicago-bibliography: "&#x2014;&#x2014;&#x2014;. &#x201C;Communities of Knowledge
-    (Usaybia.Net): Tagging, Prosopography, and Networks.&#x201D; October 20, 2020."
+  chicago-bibliography: "———. “Communities of Knowledge (Usaybia.Net): Tagging, Prosopography,
+    and Networks.” October 20, 2020."
 - id: gibsonCrosscommunalScholarlyInteractions2022
   attachments:
   - title: urn:nbn:de:bvb:19-epub-75471-6
@@ -451,8 +448,8 @@ references:
   title: Cross-communal scholarly interactions
   type: chapter
   URL: https://doi.org/10.4324/9781315170718-65
-  chicago-bibliography: "&#x201C;Gibson and Vollandt - 2023 - Cross-Communal Scholarly
-    Interactions.Pdf,&#x201D; n.d."
+  chicago-bibliography: "“Gibson and Vollandt - 2023 - Cross-Communal Scholarly Interactions.Pdf,”
+    n.d."
 - id: gibsonCyberinfrastructureSyriacLiterature2017
   author:
   - family: Gibson
@@ -470,7 +467,7 @@ references:
     using TEI and RDF'
   type: speech
   URL: http://hdl.handle.net/11858/00-1780-0000-002C-93A4-1
-  chicago-bibliography: "&#x201C;Balisage.&#x201D; Accessed March 31, 2017. http://www.balisage.net/Proceedings/vol16/html/Gibson01/BalisageVol16-Gibson01.html."
+  chicago-bibliography: "“Balisage.” Accessed March 31, 2017. http://www.balisage.net/Proceedings/vol16/html/Gibson01/BalisageVol16-Gibson01.html."
 - id: gibsonDistantReadingPersons2020
   author:
   - family: Gibson
@@ -488,8 +485,8 @@ references:
   note: 'Presenters: _:n77'
   title: Distant Reading for Persons and Networks
   type: speech
-  chicago-bibliography: "&#x2014;&#x2014;&#x2014;. &#x201C;Distant Reading for Persons
-    and Networks.&#x201D; June 9, 2020."
+  chicago-bibliography: "———. “Distant Reading for Persons and Networks.” June 9,
+    2020."
 - id: gibsonDivineAdoptionJewish2023
   author:
   - family: Gibson
@@ -507,11 +504,10 @@ references:
     View'
   type: speech
   URL: https://npgibson.com/s/adoption
-  chicago-bibliography: 'D&#xFC;cker, Malte. &#x201C;&#x2018;Je gr&#xF6;&#xDF;er die
-    Liebe und N&#xE4;he (zwischen Nachbarn), desto mehr Hass und Entfremdung kann
-    es geben.&#x2019;&#x202F;: Interview zur Berufung von Prof. Dr. Nathan Gibson.&#x201D;
-    Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universit&#xE4;t Frankfurt
-    am Main 3 (2023): 32&#x2013;33. https://doi.org/10.21248/gups.80437.'
+  chicago-bibliography: 'Dücker, Malte. “‘Je größer die Liebe und Nähe (zwischen Nachbarn),
+    desto mehr Hass und Entfremdung kann es geben.’ : Interview zur Berufung von Prof.
+    Dr. Nathan Gibson.” Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universität
+    Frankfurt am Main 3 (2023): 32–33. https://doi.org/10.21248/gups.80437.'
 - id: gibsonEncodingWesternNonWestern2015
   abstract: One of the major digital challenges of the Syriaca.org research project
     has been to encode and visualize personal names of authors in Middle Eastern languages
@@ -553,9 +549,9 @@ references:
   type: paper-conference
   URL: http://www.balisage.net/Proceedings/vol16/html/Gibson01/BalisageVol16-Gibson01.html
   chicago-bibliography: Gibson, Nathan P., Winona Salesky, and David A. Michelson.
-    &#x201C;Encoding Western and Non-Western Names for Ancient Syriac Authors.&#x201D;
-    In Proceedings of the Symposium on Cultural Heritage Markup. Balisage Series on
-    Markup Technologies 16. Washington, D.C., 2015. https://doi.org/10.4242/BalisageVol16.Gibson01.
+    “Encoding Western and Non-Western Names for Ancient Syriac Authors.” In Proceedings
+    of the Symposium on Cultural Heritage Markup. Balisage Series on Markup Technologies
+    16. Washington, D.C., 2015. https://doi.org/10.4242/BalisageVol16.Gibson01.
 - id: gibsonEntityTaggingNetwork2024
   author:
   - family: Gibson
@@ -572,7 +568,7 @@ references:
   title: Entity tagging and network extraction in Arabic texts
   type: speech
   URL: https://github.com/SunoikisisDC/SunoikisisDC-2023-2024/wiki/11.-Arabic-Georgian
-  chicago-bibliography: "&#x201C;Full Text PDF.&#x201D; Accessed March 18, 2024. http://publikationen.ub.uni-frankfurt.de/files/80437/09_Gibson_Duecker.pdf."
+  chicago-bibliography: "“Full Text PDF.” Accessed March 18, 2024. http://publikationen.ub.uni-frankfurt.de/files/80437/09_Gibson_Duecker.pdf."
 - id: gibsonFiveCenturiesHistory2019
   abstract: 'How should historical researchers encode texts that will be used as primary
     sources for network analysis? Moreover, how can they link together the various
@@ -621,11 +617,10 @@ references:
   title: Five Centuries of History in a Network
   type: speech
   URL: https://doi.org/10.5281/zenodo.3452743
-  chicago-bibliography: 'D&#xFC;cker, Malte. &#x201C;&#x2018;Je gr&#xF6;&#xDF;er die
-    Liebe und N&#xE4;he (zwischen Nachbarn), desto mehr Hass und Entfremdung kann
-    es geben.&#x2019;&#x202F;: Interview zur Berufung von Prof. Dr. Nathan Gibson.&#x201D;
-    Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universit&#xE4;t Frankfurt
-    am Main 3 (2023): 32&#x2013;33. https://doi.org/10.21248/gups.80437.'
+  chicago-bibliography: 'Dücker, Malte. “‘Je größer die Liebe und Nähe (zwischen Nachbarn),
+    desto mehr Hass und Entfremdung kann es geben.’ : Interview zur Berufung von Prof.
+    Dr. Nathan Gibson.” Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universität
+    Frankfurt am Main 3 (2023): 32–33. https://doi.org/10.21248/gups.80437.'
 - id: gibsonFlorilegiumBadTranslations2016
   author:
   - family: Gibson
@@ -641,9 +636,8 @@ references:
   title: 'A Florilegium of Bad Translations: Al-Jahiz''s Ninth-Century Excerpts of
     Jewish Arabic Bible Translations'
   type: speech
-  chicago-bibliography: 'Gibson, Nathan P. &#x201C;A Florilegium of Bad Translations:
-    Al-Jahiz&#x2019;s Ninth-Century Excerpts of Jewish Arabic Bible Translations.&#x201D;
-    March 29, 2016.'
+  chicago-bibliography: 'Gibson, Nathan P. “A Florilegium of Bad Translations: Al-Jahiz’s
+    Ninth-Century Excerpts of Jewish Arabic Bible Translations.” March 29, 2016.'
 - id: gibsonGodAloneKnows2024
   author:
   - family: Gibson
@@ -658,7 +652,7 @@ references:
   title: '"God alone knows what they hide in their hearts": Identifying religious
     affiliation in medieval Arabic texts'
   type: speech
-  chicago-bibliography: "&#x201C;Full Text PDF.&#x201D; Accessed March 18, 2024. http://publikationen.ub.uni-frankfurt.de/files/80437/09_Gibson_Duecker.pdf."
+  chicago-bibliography: "“Full Text PDF.” Accessed March 18, 2024. http://publikationen.ub.uni-frankfurt.de/files/80437/09_Gibson_Duecker.pdf."
 - id: gibsonGospelCitationsVirgin2012
   author:
   - family: Gibson
@@ -672,8 +666,8 @@ references:
   note: 'Presenters: _:n192'
   title: Gospel Citations on the Virgin Birth from Ninth Century Muslim Writers
   type: speech
-  chicago-bibliography: "&#x2014;&#x2014;&#x2014;. &#x201C;Gospel Citations on the
-    Virgin Birth from Ninth Century Muslim Writers.&#x201D; July 19, 2012."
+  chicago-bibliography: "———. “Gospel Citations on the Virgin Birth from Ninth Century
+    Muslim Writers.” July 19, 2012."
 - id: gibsonGuideSyriacaorgReference2016
   author:
   - family: Gibson
@@ -689,8 +683,8 @@ references:
   title: A Guide to Syriaca.org Reference Tools and Desiderata for Central and East
     Asia
   type: speech
-  chicago-bibliography: "&#x2014;&#x2014;&#x2014;. &#x201C;A Guide to Syriaca.Org
-    Reference Tools and Desiderata for Central and East Asia.&#x201D; June 19, 2016."
+  chicago-bibliography: "———. “A Guide to Syriaca.Org Reference Tools and Desiderata
+    for Central and East Asia.” June 19, 2016."
 - id: gibsonInquiringBeelzebubChristians2013
   author:
   - family: Gibson
@@ -705,9 +699,8 @@ references:
   title: 'Inquiring of ''Beelzebub'': Christians between the Caliph''s Courts and
     the ''Kingdom of God'''
   type: speech
-  chicago-bibliography: "&#x2014;&#x2014;&#x2014;. &#x201C;Inquiring of &#x2018;Beelzebub&#x2019;:
-    Christians between the Caliph&#x2019;s Courts and the &#x2018;Kingdom of God.&#x2019;&#x201D;
-    November 23, 2013."
+  chicago-bibliography: "———. “Inquiring of ‘Beelzebub’: Christians between the Caliph’s
+    Courts and the ‘Kingdom of God.’” November 23, 2013."
 - id: gibsonInterreligiousContactsAbbasid2017
   author:
   - family: Gibson
@@ -724,7 +717,7 @@ references:
   title: 'Interreligious Contacts among Abbasid Scholars: A Digital Approach using
     Network Analysis'
   type: speech
-  chicago-bibliography: "&#x201C;Balisage.&#x201D; Accessed March 31, 2017. http://www.balisage.net/Proceedings/vol16/html/Gibson01/BalisageVol16-Gibson01.html."
+  chicago-bibliography: "“Balisage.” Accessed March 31, 2017. http://www.balisage.net/Proceedings/vol16/html/Gibson01/BalisageVol16-Gibson01.html."
 - id: gibsonIslamicScholarPluralistic2016
   author:
   - family: Gibson
@@ -738,9 +731,8 @@ references:
   note: 'Presenters: _:n168'
   title: 'An Islamic Scholar in a Pluralistic Society: The Biography of al-Jahiz Reconsidered'
   type: speech
-  chicago-bibliography: "&#x2014;&#x2014;&#x2014;. &#x201C;An Islamic Scholar in a
-    Pluralistic Society: The Biography of al-Jahiz Reconsidered.&#x201D; April 11,
-    2016."
+  chicago-bibliography: "———. “An Islamic Scholar in a Pluralistic Society: The Biography
+    of al-Jahiz Reconsidered.” April 11, 2016."
 - id: gibsonKnowledgeCollaborationJews2022
   abstract: "This thematic section unearths several ways professionals from a variety
     of religious communities in the Near East collaborated with one another during
@@ -799,9 +791,9 @@ references:
   type: article-journal
   URL: http://www.medievalworlds.net/?arp=0x003ddac8
   volume: '17'
-  chicago-bibliography: "&#x2014;&#x2014;&#x2014;. &#x201C;Knowledge Collaboration
-    among Jews, Christians, Zoroastrians, and Muslims in the Abbasid Near East: Introduction.&#x201D;
-    Medieval Worlds 17 (2022): 59&#x2013;72. https://doi.org/10.1553/medievalworlds_no17_2022s59."
+  chicago-bibliography: "———. “Knowledge Collaboration among Jews, Christians, Zoroastrians,
+    and Muslims in the Abbasid Near East: Introduction.” Medieval Worlds 17 (2022):
+    59–72. https://doi.org/10.1553/medievalworlds_no17_2022s59."
 - id: gibsonLabelingReligiousAffiliation2020
   abstract: |-
     The biographical dictionary of Ibn Abī Uṣaybiʿa (1203–1270 AD), titled The Best Accounts of the Classes of Physicians (Arabic, ʿUyūn al-anbāʾ fī ṭabaqāt al-aṭibbāʾ) or History of Physicians for short, is perhaps unequaled in the extent to which it details the social interactions of scholars from many different religious communities. Ṭabaqāt literature in general tends to provide a kind of Who’s-Who resource collecting information about personages in particular categories, such as hadith transmitters or poets. Normally authors tended to make these categories applicable to a certain religious tradition, but Ibn Abī Uṣaybiʿa’s project broke the mold by outlining a profession (medicine and related areas) in which collaboration and exchange among communities was typical. The History of Physicians is thus an ideal target for large-scale analysis of interreligious exchange, as the project “Communities of Knowledge” is in the process of doing.
@@ -827,9 +819,8 @@ references:
     A Quest'
   type: speech
   URL: https://tinyurl.com/gibson201211
-  chicago-bibliography: "&#x2014;&#x2014;&#x2014;. &#x201C;Labeling Religious Affiliation
-    in Ibn Ab&#x12B; U&#x1E63;aybi&#x2BF;a&#x2019;s History of Physicians: A Quest.&#x201D;
-    December 11, 2020. https://tinyurl.com/gibson201211."
+  chicago-bibliography: "———. “Labeling Religious Affiliation in Ibn Abī Uṣaybiʿa’s
+    History of Physicians: A Quest.” December 11, 2020. https://tinyurl.com/gibson201211."
 - id: gibsonLabelingReligiousAffiliation2023
   author:
   - family: Gibson
@@ -848,11 +839,10 @@ references:
   type: article-journal
   URL: https://doi.org/10.1553/medievalworlds_no18_2023s246
   volume: '18'
-  chicago-bibliography: 'D&#xFC;cker, Malte. &#x201C;&#x2018;Je gr&#xF6;&#xDF;er die
-    Liebe und N&#xE4;he (zwischen Nachbarn), desto mehr Hass und Entfremdung kann
-    es geben.&#x2019;&#x202F;: Interview zur Berufung von Prof. Dr. Nathan Gibson.&#x201D;
-    Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universit&#xE4;t Frankfurt
-    am Main 3 (2023): 32&#x2013;33. https://doi.org/10.21248/gups.80437.'
+  chicago-bibliography: 'Dücker, Malte. “‘Je größer die Liebe und Nähe (zwischen Nachbarn),
+    desto mehr Hass und Entfremdung kann es geben.’ : Interview zur Berufung von Prof.
+    Dr. Nathan Gibson.” Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universität
+    Frankfurt am Main 3 (2023): 32–33. https://doi.org/10.21248/gups.80437.'
 - id: gibsonLinkingSyriacChristian2022
   author:
   - family: Gibson
@@ -866,8 +856,8 @@ references:
   title: Linking Syriac and Christian Arabic Scholars to their Multi-Religious Networks
   type: speech
   URL: http://npgibson.com/s/syriacnetworks
-  chicago-bibliography: "&#x2014;&#x2014;&#x2014;. &#x201C;Linking Syriac and Christian
-    Arabic Scholars to Their Multi-Religious Networks.&#x201D; July 4, 2022. http://npgibson.com/s/syriacnetworks."
+  chicago-bibliography: "———. “Linking Syriac and Christian Arabic Scholars to Their
+    Multi-Religious Networks.” July 4, 2022. http://npgibson.com/s/syriacnetworks."
 - id: gibsonManuscriptCataloguesHandbook17
   abstract: Despite increasing interest in Syriac studies and growing digital availability
     of Syriac texts, there is currently no up-to-date infrastructure for discovering,
@@ -913,7 +903,7 @@ references:
   URL: http://jdmdh.episciences.org/1395
   volume: Special Issue on Computer-Aided Processing of Intertextuality in Ancient
     Languages
-  chicago-bibliography: "&#x201C;Academia.Edu.&#x201D; Accessed April 1, 2017. https://www.academia.edu/29147134/From_manuscript_catalogues_to_a_handbook_of_Syriac_literature_Modeling_an_infrastructure_for_Syriaca.org."
+  chicago-bibliography: "“Academia.Edu.” Accessed April 1, 2017. https://www.academia.edu/29147134/From_manuscript_catalogues_to_a_handbook_of_Syriac_literature_Modeling_an_infrastructure_for_Syriaca.org."
 - id: gibsonMiaphysiteArabianTriangle2013
   author:
   - family: Gibson
@@ -928,9 +918,8 @@ references:
   title: 'The Miaphysite Arabian Triangle: Ghassānīya-Ḥirtā-Najrān in the Sixth Century
     C.E.'
   type: speech
-  chicago-bibliography: "&#x2014;&#x2014;&#x2014;. &#x201C;The Miaphysite Arabian
-    Triangle: Ghass&#x101;n&#x12B;ya-&#x1E24;irt&#x101;-Najr&#x101;n in the Sixth
-    Century C.E.&#x201D; March 15, 2013."
+  chicago-bibliography: "———. “The Miaphysite Arabian Triangle: Ghassānīya-Ḥirtā-Najrān
+    in the Sixth Century C.E.” March 15, 2013."
 - id: gibsonMidNinthCenturyArabicTranslation2017
   abstract: "One of the earliest Muslim authors to make use of biblical material translated
     into Arabic was ʿAmr b. Baḥr al-Jāḥiẓ (d. 868/9), who in his “Refutation of Christians”
@@ -982,7 +971,7 @@ references:
   title: A Mid-Ninth-Century Arabic Translation of Isaiah? Glimpses from al-Jāḥiẓ
   type: chapter
   URL: https://doi.org/10.1163/9789004347403_015
-  chicago-bibliography: "&#x201C;Academia.Edu.&#x201D; Accessed April 1, 2017. https://www.academia.edu/30958504/A_Mid-Ninth-Century_Arabic_Translation_of_Isaiah_Glimpses_from_al-Jahiz."
+  chicago-bibliography: "“Academia.Edu.” Accessed April 1, 2017. https://www.academia.edu/30958504/A_Mid-Ninth-Century_Arabic_Translation_of_Isaiah_Glimpses_from_al-Jahiz."
 - id: gibsonModelingBodyLiterature[acceptedrevisionsinpreparation]
   abstract: The New Handbook of Syriac Literature (NHSL) is a born-digital TEI-encoded
     reference work for the study of Syriac literature. The first volume, Bibliotheca
@@ -1023,7 +1012,7 @@ references:
   title-short: Modeling a Body of Literature in TEI
   type: article-journal
   URL: http://dx.doi.org/10.17613/M6V67M
-  chicago-bibliography: "&#x201C;Academia.Edu.&#x201D; Accessed April 1, 2017. https://www.academia.edu/29147134/From_manuscript_catalogues_to_a_handbook_of_Syriac_literature_Modeling_an_infrastructure_for_Syriaca.org."
+  chicago-bibliography: "“Academia.Edu.” Accessed April 1, 2017. https://www.academia.edu/29147134/From_manuscript_catalogues_to_a_handbook_of_Syriac_literature_Modeling_an_infrastructure_for_Syriaca.org."
 - id: gibsonModelingBodyLiterature2016
   abstract: "The Syriaca.org project publishes born-digital reference works in TEI.
     Bibliotheca Hagiographica Syriaca Electronica [http://syriaca.org/bhse] is a set
@@ -1066,7 +1055,7 @@ references:
   title: 'Modeling a Body of Literature in TEI: The New Handbook of Syriac Literature'
   type: paper-conference
   URL: http://tei2016.acdh.oeaw.ac.at/poster-gallery
-  chicago-bibliography: "&#x201C;Academia.Edu.&#x201D; Accessed April 1, 2017. https://www.academia.edu/29147134/From_manuscript_catalogues_to_a_handbook_of_Syriac_literature_Modeling_an_infrastructure_for_Syriaca.org."
+  chicago-bibliography: "“Academia.Edu.” Accessed April 1, 2017. https://www.academia.edu/29147134/From_manuscript_catalogues_to_a_handbook_of_Syriac_literature_Modeling_an_infrastructure_for_Syriaca.org."
 - id: gibsonModelingBodyLiterature2016a
   author:
   - family: Gibson
@@ -1082,9 +1071,8 @@ references:
     Electronica'
   type: speech
   URL: http://tei2016.acdh.oeaw.ac.at/poster-gallery
-  chicago-bibliography: "&#x2014;&#x2014;&#x2014;. &#x201C;Modeling a Body of Literature
-    in TEI: Bibliotheca Hagiographica Syriaca Electronica.&#x201D; September 26, 2016.
-    http://tei2016.acdh.oeaw.ac.at/poster-gallery."
+  chicago-bibliography: "———. “Modeling a Body of Literature in TEI: Bibliotheca Hagiographica
+    Syriaca Electronica.” September 26, 2016. http://tei2016.acdh.oeaw.ac.at/poster-gallery."
 - id: gibsonMountainsPlainsGeographical2011
   author:
   - family: Gibson
@@ -1098,8 +1086,8 @@ references:
   note: 'Presenters: _:n200'
   title: 'Mountains and Plains: Geographical Exegesis in ''On Solitaries'''
   type: speech
-  chicago-bibliography: "&#x2014;&#x2014;&#x2014;. &#x201C;Mountains and Plains: Geographical
-    Exegesis in &#x2018;On Solitaries.&#x2019;&#x201D; June 26, 2011."
+  chicago-bibliography: "———. “Mountains and Plains: Geographical Exegesis in ‘On
+    Solitaries.’” June 26, 2011."
 - id: gibsonMultireligiousMultilingualKnowledge2021
   author:
   - family: Gibson
@@ -1117,9 +1105,9 @@ references:
     History of Physicians An Exploration Using Digital Tools
   type: speech
   URL: https://tinyurl.com/gibson210518
-  chicago-bibliography: "&#x2014;&#x2014;&#x2014;. &#x201C;Multireligious & Multilingual
-    Knowledge Communities in Ibn Ab&#x12B; U&#x1E63;aybi&#x2BF;a&#x2019;s History
-    of Physicians An Exploration Using Digital Tools.&#x201D; May 18, 2021. https://tinyurl.com/gibson210518."
+  chicago-bibliography: "———. “Multireligious & Multilingual Knowledge Communities
+    in Ibn Abī Uṣaybiʿa’s History of Physicians An Exploration Using Digital Tools.”
+    May 18, 2021. https://tinyurl.com/gibson210518."
 - id: gibsonNeighborhoodBiblesCirculation2024
   author:
   - family: Gibson
@@ -1138,7 +1126,7 @@ references:
     Muslim Writers (8th–10th Century)'
   type: speech
   URL: https://npgibson.com/s/neighborhood
-  chicago-bibliography: "&#x201C;Full Text PDF.&#x201D; Accessed March 18, 2024. http://publikationen.ub.uni-frankfurt.de/files/80437/09_Gibson_Duecker.pdf."
+  chicago-bibliography: "“Full Text PDF.” Accessed March 18, 2024. http://publikationen.ub.uni-frankfurt.de/files/80437/09_Gibson_Duecker.pdf."
 - id: gibsonNetworksBiblicalScholarship2017
   author:
   - family: Gibson
@@ -1156,7 +1144,7 @@ references:
     in Biographical Literature'
   type: speech
   URL: https://tinyurl.com/gibson171107
-  chicago-bibliography: "&#x201C;Balisage.&#x201D; Accessed March 31, 2017. http://www.balisage.net/Proceedings/vol16/html/Gibson01/BalisageVol16-Gibson01.html."
+  chicago-bibliography: "“Balisage.” Accessed March 31, 2017. http://www.balisage.net/Proceedings/vol16/html/Gibson01/BalisageVol16-Gibson01.html."
 - id: gibsonNewHandbookSyriac2016
   citation-key: gibsonNewHandbookSyriac2016
   editor:
@@ -1174,7 +1162,7 @@ references:
   title: The New Handbook of Syriac Literature
   type: book
   URL: http://syriaca.org/nhsl
-  chicago-bibliography: "&#x201C;Academia.Edu.&#x201D; Accessed April 1, 2017. https://www.academia.edu/29147134/From_manuscript_catalogues_to_a_handbook_of_Syriac_literature_Modeling_an_infrastructure_for_Syriaca.org."
+  chicago-bibliography: "“Academia.Edu.” Accessed April 1, 2017. https://www.academia.edu/29147134/From_manuscript_catalogues_to_a_handbook_of_Syriac_literature_Modeling_an_infrastructure_for_Syriaca.org."
 - id: gibsonNewHandbookSyriac2016a
   author:
   - family: Gibson
@@ -1189,9 +1177,8 @@ references:
   title: 'The New Handbook of Syriac Literature: Bringing Syriac Literature into the
     Digital Landscape'
   type: speech
-  chicago-bibliography: "&#x2014;&#x2014;&#x2014;. &#x201C;The New Handbook of Syriac
-    Literature: Bringing Syriac Literature into the Digital Landscape.&#x201D; August
-    19, 2016."
+  chicago-bibliography: "———. “The New Handbook of Syriac Literature: Bringing Syriac
+    Literature into the Digital Landscape.” August 19, 2016."
 - id: gibsonPhysiciansPhilosophersPolymaths2017
   author:
   - family: Gibson
@@ -1208,7 +1195,7 @@ references:
   title: 'Physicians, Philosophers, and Polymaths: New Research on Christian Intellectuals
     during the ''Golden Age'' of Islam'
   type: speech
-  chicago-bibliography: "&#x201C;Balisage.&#x201D; Accessed March 31, 2017. http://www.balisage.net/Proceedings/vol16/html/Gibson01/BalisageVol16-Gibson01.html."
+  chicago-bibliography: "“Balisage.” Accessed March 31, 2017. http://www.balisage.net/Proceedings/vol16/html/Gibson01/BalisageVol16-Gibson01.html."
 - id: gibsonReadingHistoryPolemic2015
   author:
   - family: Gibson
@@ -1226,9 +1213,8 @@ references:
   title: 'Reading History from Polemic: Al-Jāḥiẓ''s Portrayal of Christians in Abbasid
     Society'
   type: speech
-  chicago-bibliography: "&#x2014;&#x2014;&#x2014;. &#x201C;Reading History from Polemic:
-    Al-J&#x101;&#x1E25;i&#x1E93;&#x2019;s Portrayal of Christians in Abbasid Society.&#x201D;
-    October 13, 2015."
+  chicago-bibliography: "———. “Reading History from Polemic: Al-Jāḥiẓ’s Portrayal
+    of Christians in Abbasid Society.” October 13, 2015."
 - id: gibsonReadingLinesMining2017
   author:
   - family: Gibson
@@ -1245,7 +1231,7 @@ references:
   title: 'Reading between the Lines: Mining History from Polemic using Argumentation
     Analysis'
   type: speech
-  chicago-bibliography: "&#x201C;Balisage.&#x201D; Accessed March 31, 2017. http://www.balisage.net/Proceedings/vol16/html/Gibson01/BalisageVol16-Gibson01.html."
+  chicago-bibliography: "“Balisage.” Accessed March 31, 2017. http://www.balisage.net/Proceedings/vol16/html/Gibson01/BalisageVol16-Gibson01.html."
 - id: gibsonRhetoricFulcrumPower2016
   author:
   - family: Gibson
@@ -1260,9 +1246,8 @@ references:
   title: 'Rhetoric as a Fulcrum of Power: How a Writer''s Words Helped the Caliph
     Turn Program into Practice'
   type: speech
-  chicago-bibliography: "&#x2014;&#x2014;&#x2014;. &#x201C;Rhetoric as a Fulcrum of
-    Power: How a Writer&#x2019;s Words Helped the Caliph Turn Program into Practice.&#x201D;
-    April 8, 2016."
+  chicago-bibliography: "———. “Rhetoric as a Fulcrum of Power: How a Writer’s Words
+    Helped the Caliph Turn Program into Practice.” April 8, 2016."
 - id: gibsonRobustDigitalApproaches2017
   author:
   - family: Gibson
@@ -1279,7 +1264,7 @@ references:
   title: 'Robust Digital Approaches to Literary History: The Case of Syriac'
   type: speech
   URL: https://goo.gl/4MYc2X
-  chicago-bibliography: "&#x201C;Balisage.&#x201D; Accessed March 31, 2017. http://www.balisage.net/Proceedings/vol16/html/Gibson01/BalisageVol16-Gibson01.html."
+  chicago-bibliography: "“Balisage.” Accessed March 31, 2017. http://www.balisage.net/Proceedings/vol16/html/Gibson01/BalisageVol16-Gibson01.html."
 - id: gibsonScholarConvertsHubsKnowledge2018
   author:
   - family: Gibson
@@ -1298,11 +1283,10 @@ references:
     World
   type: speech
   URL: https://tinyurl.com/gibson180612
-  chicago-bibliography: 'D&#xFC;cker, Malte. &#x201C;&#x2018;Je gr&#xF6;&#xDF;er die
-    Liebe und N&#xE4;he (zwischen Nachbarn), desto mehr Hass und Entfremdung kann
-    es geben.&#x2019;&#x202F;: Interview zur Berufung von Prof. Dr. Nathan Gibson.&#x201D;
-    Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universit&#xE4;t Frankfurt
-    am Main 3 (2023): 32&#x2013;33. https://doi.org/10.21248/gups.80437.'
+  chicago-bibliography: 'Dücker, Malte. “‘Je größer die Liebe und Nähe (zwischen Nachbarn),
+    desto mehr Hass und Entfremdung kann es geben.’ : Interview zur Berufung von Prof.
+    Dr. Nathan Gibson.” Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universität
+    Frankfurt am Main 3 (2023): 32–33. https://doi.org/10.21248/gups.80437.'
 - id: gibsonSocialLivesPolemicists2023
   author:
   - family: Gibson
@@ -1318,11 +1302,10 @@ references:
   title: The Social Lives of Polemicists
   type: speech
   URL: https://npgibson.com/s/social-lives
-  chicago-bibliography: 'D&#xFC;cker, Malte. &#x201C;&#x2018;Je gr&#xF6;&#xDF;er die
-    Liebe und N&#xE4;he (zwischen Nachbarn), desto mehr Hass und Entfremdung kann
-    es geben.&#x2019;&#x202F;: Interview zur Berufung von Prof. Dr. Nathan Gibson.&#x201D;
-    Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universit&#xE4;t Frankfurt
-    am Main 3 (2023): 32&#x2013;33. https://doi.org/10.21248/gups.80437.'
+  chicago-bibliography: 'Dücker, Malte. “‘Je größer die Liebe und Nähe (zwischen Nachbarn),
+    desto mehr Hass und Entfremdung kann es geben.’ : Interview zur Berufung von Prof.
+    Dr. Nathan Gibson.” Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universität
+    Frankfurt am Main 3 (2023): 32–33. https://doi.org/10.21248/gups.80437.'
 - id: gibsonStateArabicManuscript2018
   author:
   - family: Gibson
@@ -1339,11 +1322,10 @@ references:
   title: State of Arabic Manuscript Description
   type: speech
   URL: https://tinyurl.com/ba181005
-  chicago-bibliography: 'D&#xFC;cker, Malte. &#x201C;&#x2018;Je gr&#xF6;&#xDF;er die
-    Liebe und N&#xE4;he (zwischen Nachbarn), desto mehr Hass und Entfremdung kann
-    es geben.&#x2019;&#x202F;: Interview zur Berufung von Prof. Dr. Nathan Gibson.&#x201D;
-    Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universit&#xE4;t Frankfurt
-    am Main 3 (2023): 32&#x2013;33. https://doi.org/10.21248/gups.80437.'
+  chicago-bibliography: 'Dücker, Malte. “‘Je größer die Liebe und Nähe (zwischen Nachbarn),
+    desto mehr Hass und Entfremdung kann es geben.’ : Interview zur Berufung von Prof.
+    Dr. Nathan Gibson.” Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universität
+    Frankfurt am Main 3 (2023): 32–33. https://doi.org/10.21248/gups.80437.'
 - id: gibsonTEIManuscriptDescription2019
   author:
   - family: Gibson
@@ -1359,11 +1341,10 @@ references:
   note: 'Presenters: _:n100'
   title: TEI Manuscript Description Workflows for Small Projects
   type: speech
-  chicago-bibliography: 'D&#xFC;cker, Malte. &#x201C;&#x2018;Je gr&#xF6;&#xDF;er die
-    Liebe und N&#xE4;he (zwischen Nachbarn), desto mehr Hass und Entfremdung kann
-    es geben.&#x2019;&#x202F;: Interview zur Berufung von Prof. Dr. Nathan Gibson.&#x201D;
-    Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universit&#xE4;t Frankfurt
-    am Main 3 (2023): 32&#x2013;33. https://doi.org/10.21248/gups.80437.'
+  chicago-bibliography: 'Dücker, Malte. “‘Je größer die Liebe und Nähe (zwischen Nachbarn),
+    desto mehr Hass und Entfremdung kann es geben.’ : Interview zur Berufung von Prof.
+    Dr. Nathan Gibson.” Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universität
+    Frankfurt am Main 3 (2023): 32–33. https://doi.org/10.21248/gups.80437.'
 - id: gibsonThinkingTYaReorienting2019
   author:
   - family: Gibson
@@ -1381,11 +1362,10 @@ references:
     Scholarship'
   type: speech
   URL: https://doi.org/10.17613/3vws-5s29
-  chicago-bibliography: 'D&#xFC;cker, Malte. &#x201C;&#x2018;Je gr&#xF6;&#xDF;er die
-    Liebe und N&#xE4;he (zwischen Nachbarn), desto mehr Hass und Entfremdung kann
-    es geben.&#x2019;&#x202F;: Interview zur Berufung von Prof. Dr. Nathan Gibson.&#x201D;
-    Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universit&#xE4;t Frankfurt
-    am Main 3 (2023): 32&#x2013;33. https://doi.org/10.21248/gups.80437.'
+  chicago-bibliography: 'Dücker, Malte. “‘Je größer die Liebe und Nähe (zwischen Nachbarn),
+    desto mehr Hass und Entfremdung kann es geben.’ : Interview zur Berufung von Prof.
+    Dr. Nathan Gibson.” Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universität
+    Frankfurt am Main 3 (2023): 32–33. https://doi.org/10.21248/gups.80437.'
 - id: gibsonTransculturationNeoculturationJewish2023
   author:
   - family: Gibson
@@ -1400,11 +1380,10 @@ references:
   title: Transculturation & Neoculturation among Jewish Physicians in Fatimid Cairo
   type: speech
   URL: http://npgibson.com/s/transculturation
-  chicago-bibliography: 'D&#xFC;cker, Malte. &#x201C;&#x2018;Je gr&#xF6;&#xDF;er die
-    Liebe und N&#xE4;he (zwischen Nachbarn), desto mehr Hass und Entfremdung kann
-    es geben.&#x2019;&#x202F;: Interview zur Berufung von Prof. Dr. Nathan Gibson.&#x201D;
-    Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universit&#xE4;t Frankfurt
-    am Main 3 (2023): 32&#x2013;33. https://doi.org/10.21248/gups.80437.'
+  chicago-bibliography: 'Dücker, Malte. “‘Je größer die Liebe und Nähe (zwischen Nachbarn),
+    desto mehr Hass und Entfremdung kann es geben.’ : Interview zur Berufung von Prof.
+    Dr. Nathan Gibson.” Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universität
+    Frankfurt am Main 3 (2023): 32–33. https://doi.org/10.21248/gups.80437.'
 - id: gibsonTurningFriendsEnemies2016
   author:
   - family: Gibson
@@ -1418,9 +1397,9 @@ references:
   title: 'Turning Friends into Enemies and Enemies into Friends: Al-Jahiz''s Attempt
     to Redefine Religious Identity in Ninth-Century Iraq'
   type: speech
-  chicago-bibliography: "&#x2014;&#x2014;&#x2014;. &#x201C;Turning Friends into Enemies
-    and Enemies into Friends: Al-Jahiz&#x2019;s Attempt to Redefine Religious Identity
-    in Ninth-Century Iraq.&#x201D; March 7, 2016."
+  chicago-bibliography: "———. “Turning Friends into Enemies and Enemies into Friends:
+    Al-Jahiz’s Attempt to Redefine Religious Identity in Ninth-Century Iraq.” March
+    7, 2016."
 - id: gibsonUsaybianetDataStructure2023
   author:
   - family: Gibson
@@ -1434,11 +1413,10 @@ references:
     day: 17
   title: 'Usaybia.net: Data Structure and Tools'
   type: speech
-  chicago-bibliography: 'D&#xFC;cker, Malte. &#x201C;&#x2018;Je gr&#xF6;&#xDF;er die
-    Liebe und N&#xE4;he (zwischen Nachbarn), desto mehr Hass und Entfremdung kann
-    es geben.&#x2019;&#x202F;: Interview zur Berufung von Prof. Dr. Nathan Gibson.&#x201D;
-    Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universit&#xE4;t Frankfurt
-    am Main 3 (2023): 32&#x2013;33. https://doi.org/10.21248/gups.80437.'
+  chicago-bibliography: 'Dücker, Malte. “‘Je größer die Liebe und Nähe (zwischen Nachbarn),
+    desto mehr Hass und Entfremdung kann es geben.’ : Interview zur Berufung von Prof.
+    Dr. Nathan Gibson.” Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universität
+    Frankfurt am Main 3 (2023): 32–33. https://doi.org/10.21248/gups.80437.'
 - id: gibsonWhatDidAlJahiz2016
   author:
   - family: Gibson
@@ -1453,9 +1431,8 @@ references:
   title: What Did al-Jāḥiẓ Know about Christians? Terms, Doctrines, and Practices
     in the Works of a IXth c. Muslim
   type: speech
-  chicago-bibliography: "&#x2014;&#x2014;&#x2014;. &#x201C;What Did Al-J&#x101;&#x1E25;i&#x1E93;
-    Know about Christians? Terms, Doctrines, and Practices in the Works of a IXth
-    c. Muslim.&#x201D; August 21, 2016."
+  chicago-bibliography: "———. “What Did Al-Jāḥiẓ Know about Christians? Terms, Doctrines,
+    and Practices in the Works of a IXth c. Muslim.” August 21, 2016."
 - id: goetheuniversitaetGoetheUniStelltSich2025
   accessed:
   - year: 2025
@@ -1497,8 +1474,8 @@ references:
   title-short: Newly appointed
   type: motion_picture
   URL: https://www.youtube.com/watch?v=GuUZvtPNc4U
-  chicago-bibliography: "&#x2014;&#x2014;&#x2014;. Newly Appointed: Prof. Dr. Nathan
-    Gibson, Professor of Religious Studies, 2024. https://www.youtube.com/watch?v=GuUZvtPNc4U."
+  chicago-bibliography: "———. Newly Appointed: Prof. Dr. Nathan Gibson, Professor
+    of Religious Studies, 2024. https://www.youtube.com/watch?v=GuUZvtPNc4U."
 - id: InterviewDrNathan2021
   abstract: This is the first part of a series of posts by the Digital Orientalist’s
     Syriac Studies Editor, Ephrem Ishac, based on an interview with Dr. Nathan P.
@@ -1521,7 +1498,7 @@ references:
   title: Interview with Dr. Nathan P. Gibson about Syriaca.org, Part 1
   type: post-weblog
   URL: https://digitalorientalist.com/2021/09/14/interview-with-dr-nathan-p-gibson-about-syriaca-org-part-1/
-  chicago-bibliography: "&#x201C;Snapshot.&#x201D; Accessed September 15, 2021. https://digitalorientalist.com/2021/09/14/interview-with-dr-nathan-p-gibson-about-syriaca-org-part-1/."
+  chicago-bibliography: "“Snapshot.” Accessed September 15, 2021. https://digitalorientalist.com/2021/09/14/interview-with-dr-nathan-p-gibson-about-syriaca-org-part-1/."
 - id: j.jacobUniversitaetTrifftGesellschaft2025
   abstract: Am 12. Februar 2025 waren Prof. Armina Omerika und Prof. Nathan Gibson
     gemeinsam mit Studierenden des Seminars „Jüdisch-christlich-islamische Begegnungen
@@ -1552,10 +1529,9 @@ references:
   title-short: Universität trifft Gesellschaft
   type: webpage
   URL: https://islamdigitality.com/de/universitaet-trifft-gesellschaft-studierende-praesentieren-poster-zu-interreligioesen-begegnungen-in-digitalen-raeumen-in-der-evangelischen-akademie-frankfurt/
-  chicago-bibliography: 'j.jacob. &#x201C;Universit&#xE4;t trifft Gesellschaft: Studierende
-    pr&#xE4;sentieren Poster zu interreligi&#xF6;sen Begegnungen in digitalen R&#xE4;umen
-    in der Evangelischen Akademie Frankfurt.&#x201D; Islam & Digitality, February
-    12, 2025. https://islamdigitality.com/de/universitaet-trifft-gesellschaft-studierende-praesentieren-poster-zu-interreligioesen-begegnungen-in-digitalen-raeumen-in-der-evangelischen-akademie-frankfurt/.'
+  chicago-bibliography: 'j.jacob. “Universität trifft Gesellschaft: Studierende präsentieren
+    Poster zu interreligiösen Begegnungen in digitalen Räumen in der Evangelischen
+    Akademie Frankfurt.” Islam & Digitality, February 12, 2025. https://islamdigitality.com/de/universitaet-trifft-gesellschaft-studierende-praesentieren-poster-zu-interreligioesen-begegnungen-in-digitalen-raeumen-in-der-evangelischen-akademie-frankfurt/.'
 - id: lohrScholarsServantsCaliphs2021
   author:
   - family: Löhr
@@ -1574,9 +1550,9 @@ references:
   title: 'Scholars, Servants and Caliphs: Encoding Social Encounters from Biographies'
   type: speech
   URL: https://prezi.com/view/jGuqpCUCKNtfUKB2YrXN/
-  chicago-bibliography: 'L&#xF6;hr, Nadine, and Nathan P. Gibson. &#x201C;Scholars,
-    Servants and Caliphs: Encoding Social Encounters from Biographies.&#x201D; Poster,
-    June 18, 2021. https://prezi.com/view/jGuqpCUCKNtfUKB2YrXN/.'
+  chicago-bibliography: 'Löhr, Nadine, and Nathan P. Gibson. “Scholars, Servants and
+    Caliphs: Encoding Social Encounters from Biographies.” Poster, June 18, 2021.
+    https://prezi.com/view/jGuqpCUCKNtfUKB2YrXN/.'
 - id: michelsonGuideSyriacAuthors2016
   citation-key: michelsonGuideSyriacAuthors2016
   collection-number: '2'
@@ -1655,12 +1631,11 @@ references:
     Legal System'
   type: chapter
   URL: https://doi.org/10.1163/9789004383869_013
-  chicago-bibliography: 'Platt, Andrew, and Nathan P. Gibson. &#x201C;Inquiring of
-    &#x2018;Beelzebub&#x2019;: Timothy and al-J&#x101;&#x1E25;i&#x1E93; on Christians
-    in the &#x2BF;Abb&#x101;sid Legal System.&#x201D; In Heirs of the Apostles: Studies
-    on Arabic Christianity in Honor of Sidney H. Griffith, edited by David Bertaina,
-    Sandra Toenies Keating, Mark N. Swanson, and Alexander Treiger, 254&#x2013;81.
-    Arabic Christianity 1. Leiden: Brill, 2018. https://doi.org/10.1163/9789004383869_013.'
+  chicago-bibliography: 'Platt, Andrew, and Nathan P. Gibson. “Inquiring of ‘Beelzebub’:
+    Timothy and al-Jāḥiẓ on Christians in the ʿAbbāsid Legal System.” In Heirs of
+    the Apostles: Studies on Arabic Christianity in Honor of Sidney H. Griffith, edited
+    by David Bertaina, Sandra Toenies Keating, Mark N. Swanson, and Alexander Treiger,
+    254–81. Arabic Christianity 1. Leiden: Brill, 2018. https://doi.org/10.1163/9789004383869_013.'
 - id: pohlKnowledgeCollaborationJews2022
   abstract: "This thematic section unearths several ways professionals from a variety
     of religious communities in the Near East collaborated with one another during
@@ -1723,9 +1698,9 @@ references:
   type: article-journal
   URL: http://www.medievalworlds.net/?arp=0x003ddac8
   volume: '17'
-  chicago-bibliography: "&#x2014;&#x2014;&#x2014;. &#x201C;Knowledge Collaboration
-    among Jews, Christians, Zoroastrians, and Muslims in the Abbasid Near East: Introduction.&#x201D;
-    Medieval Worlds 17 (2022): 59&#x2013;72. https://doi.org/10.1553/medievalworlds_no17_2022s59."
+  chicago-bibliography: "———. “Knowledge Collaboration among Jews, Christians, Zoroastrians,
+    and Muslims in the Abbasid Near East: Introduction.” Medieval Worlds 17 (2022):
+    59–72. https://doi.org/10.1553/medievalworlds_no17_2022s59."
 - id: pohlKnowledgeCollaborationJews2023
   abstract: "This thematic section unearths several ways professionals from a variety
     of religious communities in the Near East collaborated with one another during
@@ -1785,9 +1760,9 @@ references:
   type: article-journal
   URL: https://doi.org/10.1553/medievalworlds_no18_2023
   volume: '18'
-  chicago-bibliography: "&#x2014;&#x2014;&#x2014;. &#x201C;Knowledge Collaboration
-    among Jews, Christians, Zoroastrians, and Muslims in the Abbasid Near East: Introduction.&#x201D;
-    Medieval Worlds 17 (2022): 59&#x2013;72. https://doi.org/10.1553/medievalworlds_no17_2022s59."
+  chicago-bibliography: "———. “Knowledge Collaboration among Jews, Christians, Zoroastrians,
+    and Muslims in the Abbasid Near East: Introduction.” Medieval Worlds 17 (2022):
+    59–72. https://doi.org/10.1553/medievalworlds_no17_2022s59."
 - id: sane-digitalAmbivalenteBeziehungenFachtag2023
   accessed:
   - year: 2024
@@ -1857,8 +1832,8 @@ references:
   type: speech
   URL: https://zenodo.org/record/6539718
   chicago-bibliography: Schwartz, Daniel L., Nathan P. Gibson, and Katayoun Torabi.
-    &#x201C;Modeling a Born-Digital Factoid Prosopography Using the TEI and Linked
-    Data.&#x201D; October 27, 2021. https://doi.org/10.5281/zenodo.6539718.
+    “Modeling a Born-Digital Factoid Prosopography Using the TEI and Linked Data.”
+    October 27, 2021. https://doi.org/10.5281/zenodo.6539718.
 - id: schwartzModelingBornDigitalFactoid2022a
   abstract: Although the TEI has traditionally been used for encoding text, its combination
     of structured and semi-structured data has made it a compelling choice for born-digital,
@@ -1903,8 +1878,8 @@ references:
   URL: https://journals.openedition.org/jtei/3979
   volume: Rolling Issue
   chicago-bibliography: Schwartz, Daniel L., Nathan P. Gibson, and Katayoun Torabi.
-    &#x201C;Modeling a Born-Digital Factoid Prosopography Using the TEI and Linked
-    Data.&#x201D; October 27, 2021. https://doi.org/10.5281/zenodo.6539718.
+    “Modeling a Born-Digital Factoid Prosopography Using the TEI and Linked Data.”
+    October 27, 2021. https://doi.org/10.5281/zenodo.6539718.
 - id: textandtransmissionjointresearchseminarTeTraNathanGibson2022
   accessed:
   - year: 2022
@@ -1922,9 +1897,9 @@ references:
   title: TeTra | Nathan Gibson "Circumnavigating Jewish and Christian Realities"
   type: motion_picture
   URL: https://www.youtube.com/watch?v=kCKxoCkRxs0
-  chicago-bibliography: "&#x2014;&#x2014;&#x2014;. &#x201C;Circumnavigating Jewish
-    and Christian Realities: What the Polemicist al-J&#x101;&#x1E25;i&#x1E93; Didn&#x2019;t
-    Want to Admit about His Society.&#x201D; November 11, 2022. http://npgibson.com/s/circumnavigating."
+  chicago-bibliography: "———. “Circumnavigating Jewish and Christian Realities: What
+    the Polemicist al-Jāḥiẓ Didn’t Want to Admit about His Society.” November 11,
+    2022. http://npgibson.com/s/circumnavigating."
 - id: TurmoilDisplacesMiddle
   abstract: The continued depletion of religious diversity in the Middle East could
     be contributing to the death of one of the oldest living languages, known as…
@@ -1943,7 +1918,7 @@ references:
     Syriac Culture
   type: webpage
   URL: https://www.wuwm.com/podcast/lake-effect-segments/2017-05-24/as-turmoil-displaces-middle-eastern-christians-scholars-work-to-preserve-syriac-culture
-  chicago-bibliography: "&#x201C;Snapshot.&#x201D; Accessed September 15, 2021. https://www.wuwm.com/podcast/lake-effect-segments/2017-05-24/as-turmoil-displaces-middle-eastern-christians-scholars-work-to-preserve-syriac-culture."
+  chicago-bibliography: "“Snapshot.” Accessed September 15, 2021. https://www.wuwm.com/podcast/lake-effect-segments/2017-05-24/as-turmoil-displaces-middle-eastern-christians-scholars-work-to-preserve-syriac-culture."
 - id: vollandtBibliographyArabicBible2018
   citation-key: vollandtBibliographyArabicBible2018
   editor:
@@ -1987,4 +1962,4 @@ references:
   title: Heimliches Vorbild
   type: webpage
   URL: https://www.juedische-allgemeine.de/kultur/heimliches-vorbild/
-  chicago-bibliography: "&#x201C;Snapshot.&#x201D; Accessed January 23, 2023. https://www.juedische-allgemeine.de/kultur/heimliches-vorbild/?amp."
+  chicago-bibliography: "“Snapshot.” Accessed January 23, 2023. https://www.juedische-allgemeine.de/kultur/heimliches-vorbild/?amp."

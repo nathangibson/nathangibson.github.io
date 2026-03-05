@@ -1,12 +1,13 @@
+Cache cleared - will refetch all citations
 Starting Zotero citation fetch (FULL RUN)
 Found 77 publications to process
 Fetching bibliographies from Zotero API...
 Successfully fetched 105 bibliography entries
-  [CACHE] bantuGlobalChristianTexts2027
-  [CACHE] ConnectingLateAntiquities2025
-  [CACHE] duckerJeGrosserLiebe2023
-  [CACHE] ghorbaninejadRighttoLeftRTLText2023
-  [CACHE] gibsonAbrahamPointDeparture2012
+  [FETCHED] bantuGlobalChristianTexts2027
+  [FETCHED] ConnectingLateAntiquities2025
+  [FETCHED] duckerJeGrosserLiebe2023
+  [FETCHED] ghorbaninejadRighttoLeftRTLText2023
+  [FETCHED] gibsonAbrahamPointDeparture2012
   [FETCHED] gibsonAlJahizDivineAdoption2022
   [FETCHED] gibsonArabicLiteraryPersonages2023
   [FETCHED] gibsonAuthorityRecordsFrontiers2021

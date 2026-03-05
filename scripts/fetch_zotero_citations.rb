@@ -16,14 +16,20 @@ class ZoteroCitationFetcher
   LOG_FILE = '.zotero_fetch_log.txt'
   TIMEOUT_SECONDS = 10
 
-  def initialize(test_mode: false)
+  def initialize(test_mode: false, clear_cache: false)
     @test_mode = test_mode
+    @clear_cache = clear_cache
     @fetched_count = 0
     @cached_count = 0
     @failed_count = 0
     @log = []
     @cache = load_cache
     @all_bibliographies = nil
+
+    if @clear_cache
+      @cache = {}
+      log_message("Cache cleared - will refetch all citations")
+    end
   end
 
   def run
@@ -149,18 +155,18 @@ class ZoteroCitationFetcher
 
       # Strategy 1: Match by author + year (most reliable)
       if authors && issued && author_year_match?(authors, issued, citation_text)
-        return citation_text
+        return decode_all_entities(citation_text)
       end
 
       # Strategy 2: Match by significant title portion
       if normalized_title && title_match?(normalized_title, citation_text)
-        return citation_text
+        return decode_all_entities(citation_text)
       end
 
       # Strategy 3: Match by author alone (for items without  year)
       if authors && !issued && author_match?(authors, citation_text)
         # Make sure year doesn't mismatch if it exists
-        return citation_text
+        return decode_all_entities(citation_text)
       end
     end
 
@@ -238,8 +244,8 @@ class ZoteroCitationFetcher
       return nil unless match
 
       citation_text = match[1]
-      # Decode HTML entities
-      citation_text = CGI.unescapeHTML(citation_text)
+      # Fully decode HTML entities
+      citation_text = decode_all_entities(citation_text)
       # Remove HTML tags
       citation_text = citation_text.gsub(/<[^>]*>/, '')
       # Clean up whitespace
@@ -255,6 +261,16 @@ class ZoteroCitationFetcher
   def clean_citation_text(text)
     # Remove extra whitespace and normalize
     text.gsub(/\s+/, ' ').strip
+  end
+
+  def decode_all_entities(text)
+    # Decode all HTML entities and named entities
+    # First pass: CGI.unescapeHTML handles most common entities
+    decoded = CGI.unescapeHTML(text)
+    # Second pass: Handle any remaining numeric entities that might be double-encoded
+    decoded = decoded.gsub(/&#x([0-9a-fA-F]+);/) { |match| [match[3..-2].to_i(16)].pack('U') }
+    decoded = decoded.gsub(/&#(\d+);/) { |match| [match[2..-2].to_i].pack('U') }
+    decoded
   end
 
   def load_publications
@@ -308,6 +324,7 @@ class ZoteroCitationFetcher
     puts "ZOTERO CITATION FETCH SUMMARY"
     puts "=" * 60
     puts "Mode: #{@test_mode ? 'TEST (5 items)' : 'FULL RUN'}"
+    puts "Cache: #{@clear_cache ? 'CLEARED (full refresh)' : 'ENABLED'}"
     puts "Fetched: #{@fetched_count} from API"
     puts "Cached:  #{@cached_count} from cache"
     puts "Failed:  #{@failed_count}"
@@ -321,6 +338,7 @@ end
 # Main execution
 if __FILE__ == $PROGRAM_NAME
   test_mode = ARGV.include?('--test')
-  fetcher = ZoteroCitationFetcher.new(test_mode: test_mode)
+  clear_cache = ARGV.include?('--clear-cache')
+  fetcher = ZoteroCitationFetcher.new(test_mode: test_mode, clear_cache: clear_cache)
   fetcher.run
 end
