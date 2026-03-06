@@ -27,10 +27,10 @@
               </div>
 
               {%- if pub['chicago-bibliography'] -%}
-              {%- capture title-period -%}{{ pub.title }}.{%- endcapture -%}
-              {%- capture title_wrapped -%}<h5 class="card-title fw-bold">{{ title-period }}</h5>{%- endcapture -%}
-              {%- capture bibliography_wrapped -%}{{ pub['chicago-bibliography'] | replace: title-period, title_wrapped }}{%- endcapture -%}
-              <p class="small mt-1 mb-2">{{ bibliography_wrapped | replace: '&#x201C;', '' | replace: '&#x201D;', '' }}</p>
+              {%- capture title_period -%}{{ pub.title }}.{%- endcapture -%}
+              {%- capture title_wrapped -%}<h5 class="card-title fw-bold">{{ title_period }}</h5>{%- endcapture -%}
+              {%- capture bibliography_wrapped -%}{{ pub['chicago-bibliography'] | replace: title_period, title_wrapped }}{%- endcapture -%}
+              <p class="small mt-1 mb-2">{{ bibliography_wrapped | replace: '“', '' | replace: '”', '' }}</p>
               {%- endif -%}
               
               <!-- Abstract (optional, expandable) -->
