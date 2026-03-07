@@ -11,7 +11,7 @@ require 'json'
 class ZoteroCitationFetcher
   ZOTERO_GROUP = '1114225'
   BASE_URL = "https://api.zotero.org/groups/#{ZOTERO_GROUP}/items"
-  STYLE = 'chicago-fullnote-bibliography'
+  STYLE = 'https://npgibson.com/assets/csl/chicago-notes-bibliography-literal-case.csl'
   CACHE_FILE = '.zotero_citations_cache.yml'
   LOG_FILE = '.zotero_fetch_log.txt'
   TIMEOUT_SECONDS = 10
@@ -125,11 +125,6 @@ class ZoteroCitationFetcher
 
     if bib
       publication['chicago-bibliography'] = bib
-      chicago_title = extract_title_from_bib(bib, publication['title'])
-      if chicago_title
-        publication['title'] = chicago_title
-        log_message("    [TITLE] #{chicago_title}")
-      end
       @cache[citation_key] = bib
       @fetched_count += 1
       log_message("  [FETCHED] #{citation_key}")
@@ -137,17 +132,6 @@ class ZoteroCitationFetcher
       @failed_count += 1
       log_message("  [NOT FOUND] #{citation_key} - no Zotero item matched URL: #{url}")
     end
-  end
-
-  # Searches the chicago bibliography string for the publication title (case-insensitively)
-  # and returns the title exactly as Chicago formatted it.
-  def extract_title_from_bib(bib, title)
-    return nil if title.nil? || title.empty?
-
-    # Escape any regex metacharacters in the title before matching
-    escaped = Regexp.escape(title)
-    match = bib.match(/#{escaped}/i)
-    match ? match[0] : nil
   end
 
   # Strip trailing slashes and downcase for reliable comparison.
