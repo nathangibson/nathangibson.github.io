@@ -11,7 +11,7 @@ require 'json'
 class ZoteroCitationFetcher
   ZOTERO_GROUP = '1114225'
   BASE_URL = "https://api.zotero.org/groups/#{ZOTERO_GROUP}/items"
-  STYLE = 'https://npgibson.com/assets/csl/chicago-notes-bibliography-literal-case.csl'
+  STYLE = 'https://npgibson.com/assets/csl/chicago-notes-bibliography-titles-tagged.csl'
   CACHE_FILE = '.zotero_citations_cache.yml'
   LOG_FILE = '.zotero_fetch_log.txt'
   TIMEOUT_SECONDS = 10
