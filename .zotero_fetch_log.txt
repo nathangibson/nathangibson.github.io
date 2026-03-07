@@ -4,27 +4,40 @@ Found 77 publications to process
 Fetching items with bibliography from Zotero API...
 Built URL map with 71 entries
   [NO URL] bantuGlobalChristianTexts2027 - skipping, no URL field
+    [TITLE] Connecting Late Antiquities | H-Soz-Kult. Kommunikation und Fachinformation für die Geschichtswissenschaften | Geschichte im Netz | History in the web
   [FETCHED] ConnectingLateAntiquities2025
   [FETCHED] duckerJeGrosserLiebe2023
+    [TITLE] Right-to-Left (RTL) Text: Digital Humanists Plus Half a Billion Users
   [FETCHED] ghorbaninejadRighttoLeftRTLText2023
   [NO URL] gibsonAbrahamPointDeparture2012 - skipping, no URL field
   [NO URL] gibsonAlJahizDivineAdoption2022 - skipping, no URL field
   [NO URL] gibsonArabicLiteraryPersonages2023 - skipping, no URL field
+    [TITLE] Authority Records at the Frontiers of Research: How Can Small Projects Incorporate Large Providers into Their Workflows?
   [FETCHED] gibsonAuthorityRecordsFrontiers2021
+    [TITLE] The Bible in Arabic: An Update on the State of Research
   [FETCHED] gibsonBibleArabicUpdate2018
+    [TITLE] Challenges of Polyvalent Infrastructures: The Case of Syriac Studies and Syriaca.Org
   [FETCHED] gibsonChallengesPolyvalentInfrastructures2017
+    [TITLE] The Christian Orient in Islamic Sources: Discovering Interdisciplinary Connections on the Digital Frontier
   [FETCHED] gibsonChristianOrientIslamic2017
+    [TITLE] Circumnavigating Jewish and Christian Realities: What the Polemicist al-Jāḥiẓ Didn’t Want to Admit about His Society
   [FETCHED] gibsonCircumnavigatingJewishChristian2022
   [FETCHED] gibsonClosestFriendshipAlJahiz2015
+    [TITLE] Communities of Knowledge: Interreligious Networks of Scholars in Ibn Abi Usaybiʿa’s History of the Physicians
   [FETCHED] gibsonCommunitiesKnowledgeInterreligious2020
   [FETCHED] gibsonCommunitiesKnowledgeInterreligious2023a
   [NO URL] gibsonCommunitiesKnowledgeUsaybianet2020 - skipping, no URL field
+    [TITLE] Cross-Communal Scholarly Interactions
   [FETCHED] gibsonCrosscommunalScholarlyInteractions2022
+    [TITLE] Toward a Cyberinfrastructure for Syriac Literature: Mapping a Text Corpus Using TEI and RDF
   [FETCHED] gibsonCyberinfrastructureSyriacLiterature2017
   [NO URL] gibsonDistantReadingPersons2020 - skipping, no URL field
   [FETCHED] gibsonDivineAdoptionJewish2023
+    [TITLE] Balisage
   [FETCHED] gibsonEncodingWesternNonWestern2015
+    [TITLE] Entity Tagging and Network Extraction in Arabic Texts
   [FETCHED] gibsonEntityTaggingNetwork2024
+    [TITLE] Five Centuries of History in a Network
   [FETCHED] gibsonFiveCenturiesHistory2019
   [NO URL] gibsonFlorilegiumBadTranslations2016 - skipping, no URL field
   [NO URL] gibsonGodAloneKnows2024 - skipping, no URL field
@@ -33,51 +46,82 @@ Built URL map with 71 entries
   [NO URL] gibsonInquiringBeelzebubChristians2013 - skipping, no URL field
   [NO URL] gibsonInterreligiousContactsAbbasid2017 - skipping, no URL field
   [NO URL] gibsonIslamicScholarPluralistic2016 - skipping, no URL field
+    [TITLE] Knowledge Collaboration among Jews, Christians, Zoroastrians, and Muslims in the Abbasid Near East: Introduction
   [FETCHED] gibsonKnowledgeCollaborationJews2022
   [FETCHED] gibsonLabelingReligiousAffiliation2020
   [FETCHED] gibsonLabelingReligiousAffiliation2023
+    [TITLE] Linking Syriac and Christian Arabic Scholars to Their Multi-Religious Networks
   [FETCHED] gibsonLinkingSyriacChristian2022
+    [TITLE] From Manuscript Catalogues to a Handbook of Syriac Literature: Modeling an Infrastructure for Syriaca.Org
   [FETCHED] gibsonManuscriptCataloguesHandbook17
   [NO URL] gibsonMiaphysiteArabianTriangle2013 - skipping, no URL field
+    [TITLE] A Mid-Ninth-Century Arabic Translation of Isaiah? Glimpses from al-Jāḥiẓ
   [FETCHED] gibsonMidNinthCenturyArabicTranslation2017
+    [TITLE] Modeling a Body of Literature in TEI: The New Handbook of Syriac Literature
   [FETCHED] gibsonModelingBodyLiterature[acceptedrevisionsinpreparation]
+    [TITLE] Modeling a Body of Literature in TEI: The New Handbook of Syriac Literature
   [FETCHED] gibsonModelingBodyLiterature2016
+    [TITLE] Modeling a Body of Literature in TEI: The New Handbook of Syriac Literature
   [FETCHED] gibsonModelingBodyLiterature2016a
   [NO URL] gibsonMountainsPlainsGeographical2011 - skipping, no URL field
   [FETCHED] gibsonMultireligiousMultilingualKnowledge2021
+    [TITLE] Neighborhood Bibles: The Circulation of Tanakh/OT Versions Among Arabic Muslim Writers (8th–10th Century)
   [FETCHED] gibsonNeighborhoodBiblesCirculation2024
+    [TITLE] Networks of Biblical Scholarship: Jewish, Christian, and Muslim Collaboration in Biographical Literature
   [FETCHED] gibsonNetworksBiblicalScholarship2017
+    [TITLE] The New Handbook of Syriac Literature
   [FETCHED] gibsonNewHandbookSyriac2016
   [NO URL] gibsonNewHandbookSyriac2016a - skipping, no URL field
   [NO URL] gibsonPhysiciansPhilosophersPolymaths2017 - skipping, no URL field
   [NO URL] gibsonReadingHistoryPolemic2015 - skipping, no URL field
   [NO URL] gibsonReadingLinesMining2017 - skipping, no URL field
   [NO URL] gibsonRhetoricFulcrumPower2016 - skipping, no URL field
+    [TITLE] Robust Digital Approaches to Literary History: The Case of Syriac
   [FETCHED] gibsonRobustDigitalApproaches2017
+    [TITLE] Scholar-Converts as Hubs of Knowledge Exchange in the Medieval Islamicate World
   [FETCHED] gibsonScholarConvertsHubsKnowledge2018
+    [TITLE] The Social Lives of Polemicists
   [FETCHED] gibsonSocialLivesPolemicists2023
+    [TITLE] State of Arabic Manuscript Description
   [FETCHED] gibsonStateArabicManuscript2018
   [NO URL] gibsonTEIManuscriptDescription2019 - skipping, no URL field
+    [TITLE] Thinking in ⅃TЯ: Reorienting the Directional Assumptions of Global Digital Scholarship
   [FETCHED] gibsonThinkingTYaReorienting2019
+    [TITLE] Transculturation & Neoculturation among Jewish Physicians in Fatimid Cairo
   [FETCHED] gibsonTransculturationNeoculturationJewish2023
   [NO URL] gibsonTurningFriendsEnemies2016 - skipping, no URL field
   [NO URL] gibsonUsaybianetDataStructure2023 - skipping, no URL field
   [NO URL] gibsonWhatDidAlJahiz2016 - skipping, no URL field
+    [TITLE] Die Goethe-Uni Stellt Sich Vor
   [FETCHED] goetheuniversitaetGoetheUniStelltSich2025
+    [TITLE] Newly Appointed: Prof. Dr. Nathan Gibson, Professor of Religious Studies
   [FETCHED] goetheuniversitaetNewlyAppointedProf2024
+    [TITLE] Snapshot
   [FETCHED] InterviewDrNathan2021
+    [TITLE] Snapshot
   [FETCHED] j.jacobUniversitaetTrifftGesellschaft2025
+    [TITLE] Scholars, Servants and Caliphs: Encoding Social Encounters from Biographies
   [FETCHED] lohrScholarsServantsCaliphs2021
+    [TITLE] A Guide to Syriac Authors
   [FETCHED] michelsonGuideSyriacAuthors2016
+    [TITLE] The Syriac Biographical Dictionary
   [FETCHED] michelsonSyriacBiographicalDictionary2016
   [FETCHED] plattInquiringBeelzebubTimothy2018
+    [TITLE] Knowledge Collaboration among Jews, Christians, Zoroastrians, and Muslims in the Abbasid Near East: Introduction
   [FETCHED] pohlKnowledgeCollaborationJews2022
+    [TITLE] Knowledge Collaboration among Jews, Christians, Zoroastrians, and Muslims in the Abbasid Near East II [Thematic Section]
   [FETCHED] pohlKnowledgeCollaborationJews2023
+    [TITLE] Ambivalente Beziehungen - Fachtag - Interviews
   [FETCHED] sane-digitalAmbivalenteBeziehungenFachtag2023
+    [TITLE] Modeling a Born-Digital Factoid Prosopography Using the TEI and Linked Data
   [FETCHED] schwartzModelingBornDigitalFactoid2021
+    [TITLE] Modeling a Born-Digital Factoid Prosopography Using the TEI and Linked Data
   [FETCHED] schwartzModelingBornDigitalFactoid2022a
   [FETCHED] textandtransmissionjointresearchseminarTeTraNathanGibson2022
+    [TITLE] Snapshot
   [FETCHED] TurmoilDisplacesMiddle
+    [TITLE] Bibliography of the Arabic Bible: A Classified and Annotated History of Scholarship
   [FETCHED] vollandtBibliographyArabicBible2018
+    [TITLE] Heimliches Vorbild
   [FETCHED] wolframHeimlichesVorbild2022
 Saved updated publications to _data/publications.yaml

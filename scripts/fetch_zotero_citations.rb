@@ -63,7 +63,7 @@ class ZoteroCitationFetcher
 
   private
 
-  # Fetches all Zotero items (paginated) and returns a Hash of normalized URL => {bib:, title:}.
+  # Fetches all Zotero items (paginated) and returns a Hash of normalized URL => bib string.
   def fetch_url_bib_map
     url_to_bib = {}
     start = 0
@@ -72,11 +72,10 @@ class ZoteroCitationFetcher
       uri = URI(BASE_URL)
       uri.query = URI.encode_www_form(
         format: 'json',
-        include: 'bib,data',
         style: STYLE,
         limit: PAGE_LIMIT,
         start: start
-      )
+      ) + "&include=bib,data"
 
       response = make_request(uri)
       return nil if response.nil?
@@ -87,14 +86,13 @@ class ZoteroCitationFetcher
       items.each do |item|
         url   = item.dig('data', 'url').to_s.strip
         bib   = item.dig('bib')
-        title = item.dig('data', 'title').to_s.strip
 
         next if url.empty? || bib.nil?
 
         bib_text = extract_bib_text(bib)
         next unless bib_text
 
-        url_to_bib[normalize_url(url)] = { bib: bib_text, title: title }
+        url_to_bib[normalize_url(url)] = bib_text
       end
 
       total = response['Total-Results'].to_i
@@ -123,18 +121,33 @@ class ZoteroCitationFetcher
       return
     end
 
-    entry = url_to_bib[normalize_url(url)]
+    bib = url_to_bib[normalize_url(url)]
 
-    if entry
-      publication['chicago-bibliography'] = entry[:bib]
-      publication['title'] = entry[:title] unless entry[:title].empty?
-      @cache[citation_key] = entry[:bib]
+    if bib
+      publication['chicago-bibliography'] = bib
+      chicago_title = extract_title_from_bib(bib, publication['title'])
+      if chicago_title
+        publication['title'] = chicago_title
+        log_message("    [TITLE] #{chicago_title}")
+      end
+      @cache[citation_key] = bib
       @fetched_count += 1
       log_message("  [FETCHED] #{citation_key}")
     else
       @failed_count += 1
       log_message("  [NOT FOUND] #{citation_key} - no Zotero item matched URL: #{url}")
     end
+  end
+
+  # Searches the chicago bibliography string for the publication title (case-insensitively)
+  # and returns the title exactly as Chicago formatted it.
+  def extract_title_from_bib(bib, title)
+    return nil if title.nil? || title.empty?
+
+    # Escape any regex metacharacters in the title before matching
+    escaped = Regexp.escape(title)
+    match = bib.match(/#{escaped}/i)
+    match ? match[0] : nil
   end
 
   # Strip trailing slashes and downcase for reliable comparison.
