@@ -63,7 +63,7 @@ class ZoteroCitationFetcher
 
   private
 
-  # Fetches all Zotero items (paginated) and returns a Hash of normalized URL => bib string.
+  # Fetches all Zotero items (paginated) and returns a Hash of normalized URL => {bib:, title:}.
   def fetch_url_bib_map
     url_to_bib = {}
     start = 0
@@ -85,13 +85,16 @@ class ZoteroCitationFetcher
       break if items.empty?
 
       items.each do |item|
-        url = item.dig('data', 'url').to_s.strip
-        bib = item.dig('bib')
+        url   = item.dig('data', 'url').to_s.strip
+        bib   = item.dig('bib')
+        title = item.dig('data', 'title').to_s.strip
 
         next if url.empty? || bib.nil?
 
         bib_text = extract_bib_text(bib)
-        url_to_bib[normalize_url(url)] = bib_text if bib_text
+        next unless bib_text
+
+        url_to_bib[normalize_url(url)] = { bib: bib_text, title: title }
       end
 
       total = response['Total-Results'].to_i
@@ -120,11 +123,12 @@ class ZoteroCitationFetcher
       return
     end
 
-    bib = url_to_bib[normalize_url(url)]
+    entry = url_to_bib[normalize_url(url)]
 
-    if bib
-      publication['chicago-bibliography'] = bib
-      @cache[citation_key] = bib
+    if entry
+      publication['chicago-bibliography'] = entry[:bib]
+      publication['title'] = entry[:title] unless entry[:title].empty?
+      @cache[citation_key] = entry[:bib]
       @fetched_count += 1
       log_message("  [FETCHED] #{citation_key}")
     else
