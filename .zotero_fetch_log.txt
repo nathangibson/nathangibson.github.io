@@ -2,8 +2,8 @@ Cache cleared - will refetch all citations
 Starting Zotero citation fetch (FULL RUN)
 Found 77 publications to process
 Fetching items with bibliography from Zotero API...
-Built URL map with 71 entries
-  [NO URL] bantuGlobalChristianTexts2027 - skipping, no URL field
+Built URL map with 72 entries
+  [FETCHED] bantuGlobalChristianTexts2027
   [FETCHED] ConnectingLateAntiquities2025
   [FETCHED] duckerJeGrosserLiebe2023
   [FETCHED] ghorbaninejadRighttoLeftRTLText2023
