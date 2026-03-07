@@ -4,110 +4,101 @@ references:
   citation-key: bantuGlobalChristianTexts2027
   collection-title: De Gruyter Studium
   editor:
-    - family: Bantu
-      given: Vince
-    - family: Gibson
-      given: Nathan P.
+  - family: Bantu
+    given: Vince
+  - family: Gibson
+    given: Nathan P.
   ISBN: 978-1-5015-2500-1
   issued:
-    - literal: '[forthcoming 2027]'
+  - literal: "[forthcoming 2027]"
   language: en
   publisher: De Gruyter Brill
   publisher-place: Berlin
-  title: >-
-    Global Christian Texts: Readings in Premodern Christianity from African,
-    Middle Eastern, and Asian Languages
+  title: 'Global Christian Texts: Readings in Premodern Christianity from African,
+    Middle Eastern, and Asian Languages'
   type: book
-
+  chicago-bibliography: 'Bantu, Vince, and Nathan P. Gibson, eds. Global Christian
+    Texts: Readings in Premodern Christianity from African, Middle Eastern, and Asian
+    Languages. De Gruyter Studium. Berlin: De Gruyter Brill, 2027.'
 - id: ConnectingLateAntiquities2025
-  abstract: >-
-    The Connecting Late Antiquities Conference served as a forum for discussing
-    several current prosopography projects in the field of late antiquity and
-    sharing experiences about the methodology and the specific challenges of
-    digital datasets. Many presentations also showed how prosopographies can
-    contribute to different fields of historical research.
+  abstract: |-
+    The Connecting Late Antiquities Conference served as a forum for discussing several current prosopography projects in the field of late antiquity and sharing experiences about the methodology and the specific challenges of digital datasets. Many presentations also showed how prosopographies can contribute to different fields of historical research.
 
-
-    The organisers, JULIA HILLNER (Bonn) and RICHARD FLOWER (Exeter), opened by
-    introducing the Connecting Late Antiquities Project (CLA), a successor of
-    the Prosopography of the Later Roman Empire (PLRE).
+    The organisers, JULIA HILLNER (Bonn) and RICHARD FLOWER (Exeter), opened by introducing the Connecting Late Antiquities Project (CLA), a successor of the Prosopography of the Later Roman Empire (PLRE).
   accessed:
-    - year: 2025
-      month: 5
-      day: 23
+  - year: 2025
+    month: 5
+    day: 23
   citation-key: ConnectingLateAntiquities2025
-  container-title: >-
-    H-Soz-Kult. Kommunikation und Fachinformation für die
-    Geschichtswissenschaften
+  container-title: H-Soz-Kult. Kommunikation und Fachinformation für die Geschichtswissenschaften
   issued:
-    - year: 2025
-      month: 5
-      day: 19
+  - year: 2025
+    month: 5
+    day: 19
   language: de
   publisher: H-Soz-Kult
-  title: >-
-    Connecting Late Antiquities | H-Soz-Kult. Kommunikation und Fachinformation
+  title: Connecting Late Antiquities | H-Soz-Kult. Kommunikation und Fachinformation
     für die Geschichtswissenschaften | Geschichte im Netz | History in the web
   type: webpage
   URL: https://www.hsozkult.de/conferencereport/id/fdkn-155043
-
+  chicago-bibliography: H-Soz-Kult. Kommunikation und Fachinformation für die Geschichtswissenschaften.
+    “Connecting Late Antiquities | H-Soz-Kult. Kommunikation und Fachinformation für
+    die Geschichtswissenschaften | Geschichte im Netz | History in the web.” H-Soz-Kult,
+    May 19, 2025. https://www.hsozkult.de/conferencereport/id/fdkn-155043.
 - id: duckerJeGrosserLiebe2023
-  abstract: >-
-    Neu am Fachbereich begrüßen wir Prof. Dr. Nathan Gibson als Professor für
-    Religionswissenschaft mit dem Schwerpunkt „Jüdisch-Islamische Beziehungen“.
-    Ein Gespräch über Forschung auf drei Kontinenten, „Facebook für Verstorbene“
-    und Begegnungen zwischen den drei abrahamitischen Religionen in Geschichte
-    und Gegenwart.
+  abstract: Neu am Fachbereich begrüßen wir Prof. Dr. Nathan Gibson als Professor
+    für Religionswissenschaft mit dem Schwerpunkt „Jüdisch-Islamische Beziehungen“.
+    Ein Gespräch über Forschung auf drei Kontinenten, „Facebook für Verstorbene“ und
+    Begegnungen zwischen den drei abrahamitischen Religionen in Geschichte und Gegenwart.
   accessed:
-    - year: 2024
-      month: 3
-      day: 18
+  - year: 2024
+    month: 3
+    day: 18
   author:
-    - family: Dücker
-      given: Malte
+  - family: Dücker
+    given: Malte
   citation-key: duckerJeGrosserLiebe2023
-  container-title: >-
-    Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universität
+  container-title: Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universität
     Frankfurt am Main
   DOI: 10.21248/gups.80437
   issued:
-    - year: 2023
+  - year: 2023
   language: deu
   license: http://creativecommons.org/licenses/by-nc-nd/4.0/de/deed.de
   page: 32–33
   publisher: Goethe-Universität Frankfurt am Main. Fachbereich Evangelische Theologie
   source: publikationen.ub.uni-frankfurt.de
-  title: >-
-    "Je größer die Liebe und Nähe (zwischen Nachbarn), desto mehr Hass und
-    Entfremdung kann es geben." : Interview zur Berufung von Prof. Dr. Nathan
-    Gibson
-  title-short: >-
-    Je größer die Liebe und Nähe (zwischen Nachbarn), desto mehr Hass und
+  title: '"Je größer die Liebe und Nähe (zwischen Nachbarn), desto mehr Hass und Entfremdung
+    kann es geben." : Interview zur Berufung von Prof. Dr. Nathan Gibson'
+  title-short: Je größer die Liebe und Nähe (zwischen Nachbarn), desto mehr Hass und
     Entfremdung kann es geben.
   type: article-journal
   URL: http://publikationen.ub.uni-frankfurt.de/frontdoor/index/index/docId/80437
   volume: '3'
-
+  chicago-bibliography: 'Dücker, Malte. “‘Je größer die Liebe und Nähe (zwischen Nachbarn),
+    desto mehr Hass und Entfremdung kann es geben.’ : Interview zur Berufung von Prof.
+    Dr. Nathan Gibson.” Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universität
+    Frankfurt am Main 3 (2023): 32–33. https://doi.org/10.21248/gups.80437.'
 - id: ghorbaninejadRighttoLeftRTLText2023
   author:
-    - family: Ghorbaninejad
-      given: Masoud
-    - family: Gibson
-      given: Nathan P.
-    - family: Wrisley
-      given: David Joseph
+  - family: Ghorbaninejad
+    given: Masoud
+  - family: Gibson
+    given: Nathan P.
+  - family: Wrisley
+    given: David Joseph
   citation-key: ghorbaninejadRighttoLeftRTLText2023
   collection-number: '9'
   collection-title: Debates in the Digital Humanities
   container-title: Debates in the Digital Humanities 2023
   editor:
-    - family: Gold
-      given: Matthew K.
-    - family: Klein
-      given: Lauren F.
+  - family: Gold
+    given: Matthew K.
+  - family: Klein
+    given: Lauren F.
   ISBN: 978-1-4529-6932-9 978-1-4529-6956-5
   issued:
-    - year: 2023
+  - year: 2023
   language: en
   note: 'Book DOI: https://doi.org/10.5749/9781452969565'
   page: 47–73
@@ -115,13 +106,16 @@ references:
   publisher-place: Minneapolis
   title: 'Right-to-Left (RTL) Text: Digital Humanists Plus Half a Billion Users'
   type: chapter
-  URL: >-
-    https://dhdebates.gc.cuny.edu/read/debates-in-the-digital-humanities-2023/section/51ad75ab-76a4-43f3-81f8-0b31e350ca9c#ch03
-
+  URL: https://dhdebates.gc.cuny.edu/read/debates-in-the-digital-humanities-2023/section/51ad75ab-76a4-43f3-81f8-0b31e350ca9c#ch03
+  chicago-bibliography: 'Ghorbaninejad, Masoud, Nathan P. Gibson, and David Joseph
+    Wrisley. “Right-to-Left (RTL) Text: Digital Humanists Plus Half a Billion Users.”
+    In Debates in the Digital Humanities 2023, edited by Matthew K. Gold and Lauren
+    F. Klein, 47–73. Debates in the Digital Humanities 9. Minneapolis: University
+    of Minnesota Press, 2023. https://dhdebates.gc.cuny.edu/read/debates-in-the-digital-humanities-2023/section/51ad75ab-76a4-43f3-81f8-0b31e350ca9c#ch03.'
 - id: gibsonAbrahamPointDeparture2012
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonAbrahamPointDeparture2012
   event-place: Valletta, Malta
   event-title: XI Symposium Syriacum
@@ -131,80 +125,87 @@ references:
   note: 'Presenters: _:n196'
   title: Abraham as a Point of Departure in the 'Monk of Bet Hale' Text
   type: speech
-
+  chicago-bibliography: "———. “Abraham as a Point of Departure in the ‘Monk of Bet
+    Hale’ Text.” July 16, 2012."
 - id: gibsonAlJahizDivineAdoption2022
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonAlJahizDivineAdoption2022
   event-place: Georgetown University (online)
   event-title: Theology in Arabic seminars
   issued:
-    - year: 2022
-      month: 11
-      day: 18
+  - year: 2022
+    month: 11
+    day: 18
   title: Al-Jāḥiẓ on Divine Adoption
   type: speech
-
+  chicago-bibliography: 'Gibson, Nathan P., and Ronny Vollandt. “Cross-Communal Scholarly
+    Interactions.” In Routledge Handbook on the Sciences in Islamicate Societies:
+    Practices from the 2nd/8th to the 13th/19th Centuries, edited by Sonja Brentjes,
+    Peter Barker, and Rana Brentjes, 723–40. Routledge Handbooks. London: Routledge,
+    2022. https://doi.org/10.4324/9781315170718-65.'
 - id: gibsonArabicLiteraryPersonages2023
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonArabicLiteraryPersonages2023
   event-place: Ludwig-Maximilians Universität, Munich/online
   event-title: Research Colloquium of the BMBF Project "Beyond Conflict and Coexistence"
   issued:
-    - year: 2023
-      month: 1
-      day: 23
+  - year: 2023
+    month: 1
+    day: 23
   language: en
   title: Arabic Literary Personages as Jewish Documentary Subjects
   type: speech
-
+  chicago-bibliography: 'Dücker, Malte. “‘Je größer die Liebe und Nähe (zwischen Nachbarn),
+    desto mehr Hass und Entfremdung kann es geben.’ : Interview zur Berufung von Prof.
+    Dr. Nathan Gibson.” Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universität
+    Frankfurt am Main 3 (2023): 32–33. https://doi.org/10.21248/gups.80437.'
 - id: gibsonAuthorityRecordsFrontiers2021
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonAuthorityRecordsFrontiers2021
   event-place: Berlin State Library and “Bibliotheca Arabica” Project, Berlin
-  event-title: >-
-    <Author><Title><Place>: Authority Records and Manuscripts in Libraries and
-    Research
+  event-title: "<Author><Title><Place>: Authority Records and Manuscripts in Libraries
+    and Research"
   issued:
-    - year: 2021
-      month: 10
-      day: 28
+  - year: 2021
+    month: 10
+    day: 28
   language: en
-  title: >-
-    Authority Records at the Frontiers of Research: How Can Small Projects
-    Incorporate Large Providers into their Workflows?
+  title: 'Authority Records at the Frontiers of Research: How Can Small Projects Incorporate
+    Large Providers into their Workflows?'
   type: speech
   URL: http://npgibson.com/s/authority-frontiers
-
+  chicago-bibliography: "———. “Authority Records at the Frontiers of Research: How
+    Can Small Projects Incorporate Large Providers into Their Workflows?” October
+    28, 2021. http://npgibson.com/s/authority-frontiers."
 - id: gibsonBibleArabicUpdate2018
   author:
-    - family: Gibson
-      given: Nathan P.
-    - family: Hjälm
-      given: Miriam L.
-    - family: Tarras
-      given: Peter
-    - family: Vollandt
-      given: Ronny
-    - family: Zaki
-      given: Vevian
+  - family: Gibson
+    given: Nathan P.
+  - family: Hjälm
+    given: Miriam L.
+  - family: Tarras
+    given: Peter
+  - family: Vollandt
+    given: Ronny
+  - family: Zaki
+    given: Vevian
   citation-key: gibsonBibleArabicUpdate2018
   collection-number: '304'
   collection-title: Orientalia Christiana Analecta
-  container-title: >-
-    Between the Cross and the Crescent: Studies in Honor of Samir Khalil Samir,
-    S.J. on the Occasion of His Eightieth Birthday
+  container-title: 'Between the Cross and the Crescent: Studies in Honor of Samir
+    Khalil Samir, S.J. on the Occasion of His Eightieth Birthday'
   editor:
-    - family: Paša
-      given: Željko
+  - family: Paša
+    given: Željko
   ISBN: 88-7210-398-3
   issued:
-    - year: 2018
+  - year: 2018
   language: en
   page: 57–84
   publisher: Pontifical Oriental Institute
@@ -212,212 +213,213 @@ references:
   title: 'The Bible in Arabic: An Update on the State of Research'
   type: chapter
   URL: https://doi.org/10.5282/ubm/epub.49819
-
+  chicago-bibliography: 'Dücker, Malte. “‘Je größer die Liebe und Nähe (zwischen Nachbarn),
+    desto mehr Hass und Entfremdung kann es geben.’ : Interview zur Berufung von Prof.
+    Dr. Nathan Gibson.” Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universität
+    Frankfurt am Main 3 (2023): 32–33. https://doi.org/10.21248/gups.80437.'
 - id: gibsonChallengesPolyvalentInfrastructures2017
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonChallengesPolyvalentInfrastructures2017
   event-place: Leipzig, Germany
   event-title: Global Philology Open Conference
   issued:
-    - year: 2017
-      month: 2
-      day: 22
+  - year: 2017
+    month: 2
+    day: 22
   language: en
   note: 'Presenters: _:n141'
-  title: >-
-    Challenges of Polyvalent Infrastructures: The Case of Syriac Studies and
-    Syriaca.org
+  title: 'Challenges of Polyvalent Infrastructures: The Case of Syriac Studies and
+    Syriaca.org'
   type: speech
   URL: http://goo.gl/v6up1E
-
+  chicago-bibliography: "“Balisage.” Accessed March 31, 2017. http://www.balisage.net/Proceedings/vol16/html/Gibson01/BalisageVol16-Gibson01.html."
 - id: gibsonChristianOrientIslamic2017
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonChristianOrientIslamic2017
   event-place: Jena
   event-title: 33. Deutscher Orientalistentag
   issued:
-    - year: 2017
-      month: 9
-      day: 19
+  - year: 2017
+    month: 9
+    day: 19
   language: en
   note: 'Presenters: _:n123'
-  title: >-
-    The Christian Orient in Islamic Sources: Discovering Interdisciplinary
-    Connections on the Digital Frontier
+  title: 'The Christian Orient in Islamic Sources: Discovering Interdisciplinary Connections
+    on the Digital Frontier'
   type: speech
   URL: https://tinyurl.com/gibson170919
-
+  chicago-bibliography: "“Balisage.” Accessed March 31, 2017. http://www.balisage.net/Proceedings/vol16/html/Gibson01/BalisageVol16-Gibson01.html."
 - id: gibsonCircumnavigatingJewishChristian2022
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonCircumnavigatingJewishChristian2022
   event-place: Ghent/online
   event-title: Text and Transmission Joint Research Seminar
   issued:
-    - year: 2022
-      month: 11
-      day: 11
-  title: >-
-    Circumnavigating Jewish and Christian Realities: What the Polemicist
-    al-Jāḥiẓ Didn’t Want to Admit about His Society
+  - year: 2022
+    month: 11
+    day: 11
+  title: 'Circumnavigating Jewish and Christian Realities: What the Polemicist al-Jāḥiẓ
+    Didn’t Want to Admit about His Society'
   type: speech
   URL: http://npgibson.com/s/circumnavigating
-
+  chicago-bibliography: "———. “Circumnavigating Jewish and Christian Realities: What
+    the Polemicist al-Jāḥiẓ Didn’t Want to Admit about His Society.” November 11,
+    2022. http://npgibson.com/s/circumnavigating."
 - id: gibsonClosestFriendshipAlJahiz2015
-  abstract: >-
-    Abbasid society in ninth-century Iraq faced the challenge of reconciling the
-    role of its many non-Muslim citizens with Islamic norms and governance, as
-    seen in ¿The Refutation of Christians¿ by al-Jahiz (d. 868/869 [255 A.H.]).
-    Al-Jahiz moved in circles only one step removed from those of the Christian
-    and Jewish intellectuals he came to criticize in the work, and he likely
-    composed it just prior to Caliph al-Mutawakkil¿s watershed reforms in
-    non-Muslim policy. Thus, the ¿Refutation¿ is a primary source for
-    understanding shifting Muslim sensibilities toward Christians¿ societal role
-    in a religiously diverse realm, but its polemic approach makes it
-    problematic to analyze historically. This dissertation seeks to make ¿The
-    Refutation of Christians¿ more accessible as a historical source by
-    performing a contextual analysis of its argumentation. Al-Jahiz¿ rhetorical
-    strategy is to explain away factors behind popular Muslim preferences for
-    Christians over Jews, and then to advance positive reasons for considering
-    Christians more harmful than Jews. Argumentation analysis using the
-    pragma-dialectical approach highlights salient social points at issue
-    between Christians and Muslims of the time. First, al-Jahiz¿ dispute is not
-    directly with Christians, but with Muslims who show them too much respect
-    and liberality. Second, he must reframe certain facts about Christians that
-    are too generally accepted to contradict, including memories of Arabs¿
-    pre-Islamic and early Islamic contacts with Christians, and Christian
-    intellectuals¿ crucial role in perpetuating Greek scientific works. He turns
-    these favorable perceptions into liabilities, arguing that Christians¿
-    intellectualism diverts weak Muslims from the faith and their social
-    position violates Christian-Muslim agreements. Finally, in contrast to the
-    jurists¿ approach, he argues for enforcing the original intention of these
-    agreements rather than trying to demonstrate specific historical
-    stipulations. Al-Jahiz¿ ideology aligns with al-Mutawakkil¿s Qur'anically
-    charged edicts, in that Christians, far from being ¿closest in friendship¿
-    (5:82), are those with whom believers must not make any alliance (5:51). As
-    such, the ¿Refutation¿ reveals the battle lines between more lenient,
-    popular Muslim attitudes and a stricter position promoted by al-Jahiz and
-    enforced by al-Mutawakkil.
+  abstract: Abbasid society in ninth-century Iraq faced the challenge of reconciling
+    the role of its many non-Muslim citizens with Islamic norms and governance, as
+    seen in ¿The Refutation of Christians¿ by al-Jahiz (d. 868/869 [255 A.H.]). Al-Jahiz
+    moved in circles only one step removed from those of the Christian and Jewish
+    intellectuals he came to criticize in the work, and he likely composed it just
+    prior to Caliph al-Mutawakkil¿s watershed reforms in non-Muslim policy. Thus,
+    the ¿Refutation¿ is a primary source for understanding shifting Muslim sensibilities
+    toward Christians¿ societal role in a religiously diverse realm, but its polemic
+    approach makes it problematic to analyze historically. This dissertation seeks
+    to make ¿The Refutation of Christians¿ more accessible as a historical source
+    by performing a contextual analysis of its argumentation. Al-Jahiz¿ rhetorical
+    strategy is to explain away factors behind popular Muslim preferences for Christians
+    over Jews, and then to advance positive reasons for considering Christians more
+    harmful than Jews. Argumentation analysis using the pragma-dialectical approach
+    highlights salient social points at issue between Christians and Muslims of the
+    time. First, al-Jahiz¿ dispute is not directly with Christians, but with Muslims
+    who show them too much respect and liberality. Second, he must reframe certain
+    facts about Christians that are too generally accepted to contradict, including
+    memories of Arabs¿ pre-Islamic and early Islamic contacts with Christians, and
+    Christian intellectuals¿ crucial role in perpetuating Greek scientific works.
+    He turns these favorable perceptions into liabilities, arguing that Christians¿
+    intellectualism diverts weak Muslims from the faith and their social position
+    violates Christian-Muslim agreements. Finally, in contrast to the jurists¿ approach,
+    he argues for enforcing the original intention of these agreements rather than
+    trying to demonstrate specific historical stipulations. Al-Jahiz¿ ideology aligns
+    with al-Mutawakkil¿s Qur'anically charged edicts, in that Christians, far from
+    being ¿closest in friendship¿ (5:82), are those with whom believers must not make
+    any alliance (5:51). As such, the ¿Refutation¿ reveals the battle lines between
+    more lenient, popular Muslim attitudes and a stricter position promoted by al-Jahiz
+    and enforced by al-Mutawakkil.
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   call-number: '1691345901'
   citation-key: gibsonClosestFriendshipAlJahiz2015
   genre: Ph.D. dissertation
   issued:
-    - year: 2015
+  - year: 2015
   language: English
   number-of-pages: '262'
   publisher: The Catholic University of America
   publisher-place: Washington, D.C.
   source: ProQuest
-  title: >-
-    Closest in Friendship? Al-Jahiz' Profile of Christians in Abbasid Society in
-    "The Refutation of Christians" ("Al-Radd 'ala al-Nasara")
+  title: Closest in Friendship? Al-Jahiz' Profile of Christians in Abbasid Society
+    in "The Refutation of Christians" ("Al-Radd 'ala al-Nasara")
   title-short: Closest in Friendship?
   type: thesis
   URL: http://search.proquest.com/docview/1691345901
-
+  chicago-bibliography: "“BibBase.” Accessed March 5, 2019. https://bibbase.org/network/publication/gibson-closestinfriendshipaljahizprofileofchristiansinabbasidsocietyintherefutationofchristiansalraddalaalnasara-2015."
 - id: gibsonCommunitiesKnowledgeInterreligious2020
   citation-key: gibsonCommunitiesKnowledgeInterreligious2020
   contributor:
-    - family: Birkhahn
-      given: Vanessa
-    - family: Friedel
-      given: Hanna
-    - family: Froschmeier
-      given: Lukas
-    - family: Ioppolo
-      given: Fabio
-    - family: Löhr
-      given: Nadine
-    - family: Schmahl
-      given: Robin
-    - family: Tolay
-      given: Malinda
-    - family: Zeska
-      given: Flavio
+  - family: Birkhahn
+    given: Vanessa
+  - family: Friedel
+    given: Hanna
+  - family: Froschmeier
+    given: Lukas
+  - family: Ioppolo
+    given: Fabio
+  - family: Löhr
+    given: Nadine
+  - family: Schmahl
+    given: Robin
+  - family: Tolay
+    given: Malinda
+  - family: Zeska
+    given: Flavio
   DOI: 10.5281/zenodo.3975505
   edition: Version 0.4
   editor:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   issued:
-    - year: 2020
-    - year: 0
+  - year: 2020
+  - year: 0
   publisher: Usaybia.net
   publisher-place: Munich
-  title: >-
-    Communities of Knowledge: Interreligious Networks of Scholars in Ibn Abi
-    Usaybiʿa’s History of the Physicians
+  title: 'Communities of Knowledge: Interreligious Networks of Scholars in Ibn Abi
+    Usaybiʿa’s History of the Physicians'
   type: book
   URL: https://usaybia.net
-
+  chicago-bibliography: "———, ed. Communities of Knowledge: Interreligious Networks
+    of Scholars in Ibn Abi Usaybiʿa’s History of the Physicians. Version 0.4. Munich:
+    Usaybia.net, 2020. https://doi.org/10.5281/zenodo.3975505."
 - id: gibsonCommunitiesKnowledgeInterreligious2023a
   author:
-    - family: Gibson
-      given: Nathan P.
-    - family: Schmahl
-      given: Robin
+  - family: Gibson
+    given: Nathan P.
+  - family: Schmahl
+    given: Robin
   citation-key: gibsonCommunitiesKnowledgeInterreligious2023a
   container-title: Medieval Worlds
   DOI: 10.1553/medievalworlds_no18_2023s196
   ISSN: 2412-3196
   issued:
-    - year: 2023
-      month: 7
+  - year: 2023
+    month: 7
   language: en
   page: 196–218
-  title: "Communities of Knowledge: Interreligious Networks of Scholars in Ibn Abī Uṣaybiʿa's\_History of the Physicians (Project Report)"
+  title: 'Communities of Knowledge: Interreligious Networks of Scholars in Ibn Abī
+    Uṣaybiʿa''s History of the Physicians (Project Report)'
   type: article-journal
   URL: https://doi.org/10.1553/medievalworlds_no18_2023s196
   volume: '18'
-
+  chicago-bibliography: 'Dücker, Malte. “‘Je größer die Liebe und Nähe (zwischen Nachbarn),
+    desto mehr Hass und Entfremdung kann es geben.’ : Interview zur Berufung von Prof.
+    Dr. Nathan Gibson.” Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universität
+    Frankfurt am Main 3 (2023): 32–33. https://doi.org/10.21248/gups.80437.'
 - id: gibsonCommunitiesKnowledgeUsaybianet2020
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonCommunitiesKnowledgeUsaybianet2020
   event-place: online
-  event-title: >-
-    Virtual Forum: Jews, Christians, and Muslims as Colleagues and Collaborators
-    in the Abbasid Near East
+  event-title: 'Virtual Forum: Jews, Christians, and Muslims as Colleagues and Collaborators
+    in the Abbasid Near East'
   issued:
-    - year: 2020
-      month: 10
-      day: 20
+  - year: 2020
+    month: 10
+    day: 20
   language: en
   note: 'Presenters: _:n86'
   title: 'Communities of Knowledge (Usaybia.net): Tagging, Prosopography, and Networks'
   type: speech
-
+  chicago-bibliography: "———. “Communities of Knowledge (Usaybia.Net): Tagging, Prosopography,
+    and Networks.” October 20, 2020."
 - id: gibsonCrosscommunalScholarlyInteractions2022
   author:
-    - family: Gibson
-      given: Nathan P.
-    - family: Vollandt
-      given: Ronny
+  - family: Gibson
+    given: Nathan P.
+  - family: Vollandt
+    given: Ronny
   citation-key: gibsonCrosscommunalScholarlyInteractions2022
   collection-title: Routledge Handbooks
-  container-title: >-
-    Routledge handbook on the sciences in Islamicate societies: Practices from
-    the 2nd/8th to the 13th/19th centuries
+  container-title: 'Routledge handbook on the sciences in Islamicate societies: Practices
+    from the 2nd/8th to the 13th/19th centuries'
   DOI: 10.4324/9781315170718-65
   editor:
-    - family: Brentjes
-      given: Sonja
-    - family: Barker
-      given: Peter
-    - family: Brentjes
-      given: Rana
+  - family: Brentjes
+    given: Sonja
+  - family: Barker
+    given: Peter
+  - family: Brentjes
+    given: Rana
   ISBN: 978-1-138-04759-4
   issued:
-    - year: 2022
+  - year: 2022
   language: en
   page: 723–740
   publisher: Routledge
@@ -425,210 +427,207 @@ references:
   title: Cross-communal scholarly interactions
   type: chapter
   URL: https://doi.org/10.4324/9781315170718-65
-
+  chicago-bibliography: "“Gibson and Vollandt - 2023 - Cross-Communal Scholarly Interactions.Pdf,”
+    n.d."
 - id: gibsonCyberinfrastructureSyriacLiterature2017
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonCyberinfrastructureSyriacLiterature2017
   event-place: Berlin, Germany
   event-title: Digital Classicist Seminar
   issued:
-    - year: 2017
-      month: 1
-      day: 24
+  - year: 2017
+    month: 1
+    day: 24
   language: en
   note: 'Presenters: _:n146'
-  title: >-
-    Toward a Cyberinfrastructure for Syriac Literature: Mapping a Text Corpus
-    using TEI and RDF
+  title: 'Toward a Cyberinfrastructure for Syriac Literature: Mapping a Text Corpus
+    using TEI and RDF'
   type: speech
   URL: http://hdl.handle.net/11858/00-1780-0000-002C-93A4-1
-
+  chicago-bibliography: "“Balisage.” Accessed March 31, 2017. http://www.balisage.net/Proceedings/vol16/html/Gibson01/BalisageVol16-Gibson01.html."
 - id: gibsonDistantReadingPersons2020
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonDistantReadingPersons2020
-  event-place: >-
-    Institute of Near and Middle Eastern Studies, Ludwig-Maximilians-Universität
+  event-place: Institute of Near and Middle Eastern Studies, Ludwig-Maximilians-Universität
     München
-  event-title: >-
-    12454 VM Arabistik (B.A. Proseminar), "Neue Räume, alte Fragen? Digitalität
+  event-title: 12454 VM Arabistik (B.A. Proseminar), "Neue Räume, alte Fragen? Digitalität
     und die Islamwissenschaft"
   issued:
-    - year: 2020
-      month: 6
-      day: 9
+  - year: 2020
+    month: 6
+    day: 9
   language: en
   note: 'Presenters: _:n77'
   title: Distant Reading for Persons and Networks
   type: speech
-
+  chicago-bibliography: "———. “Distant Reading for Persons and Networks.” June 9,
+    2020."
 - id: gibsonDivineAdoptionJewish2023
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonDivineAdoptionJewish2023
   event-place: LMU-Munich
   event-title: International Workshop on Arabic Biblical Interpretation, LMU-Munich
   genre: invited
   issued:
-    - year: 2023
-      month: 7
-      day: 20
+  - year: 2023
+    month: 7
+    day: 20
   language: en
-  title: 'Divine Adoption in Jewish, Christian, and Muslim Scriptures: Al-Jāḥiẓ''s View'
+  title: 'Divine Adoption in Jewish, Christian, and Muslim Scriptures: Al-Jāḥiẓ''s
+    View'
   type: speech
   URL: https://npgibson.com/s/adoption
-
+  chicago-bibliography: 'Dücker, Malte. “‘Je größer die Liebe und Nähe (zwischen Nachbarn),
+    desto mehr Hass und Entfremdung kann es geben.’ : Interview zur Berufung von Prof.
+    Dr. Nathan Gibson.” Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universität
+    Frankfurt am Main 3 (2023): 32–33. https://doi.org/10.21248/gups.80437.'
 - id: gibsonEncodingWesternNonWestern2015
-  abstract: >-
-    One of the major digital challenges of the Syriaca.org research project has
-    been to encode and visualize personal names of authors in Middle Eastern
-    languages (especially Syriac and Arabic). TEI-XML and HTML are digital
-    standards for the encoding and visualization of cultural heritage data and
-    have features for encoding names and displaying Middle Eastern languages.
-    Because these formats were developed primarily for Western cultural data,
-    however, representing our non-Western data in these formats has required
-    complex adaptation particularly in regard to marking up name parts,
-    customizing search algorithms, displaying bidirectional text, and displaying
-    Syriac text with embedded fonts. These requirements have led us to develop
-    small-scale systems that may be of use to other cultural heritage
-    preservation projects involving names for ancient and, especially,
-    non-Western entities.
+  abstract: One of the major digital challenges of the Syriaca.org research project
+    has been to encode and visualize personal names of authors in Middle Eastern languages
+    (especially Syriac and Arabic). TEI-XML and HTML are digital standards for the
+    encoding and visualization of cultural heritage data and have features for encoding
+    names and displaying Middle Eastern languages. Because these formats were developed
+    primarily for Western cultural data, however, representing our non-Western data
+    in these formats has required complex adaptation particularly in regard to marking
+    up name parts, customizing search algorithms, displaying bidirectional text, and
+    displaying Syriac text with embedded fonts. These requirements have led us to
+    develop small-scale systems that may be of use to other cultural heritage preservation
+    projects involving names for ancient and, especially, non-Western entities.
   author:
-    - family: Gibson
-      given: Nathan P.
-    - family: Salesky
-      given: Winona
-    - family: Michelson
-      given: David A.
+  - family: Gibson
+    given: Nathan P.
+  - family: Salesky
+    given: Winona
+  - family: Michelson
+    given: David A.
   citation-key: gibsonEncodingWesternNonWestern2015
   collection-title: Balisage Series on Markup Technologies 16
   container-title: Proceedings of the Symposium on Cultural Heritage Markup
   DOI: 10.4242/BalisageVol16.Gibson01
   event-title: Symposium on Cultural Heritage Markup
   issued:
-    - year: 2015
-      month: 8
-      day: 10
-  license: >-
-    Copyright © 2015, Nathan P. Gibson, Winona Salesky, & David A. Michelson.
-    Released under a Creative Commons Attribution 4.0 International License (CC
-    BY 4.0).
+  - year: 2015
+    month: 8
+    day: 10
+  license: Copyright © 2015, Nathan P. Gibson, Winona Salesky, & David A. Michelson.
+    Released under a Creative Commons Attribution 4.0 International License (CC BY
+    4.0).
   publisher-place: Washington, D.C.
   source: www.balisage.net
   title: Encoding Western and Non-Western Names for Ancient Syriac Authors
   type: paper-conference
-  URL: >-
-    http://www.balisage.net/Proceedings/vol16/html/Gibson01/BalisageVol16-Gibson01.html
-
+  URL: http://www.balisage.net/Proceedings/vol16/html/Gibson01/BalisageVol16-Gibson01.html
+  chicago-bibliography: Gibson, Nathan P., Winona Salesky, and David A. Michelson.
+    “Encoding Western and Non-Western Names for Ancient Syriac Authors.” In Proceedings
+    of the Symposium on Cultural Heritage Markup. Balisage Series on Markup Technologies
+    16. Washington, D.C., 2015. https://doi.org/10.4242/BalisageVol16.Gibson01.
 - id: gibsonEntityTaggingNetwork2024
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonEntityTaggingNetwork2024
   event-place: online
   event-title: 'SunoikisisDC Digital Classics and Byzantine Studies: Session 11'
   genre: invited
   issued:
-    - year: 2024
-      month: 6
-      day: 24
+  - year: 2024
+    month: 6
+    day: 24
   language: en
   title: Entity tagging and network extraction in Arabic texts
   type: speech
-  URL: >-
-    https://github.com/SunoikisisDC/SunoikisisDC-2023-2024/wiki/11.-Arabic-Georgian
-
+  URL: https://github.com/SunoikisisDC/SunoikisisDC-2023-2024/wiki/11.-Arabic-Georgian
+  chicago-bibliography: "“Full Text PDF.” Accessed March 18, 2024. http://publikationen.ub.uni-frankfurt.de/files/80437/09_Gibson_Duecker.pdf."
 - id: gibsonFiveCenturiesHistory2019
-  abstract: >-
-    How should historical researchers encode texts that will be used as primary
-    sources for network analysis? Moreover, how can they link together the
-    various layers of this encoding in a way that explicitly shows the encoder’s
-    methodology and interpretations? This presentation is intended to
-    demonstrate and solicit feedback on an experimental procedure applicable to
-    projects producing networks from historiographical texts. The project
-    “Communities of Knowledge: Interreligious Networks of Scholars in Ibn Abi
-    Usaybiʿa’s History of the Physicians” (https://usaybia.net) is conducting a
-    network analysis of interactions among Muslim, Christian, and Jewish
-    scholars across five centuries of Abbasid rule in the Near East (750–1258).
-    The primary source text for this endeavor is an Arabic biographical
-    dictionary written by Ibn Abi Usaybiʿa, a physician active in Cairo and
-    Damascus in the 13th century. This History of Physicians details
-    teacher-student relations, workplace exchanges, correspondence, oral
-    reports, and other interactions among the scholars mentioned. The network
-    analysis based on this historiographical text requires a way to proceed from
-    encoding a source text in TEI to producing a dataset for network analysis.
-    Along the way, it must document at least two layers of interpretation: (1)
-    the primary source author’s portrayal of events and (2) the researcher’s own
-    understanding of these assertions. One way to make these interpretive layers
-    explicit is to isolate individual “factoids” as analytical units. Encoding
-    factoids in TEI and RDF has been recently pioneered by Daniel L. Schwartz
-    for the Syriaca.org project “SPEAR: Syriac Persons, Events, and
-    Relationships.” The current project extends this by producing factoids
-    directly from a primary source and integrating them into the encoded text,
-    as well as by further refining the process of curating resulting factoids
-    into nodes and edges for network analysis.
+  abstract: 'How should historical researchers encode texts that will be used as primary
+    sources for network analysis? Moreover, how can they link together the various
+    layers of this encoding in a way that explicitly shows the encoder’s methodology
+    and interpretations? This presentation is intended to demonstrate and solicit
+    feedback on an experimental procedure applicable to projects producing networks
+    from historiographical texts. The project “Communities of Knowledge: Interreligious
+    Networks of Scholars in Ibn Abi Usaybiʿa’s History of the Physicians” (https://usaybia.net)
+    is conducting a network analysis of interactions among Muslim, Christian, and
+    Jewish scholars across five centuries of Abbasid rule in the Near East (750–1258).
+    The primary source text for this endeavor is an Arabic biographical dictionary
+    written by Ibn Abi Usaybiʿa, a physician active in Cairo and Damascus in the 13th
+    century. This History of Physicians details teacher-student relations, workplace
+    exchanges, correspondence, oral reports, and other interactions among the scholars
+    mentioned. The network analysis based on this historiographical text requires
+    a way to proceed from encoding a source text in TEI to producing a dataset for
+    network analysis. Along the way, it must document at least two layers of interpretation:
+    (1) the primary source author’s portrayal of events and (2) the researcher’s own
+    understanding of these assertions. One way to make these interpretive layers explicit
+    is to isolate individual “factoids” as analytical units. Encoding factoids in
+    TEI and RDF has been recently pioneered by Daniel L. Schwartz for the Syriaca.org
+    project “SPEAR: Syriac Persons, Events, and Relationships.” The current project
+    extends this by producing factoids directly from a primary source and integrating
+    them into the encoded text, as well as by further refining the process of curating
+    resulting factoids into nodes and edges for network analysis.'
   accessed:
-    - year: 2019
-      month: 9
-      day: 20
+  - year: 2019
+    month: 9
+    day: 20
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonFiveCenturiesHistory2019
   DOI: 10.5281/zenodo.3452744
   event-place: Graz
   event-title: What is Text, Really? TEI and Beyond (TEI Conference 2019)
   issued:
-    - year: 2019
-      month: 9
-      day: 20
+  - year: 2019
+    month: 9
+    day: 20
   language: en
   title: Five Centuries of History in a Network
   type: speech
   URL: https://doi.org/10.5281/zenodo.3452743
-
+  chicago-bibliography: 'Dücker, Malte. “‘Je größer die Liebe und Nähe (zwischen Nachbarn),
+    desto mehr Hass und Entfremdung kann es geben.’ : Interview zur Berufung von Prof.
+    Dr. Nathan Gibson.” Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universität
+    Frankfurt am Main 3 (2023): 32–33. https://doi.org/10.21248/gups.80437.'
 - id: gibsonFlorilegiumBadTranslations2016
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonFlorilegiumBadTranslations2016
   event-place: Uppsala, Sweden
-  event-title: >-
-    Christianity and Judaism in the Language of Islam: A Conference on the Bible
-    in Arabic and Cognate Fields
+  event-title: 'Christianity and Judaism in the Language of Islam: A Conference on
+    the Bible in Arabic and Cognate Fields'
   issued:
-    - literal: 2016-03-29/04-01
+  - literal: 2016-03-29/04-01
   language: en
   note: 'Presenters: _:n176'
-  title: >-
-    A Florilegium of Bad Translations: Al-Jahiz's Ninth-Century Excerpts of
-    Jewish Arabic Bible Translations
+  title: 'A Florilegium of Bad Translations: Al-Jahiz''s Ninth-Century Excerpts of
+    Jewish Arabic Bible Translations'
   type: speech
-
+  chicago-bibliography: 'Gibson, Nathan P. “A Florilegium of Bad Translations: Al-Jahiz’s
+    Ninth-Century Excerpts of Jewish Arabic Bible Translations.” March 29, 2016.'
 - id: gibsonGodAloneKnows2024
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonGodAloneKnows2024
   event-place: Wiesen/Goethe University Frankfurt
   event-title: 'Symposium des FB 06: „Religion in Relation“'
   issued:
-    - year: 2024
-      month: 2
-      day: 19
-  title: >-
-    "God alone knows what they hide in their hearts": Identifying religious
-    affiliation in medieval Arabic texts
+  - year: 2024
+    month: 2
+    day: 19
+  title: '"God alone knows what they hide in their hearts": Identifying religious
+    affiliation in medieval Arabic texts'
   type: speech
-
+  chicago-bibliography: "“Full Text PDF.” Accessed March 18, 2024. http://publikationen.ub.uni-frankfurt.de/files/80437/09_Gibson_Duecker.pdf."
 - id: gibsonGospelCitationsVirgin2012
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonGospelCitationsVirgin2012
   event-place: Valletta, Malta
   event-title: IX Conference on Christian Arabic Studies
@@ -638,29 +637,29 @@ references:
   note: 'Presenters: _:n192'
   title: Gospel Citations on the Virgin Birth from Ninth Century Muslim Writers
   type: speech
-
+  chicago-bibliography: "———. “Gospel Citations on the Virgin Birth from Ninth Century
+    Muslim Writers.” July 19, 2012."
 - id: gibsonGuideSyriacaorgReference2016
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonGuideSyriacaorgReference2016
   event-place: Salzburg, Austria
-  event-title: >-
-    5th International Conference on the Church of the East in China and Central
-    Asia
+  event-title: 5th International Conference on the Church of the East in China and
+    Central Asia
   issued:
     literal: 2016-06-19/22
   language: en
   note: 'Presenters: _:n164'
-  title: >-
-    A Guide to Syriaca.org Reference Tools and Desiderata for Central and East
+  title: A Guide to Syriaca.org Reference Tools and Desiderata for Central and East
     Asia
   type: speech
-
+  chicago-bibliography: "———. “A Guide to Syriaca.Org Reference Tools and Desiderata
+    for Central and East Asia.” June 19, 2016."
 - id: gibsonInquiringBeelzebubChristians2013
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonInquiringBeelzebubChristians2013
   event-place: Baltimore, Md.
   event-title: Society of Biblical Literature Annual Meeting
@@ -668,33 +667,32 @@ references:
     literal: 2013-11-23/26
   language: en
   note: 'Presenters: _:n184'
-  title: >-
-    Inquiring of 'Beelzebub': Christians between the Caliph's Courts and the
-    'Kingdom of God'
+  title: 'Inquiring of ''Beelzebub'': Christians between the Caliph''s Courts and
+    the ''Kingdom of God'''
   type: speech
-
+  chicago-bibliography: "———. “Inquiring of ‘Beelzebub’: Christians between the Caliph’s
+    Courts and the ‘Kingdom of God.’” November 23, 2013."
 - id: gibsonInterreligiousContactsAbbasid2017
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonInterreligiousContactsAbbasid2017
   event-place: Chester, U.K.
   event-title: British Association for Islamic Studies
   issued:
-    - year: 2017
-      month: 4
-      day: 12
+  - year: 2017
+    month: 4
+    day: 12
   language: en
   note: 'Presenters: _:n137'
-  title: >-
-    Interreligious Contacts among Abbasid Scholars: A Digital Approach using
-    Network Analysis
+  title: 'Interreligious Contacts among Abbasid Scholars: A Digital Approach using
+    Network Analysis'
   type: speech
-
+  chicago-bibliography: "“Balisage.” Accessed March 31, 2017. http://www.balisage.net/Proceedings/vol16/html/Gibson01/BalisageVol16-Gibson01.html."
 - id: gibsonIslamicScholarPluralistic2016
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonIslamicScholarPluralistic2016
   event-place: London, England
   event-title: Third Annual Conference of the British Association for Islamic Studies
@@ -702,180 +700,175 @@ references:
     literal: 2016-04-11/12
   language: en
   note: 'Presenters: _:n168'
-  title: >-
-    An Islamic Scholar in a Pluralistic Society: The Biography of al-Jahiz
-    Reconsidered
+  title: 'An Islamic Scholar in a Pluralistic Society: The Biography of al-Jahiz Reconsidered'
   type: speech
-
+  chicago-bibliography: "———. “An Islamic Scholar in a Pluralistic Society: The Biography
+    of al-Jahiz Reconsidered.” April 11, 2016."
 - id: gibsonKnowledgeCollaborationJews2022
-  abstract: "This thematic section unearths several ways professionals from a variety of religious communities in the Near East collaborated with one another during the medieval period. Modern scholars of intellectual history have often attempted to trace connections in medieval texts across the religious spectrum, but it has been difficult to pin down the interpersonal circumstances behind these and other interactions. This is at least in part because scientific, philosophical, and theological treatises rarely refer to these personal relationships explicitly, leaving researchers to turn to other kinds of works for such details: biographies, chronicles, hagiographies, and documentary sources. But it then remains to come to terms with the historiographical perspectives of the authors of these works. For example, the authors of Arabic biographical dictionaries (á¹­abaqÄ\x81t literature) have provided some of the richest sources for person-to-person exchange in Near Eastern intellectual history, but they filter and taxonomize their subjects to focus on individuals, overwhelmingly men, who can be seen as formative for particular classes or categories (á¹­abaqÄ\x81t) of society. Disciplinary segmentation has made it especially difficult to answer questions such as how much Â»neutralÂ« space there was in interreligious knowledge exchange in the Near East, or whether fields such as medicine became Â»IslamicizedÂ« through the exclusion of non-Muslims in the teaching, study, or practice of the field. The authors of the research articles here (contributors to a virtual forum hosted by the BMBF-funded Â»Communities of KnowledgeÂ« project) take various approaches to these problems of explicating silent sources, interpreting historiographical constructions, and bridging disciplinary segmentation. Some put particular texts under the microscope, pointing out new evidence of specific interactions on the basis of close readings or the examination of texts in a palimpsested manuscript. Some zoom out slightly on these interactions by making fresh comparisons between sources in differing genres or languages. All focus on the interreligious dimensions of exchange and, wherever possible, on the interpersonal engagements that brought these about. Reports from two research projects complement these by taking macro-level approaches that involve multiple languages, several genres, and broad regions. Overall, this thematic collection highlights the interpersonal and collaborative aspects of work by Jews, Christians, Zoroastrians, and Muslims during the Abbasid caliphate (132-656 AH/750-1258 CE) with the aim of stimulating new research approaches that overcome previous genre limitations and disciplinary boundaries."
+  abstract: "This thematic section unearths several ways professionals from a variety
+    of religious communities in the Near East collaborated with one another during
+    the medieval period. Modern scholars of intellectual history have often attempted
+    to trace connections in medieval texts across the religious spectrum, but it has
+    been difficult to pin down the interpersonal circumstances behind these and other
+    interactions. This is at least in part because scientific, philosophical, and
+    theological treatises rarely refer to these personal relationships explicitly,
+    leaving researchers to turn to other kinds of works for such details: biographies,
+    chronicles, hagiographies, and documentary sources. But it then remains to come
+    to terms with the historiographical perspectives of the authors of these works.
+    For example, the authors of Arabic biographical dictionaries (á¹­abaqÄ\x81t literature)
+    have provided some of the richest sources for person-to-person exchange in Near
+    Eastern intellectual history, but they filter and taxonomize their subjects to
+    focus on individuals, overwhelmingly men, who can be seen as formative for particular
+    classes or categories (á¹­abaqÄ\x81t) of society. Disciplinary segmentation has
+    made it especially difficult to answer questions such as how much Â»neutralÂ«
+    space there was in interreligious knowledge exchange in the Near East, or whether
+    fields such as medicine became Â»IslamicizedÂ« through the exclusion of non-Muslims
+    in the teaching, study, or practice of the field. The authors of the research
+    articles here (contributors to a virtual forum hosted by the BMBF-funded Â»Communities
+    of KnowledgeÂ« project) take various approaches to these problems of explicating
+    silent sources, interpreting historiographical constructions, and bridging disciplinary
+    segmentation. Some put particular texts under the microscope, pointing out new
+    evidence of specific interactions on the basis of close readings or the examination
+    of texts in a palimpsested manuscript. Some zoom out slightly on these interactions
+    by making fresh comparisons between sources in differing genres or languages.
+    All focus on the interreligious dimensions of exchange and, wherever possible,
+    on the interpersonal engagements that brought these about. Reports from two research
+    projects complement these by taking macro-level approaches that involve multiple
+    languages, several genres, and broad regions. Overall, this thematic collection
+    highlights the interpersonal and collaborative aspects of work by Jews, Christians,
+    Zoroastrians, and Muslims during the Abbasid caliphate (132-656 AH/750-1258 CE)
+    with the aim of stimulating new research approaches that overcome previous genre
+    limitations and disciplinary boundaries."
   accessed:
-    - year: 2022
-      month: 12
-      day: 1
+  - year: 2022
+    month: 12
+    day: 1
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonKnowledgeCollaborationJews2022
   container-title: Medieval Worlds
   DOI: 10.1553/medievalworlds_no17_2022s59
   ISSN: 2412-3196
   issued:
-    - year: 2022
+  - year: 2022
   language: en
   note: '59'
   page: 59–72
   publisher: "Verlag der Ã\x96sterreichischen Akademie der Wissenschaften"
   publisher-place: Wien
-  title: >-
-    Knowledge Collaboration among Jews, Christians, Zoroastrians, and Muslims in
-    the Abbasid Near East: Introduction
+  title: 'Knowledge Collaboration among Jews, Christians, Zoroastrians, and Muslims
+    in the Abbasid Near East: Introduction'
   type: article-journal
   URL: http://www.medievalworlds.net/?arp=0x003ddac8
   volume: '17'
-
+  chicago-bibliography: "———. “Knowledge Collaboration among Jews, Christians, Zoroastrians,
+    and Muslims in the Abbasid Near East: Introduction.” Medieval Worlds 17 (2022):
+    59–72. https://doi.org/10.1553/medievalworlds_no17_2022s59."
 - id: gibsonLabelingReligiousAffiliation2020
-  abstract: >-
-    The biographical dictionary of Ibn Abī Uṣaybiʿa (1203–1270 AD), titled The
-    Best Accounts of the Classes of Physicians (Arabic, ʿUyūn al-anbāʾ fī
-    ṭabaqāt al-aṭibbāʾ) or History of Physicians for short, is perhaps unequaled
-    in the extent to which it details the social interactions of scholars from
-    many different religious communities. Ṭabaqāt literature in general tends to
-    provide a kind of Who’s-Who resource collecting information about personages
-    in particular categories, such as hadith transmitters or poets. Normally
-    authors tended to make these categories applicable to a certain religious
-    tradition, but Ibn Abī Uṣaybiʿa’s project broke the mold by outlining a
-    profession (medicine and related areas) in which collaboration and exchange
-    among communities was typical. The History of Physicians is thus an ideal
-    target for large-scale analysis of interreligious exchange, as the project
-    “Communities of Knowledge” is in the process of doing.
+  abstract: |-
+    The biographical dictionary of Ibn Abī Uṣaybiʿa (1203–1270 AD), titled The Best Accounts of the Classes of Physicians (Arabic, ʿUyūn al-anbāʾ fī ṭabaqāt al-aṭibbāʾ) or History of Physicians for short, is perhaps unequaled in the extent to which it details the social interactions of scholars from many different religious communities. Ṭabaqāt literature in general tends to provide a kind of Who’s-Who resource collecting information about personages in particular categories, such as hadith transmitters or poets. Normally authors tended to make these categories applicable to a certain religious tradition, but Ibn Abī Uṣaybiʿa’s project broke the mold by outlining a profession (medicine and related areas) in which collaboration and exchange among communities was typical. The History of Physicians is thus an ideal target for large-scale analysis of interreligious exchange, as the project “Communities of Knowledge” is in the process of doing.
 
+    Nevertheless, incorporating “religious affiliation” as a factor in analyzing Ibn Abī Uṣaybiʿa’s text is fraught with complexity. First is the looming issue of what religion even means in this context. Second is the question of which terms or phrases the author uses to intentionally signal a particular affiliation. Third, which other characteristics may be taken to indicate religious affiliation, as perhaps certain titles, professions, actions, or (very cautiously) names? Finally, what should be done with mixed indications, whether these are due to inaccurate sources, ambiguous affiliation, or conversion?
 
-    Nevertheless, incorporating “religious affiliation” as a factor in analyzing
-    Ibn Abī Uṣaybiʿa’s text is fraught with complexity. First is the looming
-    issue of what religion even means in this context. Second is the question of
-    which terms or phrases the author uses to intentionally signal a particular
-    affiliation. Third, which other characteristics may be taken to indicate
-    religious affiliation, as perhaps certain titles, professions, actions, or
-    (very cautiously) names? Finally, what should be done with mixed
-    indications, whether these are due to inaccurate sources, ambiguous
-    affiliation, or conversion?
+    I will present a case for recording these textual indications using the prosopographical tool of “factoids,” which can support a more nuanced analysis than simply recording a single affiliation for each person. Each factoid, representing an assertion by Ibn Abī Uṣaybiʿa or his sources, is one of several markers of religious affiliation, which may point toward different affiliations for the same person. The strength of these markers and their agreement or variance for a particular person provide specific data points that can be used to reconstruct networks of communities while also allowing for alternate scenarios.
 
-
-    I will present a case for recording these textual indications using the
-    prosopographical tool of “factoids,” which can support a more nuanced
-    analysis than simply recording a single affiliation for each person. Each
-    factoid, representing an assertion by Ibn Abī Uṣaybiʿa or his sources, is
-    one of several markers of religious affiliation, which may point toward
-    different affiliations for the same person. The strength of these markers
-    and their agreement or variance for a particular person provide specific
-    data points that can be used to reconstruct networks of communities while
-    also allowing for alternate scenarios.
-
-
-    The “Communities of Knowledge” project is funded by the “Kleine Fächer –
-    Große Potentiale” program of the German Federal Ministry of Research and
-    Education, 2018–2021.
+    The “Communities of Knowledge” project is funded by the “Kleine Fächer – Große Potentiale” program of the German Federal Ministry of Research and Education, 2018–2021.
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonLabelingReligiousAffiliation2020
   event-place: Munich/online
-  event-title: >-
-    Jews, Christians, and Muslims as Colleagues and Collaborators in the Abbasid
-    Near East
+  event-title: Jews, Christians, and Muslims as Colleagues and Collaborators in the
+    Abbasid Near East
   issued:
-    - year: 2020
-      month: 12
-      day: 11
+  - year: 2020
+    month: 12
+    day: 11
   language: en
-  title: >-
-    Labeling Religious Affiliation in Ibn Abī Uṣaybiʿa's History of Physicians:
-    A Quest
+  title: 'Labeling Religious Affiliation in Ibn Abī Uṣaybiʿa''s History of Physicians:
+    A Quest'
   type: speech
   URL: https://tinyurl.com/gibson201211
-
+  chicago-bibliography: "———. “Labeling Religious Affiliation in Ibn Abī Uṣaybiʿa’s
+    History of Physicians: A Quest.” December 11, 2020. https://tinyurl.com/gibson201211."
 - id: gibsonLabelingReligiousAffiliation2023
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonLabelingReligiousAffiliation2023
   container-title: Medieval Worlds
   DOI: 10.1553/medievalworlds_no18_2023s246
   ISSN: 2412-3196
   issued:
-    - year: 2023
-      month: 7
+  - year: 2023
+    month: 7
   language: en
   page: 246–270
-  title: >-
-    Labeling Religious Affiliation in Ibn Abī Uṣaybiʿa's *History of
-    Physicians*: A Quest
+  title: 'Labeling Religious Affiliation in Ibn Abī Uṣaybiʿa''s *History of Physicians*:
+    A Quest'
   type: article-journal
   URL: https://doi.org/10.1553/medievalworlds_no18_2023s246
   volume: '18'
-
+  chicago-bibliography: 'Dücker, Malte. “‘Je größer die Liebe und Nähe (zwischen Nachbarn),
+    desto mehr Hass und Entfremdung kann es geben.’ : Interview zur Berufung von Prof.
+    Dr. Nathan Gibson.” Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universität
+    Frankfurt am Main 3 (2023): 32–33. https://doi.org/10.21248/gups.80437.'
 - id: gibsonLinkingSyriacChristian2022
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonLinkingSyriacChristian2022
   event-place: Paris
   event-title: XIII Symposium Syriacum
   issued:
     literal: 2022-07-04/09
   language: en
-  title: >-
-    Linking Syriac and Christian Arabic Scholars to their Multi-Religious
-    Networks
+  title: Linking Syriac and Christian Arabic Scholars to their Multi-Religious Networks
   type: speech
   URL: http://npgibson.com/s/syriacnetworks
-
+  chicago-bibliography: "———. “Linking Syriac and Christian Arabic Scholars to Their
+    Multi-Religious Networks.” July 4, 2022. http://npgibson.com/s/syriacnetworks."
 - id: gibsonManuscriptCataloguesHandbook17
-  abstract: >-
-    Despite increasing interest in Syriac studies and growing digital
-    availability of Syriac texts, there is currently no up-to-date
-    infrastructure for discovering, identifying, classifying, and referencing
-    works of Syriac literature. The standard reference work (Baumstark's
-    Geschichte) is over ninety years old, and the perhaps 20,000 Syriac
-    manuscripts extant worldwide can be accessed only through disparate
-    catalogues and databases. The present article proposes a tentative data
-    model for Syriaca.org's New Handbook of Syriac Literature, an open-access
-    digital publication that will serve as both an authority file for Syriac
-    works and a guide to accessing their manuscript representations, editions,
-    and translations. The authors hope that by publishing a draft data model
-    they can receive feedback and incorporate suggestions into the next stage of
-    the project.
+  abstract: Despite increasing interest in Syriac studies and growing digital availability
+    of Syriac texts, there is currently no up-to-date infrastructure for discovering,
+    identifying, classifying, and referencing works of Syriac literature. The standard
+    reference work (Baumstark's Geschichte) is over ninety years old, and the perhaps
+    20,000 Syriac manuscripts extant worldwide can be accessed only through disparate
+    catalogues and databases. The present article proposes a tentative data model
+    for Syriaca.org's New Handbook of Syriac Literature, an open-access digital publication
+    that will serve as both an authority file for Syriac works and a guide to accessing
+    their manuscript representations, editions, and translations. The authors hope
+    that by publishing a draft data model they can receive feedback and incorporate
+    suggestions into the next stage of the project.
   author:
-    - family: Gibson
-      given: Nathan P.
-    - family: Michelson
-      given: David A.
-    - family: Schwartz
-      given: Daniel L.
+  - family: Gibson
+    given: Nathan P.
+  - family: Michelson
+    given: David A.
+  - family: Schwartz
+    given: Daniel L.
   citation-key: gibsonManuscriptCataloguesHandbook17
   container-title: Journal of Data Mining and Digital Humanities
   DOI: 10.46298/jdmdh.1395
   ISSN: 2416-5999
   issued:
-    - year: 17
-      month: 5
-      day: 30
+  - year: 17
+    month: 5
+    day: 30
   language: en
-  title: >-
-    From Manuscript Catalogues to a Handbook of Syriac Literature: Modeling an
-    Infrastructure for Syriaca.org
+  title: 'From Manuscript Catalogues to a Handbook of Syriac Literature: Modeling
+    an Infrastructure for Syriaca.org'
   title-short: From Manuscript Catalogues to a Handbook of Syriac Literature
   type: article-journal
   URL: http://jdmdh.episciences.org/1395
-  volume: >-
-    Special Issue on Computer-Aided Processing of Intertextuality in Ancient
+  volume: Special Issue on Computer-Aided Processing of Intertextuality in Ancient
     Languages
-
+  chicago-bibliography: "“Academia.Edu.” Accessed April 1, 2017. https://www.academia.edu/29147134/From_manuscript_catalogues_to_a_handbook_of_Syriac_literature_Modeling_an_infrastructure_for_Syriaca.org."
 - id: gibsonMiaphysiteArabianTriangle2013
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonMiaphysiteArabianTriangle2013
   event-place: Portland, Or.
   event-title: 223rd Meeting of the American Oriental Society
@@ -883,53 +876,45 @@ references:
     literal: 2013-03-15/18
   language: en
   note: 'Presenters: _:n188'
-  title: >-
-    The Miaphysite Arabian Triangle: Ghassānīya-Ḥirtā-Najrān in the Sixth
-    Century C.E.
+  title: 'The Miaphysite Arabian Triangle: Ghassānīya-Ḥirtā-Najrān in the Sixth Century
+    C.E.'
   type: speech
-
+  chicago-bibliography: "———. “The Miaphysite Arabian Triangle: Ghassānīya-Ḥirtā-Najrān
+    in the Sixth Century C.E.” March 15, 2013."
 - id: gibsonMidNinthCenturyArabicTranslation2017
-  abstract: >-
-    One of the earliest Muslim authors to make use of biblical material
-    translated into Arabic was ʿAmr b. Baḥr al-Jāḥiẓ (d. 868/9), who in his
-    “Refutation of Christians” (Al-Radd ʿalā al-Naṣārā), attempts to discredit
-    Jewish Arabic translations of the Old Testament as a source for Christian
-    arguments that Jesus was the Son of God. His position assumes two
-    distinctive points regarding scriptural texts: (1) that the text of the
-    extant Hebrew Bible was trustworthy but that the Christian Gospels were not,
-    and (2) that the anthropomorphizing content of existing Jewish versions
-    resulted from poor translation. 
-
-
-    Research into al-Jāḥiẓ’s text so far has explored its discussion of
-    anthropomorphism and its potential impact on Saʿadya Gaon’s Bible
-    translation of the Hebrew Bible, but has left open the translation source of
-    the longest passage al-Jāḥiẓ quotes, Isaiah 42:10–16. Although it has
-    earlier been suggested that the translation of this passage ultimately stems
-    from the Peshiṭṭa Syriac version, this study compares al-Jāḥiẓ’s text to the
-    Hebrew, Syriac, and other versions, and demonstrates that the cited
-    translation must have been made from the Hebrew. It also examines the
-    translation techniques observable in the passage, showing a more
-    Arabo-centric approach than typically attested in early non-Saʿadyanic
-    versions. The study concludes (1) that as a Muslim polemicist, al-Jāḥiẓ had
-    real contact with the Jewish community and its texts, and (2) that his
-    quotation evidences a pre-Saʿadyanic attempt to translate the Bible from
-    Hebrew into Arabic using a less literal approach than is previously
-    attested.
+  abstract: "One of the earliest Muslim authors to make use of biblical material translated
+    into Arabic was ʿAmr b. Baḥr al-Jāḥiẓ (d. 868/9), who in his “Refutation of Christians”
+    (Al-Radd ʿalā al-Naṣārā), attempts to discredit Jewish Arabic translations of
+    the Old Testament as a source for Christian arguments that Jesus was the Son of
+    God. His position assumes two distinctive points regarding scriptural texts: (1)
+    that the text of the extant Hebrew Bible was trustworthy but that the Christian
+    Gospels were not, and (2) that the anthropomorphizing content of existing Jewish
+    versions resulted from poor translation. \n\nResearch into al-Jāḥiẓ’s text so
+    far has explored its discussion of anthropomorphism and its potential impact on
+    Saʿadya Gaon’s Bible translation of the Hebrew Bible, but has left open the translation
+    source of the longest passage al-Jāḥiẓ quotes, Isaiah 42:10–16. Although it has
+    earlier been suggested that the translation of this passage ultimately stems from
+    the Peshiṭṭa Syriac version, this study compares al-Jāḥiẓ’s text to the Hebrew,
+    Syriac, and other versions, and demonstrates that the cited translation must have
+    been made from the Hebrew. It also examines the translation techniques observable
+    in the passage, showing a more Arabo-centric approach than typically attested
+    in early non-Saʿadyanic versions. The study concludes (1) that as a Muslim polemicist,
+    al-Jāḥiẓ had real contact with the Jewish community and its texts, and (2) that
+    his quotation evidences a pre-Saʿadyanic attempt to translate the Bible from Hebrew
+    into Arabic using a less literal approach than is previously attested."
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonMidNinthCenturyArabicTranslation2017
   collection-number: '5'
   collection-title: Biblia Arabica
-  container-title: >-
-    Senses of Scripture, Treasures of Tradition: The Bible in Arabic among Jews,
-    Christians and Muslims
+  container-title: 'Senses of Scripture, Treasures of Tradition: The Bible in Arabic
+    among Jews, Christians and Muslims'
   editor:
-    - family: Hjälm
-      given: Miriam Lindgren
+  - family: Hjälm
+    given: Miriam Lindgren
   issued:
-    - year: 2017
+  - year: 2017
   language: en
   page: 327–369
   publisher: Brill
@@ -937,103 +922,88 @@ references:
   title: A Mid-Ninth-Century Arabic Translation of Isaiah? Glimpses from al-Jāḥiẓ
   type: chapter
   URL: https://doi.org/10.1163/9789004347403_015
-
+  chicago-bibliography: "“Academia.Edu.” Accessed April 1, 2017. https://www.academia.edu/30958504/A_Mid-Ninth-Century_Arabic_Translation_of_Isaiah_Glimpses_from_al-Jahiz."
 - id: gibsonModelingBodyLiterature[acceptedrevisionsinpreparation]
-  abstract: >-
-    The New Handbook of Syriac Literature (NHSL) is a born-digital TEI-encoded
-    reference work for the study of Syriac literature. The first volume,
-    Bibliotheca Hagiographica Syriaca Electronica, was published by Syriaca.org
-    in 2016 using a simple TEI schema to describe a single genre (hagiography)
-    (Saint-Laurent et al. 2016; see also Saint-Laurent 2016, Zanetti 2016). Past
-    TEI-encoding practice has focused on describing specific manuscripts or
-    creating editions of works. By contrast, the NHSL seeks to describe abstract
-    or conceptual works (including unpublished ones) and to relate them to
-    people, places, and other works, as well as to the manuscripts, editions,
-    and translations that embody them. Two key features of this encoding model
-    include using for description of works and fully leveraging @source for
-    scholarly citations. In preparation for expanding the NHSL to include other
-    genres, Syriaca.org is revising the TEI schema used for hagiographic works.
-    Among other revisions, the new model will employ RDF classes and properties
-    as @type and @ref values, respectively, in order to aid RDF serialization.
-    The authors actively seek feedback, suggestions, and criticism concerning
-    this revised schema.
+  abstract: The New Handbook of Syriac Literature (NHSL) is a born-digital TEI-encoded
+    reference work for the study of Syriac literature. The first volume, Bibliotheca
+    Hagiographica Syriaca Electronica, was published by Syriaca.org in 2016 using
+    a simple TEI schema to describe a single genre (hagiography) (Saint-Laurent et
+    al. 2016; see also Saint-Laurent 2016, Zanetti 2016). Past TEI-encoding practice
+    has focused on describing specific manuscripts or creating editions of works.
+    By contrast, the NHSL seeks to describe abstract or conceptual works (including
+    unpublished ones) and to relate them to people, places, and other works, as well
+    as to the manuscripts, editions, and translations that embody them. Two key features
+    of this encoding model include using for description of works and fully leveraging
+    @source for scholarly citations. In preparation for expanding the NHSL to include
+    other genres, Syriaca.org is revising the TEI schema used for hagiographic works.
+    Among other revisions, the new model will employ RDF classes and properties as
+    @type and @ref values, respectively, in order to aid RDF serialization. The authors
+    actively seek feedback, suggestions, and criticism concerning this revised schema.
   author:
-    - family: Gibson
-      given: Nathan P.
-    - family: Michelson
-      given: David A.
+  - family: Gibson
+    given: Nathan P.
+  - family: Michelson
+    given: David A.
   citation-key: gibsonModelingBodyLiterature[acceptedrevisionsinpreparation]
   container-title: Journal of the Text Encoding Initiative
   DOI: 10.17613/M6V67M
   ISSN: 2162-5603
   issued:
-    - literal: '[accepted, revisions in preparation]'
+  - literal: "[accepted, revisions in preparation]"
   license: CC-BY 4.0
   source: hcommons.org
   title: 'Modeling a Body of Literature in TEI: The New Handbook of Syriac Literature'
   title-short: Modeling a Body of Literature in TEI
   type: article-journal
   URL: http://dx.doi.org/10.17613/M6V67M
-
+  chicago-bibliography: "“Academia.Edu.” Accessed April 1, 2017. https://www.academia.edu/29147134/From_manuscript_catalogues_to_a_handbook_of_Syriac_literature_Modeling_an_infrastructure_for_Syriaca.org."
 - id: gibsonModelingBodyLiterature2016
-  abstract: >-
-    The Syriaca.org project publishes born-digital reference works in TEI.
-    Bibliotheca Hagiographica Syriaca Electronica [http://syriaca.org/bhse] is a
-    set of metadata records describing a particular genre of Middle Eastern
-    literature: saints’ lives written in the Syriac language. This poster
-    describes (1) the process of transforming a legacy (tabular) dataset into
-    TEI and (2) the decisions made in creating a schema for encoding and
-    modeling metadata about a body of literature. Syriaca.org is now revising
-    this TEI schema for an expanded project which will describe all of Syriac
-    literature, a corpus which has had little previous scholarly classification
-    or description. 
-
-
-    Syriaca.org considered a number of methodological questions which arose from
-    using TEI to model “works” (in the sense defined by FRBR
-    [http://archive.ifla.org/VII/s13/frbr/frbr_current3.htm#3.2]). While TEI is
-    frequently used to represent the content of specific manuscripts (or other
-    text-bearing objects) and create editions of works, we found that the use of
-    TEI for born-digital metadata records was less common. We found a number of
-    advantages in using TEI over other metadata or bibliographic formats (e.g.
-    MARC, Dublin Core). In addition, we made encoding decisions about how to
-    apply the TEI guidelines to the following questions:
-
-    How can TEI model relationships among works, especially different recensions
-    of the same work or whole-to-part relationships?
-
-    How can TEI express the relationships of works to their manuscript
-    witnesses, editions, and translations?
-
-    How can TEI express the relationship of works to persons with alleged
-    authorial or editorial responsibility for it, whether genuine, pseudonymous,
-    anonymous, or attributed?
-
-    This poster presents our preliminary schema for modeling a body of
-    literature in TEI, for which the authors actively seek feedback,
-    suggestions, and criticism. We are particularly interested in learning from
-    similar projects which have used TEI to map or model metadata about large
-    and heterogenous literary canons.
+  abstract: "The Syriaca.org project publishes born-digital reference works in TEI.
+    Bibliotheca Hagiographica Syriaca Electronica [http://syriaca.org/bhse] is a set
+    of metadata records describing a particular genre of Middle Eastern literature:
+    saints’ lives written in the Syriac language. This poster describes (1) the process
+    of transforming a legacy (tabular) dataset into TEI and (2) the decisions made
+    in creating a schema for encoding and modeling metadata about a body of literature.
+    Syriaca.org is now revising this TEI schema for an expanded project which will
+    describe all of Syriac literature, a corpus which has had little previous scholarly
+    classification or description. \n\nSyriaca.org considered a number of methodological
+    questions which arose from using TEI to model “works” (in the sense defined by
+    FRBR [http://archive.ifla.org/VII/s13/frbr/frbr_current3.htm#3.2]). While TEI
+    is frequently used to represent the content of specific manuscripts (or other
+    text-bearing objects) and create editions of works, we found that the use of TEI
+    for born-digital metadata records was less common. We found a number of advantages
+    in using TEI over other metadata or bibliographic formats (e.g. MARC, Dublin Core).
+    In addition, we made encoding decisions about how to apply the TEI guidelines
+    to the following questions:\nHow can TEI model relationships among works, especially
+    different recensions of the same work or whole-to-part relationships?\nHow can
+    TEI express the relationships of works to their manuscript witnesses, editions,
+    and translations?\nHow can TEI express the relationship of works to persons with
+    alleged authorial or editorial responsibility for it, whether genuine, pseudonymous,
+    anonymous, or attributed?\nThis poster presents our preliminary schema for modeling
+    a body of literature in TEI, for which the authors actively seek feedback, suggestions,
+    and criticism. We are particularly interested in learning from similar projects
+    which have used TEI to map or model metadata about large and heterogenous literary
+    canons."
   author:
-    - family: Gibson
-      given: Nathan P.
-    - family: Michelson
-      given: David A.
+  - family: Gibson
+    given: Nathan P.
+  - family: Michelson
+    given: David A.
   citation-key: gibsonModelingBodyLiterature2016
   event-title: TEI Conference 2016
   issued:
-    - year: 2016
-      month: 9
-      day: 29
+  - year: 2016
+    month: 9
+    day: 29
   publisher-place: Vienna, Austria
   title: 'Modeling a Body of Literature in TEI: The New Handbook of Syriac Literature'
   type: paper-conference
   URL: http://tei2016.acdh.oeaw.ac.at/poster-gallery
-
+  chicago-bibliography: "“Academia.Edu.” Accessed April 1, 2017. https://www.academia.edu/29147134/From_manuscript_catalogues_to_a_handbook_of_Syriac_literature_Modeling_an_infrastructure_for_Syriaca.org."
 - id: gibsonModelingBodyLiterature2016a
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonModelingBodyLiterature2016a
   event-place: Vienna, Austria
   event-title: TEI Conference
@@ -1041,16 +1011,16 @@ references:
     literal: 2016-09-26/30
   language: en
   note: 'Presenters: _:n151'
-  title: >-
-    Modeling a Body of Literature in TEI: Bibliotheca Hagiographica Syriaca
-    Electronica
+  title: 'Modeling a Body of Literature in TEI: Bibliotheca Hagiographica Syriaca
+    Electronica'
   type: speech
   URL: http://tei2016.acdh.oeaw.ac.at/poster-gallery
-
+  chicago-bibliography: "———. “Modeling a Body of Literature in TEI: Bibliotheca Hagiographica
+    Syriaca Electronica.” September 26, 2016. http://tei2016.acdh.oeaw.ac.at/poster-gallery."
 - id: gibsonMountainsPlainsGeographical2011
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonMountainsPlainsGeographical2011
   event-place: Duke University
   event-title: 'Sixth North American Syriac Symposium: Syriac Encounters'
@@ -1060,90 +1030,87 @@ references:
   note: 'Presenters: _:n200'
   title: 'Mountains and Plains: Geographical Exegesis in ''On Solitaries'''
   type: speech
-
+  chicago-bibliography: "———. “Mountains and Plains: Geographical Exegesis in ‘On
+    Solitaries.’” June 26, 2011."
 - id: gibsonMultireligiousMultilingualKnowledge2021
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonMultireligiousMultilingualKnowledge2021
-  event-place: >-
-    Institute of Near and Middle Eastern Studies,
-    Ludwig-Maximilians-Universität, Munich
-  event-title: >-
-    Multilingual Societies and Power: Linguistic Diversity, Multigraphism, and
-    Endangered Languages
+  event-place: Institute of Near and Middle Eastern Studies, Ludwig-Maximilians-Universität,
+    Munich
+  event-title: 'Multilingual Societies and Power: Linguistic Diversity, Multigraphism,
+    and Endangered Languages'
   issued:
-    - year: 2021
-      month: 5
-      day: 18
-  title: >-
-    Multireligious & Multilingual Knowledge Communities in Ibn Abī Uṣaybiʿa's
+  - year: 2021
+    month: 5
+    day: 18
+  title: Multireligious & Multilingual Knowledge Communities in Ibn Abī Uṣaybiʿa's
     History of Physicians An Exploration Using Digital Tools
   type: speech
   URL: https://tinyurl.com/gibson210518
-
+  chicago-bibliography: "———. “Multireligious & Multilingual Knowledge Communities
+    in Ibn Abī Uṣaybiʿa’s History of Physicians An Exploration Using Digital Tools.”
+    May 18, 2021. https://tinyurl.com/gibson210518."
 - id: gibsonNeighborhoodBiblesCirculation2024
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonNeighborhoodBiblesCirculation2024
   event-place: Goethe University Frankfurt
-  event-title: >-
-    Nachbarschaften: Religiöse, kulturelle, soziologische und politische
-    Perspektiven
+  event-title: 'Nachbarschaften: Religiöse, kulturelle, soziologische und politische
+    Perspektiven'
   genre: invited
   issued:
-    - year: 2024
-      month: 4
-      day: 29
+  - year: 2024
+    month: 4
+    day: 29
   language: en
-  title: >-
-    Neighborhood Bibles: The Circulation of Tanakh/OT Versions Among Arabic
-    Muslim Writers (8th–10th Century)
+  title: 'Neighborhood Bibles: The Circulation of Tanakh/OT Versions Among Arabic
+    Muslim Writers (8th–10th Century)'
   type: speech
   URL: https://npgibson.com/s/neighborhood
-
+  chicago-bibliography: "“Full Text PDF.” Accessed March 18, 2024. http://publikationen.ub.uni-frankfurt.de/files/80437/09_Gibson_Duecker.pdf."
 - id: gibsonNetworksBiblicalScholarship2017
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonNetworksBiblicalScholarship2017
   event-place: Tel Aviv
   event-title: The Bible in Arabic International Conference
   issued:
-    - year: 2017
-      month: 11
-      day: 7
+  - year: 2017
+    month: 11
+    day: 7
   language: en
   note: 'Presenters: _:n118'
-  title: >-
-    Networks of Biblical Scholarship: Jewish, Christian, and Muslim
-    Collaboration in Biographical Literature
+  title: 'Networks of Biblical Scholarship: Jewish, Christian, and Muslim Collaboration
+    in Biographical Literature'
   type: speech
   URL: https://tinyurl.com/gibson171107
-
+  chicago-bibliography: "“Balisage.” Accessed March 31, 2017. http://www.balisage.net/Proceedings/vol16/html/Gibson01/BalisageVol16-Gibson01.html."
 - id: gibsonNewHandbookSyriac2016
   citation-key: gibsonNewHandbookSyriac2016
   editor:
-    - family: Gibson
-      given: Nathan P.
-    - family: Michelson
-      given: David A.
-    - family: Saint-Laurent
-      given: Jeanne-Nicole Mellon
+  - family: Gibson
+    given: Nathan P.
+  - family: Michelson
+    given: David A.
+  - family: Saint-Laurent
+    given: Jeanne-Nicole Mellon
   issued:
-    - year: 2016
-    - year: 0
+  - year: 2016
+  - year: 0
   publisher: The Syriac Reference Portal
   publisher-place: Syriaca.org
   title: The New Handbook of Syriac Literature
   type: book
   URL: http://syriaca.org/nhsl
-
+  chicago-bibliography: "“Academia.Edu.” Accessed April 1, 2017. https://www.academia.edu/29147134/From_manuscript_catalogues_to_a_handbook_of_Syriac_literature_Modeling_an_infrastructure_for_Syriaca.org."
 - id: gibsonNewHandbookSyriac2016a
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonNewHandbookSyriac2016a
   event-place: Rome, Italy
   event-title: XII Symposium Syriacum
@@ -1151,73 +1118,68 @@ references:
     literal: 2016-08-19/21
   language: en
   note: 'Presenters: _:n160'
-  title: >-
-    The New Handbook of Syriac Literature: Bringing Syriac Literature into the
-    Digital Landscape
+  title: 'The New Handbook of Syriac Literature: Bringing Syriac Literature into the
+    Digital Landscape'
   type: speech
-
+  chicago-bibliography: "———. “The New Handbook of Syriac Literature: Bringing Syriac
+    Literature into the Digital Landscape.” August 19, 2016."
 - id: gibsonPhysiciansPhilosophersPolymaths2017
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonPhysiciansPhilosophersPolymaths2017
   event-place: Munich
   event-title: Munich Center for Islamic Studies (MZIS)
   issued:
-    - year: 2017
-      month: 12
-      day: 12
+  - year: 2017
+    month: 12
+    day: 12
   language: en
   note: 'Presenters: _:n114'
-  title: >-
-    Physicians, Philosophers, and Polymaths: New Research on Christian
-    Intellectuals during the 'Golden Age' of Islam
+  title: 'Physicians, Philosophers, and Polymaths: New Research on Christian Intellectuals
+    during the ''Golden Age'' of Islam'
   type: speech
-
+  chicago-bibliography: "“Balisage.” Accessed March 31, 2017. http://www.balisage.net/Proceedings/vol16/html/Gibson01/BalisageVol16-Gibson01.html."
 - id: gibsonReadingHistoryPolemic2015
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonReadingHistoryPolemic2015
   event-place: Munich, Germany
-  event-title: >-
-    Research Colloquium in Arabic, Islamic, and Judaic Studies of the Institute
+  event-title: Research Colloquium in Arabic, Islamic, and Judaic Studies of the Institute
     of Near and Middle Eastern Studies
   issued:
-    - year: 2015
-      month: 10
-      day: 13
+  - year: 2015
+    month: 10
+    day: 13
   language: en
   note: 'Presenters: _:n180'
-  title: >-
-    Reading History from Polemic: Al-Jāḥiẓ's Portrayal of Christians in Abbasid
-    Society
+  title: 'Reading History from Polemic: Al-Jāḥiẓ''s Portrayal of Christians in Abbasid
+    Society'
   type: speech
-
+  chicago-bibliography: "———. “Reading History from Polemic: Al-Jāḥiẓ’s Portrayal
+    of Christians in Abbasid Society.” October 13, 2015."
 - id: gibsonReadingLinesMining2017
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonReadingLinesMining2017
   event-place: Munich, Germany
-  event-title: >-
-    Rhetorik oder Realität, Graduate School Distant Worlds,
-    Ludwig-Maximilians-Universität
+  event-title: Rhetorik oder Realität, Graduate School Distant Worlds, Ludwig-Maximilians-Universität
   issued:
-    - year: 2017
-      month: 4
-      day: 25
+  - year: 2017
+    month: 4
+    day: 25
   language: en
   note: 'Presenters: _:n133'
-  title: >-
-    Reading between the Lines: Mining History from Polemic using Argumentation
-    Analysis
+  title: 'Reading between the Lines: Mining History from Polemic using Argumentation
+    Analysis'
   type: speech
-
+  chicago-bibliography: "“Balisage.” Accessed March 31, 2017. http://www.balisage.net/Proceedings/vol16/html/Gibson01/BalisageVol16-Gibson01.html."
 - id: gibsonRhetoricFulcrumPower2016
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonRhetoricFulcrumPower2016
   event-place: Munich, Germany
   event-title: Research Workshop on Forms of Violence
@@ -1225,166 +1187,184 @@ references:
     literal: 2016-04-08/09
   language: en
   note: 'Presenters: _:n172'
-  title: >-
-    Rhetoric as a Fulcrum of Power: How a Writer's Words Helped the Caliph Turn
-    Program into Practice
+  title: 'Rhetoric as a Fulcrum of Power: How a Writer''s Words Helped the Caliph
+    Turn Program into Practice'
   type: speech
-
+  chicago-bibliography: "———. “Rhetoric as a Fulcrum of Power: How a Writer’s Words
+    Helped the Caliph Turn Program into Practice.” April 8, 2016."
 - id: gibsonRobustDigitalApproaches2017
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonRobustDigitalApproaches2017
   event-place: Chicago, Ill.
   event-title: North American Patristics Society Annual Meeting
   issued:
-    - year: 2017
-      month: 5
-      day: 27
+  - year: 2017
+    month: 5
+    day: 27
   language: en
   note: 'Presenters: _:n128'
   title: 'Robust Digital Approaches to Literary History: The Case of Syriac'
   type: speech
   URL: https://goo.gl/4MYc2X
-
+  chicago-bibliography: "“Balisage.” Accessed March 31, 2017. http://www.balisage.net/Proceedings/vol16/html/Gibson01/BalisageVol16-Gibson01.html."
 - id: gibsonScholarConvertsHubsKnowledge2018
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonScholarConvertsHubsKnowledge2018
   event-place: Munich
-  event-title: >-
-    Institute of Near and Middle Eastern Studies Research Workshop
-    "Conversions---Changing Sides"
+  event-title: Institute of Near and Middle Eastern Studies Research Workshop "Conversions---Changing
+    Sides"
   issued:
-    - year: 2018
-      month: 6
-      day: 12
+  - year: 2018
+    month: 6
+    day: 12
   language: en
   note: 'Presenters: _:n109'
-  title: >-
-    Scholar-Converts as Hubs of Knowledge Exchange in the Medieval Islamicate
+  title: Scholar-Converts as Hubs of Knowledge Exchange in the Medieval Islamicate
     World
   type: speech
   URL: https://tinyurl.com/gibson180612
-
+  chicago-bibliography: 'Dücker, Malte. “‘Je größer die Liebe und Nähe (zwischen Nachbarn),
+    desto mehr Hass und Entfremdung kann es geben.’ : Interview zur Berufung von Prof.
+    Dr. Nathan Gibson.” Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universität
+    Frankfurt am Main 3 (2023): 32–33. https://doi.org/10.21248/gups.80437.'
 - id: gibsonSocialLivesPolemicists2023
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonSocialLivesPolemicists2023
   event-place: Goethe University Frankfurt
   genre: Inaugural Lecture
   issued:
-    - year: 2023
-      month: 11
-      day: 1
+  - year: 2023
+    month: 11
+    day: 1
   language: en
   title: The Social Lives of Polemicists
   type: speech
   URL: https://npgibson.com/s/social-lives
-
+  chicago-bibliography: 'Dücker, Malte. “‘Je größer die Liebe und Nähe (zwischen Nachbarn),
+    desto mehr Hass und Entfremdung kann es geben.’ : Interview zur Berufung von Prof.
+    Dr. Nathan Gibson.” Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universität
+    Frankfurt am Main 3 (2023): 32–33. https://doi.org/10.21248/gups.80437.'
 - id: gibsonStateArabicManuscript2018
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonStateArabicManuscript2018
   event-place: Athens
   event-title: Sinai Library Digitization Project Scholars Meeting
   issued:
-    - year: 2018
-      month: 10
-      day: 5
+  - year: 2018
+    month: 10
+    day: 5
   language: en
   note: 'Presenters: _:n104'
   title: State of Arabic Manuscript Description
   type: speech
   URL: https://tinyurl.com/ba181005
-
+  chicago-bibliography: 'Dücker, Malte. “‘Je größer die Liebe und Nähe (zwischen Nachbarn),
+    desto mehr Hass und Entfremdung kann es geben.’ : Interview zur Berufung von Prof.
+    Dr. Nathan Gibson.” Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universität
+    Frankfurt am Main 3 (2023): 32–33. https://doi.org/10.21248/gups.80437.'
 - id: gibsonTEIManuscriptDescription2019
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonTEIManuscriptDescription2019
   event-place: Fréjus
   event-title: manuSciences '19 French German Summer School
   issued:
-    - year: 2019
-      month: 3
-      day: 10
+  - year: 2019
+    month: 3
+    day: 10
   language: en
   note: 'Presenters: _:n100'
   title: TEI Manuscript Description Workflows for Small Projects
   type: speech
-
+  chicago-bibliography: 'Dücker, Malte. “‘Je größer die Liebe und Nähe (zwischen Nachbarn),
+    desto mehr Hass und Entfremdung kann es geben.’ : Interview zur Berufung von Prof.
+    Dr. Nathan Gibson.” Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universität
+    Frankfurt am Main 3 (2023): 32–33. https://doi.org/10.21248/gups.80437.'
 - id: gibsonThinkingTYaReorienting2019
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonThinkingTYaReorienting2019
   event-place: Victoria
   event-title: Right2Left Workshop, Digital Humanities Summer Institute
   issued:
-    - year: 2019
-      month: 6
-      day: 8
+  - year: 2019
+    month: 6
+    day: 8
   language: en
   note: 'Presenters: _:n90'
-  title: >-
-    Thinking in ⅃TЯ: Reorienting the Directional Assumptions of Global Digital
-    Scholarship
+  title: 'Thinking in ⅃TЯ: Reorienting the Directional Assumptions of Global Digital
+    Scholarship'
   type: speech
   URL: https://doi.org/10.17613/3vws-5s29
-
+  chicago-bibliography: 'Dücker, Malte. “‘Je größer die Liebe und Nähe (zwischen Nachbarn),
+    desto mehr Hass und Entfremdung kann es geben.’ : Interview zur Berufung von Prof.
+    Dr. Nathan Gibson.” Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universität
+    Frankfurt am Main 3 (2023): 32–33. https://doi.org/10.21248/gups.80437.'
 - id: gibsonTransculturationNeoculturationJewish2023
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonTransculturationNeoculturationJewish2023
   event-place: Hochschule für Jüdische Studien/Universität Heidelberg
   event-title: Theorizing Jewish-Arab Transculturation
   issued:
-    - year: 2023
-      month: 2
-      day: 8
+  - year: 2023
+    month: 2
+    day: 8
   title: Transculturation & Neoculturation among Jewish Physicians in Fatimid Cairo
   type: speech
   URL: http://npgibson.com/s/transculturation
-
+  chicago-bibliography: 'Dücker, Malte. “‘Je größer die Liebe und Nähe (zwischen Nachbarn),
+    desto mehr Hass und Entfremdung kann es geben.’ : Interview zur Berufung von Prof.
+    Dr. Nathan Gibson.” Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universität
+    Frankfurt am Main 3 (2023): 32–33. https://doi.org/10.21248/gups.80437.'
 - id: gibsonTurningFriendsEnemies2016
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonTurningFriendsEnemies2016
   event-place: Bucharest
-  event-title: >-
-    Faith and Community around the Mediterranean in Late Antiquity and the
-    Middle Ages
+  event-title: Faith and Community around the Mediterranean in Late Antiquity and
+    the Middle Ages
   issued:
     literal: 2016-03-07/08
-  title: >-
-    Turning Friends into Enemies and Enemies into Friends: Al-Jahiz's Attempt to
-    Redefine Religious Identity in Ninth-Century Iraq
+  title: 'Turning Friends into Enemies and Enemies into Friends: Al-Jahiz''s Attempt
+    to Redefine Religious Identity in Ninth-Century Iraq'
   type: speech
-
+  chicago-bibliography: "———. “Turning Friends into Enemies and Enemies into Friends:
+    Al-Jahiz’s Attempt to Redefine Religious Identity in Ninth-Century Iraq.” March
+    7, 2016."
 - id: gibsonUsaybianetDataStructure2023
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonUsaybianetDataStructure2023
   event-place: Ludwig-Maximilians Universität, Munich
   event-title: Digital Humanities Workshop for Judaic Studies
   issued:
-    - year: 2023
-      month: 1
-      day: 17
+  - year: 2023
+    month: 1
+    day: 17
   title: 'Usaybia.net: Data Structure and Tools'
   type: speech
-
+  chicago-bibliography: 'Dücker, Malte. “‘Je größer die Liebe und Nähe (zwischen Nachbarn),
+    desto mehr Hass und Entfremdung kann es geben.’ : Interview zur Berufung von Prof.
+    Dr. Nathan Gibson.” Jahrbuch des Fachbereichs Evangelische Theologie der Goethe-Universität
+    Frankfurt am Main 3 (2023): 32–33. https://doi.org/10.21248/gups.80437.'
 - id: gibsonWhatDidAlJahiz2016
   author:
-    - family: Gibson
-      given: Nathan P.
+  - family: Gibson
+    given: Nathan P.
   citation-key: gibsonWhatDidAlJahiz2016
   event-place: Rome, Italy
   event-title: X Arab-Christian Congress
@@ -1392,431 +1372,509 @@ references:
     literal: 2016-08-21/24
   language: en
   note: 'Presenters: _:n156'
-  title: >-
-    What Did al-Jāḥiẓ Know about Christians? Terms, Doctrines, and Practices in
-    the Works of a IXth c. Muslim
+  title: What Did al-Jāḥiẓ Know about Christians? Terms, Doctrines, and Practices
+    in the Works of a IXth c. Muslim
   type: speech
-
+  chicago-bibliography: "———. “What Did Al-Jāḥiẓ Know about Christians? Terms, Doctrines,
+    and Practices in the Works of a IXth c. Muslim.” August 21, 2016."
 - id: goetheuniversitaetGoetheUniStelltSich2025
   accessed:
-    - year: 2025
-      month: 5
-      day: 26
+  - year: 2025
+    month: 5
+    day: 26
   citation-key: goetheuniversitaetGoetheUniStelltSich2025
   dimensions: '2:40'
   director:
-    - literal: GoetheUniversitaet
+  - literal: GoetheUniversitaet
   issued:
-    - year: 2025
-      month: 5
-      day: 16
+  - year: 2025
+    month: 5
+    day: 16
   source: YouTube
   title: Die Goethe-Uni stellt sich vor
   type: motion_picture
   URL: https://www.youtube.com/watch?v=7UJjxjlSKDU
-
+  chicago-bibliography: GoetheUniversitaet. Die Goethe-Uni Stellt Sich Vor, 2025.
+    https://www.youtube.com/watch?v=7UJjxjlSKDU.
 - id: goetheuniversitaetNewlyAppointedProf2024
-  abstract: >-
-    Prof. Dr.  Nathan Gibson is Professor of Religious Studies with a focus on
-    Jewish-Islamic relations at the Faculty of Protestant Theology since March
-    2023. His research focuses on the social dimensions of interreligious
-    exchange, be it in relation to historic scientific cooperation, theological
-    argumentation or scriptural traditions. In this context, he is actively
-    involved in the use of digital tools for analysing and presenting humanities
-    data.
+  abstract: |-
+    Prof. Dr.  Nathan Gibson is Professor of Religious Studies with a focus on Jewish-Islamic relations at the Faculty of Protestant Theology since March 2023. His research focuses on the social dimensions of interreligious exchange, be it in relation to historic scientific cooperation, theological argumentation or scriptural traditions. In this context, he is actively involved in the use of digital tools for analysing and presenting humanities data.
 
-
-    Neuberufen: Prof. Dr. Nathan Gibson, Professor für Religionswissenschaft /
-    Prof. Dr. Nathan Gibson ist seit März 2023 Professor für
-    Religionswissenschaft mit dem Schwerpunkt jüdisch-islamische Beziehungen am
-    Fachbereich Evangelische Theologie. Sein Forschungsschwerpunkt liegt auf den
-    sozialen Dimensionen des interreligiösen Austauschs, sei es in Bezug auf die
-    historisch-wissenschaftliche Zusammenarbeit, die theologische Argumentation
-    oder die Schrifttraditionen. In diesem Zusammenhang befasst er sich aktiv
-    mit dem Einsatz digitaler Werkzeuge für die Analyse und Darstellung
-    geisteswissenschaftlicher Daten.
+    Neuberufen: Prof. Dr. Nathan Gibson, Professor für Religionswissenschaft / Prof. Dr. Nathan Gibson ist seit März 2023 Professor für Religionswissenschaft mit dem Schwerpunkt jüdisch-islamische Beziehungen am Fachbereich Evangelische Theologie. Sein Forschungsschwerpunkt liegt auf den sozialen Dimensionen des interreligiösen Austauschs, sei es in Bezug auf die historisch-wissenschaftliche Zusammenarbeit, die theologische Argumentation oder die Schrifttraditionen. In diesem Zusammenhang befasst er sich aktiv mit dem Einsatz digitaler Werkzeuge für die Analyse und Darstellung geisteswissenschaftlicher Daten.
   accessed:
-    - year: 2024
-      month: 3
-      day: 5
+  - year: 2024
+    month: 3
+    day: 5
   citation-key: goetheuniversitaetNewlyAppointedProf2024
   dimensions: '2:41'
   director:
-    - literal: GoetheUniversitaet
+  - literal: GoetheUniversitaet
   issued:
-    - year: 2024
-      month: 3
-      day: 4
+  - year: 2024
+    month: 3
+    day: 4
   source: YouTube
   title: 'Newly appointed: Prof. Dr. Nathan Gibson, Professor of Religious Studies'
   title-short: Newly appointed
   type: motion_picture
   URL: https://www.youtube.com/watch?v=GuUZvtPNc4U
-
+  chicago-bibliography: "———. Newly Appointed: Prof. Dr. Nathan Gibson, Professor
+    of Religious Studies, 2024. https://www.youtube.com/watch?v=GuUZvtPNc4U."
 - id: InterviewDrNathan2021
-  abstract: >-
-    This is the first part of a series of posts by the Digital Orientalist’s
-    Syriac Studies Editor, Ephrem Ishac, based on an interview with Dr. Nathan
-    P. Gibson about Syriaca.org. Later posts on the t…
+  abstract: This is the first part of a series of posts by the Digital Orientalist’s
+    Syriac Studies Editor, Ephrem Ishac, based on an interview with Dr. Nathan P.
+    Gibson about Syriaca.org. Later posts on the t…
   accessed:
-    - year: 2021
-      month: 9
-      day: 15
+  - year: 2021
+    month: 9
+    day: 15
   citation-key: InterviewDrNathan2021
   container-title: The Digital Orientalist
   issued:
-    - year: 2021
-      month: 9
-      day: 14
+  - year: 2021
+    month: 9
+    day: 14
   language: en
   title: Interview with Dr. Nathan P. Gibson about Syriaca.org, Part 1
   type: post-weblog
-  URL: >-
-    https://digitalorientalist.com/2021/09/14/interview-with-dr-nathan-p-gibson-about-syriaca-org-part-1/
-
+  URL: https://digitalorientalist.com/2021/09/14/interview-with-dr-nathan-p-gibson-about-syriaca-org-part-1/
+  chicago-bibliography: "“Snapshot.” Accessed September 15, 2021. https://digitalorientalist.com/2021/09/14/interview-with-dr-nathan-p-gibson-about-syriaca-org-part-1/."
 - id: j.jacobUniversitaetTrifftGesellschaft2025
-  abstract: >-
-    Am 12. Februar 2025 waren Prof. Armina Omerika und Prof. Nathan Gibson
-    gemeinsam mit Studierenden des Seminars „Jüdisch-christlich-islamische
-    Begegnungen in digitalen Räumen“ auf Einladung zu Gast in der Evangelischen
-    Akademie Frankfurt. Nach einer theoretischen Einführung präsentierten
-    Studierende praktische Projekte in einer interaktiven Poster-Session.
-    Untersucht wurden unter anderem Sinnfluencer*innen und ihre Netzwerke,
-    Hashtags und ihre communitybildende […]
+  abstract: Am 12. Februar 2025 waren Prof. Armina Omerika und Prof. Nathan Gibson
+    gemeinsam mit Studierenden des Seminars „Jüdisch-christlich-islamische Begegnungen
+    in digitalen Räumen“ auf Einladung zu Gast in der Evangelischen Akademie Frankfurt.
+    Nach einer theoretischen Einführung präsentierten Studierende praktische Projekte
+    in einer interaktiven Poster-Session. Untersucht wurden unter anderem Sinnfluencer*innen
+    und ihre Netzwerke, Hashtags und ihre communitybildende […]
   accessed:
-    - year: 2025
-      month: 3
-      day: 14
+  - year: 2025
+    month: 3
+    day: 14
   author:
-    - family: j.jacob
-      given: ''
+  - family: j.jacob
+    given: ''
   citation-key: j.jacobUniversitaetTrifftGesellschaft2025
   container-title: Islam & Digitality
   issued:
-    - year: 2025
-      month: 2
-      day: 12
+  - year: 2025
+    month: 2
+    day: 12
   language: de-DE
-  title: >-
-    Universität trifft Gesellschaft: Studierende präsentieren Poster zu
-    interreligiösen Begegnungen in digitalen Räumen in der Evangelischen
-    Akademie Frankfurt
+  title: 'Universität trifft Gesellschaft: Studierende präsentieren Poster zu interreligiösen
+    Begegnungen in digitalen Räumen in der Evangelischen Akademie Frankfurt'
   title-short: Universität trifft Gesellschaft
   type: webpage
-  URL: >-
-    https://islamdigitality.com/de/universitaet-trifft-gesellschaft-studierende-praesentieren-poster-zu-interreligioesen-begegnungen-in-digitalen-raeumen-in-der-evangelischen-akademie-frankfurt/
-
+  URL: https://islamdigitality.com/de/universitaet-trifft-gesellschaft-studierende-praesentieren-poster-zu-interreligioesen-begegnungen-in-digitalen-raeumen-in-der-evangelischen-akademie-frankfurt/
+  chicago-bibliography: 'j.jacob. “Universität trifft Gesellschaft: Studierende präsentieren
+    Poster zu interreligiösen Begegnungen in digitalen Räumen in der Evangelischen
+    Akademie Frankfurt.” Islam & Digitality, February 12, 2025. https://islamdigitality.com/de/universitaet-trifft-gesellschaft-studierende-praesentieren-poster-zu-interreligioesen-begegnungen-in-digitalen-raeumen-in-der-evangelischen-akademie-frankfurt/.'
 - id: lohrScholarsServantsCaliphs2021
   author:
-    - family: Löhr
-      given: Nadine
-    - family: Gibson
-      given: Nathan P.
+  - family: Löhr
+    given: Nadine
+  - family: Gibson
+    given: Nathan P.
   citation-key: lohrScholarsServantsCaliphs2021
   event-place: University of Victoria (online)
   event-title: Digital Humanities Summer Institute
   genre: poster
   issued:
-    - year: 2021
-      month: 6
-      day: 18
+  - year: 2021
+    month: 6
+    day: 18
   language: en
   title: 'Scholars, Servants and Caliphs: Encoding Social Encounters from Biographies'
   type: speech
   URL: https://prezi.com/view/jGuqpCUCKNtfUKB2YrXN/
-
+  chicago-bibliography: 'Löhr, Nadine, and Nathan P. Gibson. “Scholars, Servants and
+    Caliphs: Encoding Social Encounters from Biographies.” Poster, June 18, 2021.
+    https://prezi.com/view/jGuqpCUCKNtfUKB2YrXN/.'
 - id: michelsonGuideSyriacAuthors2016
   citation-key: michelsonGuideSyriacAuthors2016
   collection-number: '2'
   collection-title: The Syriac Biographical Dictionary
   editor:
-    - family: Michelson
-      given: David A.
-    - family: Gibson
-      given: Nathan P.
+  - family: Michelson
+    given: David A.
+  - family: Gibson
+    given: Nathan P.
   issued:
-    - year: 2016
+  - year: 2016
   publisher: The Syriac Reference Portal
   publisher-place: Syriaca.org
   title: A Guide to Syriac Authors
   type: book
   URL: http://syriaca.org/authors
-
+  chicago-bibliography: 'Michelson, David A., and Nathan P. Gibson, eds. A Guide to
+    Syriac Authors. The Syriac Biographical Dictionary 2. Syriaca.org: The Syriac
+    Reference Portal, 2016. http://syriaca.org/authors.'
 - id: michelsonSyriacBiographicalDictionary2016
   citation-key: michelsonSyriacBiographicalDictionary2016
   editor:
-    - family: Michelson
-      given: David A.
-    - family: Saint-Laurent
-      given: Jeanne-Nicole Mellon
-    - family: Gibson
-      given: Nathan P.
-    - family: Schwartz
-      given: Daniel L.
+  - family: Michelson
+    given: David A.
+  - family: Saint-Laurent
+    given: Jeanne-Nicole Mellon
+  - family: Gibson
+    given: Nathan P.
+  - family: Schwartz
+    given: Daniel L.
   issued:
-    - year: 2016
-    - year: 0
+  - year: 2016
+  - year: 0
   publisher: The Syriac Reference Portal
   publisher-place: Syriaca.org
   title: The Syriac Biographical Dictionary
   type: book
   URL: http://syriaca.org/persons
-
+  chicago-bibliography: 'Michelson, David A., and Nathan P. Gibson, eds. A Guide to
+    Syriac Authors. The Syriac Biographical Dictionary 2. Syriaca.org: The Syriac
+    Reference Portal, 2016. http://syriaca.org/authors.'
 - id: plattInquiringBeelzebubTimothy2018
   author:
-    - family: Platt
-      given: Andrew
-    - family: Gibson
-      given: Nathan P.
+  - family: Platt
+    given: Andrew
+  - family: Gibson
+    given: Nathan P.
   citation-key: plattInquiringBeelzebubTimothy2018
   collection-number: '1'
   collection-title: Arabic Christianity
-  container-title: >-
-    Heirs of the Apostles: Studies on Arabic Christianity in Honor of Sidney H.
-    Griffith
+  container-title: 'Heirs of the Apostles: Studies on Arabic Christianity in Honor
+    of Sidney H. Griffith'
   editor:
-    - family: Bertaina
-      given: David
-    - family: Keating
-      given: Sandra Toenies
-    - family: Swanson
-      given: Mark N.
-    - family: Treiger
-      given: Alexander
+  - family: Bertaina
+    given: David
+  - family: Keating
+    given: Sandra Toenies
+  - family: Swanson
+    given: Mark N.
+  - family: Treiger
+    given: Alexander
   ISBN: 978-90-04-36758-6 978-90-04-38386-9
   issued:
-    - year: 2018
+  - year: 2018
   language: en
   note: 'OCLC: 1080940700'
   page: 254–281
   publisher: Brill
   publisher-place: Leiden
   source: Open WorldCat
-  title: >-
-    Inquiring of “Beelzebub”: Timothy and al-Jāḥiẓ on Christians in the ʿAbbāsid
-    Legal System
+  title: 'Inquiring of “Beelzebub”: Timothy and al-Jāḥiẓ on Christians in the ʿAbbāsid
+    Legal System'
   type: chapter
   URL: https://doi.org/10.1163/9789004383869_013
-
+  chicago-bibliography: 'Platt, Andrew, and Nathan P. Gibson. “Inquiring of ‘Beelzebub’:
+    Timothy and al-Jāḥiẓ on Christians in the ʿAbbāsid Legal System.” In Heirs of
+    the Apostles: Studies on Arabic Christianity in Honor of Sidney H. Griffith, edited
+    by David Bertaina, Sandra Toenies Keating, Mark N. Swanson, and Alexander Treiger,
+    254–81. Arabic Christianity 1. Leiden: Brill, 2018. https://doi.org/10.1163/9789004383869_013.'
 - id: pohlKnowledgeCollaborationJews2022
-  abstract: "This thematic section unearths several ways professionals from a variety of religious communities in the Near East collaborated with one another during the medieval period. Modern scholars of intellectual history have often attempted to trace connections in medieval texts across the religious spectrum, but it has been difficult to pin down the interpersonal circumstances behind these and other interactions. This is at least in part because scientific, philosophical, and theological treatises rarely refer to these personal relationships explicitly, leaving researchers to turn to other kinds of works for such details: biographies, chronicles, hagiographies, and documentary sources. But it then remains to come to terms with the historiographical perspectives of the authors of these works. For example, the authors of Arabic biographical dictionaries (á¹­abaqÄ\x81t literature) have provided some of the richest sources for person-to-person exchange in Near Eastern intellectual history, but they filter and taxonomize their subjects to focus on individuals, overwhelmingly men, who can be seen as formative for particular classes or categories (á¹­abaqÄ\x81t) of society. Disciplinary segmentation has made it especially difficult to answer questions such as how much Â»neutralÂ« space there was in interreligious knowledge exchange in the Near East, or whether fields such as medicine became Â»IslamicizedÂ« through the exclusion of non-Muslims in the teaching, study, or practice of the field. The authors of the research articles here (contributors to a virtual forum hosted by the BMBF-funded Â»Communities of KnowledgeÂ« project) take various approaches to these problems of explicating silent sources, interpreting historiographical constructions, and bridging disciplinary segmentation. Some put particular texts under the microscope, pointing out new evidence of specific interactions on the basis of close readings or the examination of texts in a palimpsested manuscript. Some zoom out slightly on these interactions by making fresh comparisons between sources in differing genres or languages. All focus on the interreligious dimensions of exchange and, wherever possible, on the interpersonal engagements that brought these about. Reports from two research projects complement these by taking macro-level approaches that involve multiple languages, several genres, and broad regions. Overall, this thematic collection highlights the interpersonal and collaborative aspects of work by Jews, Christians, Zoroastrians, and Muslims during the Abbasid caliphate (132-656 AH/750-1258 CE) with the aim of stimulating new research approaches that overcome previous genre limitations and disciplinary boundaries."
+  abstract: "This thematic section unearths several ways professionals from a variety
+    of religious communities in the Near East collaborated with one another during
+    the medieval period. Modern scholars of intellectual history have often attempted
+    to trace connections in medieval texts across the religious spectrum, but it has
+    been difficult to pin down the interpersonal circumstances behind these and other
+    interactions. This is at least in part because scientific, philosophical, and
+    theological treatises rarely refer to these personal relationships explicitly,
+    leaving researchers to turn to other kinds of works for such details: biographies,
+    chronicles, hagiographies, and documentary sources. But it then remains to come
+    to terms with the historiographical perspectives of the authors of these works.
+    For example, the authors of Arabic biographical dictionaries (á¹­abaqÄ\x81t literature)
+    have provided some of the richest sources for person-to-person exchange in Near
+    Eastern intellectual history, but they filter and taxonomize their subjects to
+    focus on individuals, overwhelmingly men, who can be seen as formative for particular
+    classes or categories (á¹­abaqÄ\x81t) of society. Disciplinary segmentation has
+    made it especially difficult to answer questions such as how much Â»neutralÂ«
+    space there was in interreligious knowledge exchange in the Near East, or whether
+    fields such as medicine became Â»IslamicizedÂ« through the exclusion of non-Muslims
+    in the teaching, study, or practice of the field. The authors of the research
+    articles here (contributors to a virtual forum hosted by the BMBF-funded Â»Communities
+    of KnowledgeÂ« project) take various approaches to these problems of explicating
+    silent sources, interpreting historiographical constructions, and bridging disciplinary
+    segmentation. Some put particular texts under the microscope, pointing out new
+    evidence of specific interactions on the basis of close readings or the examination
+    of texts in a palimpsested manuscript. Some zoom out slightly on these interactions
+    by making fresh comparisons between sources in differing genres or languages.
+    All focus on the interreligious dimensions of exchange and, wherever possible,
+    on the interpersonal engagements that brought these about. Reports from two research
+    projects complement these by taking macro-level approaches that involve multiple
+    languages, several genres, and broad regions. Overall, this thematic collection
+    highlights the interpersonal and collaborative aspects of work by Jews, Christians,
+    Zoroastrians, and Muslims during the Abbasid caliphate (132-656 AH/750-1258 CE)
+    with the aim of stimulating new research approaches that overcome previous genre
+    limitations and disciplinary boundaries."
   accessed:
-    - year: 2022
-      month: 12
-      day: 1
+  - year: 2022
+    month: 12
+    day: 1
   citation-key: pohlKnowledgeCollaborationJews2022
   container-title: Medieval Worlds
   DOI: 10.1553/medievalworlds_no17_2022
   editor:
-    - family: Pohl
-      given: Walter
-    - family: Gingrich
-      given: Andre
-    - family: Gibson
-      given: Nathan P.
+  - family: Pohl
+    given: Walter
+  - family: Gingrich
+    given: Andre
+  - family: Gibson
+    given: Nathan P.
   ISSN: 2412-3196
   issued:
-    - year: 2022
+  - year: 2022
   language: en
   note: '59'
   page: 59–216
   publisher: "Verlag der Ã\x96sterreichischen Akademie der Wissenschaften"
   publisher-place: Wien
-  title: >-
-    Knowledge Collaboration among Jews, Christians, Zoroastrians, and Muslims in
-    the Abbasid Near East I [thematic section]
+  title: Knowledge Collaboration among Jews, Christians, Zoroastrians, and Muslims
+    in the Abbasid Near East I [thematic section]
   type: article-journal
   URL: http://www.medievalworlds.net/?arp=0x003ddac8
   volume: '17'
-
+  chicago-bibliography: "———. “Knowledge Collaboration among Jews, Christians, Zoroastrians,
+    and Muslims in the Abbasid Near East: Introduction.” Medieval Worlds 17 (2022):
+    59–72. https://doi.org/10.1553/medievalworlds_no17_2022s59."
 - id: pohlKnowledgeCollaborationJews2023
-  abstract: "This thematic section unearths several ways professionals from a variety of religious communities in the Near East collaborated with one another during the medieval period. Modern scholars of intellectual history have often attempted to trace connections in medieval texts across the religious spectrum, but it has been difficult to pin down the interpersonal circumstances behind these and other interactions. This is at least in part because scientific, philosophical, and theological treatises rarely refer to these personal relationships explicitly, leaving researchers to turn to other kinds of works for such details: biographies, chronicles, hagiographies, and documentary sources. But it then remains to come to terms with the historiographical perspectives of the authors of these works. For example, the authors of Arabic biographical dictionaries (á¹­abaqÄ\x81t literature) have provided some of the richest sources for person-to-person exchange in Near Eastern intellectual history, but they filter and taxonomize their subjects to focus on individuals, overwhelmingly men, who can be seen as formative for particular classes or categories (á¹­abaqÄ\x81t) of society. Disciplinary segmentation has made it especially difficult to answer questions such as how much Â»neutralÂ« space there was in interreligious knowledge exchange in the Near East, or whether fields such as medicine became Â»IslamicizedÂ« through the exclusion of non-Muslims in the teaching, study, or practice of the field. The authors of the research articles here (contributors to a virtual forum hosted by the BMBF-funded Â»Communities of KnowledgeÂ« project) take various approaches to these problems of explicating silent sources, interpreting historiographical constructions, and bridging disciplinary segmentation. Some put particular texts under the microscope, pointing out new evidence of specific interactions on the basis of close readings or the examination of texts in a palimpsested manuscript. Some zoom out slightly on these interactions by making fresh comparisons between sources in differing genres or languages. All focus on the interreligious dimensions of exchange and, wherever possible, on the interpersonal engagements that brought these about. Reports from two research projects complement these by taking macro-level approaches that involve multiple languages, several genres, and broad regions. Overall, this thematic collection highlights the interpersonal and collaborative aspects of work by Jews, Christians, Zoroastrians, and Muslims during the Abbasid caliphate (132-656 AH/750-1258 CE) with the aim of stimulating new research approaches that overcome previous genre limitations and disciplinary boundaries."
+  abstract: "This thematic section unearths several ways professionals from a variety
+    of religious communities in the Near East collaborated with one another during
+    the medieval period. Modern scholars of intellectual history have often attempted
+    to trace connections in medieval texts across the religious spectrum, but it has
+    been difficult to pin down the interpersonal circumstances behind these and other
+    interactions. This is at least in part because scientific, philosophical, and
+    theological treatises rarely refer to these personal relationships explicitly,
+    leaving researchers to turn to other kinds of works for such details: biographies,
+    chronicles, hagiographies, and documentary sources. But it then remains to come
+    to terms with the historiographical perspectives of the authors of these works.
+    For example, the authors of Arabic biographical dictionaries (á¹­abaqÄ\x81t literature)
+    have provided some of the richest sources for person-to-person exchange in Near
+    Eastern intellectual history, but they filter and taxonomize their subjects to
+    focus on individuals, overwhelmingly men, who can be seen as formative for particular
+    classes or categories (á¹­abaqÄ\x81t) of society. Disciplinary segmentation has
+    made it especially difficult to answer questions such as how much Â»neutralÂ«
+    space there was in interreligious knowledge exchange in the Near East, or whether
+    fields such as medicine became Â»IslamicizedÂ« through the exclusion of non-Muslims
+    in the teaching, study, or practice of the field. The authors of the research
+    articles here (contributors to a virtual forum hosted by the BMBF-funded Â»Communities
+    of KnowledgeÂ« project) take various approaches to these problems of explicating
+    silent sources, interpreting historiographical constructions, and bridging disciplinary
+    segmentation. Some put particular texts under the microscope, pointing out new
+    evidence of specific interactions on the basis of close readings or the examination
+    of texts in a palimpsested manuscript. Some zoom out slightly on these interactions
+    by making fresh comparisons between sources in differing genres or languages.
+    All focus on the interreligious dimensions of exchange and, wherever possible,
+    on the interpersonal engagements that brought these about. Reports from two research
+    projects complement these by taking macro-level approaches that involve multiple
+    languages, several genres, and broad regions. Overall, this thematic collection
+    highlights the interpersonal and collaborative aspects of work by Jews, Christians,
+    Zoroastrians, and Muslims during the Abbasid caliphate (132-656 AH/750-1258 CE)
+    with the aim of stimulating new research approaches that overcome previous genre
+    limitations and disciplinary boundaries."
   citation-key: pohlKnowledgeCollaborationJews2023
   container-title: Medieval Worlds
   DOI: 10.1553/medievalworlds_no18_2023
   editor:
-    - family: Pohl
-      given: Walter
-    - family: Gingrich
-      given: Andre
-    - family: Gibson
-      given: Nathan P.
+  - family: Pohl
+    given: Walter
+  - family: Gingrich
+    given: Andre
+  - family: Gibson
+    given: Nathan P.
   ISSN: 2412-3196
   issued:
-    - year: 2023
-      month: 7
+  - year: 2023
+    month: 7
   language: en
   note: '59'
   page: 137–270
   publisher: "Verlag der Ã\x96sterreichischen Akademie der Wissenschaften"
   publisher-place: Wien
-  title: >-
-    Knowledge Collaboration among Jews, Christians, Zoroastrians, and Muslims in
-    the Abbasid Near East II [thematic section]
+  title: Knowledge Collaboration among Jews, Christians, Zoroastrians, and Muslims
+    in the Abbasid Near East II [thematic section]
   type: article-journal
   URL: https://doi.org/10.1553/medievalworlds_no18_2023
   volume: '18'
-
+  chicago-bibliography: "———. “Knowledge Collaboration among Jews, Christians, Zoroastrians,
+    and Muslims in the Abbasid Near East: Introduction.” Medieval Worlds 17 (2022):
+    59–72. https://doi.org/10.1553/medievalworlds_no17_2022s59."
 - id: sane-digitalAmbivalenteBeziehungenFachtag2023
   accessed:
-    - year: 2024
-      month: 4
-      day: 17
+  - year: 2024
+    month: 4
+    day: 17
   citation-key: sane-digitalAmbivalenteBeziehungenFachtag2023
   dimensions: '11:27'
   director:
-    - literal: SANE-Digital
+  - literal: SANE-Digital
   issued:
-    - year: 2023
-      month: 4
-      day: 20
+  - year: 2023
+    month: 4
+    day: 20
   source: YouTube
   title: Ambivalente Beziehungen - Fachtag - Interviews
   type: motion_picture
   URL: https://www.youtube.com/watch?v=BhuS0hZfoSs
-
+  chicago-bibliography: SANE-Digital. Ambivalente Beziehungen - Fachtag - Interviews,
+    2023. https://www.youtube.com/watch?v=BhuS0hZfoSs.
 - id: schwartzModelingBornDigitalFactoid2021
-  abstract: "Although the TEI has traditionally been used for encoding text, its combination of structured and semi-structured data has made it a compelling choice for born-digital, linked-data resources as well. Our intent here is to demonstrate the advantages it offers for digital prosopographies along with a model that can be used for them. Syriac Persons, Events, and Relations (SPEAR) is a born-digital prosopography project in the field of Syriac studies. Where traditional prosopographies focused on prose descriptions of individual persons of significance, SPEAR follows recent developments in research methodologies that instead produce prosopographical factoids. Factoids are structured data about persons drawn from the analysis of historical texts. Most factoid prosopographies use relational databases to model data. Instead, SPEAR uses a customized TEI schema to model factoids that can be queried and visualized in an XML database as well as serialized in HTML for human viewers and in RDF for data sharing. The TEI’s provisions for structured and semi-structured data make it ideal for encoding data from heterogeneous historical source material. Moreover, its linking capabilities connect SPEAR data to related data sets. By modeling prosopographical factoids, and not the source texts themselves, SPEAR offers an example of how a born-digital, data-oriented approach to using the TEI can circumvent some of the challenges posed by the tree structure of XML. It also disrupts traditional understandings of\_data\_and\_stand-off markup\_through combining linked open data approaches with the use of the TEI."
+  abstract: Although the TEI has traditionally been used for encoding text, its combination
+    of structured and semi-structured data has made it a compelling choice for born-digital,
+    linked-data resources as well. Our intent here is to demonstrate the advantages
+    it offers for digital prosopographies along with a model that can be used for
+    them. Syriac Persons, Events, and Relations (SPEAR) is a born-digital prosopography
+    project in the field of Syriac studies. Where traditional prosopographies focused
+    on prose descriptions of individual persons of significance, SPEAR follows recent
+    developments in research methodologies that instead produce prosopographical factoids.
+    Factoids are structured data about persons drawn from the analysis of historical
+    texts. Most factoid prosopographies use relational databases to model data. Instead,
+    SPEAR uses a customized TEI schema to model factoids that can be queried and visualized
+    in an XML database as well as serialized in HTML for human viewers and in RDF
+    for data sharing. The TEI’s provisions for structured and semi-structured data
+    make it ideal for encoding data from heterogeneous historical source material.
+    Moreover, its linking capabilities connect SPEAR data to related data sets. By
+    modeling prosopographical factoids, and not the source texts themselves, SPEAR
+    offers an example of how a born-digital, data-oriented approach to using the TEI
+    can circumvent some of the challenges posed by the tree structure of XML. It also
+    disrupts traditional understandings of data and stand-off markup through combining
+    linked open data approaches with the use of the TEI.
   accessed:
-    - year: 2022
-      month: 5
-      day: 12
+  - year: 2022
+    month: 5
+    day: 12
   author:
-    - family: Schwartz
-      given: Daniel L.
-    - family: Gibson
-      given: Nathan P.
-    - family: Torabi
-      given: Katayoun
+  - family: Schwartz
+    given: Daniel L.
+  - family: Gibson
+    given: Nathan P.
+  - family: Torabi
+    given: Katayoun
   citation-key: schwartzModelingBornDigitalFactoid2021
   DOI: 10.5281/zenodo.6539718
   event-place: online
   event-title: 'Next-Gen TEI: Virtual TEI Conference and Members’ Meeting 2021'
   issued:
-    - year: 2021
-      month: 10
-      day: 27
+  - year: 2021
+    month: 10
+    day: 27
   language: en
   title: Modeling a Born-Digital Factoid Prosopography using the TEI and Linked Data
   type: speech
   URL: https://zenodo.org/record/6539718
-
+  chicago-bibliography: Schwartz, Daniel L., Nathan P. Gibson, and Katayoun Torabi.
+    “Modeling a Born-Digital Factoid Prosopography Using the TEI and Linked Data.”
+    October 27, 2021. https://doi.org/10.5281/zenodo.6539718.
 - id: schwartzModelingBornDigitalFactoid2022a
-  abstract: >-
-    Although the TEI has traditionally been used for encoding text, its
-    combination of structured and semi-structured data has made it a compelling
-    choice for born-digital, linked-data resources as well. Our intent here is
-    to demonstrate the advantages it offers for digital prosopographies along
-    with a model that can be used for them. Syriac Persons, Events, and
-    Relations ( SPEAR ) is a born-digital prosopography project in the field of
-    Syriac Studies. Where traditional prosopographies focused on prose
-    descriptions of individual persons of significance, SPEAR follows recent
-    developments in research methodologies that instead produce prosopographical
-    factoids. Factoids are structured data about persons drawn from the analysis
-    of historical texts. Most factoid prosopographies use relational databases
-    to model data. Instead SPEAR uses a customized TEI schema to model factoids
-    that can be queried and visualized in an XML database as well as serialized
-    in HTML for human viewers and in RDF for data sharing. The TEI’s provisions
-    for structured and semi-structured data make it ideal for encoding data from
-    heterogeneous historical source material. Moreover, its linking capabilities
-    connect SPEAR data to related datasets. By modeling prosopographical
-    factoids, and not the source texts themselves, SPEAR offers an example of
-    how a born-digital, data- oriented approach to using the TEI can circumvent
-    some of the challenges posed by the tree structure of XML. It also disrupts
-    traditional understandings of data and stand- off markup through combining
-    Linked Open Data approaches with the use of the TEI.
+  abstract: Although the TEI has traditionally been used for encoding text, its combination
+    of structured and semi-structured data has made it a compelling choice for born-digital,
+    linked-data resources as well. Our intent here is to demonstrate the advantages
+    it offers for digital prosopographies along with a model that can be used for
+    them. Syriac Persons, Events, and Relations ( SPEAR ) is a born-digital prosopography
+    project in the field of Syriac Studies. Where traditional prosopographies focused
+    on prose descriptions of individual persons of significance, SPEAR follows recent
+    developments in research methodologies that instead produce prosopographical factoids.
+    Factoids are structured data about persons drawn from the analysis of historical
+    texts. Most factoid prosopographies use relational databases to model data. Instead
+    SPEAR uses a customized TEI schema to model factoids that can be queried and visualized
+    in an XML database as well as serialized in HTML for human viewers and in RDF
+    for data sharing. The TEI’s provisions for structured and semi-structured data
+    make it ideal for encoding data from heterogeneous historical source material.
+    Moreover, its linking capabilities connect SPEAR data to related datasets. By
+    modeling prosopographical factoids, and not the source texts themselves, SPEAR
+    offers an example of how a born-digital, data- oriented approach to using the
+    TEI can circumvent some of the challenges posed by the tree structure of XML.
+    It also disrupts traditional understandings of data and stand- off markup through
+    combining Linked Open Data approaches with the use of the TEI.
   author:
-    - family: Schwartz
-      given: Daniel L.
-    - family: Gibson
-      given: Nathan P.
-    - family: Torabi
-      given: Katayoun
+  - family: Schwartz
+    given: Daniel L.
+  - family: Gibson
+    given: Nathan P.
+  - family: Torabi
+    given: Katayoun
   citation-key: schwartzModelingBornDigitalFactoid2022a
   container-title: Journal of the Text Encoding Initiative
   DOI: 10.4000/jtei.3979
   ISSN: 2162-5603
   issued:
-    - year: 2022
+  - year: 2022
   language: en
   title: Modeling a Born-Digital Factoid Prosopography using the TEI and Linked Data
   type: article-journal
   URL: https://journals.openedition.org/jtei/3979
   volume: Rolling Issue
-
+  chicago-bibliography: Schwartz, Daniel L., Nathan P. Gibson, and Katayoun Torabi.
+    “Modeling a Born-Digital Factoid Prosopography Using the TEI and Linked Data.”
+    October 27, 2021. https://doi.org/10.5281/zenodo.6539718.
 - id: textandtransmissionjointresearchseminarTeTraNathanGibson2022
   accessed:
-    - year: 2022
-      month: 11
-      day: 11
+  - year: 2022
+    month: 11
+    day: 11
   citation-key: textandtransmissionjointresearchseminarTeTraNathanGibson2022
   dimensions: '58:02'
   director:
-    - literal: Text and Transmission Joint Research Seminar
+  - literal: Text and Transmission Joint Research Seminar
   issued:
-    - year: 2022
-      month: 11
-      day: 10
+  - year: 2022
+    month: 11
+    day: 10
   source: YouTube
   title: TeTra | Nathan Gibson "Circumnavigating Jewish and Christian Realities"
   type: motion_picture
   URL: https://www.youtube.com/watch?v=kCKxoCkRxs0
-
+  chicago-bibliography: "———. “Circumnavigating Jewish and Christian Realities: What
+    the Polemicist al-Jāḥiẓ Didn’t Want to Admit about His Society.” November 11,
+    2022. http://npgibson.com/s/circumnavigating."
 - id: TurmoilDisplacesMiddle
-  abstract: >-
-    The continued depletion of religious diversity in the Middle East could be
-    contributing to the death of one of the oldest living languages, known as…
+  abstract: The continued depletion of religious diversity in the Middle East could
+    be contributing to the death of one of the oldest living languages, known as…
   accessed:
-    - year: 2021
-      month: 9
-      day: 15
+  - year: 2021
+    month: 9
+    day: 15
   citation-key: TurmoilDisplacesMiddle
   container-title: WUWM 89.7 FM - Milwaukee's NPR
   language: en
-  title: >-
-    As Turmoil Displaces Middle Eastern Christians, Scholars Work to Preserve
+  title: As Turmoil Displaces Middle Eastern Christians, Scholars Work to Preserve
     Syriac Culture
   type: webpage
-  URL: >-
-    https://www.wuwm.com/podcast/lake-effect-segments/2017-05-24/as-turmoil-displaces-middle-eastern-christians-scholars-work-to-preserve-syriac-culture
-
+  URL: https://www.wuwm.com/podcast/lake-effect-segments/2017-05-24/as-turmoil-displaces-middle-eastern-christians-scholars-work-to-preserve-syriac-culture
+  chicago-bibliography: "“Snapshot.” Accessed September 15, 2021. https://www.wuwm.com/podcast/lake-effect-segments/2017-05-24/as-turmoil-displaces-middle-eastern-christians-scholars-work-to-preserve-syriac-culture."
 - id: vollandtBibliographyArabicBible2018
   citation-key: vollandtBibliographyArabicBible2018
   editor:
-    - family: Vollandt
-      given: Ronny
-    - family: Gibson
-      given: Nathan P.
+  - family: Vollandt
+    given: Ronny
+  - family: Gibson
+    given: Nathan P.
   issued:
-    - year: 2018
-    - year: 0
+  - year: 2018
+  - year: 0
   publisher: Biblia-Arabica.com
   publisher-place: Munich
-  title: >-
-    Bibliography of the Arabic Bible: A Classified and Annotated History of
-    Scholarship
+  title: 'Bibliography of the Arabic Bible: A Classified and Annotated History of
+    Scholarship'
   type: book
   URL: https://biblia-arabica.com/bibl
-
+  chicago-bibliography: 'Vollandt, Ronny, and Nathan P. Gibson, eds. Bibliography
+    of the Arabic Bible: A Classified and Annotated History of Scholarship. Munich:
+    Biblia-Arabica.com, 2018. https://biblia-arabica.com/bibl.'
 - id: wolframHeimlichesVorbild2022
-  abstract: >-
-    Das Forschungsprojekt »Jenseits von Konflikt und Koexistenz« untersucht
+  abstract: Das Forschungsprojekt »Jenseits von Konflikt und Koexistenz« untersucht
     künftig die jüdisch-arabische Beziehungsgeschichte
   accessed:
-    - year: 2023
-      month: 1
-      day: 23
+  - year: 2023
+    month: 1
+    day: 23
   author:
-    - family: Wolfram
-      given: Gernot
+  - family: Wolfram
+    given: Gernot
   citation-key: wolframHeimlichesVorbild2022
   container-title: Jüdische Allgemeine
   issued:
-    - year: 2022
-      month: 11
-      day: 30
+  - year: 2022
+    month: 11
+    day: 30
   language: de
   title: Heimliches Vorbild
   type: webpage
   URL: https://www.juedische-allgemeine.de/kultur/heimliches-vorbild/
-...
+  chicago-bibliography: "“Snapshot.” Accessed January 23, 2023. https://www.juedische-allgemeine.de/kultur/heimliches-vorbild/?amp."
