@@ -1,0 +1,107 @@
+<!-- Publications List -->
+
+{% if site.data.publications and site.data.publications.references %}
+
+<div class="publications-container">
+  <!-- Filter buttons -->
+  <div class="publications-filters d-flex gap-3 flex-wrap mb-4">
+    <button class="btn btn-outline-light publication-filter fw-medium active" data-filter="all">All</button>
+    <button class="btn btn-outline-light publication-filter fw-medium" data-filter="book">Books</button>
+    <button class="btn btn-outline-light publication-filter fw-medium" data-filter="article-journal">Articles</button>
+  </div>
+
+  <!-- Publications grid -->
+  <div class="row g-4" id="pub-grid">
+    {% for pub in site.data.publications.references %}
+      {% if pub.type == "book" or pub.type == "article-journal" %}
+        <div class="pub-item col-12 py-3 text-light" data-type="{{ pub.type }}">
+          <div class="card h-100 rounded-4 text-bg-dark shadow" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('{{ card.cover-img | default: "/img/nhsl-banner.png" }}'); background-size: cover;">
+            <div class="card-body d-flex flex-column">
+              {%- capture pub_type -%}
+              {%- if pub.type == 'book' -%}Book{%- elsif pub.type == 'article-journal' -%}Journal Article{%- else -%}Publication{%- endif -%}
+              {%- endcapture -%}
+
+              <!-- Badge for publication type -->
+              <div class="mb-2">
+                <span class="badge bg-light text-dark">{{ pub_type | strip }}</span>
+              </div>
+
+              {%- if pub['chicago-bibliography'] -%}
+              {%- capture title_period -%}{{ pub.title }}.{%- endcapture -%}
+              {%- capture title_wrapped -%}<h5 class="card-title fw-bold">{{ title_period }}</h5>{%- endcapture -%}
+              {%- capture bibliography_wrapped -%}{{ pub['chicago-bibliography'] | replace: title_period, title_wrapped }}{%- endcapture -%}
+              <p class="small mt-1 mb-2">{{ bibliography_wrapped | replace: '“', '' | replace: '”', '' }}</p>
+              {%- endif -%}
+              
+              <!-- Abstract (optional, expandable) -->
+              {%- if pub.abstract -%}
+              <details class="publication-abstract mb-3">
+                <summary class="cursor-pointer text-info small fw-semibold outline-0 user-select-none">Abstract</summary>
+                <p class="card-text small mt-2">{{ pub.abstract }}</p>
+              </details>
+              {%- endif -%}
+
+              <!-- Attachments (links) -->
+              {%- if pub.attachments -%}
+              <div class="publication-attachments mt-auto pt-2">
+                <div class="d-flex flex-wrap gap-2">
+                  {%- for attachment in pub.attachments -%}
+                  <a href="{{ attachment.url }}" class="btn btn-sm btn-outline-light" target="_blank" rel="noopener noreferrer">
+                    {%- if attachment.type == 'pdf' -%}
+                      📄 {{ attachment.title | default: 'PDF' }}
+                    {%- else -%}
+                      🔗 {{ attachment.title | default: 'Link' }}
+                    {%- endif -%}
+                  </a>
+                  {%- endfor -%}
+                </div>
+              </div>
+              {%- endif -%}
+
+              <!-- DOI/URL link if available -->
+              {%- if pub.DOI or pub.URL -%}
+              <div class="mt-2 pt-2">
+                {%- if pub.DOI -%}
+                <a href="https://doi.org/{{ pub.DOI }}" class="btn btn-sm btn-link text-info ps-0" target="_blank" rel="noopener noreferrer">
+                  DOI: {{ pub.DOI }}
+                </a><br/>
+                {%- endif -%}
+                {%- if pub.URL -%}
+                <a href="{{ pub.URL }}" class="btn btn-sm btn-link text-info ps-0" target="_blank" rel="noopener noreferrer">
+                  View Online
+                </a>
+                {%- endif -%}
+              </div>
+              {%- endif -%}
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div id="no-pubs" class="alert alert-info mt-4" style="display:none;">No publications match this filter.</div>
+</div>
+
+<script>
+  document.querySelectorAll('.publication-filter').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const filter = this.dataset.filter;
+      document.querySelectorAll('.publication-filter').forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+
+      let count = 0;
+      document.querySelectorAll('.pub-item').forEach(item => {
+        const show = filter === 'all' || item.dataset.type === filter;
+        item.style.display = show ? '' : 'none';
+        if(show) count++;
+      });
+
+      document.getElementById('no-pubs').style.display = count === 0 ? 'block' : 'none';
+    });
+  });
+</script>
+
+{% else %}
+  <div class="alert alert-warning">Publications data not found.</div>
+{% endif %}

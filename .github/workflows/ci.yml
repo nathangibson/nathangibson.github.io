@@ -11,6 +11,11 @@ jobs:
           ruby-version: '3.3'
       - name: Install dependencies
         run: bundle install && bundle exec appraisal install
+      - name: Fetch Chicago citations from Zotero
+        run: bundle exec ruby scripts/fetch_zotero_citations.rb
+        continue-on-error: true
+      - name: Display citation fetch results
+        run: cat .zotero_fetch_log.txt || echo "No citation fetch log available"
       - name: Setup Pages
         id: configure-pages
         uses: actions/configure-pages@v5

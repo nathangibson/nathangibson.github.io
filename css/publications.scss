@@ -1,0 +1,123 @@
+// Publication Cards - Minimal custom styles using Bootstrap
+// Most styling delegated to Bootstrap utility classes in HTML
+
+.publications-container {
+  margin-bottom: 2rem;
+
+  // Expandable sections (abstract, citations)
+  details {
+    &[open] {
+      summary {
+        font-weight: 600;
+      }
+    }
+  }
+
+  // Citation box styling
+  .publication-citations {
+    .citation-item {
+      margin-top: 0.5rem;
+      padding-top: 0.5rem;
+
+      &:first-child {
+        margin-top: 0;
+        padding-top: 0;
+      }
+    }
+
+    // Monospace citation text block
+    .citation-text {
+      font-family: 'Courier New', Courier, monospace;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 0.75rem;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 0.275rem;
+      margin-top: 0.5rem;
+      line-height: 1.6;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      font-size: 0.85rem;
+      color: inherit;
+    }
+  }
+
+  // Cursor styling for details elements
+  details > summary {
+    cursor: pointer;
+  }
+}
+
+// Filter buttons styling
+.publications-filters {
+  margin-bottom: 2rem;
+
+  .publication-filter {
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &.active {
+      background-color: #fff;
+      color: #000;
+      border-color: #fff;
+    }
+  }
+}
+
+// Responsive design
+@media (max-width: 992px) {
+  // No additional adjustments needed with Bootstrap utilities
+}
+
+@media (max-width: 768px) {
+  .publications-filters {
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .publication-filter {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  // Bootstrap responsive classes handle sizing adjustments
+}
+
+// Print styles
+@media print {
+  .publications-filters {
+    display: none;
+  }
+
+  .publications-container {
+    .card {
+      break-inside: avoid;
+      page-break-inside: avoid;
+      box-shadow: none;
+      border: 1px solid #ddd;
+      margin-bottom: 1.5rem;
+    }
+
+    .publication-citations .citation-text {
+      background-color: #f0f0f0;
+      border: 1px solid #ddd;
+      color: #333;
+    }
+
+    .citation-item,
+    .publication-abstract,
+    .publication-attachments {
+      break-inside: avoid;
+    }
+
+    a {
+      color: #003d82;
+
+      &[href]:after {
+        content: " (" attr(href) ")";
+      }
+    }
+  }
+}
+
