@@ -72,10 +72,9 @@ class ZoteroCitationFetcher
       uri = URI(BASE_URL)
       uri.query = URI.encode_www_form(
         format: 'json',
-        style: STYLE,
         limit: PAGE_LIMIT,
         start: start
-      ) + "&include=bib,data"
+      ) + "&include=bib,data&style=#{STYLE}"
 
       response = make_request(uri)
       return nil if response.nil?
