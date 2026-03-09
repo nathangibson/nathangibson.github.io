@@ -55,6 +55,10 @@ references:
   - year: 2024
     month: 3
     day: 18
+  attachments:
+  - title: Full Text PDF
+    url: http://publikationen.ub.uni-frankfurt.de/files/80437/09_Gibson_Duecker.pdf
+    type: pdf
   author:
   - family: Dücker
     given: Malte
@@ -301,6 +305,19 @@ references:
     any alliance (5:51). As such, the ¿Refutation¿ reveals the battle lines between
     more lenient, popular Muslim attitudes and a stricter position promoted by al-Jahiz
     and enforced by al-Mutawakkil.
+  attachments:
+  - title: 83818717-The-catholic-university-of-america.html
+    url: https://religiondocbox.com/Islam/83818717-The-catholic-university-of-america.html
+    type: webpage
+  - title: BibBase
+    url: https://bibbase.org/network/publication/gibson-closestinfriendshipaljahizprofileofchristiansinabbasidsocietyintherefutationofchristiansalraddalaalnasara-2015
+    type: webpage
+  - title: cuislandora:28277
+    url: http://hdl.handle.net/1961/cuislandora:28277
+    type: webpage
+  - title: OCLC
+    url: http://worldcat.org/oclc/934820011
+    type: webpage
   author:
   - family: Gibson
     given: Nathan P.
@@ -401,6 +418,10 @@ references:
   title: 'Communities of Knowledge (Usaybia.net): Tagging, Prosopography, and Networks'
   type: speech
 - id: gibsonCrosscommunalScholarlyInteractions2022
+  attachments:
+  - title: urn:nbn:de:bvb:19-epub-75471-6
+    url: https://nbn-resolving.org/urn:nbn:de:bvb:19-epub-75471-6
+    type: webpage
   author:
   - family: Gibson
     given: Nathan P.
@@ -502,6 +523,10 @@ references:
     displaying Syriac text with embedded fonts. These requirements have led us to
     develop small-scale systems that may be of use to other cultural heritage preservation
     projects involving names for ancient and, especially, non-Western entities.
+  attachments:
+  - title: Balisage
+    url: http://www.balisage.net/Proceedings/vol16/html/Gibson01/BalisageVol16-Gibson01.html
+    type: webpage
   author:
   - family: Gibson
     given: Nathan P.
@@ -576,6 +601,10 @@ references:
   - year: 2019
     month: 9
     day: 20
+  attachments:
+  - title: Zenodo Full Text PDF
+    url: https://zenodo.org/record/3452744/files/Gibson%20-%20TEI%202019%20-%20Five%20Centuries%20of%20History%20in%20a%20Network.pdf
+    type: pdf
   author:
   - family: Gibson
     given: Nathan P.
@@ -833,6 +862,16 @@ references:
     their manuscript representations, editions, and translations. The authors hope
     that by publishing a draft data model they can receive feedback and incorporate
     suggestions into the next stage of the project.
+  attachments:
+  - title: Academia.edu
+    url: https://www.academia.edu/29147134/From_manuscript_catalogues_to_a_handbook_of_Syriac_literature_Modeling_an_infrastructure_for_Syriaca.org
+    type: webpage
+  - title: arXiv.org
+    url: http://arxiv.org/abs/1603.01207
+    type: webpage
+  - title: Thumbnail
+    url: https://nathangibson.github.io/img/circle.jpg
+    type: webpage
   author:
   - family: Gibson
     given: Nathan P.
@@ -896,6 +935,16 @@ references:
     al-Jāḥiẓ had real contact with the Jewish community and its texts, and (2) that
     his quotation evidences a pre-Saʿadyanic attempt to translate the Bible from Hebrew
     into Arabic using a less literal approach than is previously attested."
+  attachments:
+  - title: Academia.edu
+    url: https://www.academia.edu/30958504/A_Mid-Ninth-Century_Arabic_Translation_of_Isaiah_Glimpses_from_al-Jahiz
+    type: webpage
+  - title: Google Books
+    url: https://books.google.de/books?id=boJ1DwAAQBAJ&pg=327
+    type: webpage
+  - title: Thumbnail
+    url: https://nathangibson.github.io/img/al-jahiz.jpg
+    type: webpage
   author:
   - family: Gibson
     given: Nathan P.
@@ -936,6 +985,13 @@ references:
     Among other revisions, the new model will employ RDF classes and properties as
     @type and @ref values, respectively, in order to aid RDF serialization. The authors
     actively seek feedback, suggestions, and criticism concerning this revised schema.
+  attachments:
+  - title: Full Text PDF
+    url: https://hcommons.org/deposits/download/hc:13276/CONTENT/gibson-michelson-modeling-a-body-of-literature-20160430.pdf/
+    type: webpage
+  - title: Snapshot
+    url: https://hcommons.org/deposits/item/hc:13275/
+    type: webpage
   author:
   - family: Gibson
     given: Nathan P.
@@ -1413,6 +1469,10 @@ references:
   - year: 2021
     month: 9
     day: 15
+  attachments:
+  - title: Snapshot
+    url: https://digitalorientalist.com/2021/09/14/interview-with-dr-nathan-p-gibson-about-syriaca-org-part-1/
+    type: webpage
   citation-key: InterviewDrNathan2021
   container-title: The Digital Orientalist
   issued:
@@ -1436,6 +1496,10 @@ references:
   - year: 2025
     month: 3
     day: 14
+  attachments:
+  - title: Snapshot
+    url: https://islamdigitality.com/de/universitaet-trifft-gesellschaft-studierende-praesentieren-poster-zu-interreligioesen-begegnungen-in-digitalen-raeumen-in-der-evangelischen-akademie-frankfurt/
+    type: webpage
   author:
   - family: j.jacob
     given: ''
@@ -1516,6 +1580,10 @@ references:
     P. Gibson, and Daniel L. Schwartz, eds. |BEGIN_TITLE|The Syriac Biographical Dictionary|END_TITLE|.
     The Syriac Reference Portal, 2016. http://syriaca.org/persons.
 - id: plattInquiringBeelzebubTimothy2018
+  attachments:
+  - title: Google Books
+    url: https://books.google.de/books?id=TsuDDwAAQBAJ&pg=PA256
+    type: webpage
   author:
   - family: Platt
     given: Andrew
@@ -1725,6 +1793,11 @@ references:
   - year: 2022
     month: 5
     day: 12
+  attachments:
+  - title: Schwartz et al_2022_Modeling a Born-Digital Factoid Prosopography using
+      the TEI and Linked Data.pdf
+    url: https://zenodo.org/record/6539718/files/Modeling%20a%20Born-Digital%20Factoid%20Prosopography%20using%20the%20TEI%20and%20Linked%20Data%20%281%29.pdf
+    type: pdf
   author:
   - family: Schwartz
     given: Daniel L.
@@ -1769,6 +1842,10 @@ references:
     TEI can circumvent some of the challenges posed by the tree structure of XML.
     It also disrupts traditional understandings of data and stand- off markup through
     combining Linked Open Data approaches with the use of the TEI.
+  attachments:
+  - title: Preprint
+    url: https://oaktrust.library.tamu.edu/handle/1969.1/192423
+    type: webpage
   author:
   - family: Schwartz
     given: Daniel L.
@@ -1818,6 +1895,10 @@ references:
   - year: 2021
     month: 9
     day: 15
+  attachments:
+  - title: Snapshot
+    url: https://www.wuwm.com/podcast/lake-effect-segments/2017-05-24/as-turmoil-displaces-middle-eastern-christians-scholars-work-to-preserve-syriac-culture
+    type: webpage
   citation-key: TurmoilDisplacesMiddle
   container-title: WUWM 89.7 FM - Milwaukee's NPR
   language: en
@@ -1853,6 +1934,10 @@ references:
   - year: 2023
     month: 1
     day: 23
+  attachments:
+  - title: Snapshot
+    url: https://www.juedische-allgemeine.de/kultur/heimliches-vorbild/?amp
+    type: webpage
   author:
   - family: Wolfram
     given: Gernot
