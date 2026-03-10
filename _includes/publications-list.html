@@ -13,9 +13,18 @@
   <!-- Publications grid -->
   <div class="row g-4" id="pub-grid">
     {% for pub in site.data.publications.references %}
-      {% if pub.type == "book" or pub.type == "article-journal" %}
+      <!-- Only display certain types of publications -->
+      {% if pub.type == "book" or pub.type == "article-journal" or pub.type == "chapter"%}
+      <!-- Capture cover image URL from attachment labeled "thumbnail" in Zotero if available -->
+      {%- capture cover-img -%}
+        {%- for attachment in pub.attachments -%}
+          {%- if attachment.title == "thumbnail" -%}
+            {{ attachment.url }}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endcapture -%}
         <div class="pub-item col-12 py-3 text-light" data-type="{{ pub.type }}">
-          <div class="card h-100 rounded-4 text-bg-dark shadow" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('{{ card.cover-img | default: "/img/nhsl-banner.png" }}'); background-size: cover;">
+          <div class="card h-100 rounded-4 text-bg-dark shadow" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('{{ cover-img | default: "/img/nhsl-banner.png" }}'); background-size: cover;">
             <div class="card-body d-flex flex-column">
               {%- capture pub_type -%}
               {%- if pub.type == 'book' -%}Book{%- elsif pub.type == 'article-journal' -%}Journal Article{%- else -%}Publication{%- endif -%}

@@ -942,8 +942,8 @@ references:
   - title: Google Books
     url: https://books.google.de/books?id=boJ1DwAAQBAJ&pg=327
     type: webpage
-  - title: Thumbnail
-    url: https://nathangibson.github.io/img/al-jahiz.jpg
+  - title: thumbnail
+    url: https://npgibson.com/img/al-jahiz.jpg
     type: webpage
   author:
   - family: Gibson
