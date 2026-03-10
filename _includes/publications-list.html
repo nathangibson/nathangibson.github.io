@@ -23,8 +23,8 @@
           {%- endif -%}
         {%- endfor -%}
       {%- endcapture -%}
-        <div class="pub-item col-12 py-3 text-light" data-type="{{ pub.type }}">
-          <div class="card h-100 rounded-4 text-bg-dark shadow" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('{{ cover-img | default: "/img/nhsl-banner.png" }}'); background-size: cover;">
+        <div class="pub-item col-12 col-lg-6 py-3" data-type="{{ pub.type }}">
+          <div class="card h-100 rounded-4 shadow" style="background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.9)), url('{{ cover-img | default: "/img/nhsl-banner.png" }}'); background-size: cover;">
             <div class="card-body d-flex flex-column">
               {%- capture pub_type -%}
               {%- if pub.type == 'book' -%}Book{%- elsif pub.type == 'article-journal' -%}Journal Article{%- else -%}Publication{%- endif -%}
