@@ -35,12 +35,13 @@
                 <span class="badge bg-light text-dark">{{ pub_type | strip }}</span>
               </div>
 
-              {%- if pub['chicago-bibliography'] -%}
+              {%- assign chicago_bib = site.data.citations[pub['citation-key']]['chicago-bibliography'] -%}
+              {%- if chicago_bib -%}
               {%- capture title_open -%}|BEGIN_TITLE|{%- endcapture -%}
               {%- capture title_close -%}|END_TITLE|{%- endcapture -%}
               {%- capture title_close_post_period -%}{{title_close}}.{%- endcapture -%}
               {%- capture title_close_pre_period -%}.{{title_close}}{%- endcapture -%}
-              {%- capture bibliography -%}{{ pub['chicago-bibliography'] | replace: title_close_post_period, title_close_pre_period }}{%- endcapture -%}
+              {%- capture bibliography -%}{{ chicago_bib | replace: title_close_post_period, title_close_pre_period }}{%- endcapture -%}
               {%- capture bibliography_wrapped -%}{{ bibliography | replace: title_open, '<h5 class="card-title fw-bold">' | replace: title_close, '</h5>' }}{%- endcapture -%}
               <p class="small mt-1 mb-2">{{ bibliography_wrapped }}</p>
               {%- endif -%}

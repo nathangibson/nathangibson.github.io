@@ -12,6 +12,7 @@ class ZoteroCitationFetcher
   ZOTERO_GROUP = '1114225'
   BASE_URL = "https://api.zotero.org/groups/#{ZOTERO_GROUP}/items"
   STYLE = 'https://npgibson.com/assets/csl/chicago-notes-bibliography-titles-tagged.csl'
+  CITATIONS_FILE = '_data/citations.yaml'
   CACHE_FILE = '.zotero_citations_cache.yml'
   LOG_FILE = '.zotero_fetch_log.txt'
   TIMEOUT_SECONDS = 10
@@ -24,6 +25,7 @@ class ZoteroCitationFetcher
     @cached_count = 0
     @failed_count = 0
     @log = []
+    @citations = {}
     @cache = load_cache
 
     if @clear_cache
@@ -55,7 +57,7 @@ class ZoteroCitationFetcher
       match_citation(publication, url_to_bib)
     end
 
-    save_publications(publications)
+    save_citations
     save_cache
     write_log_file
     print_summary
@@ -107,7 +109,7 @@ class ZoteroCitationFetcher
     return if citation_key.nil? || citation_key.empty?
 
     if @cache[citation_key]
-      publication['chicago-bibliography'] = @cache[citation_key]
+      @citations[citation_key] = @cache[citation_key]
       @cached_count += 1
       log_message("  [CACHE] #{citation_key}")
       return
@@ -123,7 +125,7 @@ class ZoteroCitationFetcher
     bib = url_to_bib[normalize_url(url)]
 
     if bib
-      publication['chicago-bibliography'] = bib
+      @citations[citation_key] = bib
       @cache[citation_key] = bib
       @fetched_count += 1
       log_message("  [FETCHED] #{citation_key}")
@@ -182,12 +184,11 @@ class ZoteroCitationFetcher
     nil
   end
 
-  def save_publications(publications)
-    pub_file = '_data/publications.yaml'
-    File.write(pub_file, publications.to_yaml)
-    log_message("Saved updated publications to #{pub_file}")
+  def save_citations
+    File.write(CITATIONS_FILE, @citations.to_yaml)
+    log_message("Saved #{@citations.size} citations to #{CITATIONS_FILE}")
   rescue StandardError => e
-    log_message("ERROR: Failed to save publications - #{e.message}")
+    log_message("ERROR: Failed to save citations - #{e.message}")
   end
 
   def load_cache
@@ -227,8 +228,9 @@ class ZoteroCitationFetcher
     puts "Failed:  #{@failed_count}"
     puts "Total:   #{@fetched_count + @cached_count}"
     puts "=" * 60
-    puts "Log written to:   #{LOG_FILE}"
-    puts "Cache written to: #{CACHE_FILE}"
+    puts "Log written to:       #{LOG_FILE}"
+    puts "Cache written to:     #{CACHE_FILE}"
+    puts "Citations written to: #{CITATIONS_FILE}"
   end
 end
 
