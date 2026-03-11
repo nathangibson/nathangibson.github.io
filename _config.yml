@@ -300,6 +300,17 @@ defaults:
       path: "" # any file that's not a post will be a "page" layout by default
     values:
       layout: "page"
+  -
+    scope:
+      path: ""
+      type: "publications"
+    values:
+      layout: "publication"
+
+collections:
+  publications:
+    output: true
+    permalink: /publications/:name/
 
 # Exclude these files from production site
 exclude:

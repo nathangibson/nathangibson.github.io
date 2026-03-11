@@ -1,0 +1,156 @@
+---
+layout: page
+---
+
+{%- assign ck = page['citation-key'] -%}
+{%- assign pub = site.data.publications.references | where: "citation-key", ck | first -%}
+{%- assign cit = site.data.citations[ck] -%}
+
+{% if pub %}
+
+{%- comment -%}Cover image from thumbnail attachment{%- endcomment -%}
+{%- capture cover_img -%}
+  {%- for a in pub.attachments -%}
+    {%- if a.title == "thumbnail" -%}{{ a.url }}{%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+{%- assign cover_img = cover_img | strip -%}
+
+<div class="publication-detail mb-4">
+
+  {%- if cover_img != "" -%}
+  <div class="text-center mb-4">
+    <img src="{{ cover_img }}" alt="{{ pub.title | escape }} cover"
+         class="img-fluid rounded shadow"
+         style="max-height: 240px; width: auto;">
+  </div>
+  {%- endif -%}
+
+  {%- comment -%}Type badge{%- endcomment -%}
+  {%- capture pub_type_label -%}
+    {%- case pub.type -%}
+      {%- when 'book' -%}Book
+      {%- when 'article-journal' -%}Journal Article
+      {%- when 'chapter' -%}Book Chapter
+      {%- when 'speech' -%}Talk / Presentation
+      {%- when 'thesis' -%}Thesis / Dissertation
+      {%- when 'paper-conference' -%}Conference Paper
+      {%- when 'motion_picture' -%}Video
+      {%- when 'webpage' -%}Web Resource
+      {%- when 'post-weblog' -%}Blog Post
+      {%- else -%}Publication
+    {%- endcase -%}
+  {%- endcapture -%}
+  <div class="mb-3">
+    <span class="badge bg-secondary">{{ pub_type_label | strip }}</span>
+  </div>
+
+  {%- comment -%}Authors or editors{%- endcomment -%}
+  {%- assign contributors = pub.author | default: pub.editor -%}
+  {%- if contributors -%}
+  <p class="fst-italic text-muted mb-2">
+    {%- for person in contributors -%}
+      {%- if person.family and person.given -%}
+        {{- person.given }} {{ person.family -}}
+      {%- elsif person.family -%}
+        {{- person.family -}}
+      {%- elsif person.literal -%}
+        {{- person.literal -}}
+      {%- endif -%}
+      {%- unless forloop.last -%}; {% endunless -%}
+    {%- endfor -%}
+    {%- if pub.editor and pub.author == nil %} (eds.){% endif -%}
+  </p>
+  {%- endif -%}
+
+  {%- comment -%}Year and venue — handle all issued date shapes from Zotero YAML export{%- endcomment -%}
+  {%- if pub.issued[0].year -%}
+    {%- assign pub_year = pub.issued[0].year -%}
+  {%- elsif pub.issued[0].literal -%}
+    {%- assign pub_year = pub.issued[0].literal -%}
+  {%- else -%}
+    {%- assign pub_year = "" -%}
+  {%- endif -%}
+
+  <div class="small text-muted mb-3">
+    {%- if pub_year != "" -%}<strong>{{ pub_year }}</strong>{%- endif -%}
+    {%- if pub['container-title'] -%}
+      {%- if pub_year != "" %} &bull; {% endif -%}<em>{{ pub['container-title'] }}</em>
+    {%- elsif pub.publisher -%}
+      {%- if pub_year != "" %} &bull; {% endif -%}{{ pub.publisher }}
+    {%- endif -%}
+    {%- if pub['publisher-place'] %}, {{ pub['publisher-place'] }}{%- endif -%}
+    {%- if pub.page %}, pp.&nbsp;{{ pub.page }}{%- endif -%}
+  </div>
+
+  {%- comment -%}Chicago citation — prefer citations.yaml, fall back to embedded field{%- endcomment -%}
+  {%- assign chicago_raw = cit['chicago-bibliography'] | default: pub['chicago-bibliography'] -%}
+  {%- if chicago_raw -%}
+    {%- assign chicago_clean = chicago_raw | remove: '|BEGIN_TITLE|' | remove: '|END_TITLE|' -%}
+  <div class="p-3 rounded mb-3" style="background-color: #f8f9fa; border-left: 3px solid #dee2e6;">
+    <p class="small mb-1 fw-semibold text-muted text-uppercase" style="font-size: 0.7rem; letter-spacing: 0.05em;">Chicago Citation</p>
+    <p class="small mb-0">{{ chicago_clean }}</p>
+  </div>
+  {%- endif -%}
+
+  {%- comment -%}Abstract (collapsible){%- endcomment -%}
+  {%- if pub.abstract -%}
+  <details class="mb-3">
+    <summary class="fw-semibold" style="cursor: pointer;">Abstract</summary>
+    <p class="mt-2 small">{{ pub.abstract }}</p>
+  </details>
+  {%- endif -%}
+
+  {%- comment -%}DOI and primary URL{%- endcomment -%}
+  {%- if pub.DOI or pub.URL -%}
+  <div class="mb-3">
+    {%- if pub.DOI -%}
+    <a href="https://doi.org/{{ pub.DOI }}"
+       class="btn btn-sm btn-outline-dark me-2"
+       target="_blank" rel="noopener noreferrer">DOI: {{ pub.DOI }}</a>
+    {%- endif -%}
+    {%- if pub.URL -%}
+    <a href="{{ pub.URL }}"
+       class="btn btn-sm btn-outline-secondary"
+       target="_blank" rel="noopener noreferrer">View Online</a>
+    {%- endif -%}
+  </div>
+  {%- endif -%}
+
+  {%- comment -%}Attachments, excluding the thumbnail used as cover image{%- endcomment -%}
+  {%- if pub.attachments -%}
+    {%- assign non_thumb = pub.attachments | where_exp: "a", "a.title != 'thumbnail'" -%}
+    {%- if non_thumb.size > 0 -%}
+  <div class="mb-3">
+    <p class="small fw-semibold mb-2">Resources:</p>
+    <div class="d-flex flex-wrap gap-2">
+      {%- for a in non_thumb -%}
+      <a href="{{ a.url }}" class="btn btn-sm btn-outline-dark"
+         target="_blank" rel="noopener noreferrer">
+        {%- if a.type == 'pdf' -%}📄 {{ a.title | default: 'PDF' }}
+        {%- else -%}🔗 {{ a.title | default: 'Link' }}{%- endif -%}
+      </a>
+      {%- endfor -%}
+    </div>
+  </div>
+    {%- endif -%}
+  {%- endif -%}
+
+  <div class="mb-4">
+    <a href="/publications/" class="btn btn-sm btn-link ps-0 text-muted">&larr; All Publications</a>
+  </div>
+
+</div>
+
+<hr class="mb-4">
+
+{{ content }}
+
+{% else %}
+
+<div class="alert alert-warning">
+  Publication data not found for citation key: <code>{{ ck }}</code>
+</div>
+{{ content }}
+
+{% endif %}
