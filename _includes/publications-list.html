@@ -5,9 +5,9 @@
 <div class="publications-container">
   <!-- Filter buttons -->
   <div class="publications-filters d-flex gap-3 flex-wrap mb-4">
-    <button class="btn btn-outline-light publication-filter fw-medium active" data-filter="all">All</button>
-    <button class="btn btn-outline-light publication-filter fw-medium" data-filter="book">Books</button>
-    <button class="btn btn-outline-light publication-filter fw-medium" data-filter="article-journal">Articles</button>
+    <button class="btn btn-outline-dark mx-1 publication-filter fw-medium active" data-filter="all">All</button>
+    <button class="btn btn-outline-dark mx-1 publication-filter fw-medium" data-filter="book">Books</button>
+    <button class="btn btn-outline-dark mx-1 publication-filter fw-medium" data-filter="article-journal">Articles</button>
   </div>
 
   <!-- Publications grid -->
@@ -24,70 +24,72 @@
         {%- endfor -%}
       {%- endcapture -%}
         <div class="pub-item col-12 col-lg-6 py-3" data-type="{{ pub.type }}">
-          <div class="card h-100 rounded-4 shadow" style="background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.9)), url('{{ cover-img | default: "/img/nhsl-banner.png" }}'); background-size: cover;">
-            <div class="card-body d-flex flex-column">
-              {%- capture pub_type -%}
-              {%- if pub.type == 'book' -%}Book{%- elsif pub.type == 'article-journal' -%}Journal Article{%- else -%}Publication{%- endif -%}
-              {%- endcapture -%}
+          <a href="{{ pub.URL | default: '#' }}" class="text-decoration-none text-dark" target="_blank">
+            <div class="card h-100 rounded-4 shadow" style="background-image: linear-gradient(to top left, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.9)), url('{{ cover-img | default: "/img/nhsl-banner.png" }}'); background-size: cover;">
+              <div class="card-body d-flex flex-column">
+                {%- capture pub_type -%}
+                {%- if pub.type == 'book' -%}Book{%- elsif pub.type == 'article-journal' -%}Journal Article{%- else -%}Publication{%- endif -%}
+                {%- endcapture -%}
 
-              <!-- Badge for publication type -->
-              <div class="mb-2">
-                <span class="badge bg-light text-dark">{{ pub_type | strip }}</span>
-              </div>
-
-              {%- assign chicago_bib = site.data.citations[pub['citation-key']]['chicago-bibliography'] -%}
-              {%- if chicago_bib -%}
-              {%- capture title_open -%}|BEGIN_TITLE|{%- endcapture -%}
-              {%- capture title_close -%}|END_TITLE|{%- endcapture -%}
-              {%- capture title_close_post_period -%}{{title_close}}.{%- endcapture -%}
-              {%- capture title_close_pre_period -%}.{{title_close}}{%- endcapture -%}
-              {%- capture bibliography -%}{{ chicago_bib | replace: title_close_post_period, title_close_pre_period }}{%- endcapture -%}
-              {%- capture bibliography_wrapped -%}{{ bibliography | replace: title_open, '<h5 class="card-title fw-bold">' | replace: title_close, '</h5>' }}{%- endcapture -%}
-              <p class="small mt-1 mb-2">{{ bibliography_wrapped }}</p>
-              {%- endif -%}
-              
-              <!-- Abstract (optional, expandable) -->
-              {%- if pub.abstract -%}
-              <details class="publication-abstract mb-3">
-                <summary class="cursor-pointer text-info small fw-semibold outline-0 user-select-none">Abstract</summary>
-                <p class="card-text small mt-2">{{ pub.abstract }}</p>
-              </details>
-              {%- endif -%}
-
-              <!-- Attachments (links) -->
-              {%- if pub.attachments -%}
-              <div class="publication-attachments mt-auto pt-2">
-                <div class="d-flex flex-wrap gap-2">
-                  {%- for attachment in pub.attachments -%}
-                  <a href="{{ attachment.url }}" class="btn btn-sm btn-outline-light" target="_blank" rel="noopener noreferrer">
-                    {%- if attachment.type == 'pdf' -%}
-                      📄 {{ attachment.title | default: 'PDF' }}
-                    {%- else -%}
-                      🔗 {{ attachment.title | default: 'Link' }}
-                    {%- endif -%}
-                  </a>
-                  {%- endfor -%}
+                <!-- Badge for publication type -->
+                <div class="mb-2">
+                  <span class="badge bg-light text-dark">{{ pub_type | strip }}</span>
                 </div>
-              </div>
-              {%- endif -%}
 
-              <!-- DOI/URL link if available -->
-              {%- if pub.DOI or pub.URL -%}
-              <div class="mt-2 pt-2">
-                {%- if pub.DOI -%}
-                <a href="https://doi.org/{{ pub.DOI }}" class="btn btn-sm btn-link text-info ps-0" target="_blank" rel="noopener noreferrer">
-                  DOI: {{ pub.DOI }}
-                </a><br/>
+                {%- assign chicago_bib = site.data.citations[pub['citation-key']]['chicago-bibliography'] -%}
+                {%- if chicago_bib -%}
+                {%- capture title_open -%}|BEGIN_TITLE|{%- endcapture -%}
+                {%- capture title_close -%}|END_TITLE|{%- endcapture -%}
+                {%- capture title_close_post_period -%}{{title_close}}.{%- endcapture -%}
+                {%- capture title_close_pre_period -%}.{{title_close}}{%- endcapture -%}
+                {%- capture bibliography -%}{{ chicago_bib | replace: title_close_post_period, title_close_pre_period }}{%- endcapture -%}
+                {%- capture bibliography_wrapped -%}{{ bibliography | replace: title_open, '<h5 class="card-title fw-bold">' | replace: title_close, '</h5>' }}{%- endcapture -%}
+                <p class="small mt-1 mb-2">{{ bibliography_wrapped }}</p>
                 {%- endif -%}
-                {%- if pub.URL -%}
-                <a href="{{ pub.URL }}" class="btn btn-sm btn-link text-info ps-0" target="_blank" rel="noopener noreferrer">
-                  View Online
-                </a>
+                
+                <!-- Abstract (optional, expandable) -->
+                {%- if pub.abstract -%}
+                <details class="publication-abstract mb-3">
+                  <summary class="cursor-pointer text-info small fw-semibold outline-0 user-select-none">Abstract</summary>
+                  <p class="card-text small mt-2">{{ pub.abstract }}</p>
+                </details>
+                {%- endif -%}
+
+                <!-- Attachments (links) -->
+                {%- if pub.attachments -%}
+                <div class="publication-attachments mt-auto pt-2">
+                  <div class="d-flex flex-wrap gap-2">
+                    {%- for attachment in pub.attachments -%}
+                    <a href="{{ attachment.url }}" class="btn btn-sm btn-outline-dark mx-1" target="_blank" rel="noopener noreferrer">
+                      {%- if attachment.type == 'pdf' -%}
+                        📄 {{ attachment.title | default: 'PDF' }}
+                      {%- else -%}
+                        🔗 {{ attachment.title | default: 'Link' }}
+                      {%- endif -%}
+                    </a>
+                    {%- endfor -%}
+                  </div>
+                </div>
+                {%- endif -%}
+
+                <!-- DOI/URL link if available -->
+                {%- if pub.DOI or pub.URL -%}
+                <div class="mt-2 pt-2">
+                  {%- if pub.DOI -%}
+                  <a href="https://doi.org/{{ pub.DOI }}" class="badge badge-dark mx-1" target="_blank" rel="noopener noreferrer">
+                    DOI: {{ pub.DOI }}
+                  </a><br/>
+                  {%- endif -%}
+                  {%- if pub.URL -%}
+                  <a href="{{ pub.URL }}" class="btn btn-sm btn-link text-info ps-0" target="_blank" rel="noopener noreferrer">
+                    View Online
+                  </a>
+                  {%- endif -%}
+                </div>
                 {%- endif -%}
               </div>
-              {%- endif -%}
             </div>
-          </div>
+          </a>
         </div>
       {% endif %}
     {% endfor %}
