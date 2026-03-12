@@ -47,19 +47,28 @@
                 {%- capture bibliography_wrapped -%}{{ bibliography | replace: title_open, '<h5 class="card-title fw-bold">' | replace: title_close, '</h5>' }}{%- endcapture -%}
                 <p class="small mt-1 mb-2">{{ bibliography_wrapped }}</p>
                 {%- endif -%}
-                
-                <!-- Abstract (optional, expandable) -->
-                {%- if pub.abstract -%}
-                <details class="publication-abstract mb-3">
-                  <summary class="cursor-pointer text-info small fw-semibold outline-0 user-select-none">Abstract</summary>
-                  <p class="card-text small mt-2">{{ pub.abstract }}</p>
-                </details>
+
+                <!-- DOI/URL link if available -->
+                {%- if pub.DOI or pub.URL -%}
+                <div>
+                  {%- if pub.DOI -%}
+                  <a href="https://doi.org/{{ pub.DOI }}" class="badge badge-dark mx-1" target="_blank" rel="noopener noreferrer">
+                    DOI: {{ pub.DOI }}
+                  </a><br/>
+                  {%- endif -%}
+                  
+                </div>
                 {%- endif -%}
 
                 <!-- Attachments (links) -->
-                {%- if pub.attachments -%}
+                {%- if pub.attachments or pub.url -%}
                 <div class="publication-attachments mt-auto pt-2">
                   <div class="d-flex flex-wrap gap-2">
+                    {%- if pub.URL -%}
+                    <a href="{{ pub.URL }}" class="btn btn-dark btn-sm mx-1" target="_blank" rel="noopener noreferrer">
+                    → view online
+                    </a>
+                    {%- endif -%}
                     {%- for attachment in pub.attachments -%}
                     <a href="{{ attachment.url }}" class="btn btn-sm btn-outline-dark mx-1" target="_blank" rel="noopener noreferrer">
                       {%- if attachment.type == 'pdf' -%}
@@ -72,22 +81,18 @@
                   </div>
                 </div>
                 {%- endif -%}
-
-                <!-- DOI/URL link if available -->
-                {%- if pub.DOI or pub.URL -%}
-                <div class="mt-2 pt-2">
-                  {%- if pub.DOI -%}
-                  <a href="https://doi.org/{{ pub.DOI }}" class="badge badge-dark mx-1" target="_blank" rel="noopener noreferrer">
-                    DOI: {{ pub.DOI }}
-                  </a><br/>
-                  {%- endif -%}
-                  {%- if pub.URL -%}
-                  <a href="{{ pub.URL }}" class="btn btn-sm btn-link text-info ps-0" target="_blank" rel="noopener noreferrer">
-                    View Online
-                  </a>
-                  {%- endif -%}
-                </div>
+                
+                <!-- Abstract (optional, expandable) -->
+                {%- if pub.abstract -%}
+                <details class="publication-abstract mb-3">
+                  <summary class="cursor-pointer text-info small fw-semibold outline-0 user-select-none">Abstract</summary>
+                  <p class="card-text small mt-2">{{ pub.abstract }}</p>
+                </details>
                 {%- endif -%}
+
+                
+
+                
               </div>
             </div>
           </a>
