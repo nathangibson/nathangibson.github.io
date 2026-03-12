@@ -95,10 +95,10 @@ layout: page
 
   {%- comment -%}Abstract (collapsible){%- endcomment -%}
   {%- if pub.abstract -%}
-  <details class="mb-3">
-    <summary class="fw-semibold" style="cursor: pointer;">Abstract</summary>
-    <p class="mt-2 small">{{ pub.abstract }}</p>
-  </details>
+  <div class="px-3 py-2 rounded mb-3" style="background-color: #f8f9fa; border-left: 3px solid #dee2e6;">
+    <p class="mb-3 fw-semibold text-muted text-uppercase">Abstract</p>
+    <p class="small mt-2">{{ pub.abstract }}</p>
+  </div>
   {%- endif -%}
 
   {%- comment -%}DOI and primary URL{%- endcomment -%}
