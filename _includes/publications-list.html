@@ -1,4 +1,5 @@
-<!-- Publications List -->
+<!-- Publications List
+     Optional parameter: tag (filters to publications with this tag) -->
 
 {% if site.data.publications and site.data.publications.references %}
 
@@ -13,6 +14,20 @@
   <!-- Publications grid -->
   <div class="row g-4" id="pub-grid">
     {% for pub in site.data.publications.references %}
+      <!-- Filter by tag if specified -->
+      {% if include.tag %}
+        {% assign has_tag = false %}
+        {% if pub.tags %}
+          {% for pub_tag in pub.tags %}
+            {% if pub_tag == include.tag %}
+              {% assign has_tag = true %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+        {% unless has_tag %}
+          {% continue %}
+        {% endunless %}
+      {% endif %}
       <!-- Only display certain types of publications -->
       {% if pub.type == "book" or pub.type == "article-journal" or pub.type == "chapter"%}
       <!-- Capture cover image URL from attachment labeled "thumbnail" in Zotero if available -->

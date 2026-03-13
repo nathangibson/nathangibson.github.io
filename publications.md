@@ -8,4 +8,5 @@ before-content: []
 after-content: []
 ---
 
-{% include publications-list.html %}
+{% include publications-list.html tag="group: publications" %}
+
