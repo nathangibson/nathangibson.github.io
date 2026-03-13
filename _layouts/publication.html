@@ -8,23 +8,7 @@ layout: page
 
 {% if pub %}
 
-{%- comment -%}Cover image from thumbnail attachment{%- endcomment -%}
-{%- capture cover_img -%}
-  {%- for a in pub.attachments -%}
-    {%- if a.title == "thumbnail" -%}{{ a.url }}{%- endif -%}
-  {%- endfor -%}
-{%- endcapture -%}
-{%- assign cover_img = cover_img | strip -%}
-
 <div class="publication-detail mb-4">
-
-  {%- if cover_img != "" -%}
-  <div class="text-center mb-4">
-    <img src="{{ cover_img }}" alt="{{ pub.title | escape }} cover"
-         class="img-fluid rounded shadow"
-         style="max-height: 240px; width: auto;">
-  </div>
-  {%- endif -%}
 
   {%- comment -%}Type badge{%- endcomment -%}
   {%- capture pub_type_label -%}
@@ -45,52 +29,16 @@ layout: page
     <span class="badge bg-secondary">{{ pub_type_label | strip }}</span>
   </div>
 
-  {%- comment -%}Authors or editors{%- endcomment -%}
-  {%- assign contributors = pub.author | default: pub.editor -%}
-  {%- if contributors -%}
-  <p class="fst-italic text-muted mb-2">
-    {%- for person in contributors -%}
-      {%- if person.family and person.given -%}
-        {{- person.given }} {{ person.family -}}
-      {%- elsif person.family -%}
-        {{- person.family -}}
-      {%- elsif person.literal -%}
-        {{- person.literal -}}
-      {%- endif -%}
-      {%- unless forloop.last -%}; {% endunless -%}
-    {%- endfor -%}
-    {%- if pub.editor and pub.author == nil %} (eds.){% endif -%}
-  </p>
-  {%- endif -%}
-
-  {%- comment -%}Year and venue — handle all issued date shapes from Zotero YAML export{%- endcomment -%}
-  {%- if pub.issued[0].year -%}
-    {%- assign pub_year = pub.issued[0].year -%}
-  {%- elsif pub.issued[0].literal -%}
-    {%- assign pub_year = pub.issued[0].literal -%}
-  {%- else -%}
-    {%- assign pub_year = "" -%}
-  {%- endif -%}
-
-  <div class="small text-muted mb-3">
-    {%- if pub_year != "" -%}<strong>{{ pub_year }}</strong>{%- endif -%}
-    {%- if pub['container-title'] -%}
-      {%- if pub_year != "" %} &bull; {% endif -%}<em>{{ pub['container-title'] }}</em>
-    {%- elsif pub.publisher -%}
-      {%- if pub_year != "" %} &bull; {% endif -%}{{ pub.publisher }}
-    {%- endif -%}
-    {%- if pub['publisher-place'] %}, {{ pub['publisher-place'] }}{%- endif -%}
-    {%- if pub.page %}, pp.&nbsp;{{ pub.page }}{%- endif -%}
-  </div>
-
   {%- comment -%}Chicago citation — prefer citations.yaml, fall back to embedded field{%- endcomment -%}
-  {%- assign chicago_raw = cit['chicago-bibliography'] | default: pub['chicago-bibliography'] -%}
-  {%- if chicago_raw -%}
-    {%- assign chicago_clean = chicago_raw | remove: '|BEGIN_TITLE|' | remove: '|END_TITLE|' -%}
-  <div class="p-3 rounded mb-3" style="background-color: #f8f9fa; border-left: 3px solid #dee2e6;">
-    <p class="small mb-1 fw-semibold text-muted text-uppercase" style="font-size: 0.7rem; letter-spacing: 0.05em;">Chicago Citation</p>
-    <p class="small mb-0">{{ chicago_clean }}</p>
-  </div>
+  {%- assign chicago_bib = cit['chicago-bibliography'] | default: pub['chicago-bibliography'] -%}
+  {%- if chicago_bib -%}
+    {%- capture title_open -%}|BEGIN_TITLE|{%- endcapture -%}
+    {%- capture title_close -%}|END_TITLE|{%- endcapture -%}
+    {%- capture title_close_post_period -%}{{title_close}}.{%- endcapture -%}
+    {%- capture title_close_pre_period -%}.{{title_close}}{%- endcapture -%}
+    {%- capture bibliography -%}{{ chicago_bib | replace: title_close_post_period, title_close_pre_period }}{%- endcapture -%}
+    {%- capture bibliography_wrapped -%}{{ bibliography | replace: title_open, '<h5 class="card-title fw-bold text-dark my-2">' | replace: title_close, '</h5>' }}{%- endcapture -%}
+    <div class="fst-italic text-muted mb-2 small mt-1">{{ bibliography_wrapped }}</div>
   {%- endif -%}
 
   {%- comment -%}Abstract (collapsible){%- endcomment -%}
