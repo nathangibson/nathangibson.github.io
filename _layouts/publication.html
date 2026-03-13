@@ -31,49 +31,7 @@ layout: page
 
   {%- comment -%}Chicago citation — prefer citations.yaml, fall back to embedded field{%- endcomment -%}
   {%- assign chicago_bib = cit['chicago-bibliography'] | default: pub['chicago-bibliography'] -%}
-  {%- if chicago_bib -%}
-    {%- capture title_open -%}|BEGIN_TITLE|{%- endcapture -%}
-    {%- capture title_close -%}|END_TITLE|{%- endcapture -%}
-    {%- capture title_close_post_period -%}{{title_close}}.{%- endcapture -%}
-    {%- capture title_close_pre_period -%}.{{title_close}}{%- endcapture -%}
-    {%- capture bibliography -%}{{ chicago_bib | replace: title_close_post_period, title_close_pre_period }}{%- endcapture -%}
-    {%- capture bibliography_wrapped -%}{{ bibliography | replace: title_open, '<h2 class="card-title fw-bold text-dark my-2">' | replace: title_close, '</h2>' }}{%- endcapture -%}
-    <div class="fst-italic text-muted mb-2 small mt-1">{{ bibliography_wrapped }}</div>
-  {%- endif -%}
-
-  <!-- DOI/URL link if available -->
-    {%- if pub.DOI or pub.URL -%}
-    <div>
-      {%- if pub.DOI -%}
-      <a href="https://doi.org/{{ pub.DOI }}" class="badge badge-dark mx-1" target="_blank" rel="noopener noreferrer">
-        DOI: {{ pub.DOI }}
-      </a><br/>
-      {%- endif -%}
-      
-    </div>
-    {%- endif -%}
-
-    <!-- Attachments (links) -->
-    {%- if pub.attachments or pub.url -%}
-    <div class="publication-attachments mt-auto pt-2">
-      <div class="d-flex flex-wrap gap-2">
-        {%- if pub.URL -%}
-        <a href="{{ pub.URL }}" class="btn btn-dark btn-outline-light btn-sm mx-1" target="_blank" rel="noopener noreferrer">
-        → view online
-        </a>
-        {%- endif -%}
-        {%- for attachment in pub.attachments -%}
-        <a href="{{ attachment.url }}" class="btn btn-sm btn-outline-dark mx-1" target="_blank" rel="noopener noreferrer">
-          {%- if attachment.type == 'pdf' -%}
-            📄 {{ attachment.title | default: 'PDF' }}
-          {%- else -%}
-            🔗 {{ attachment.title | default: 'Link' }}
-          {%- endif -%}
-        </a>
-        {%- endfor -%}
-      </div>
-    </div>
-    {%- endif -%}
+  {%- include publication-body.html title_tag="h2" title_class="card-title fw-bold text-dark my-2" wrapper_class="fst-italic text-muted mb-2 small mt-1" -%}
 
   {%- comment -%}Abstract (collapsible){%- endcomment -%}
   {%- if pub.abstract -%}

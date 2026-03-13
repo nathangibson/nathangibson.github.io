@@ -1,0 +1,57 @@
+{%- comment -%}
+  Shared publication body: Chicago citation, DOI badge, attachments.
+
+  Requires in parent scope (assigned before include call):
+    pub          — the CSL-JSON publication object
+    chicago_bib  — the Chicago-style bibliography string (may be nil/empty)
+
+  Parameters:
+    include.title_tag    — heading element, e.g. "h5" or "h2"
+    include.title_class  — CSS classes for that heading element
+    include.wrapper_class — CSS classes for the citation wrapper <div>
+{%- endcomment -%}
+
+{%- if chicago_bib -%}
+  {%- capture _sentinel_open -%}|BEGIN_TITLE|{%- endcapture -%}
+  {%- capture _sentinel_close -%}|END_TITLE|{%- endcapture -%}
+  {%- capture _sentinel_close_post_period -%}{{ _sentinel_close }}.{%- endcapture -%}
+  {%- capture _sentinel_close_pre_period -%}.{{ _sentinel_close }}{%- endcapture -%}
+  {%- capture _bibliography -%}{{ chicago_bib | replace: _sentinel_close_post_period, _sentinel_close_pre_period }}{%- endcapture -%}
+  {%- capture _title_open_tag -%}<{{ include.title_tag }} class="{{ include.title_class }}">{%- endcapture -%}
+  {%- capture _title_close_tag -%}</{{ include.title_tag }}>{%- endcapture -%}
+  {%- capture _bibliography_wrapped -%}{{ _bibliography | replace: _sentinel_open, _title_open_tag | replace: _sentinel_close, _title_close_tag }}{%- endcapture -%}
+  <div class="{{ include.wrapper_class }}">{{ _bibliography_wrapped }}</div>
+{%- endif -%}
+
+<!-- DOI/URL link if available -->
+{%- if pub.DOI or pub.URL -%}
+<div>
+  {%- if pub.DOI -%}
+  <a href="https://doi.org/{{ pub.DOI }}" class="badge badge-dark mx-1" target="_blank" rel="noopener noreferrer">
+    DOI: {{ pub.DOI }}
+  </a><br/>
+  {%- endif -%}
+</div>
+{%- endif -%}
+
+<!-- Attachments (links) -->
+{%- if pub.attachments or pub.url -%}
+<div class="publication-attachments mt-auto pt-2">
+  <div class="d-flex flex-wrap gap-2">
+    {%- if pub.URL -%}
+    <a href="{{ pub.URL }}" class="btn btn-dark btn-outline-light btn-sm mx-1" target="_blank" rel="noopener noreferrer">
+    → view online
+    </a>
+    {%- endif -%}
+    {%- for attachment in pub.attachments -%}
+    <a href="{{ attachment.url }}" class="btn btn-sm btn-outline-dark mx-1" target="_blank" rel="noopener noreferrer">
+      {%- if attachment.type == 'pdf' -%}
+        📄 {{ attachment.title | default: 'PDF' }}
+      {%- else -%}
+        🔗 {{ attachment.title | default: 'Link' }}
+      {%- endif -%}
+    </a>
+    {%- endfor -%}
+  </div>
+</div>
+{%- endif -%}
