@@ -140,6 +140,8 @@ references:
     literal: 2012-07-16/18
   language: en
   note: 'Presenters: _:n196'
+  tags:
+    - other presentations
   title: Abraham as a Point of Departure in the 'Monk of Bet Hale' Text
   type: speech
 
@@ -186,6 +188,8 @@ references:
       month: 10
       day: 28
   language: en
+  tags:
+    - invited
   title: >-
     Authority Records at the Frontiers of Research: How Can Small Projects
     Incorporate Large Providers into their Workflows?
@@ -237,6 +241,8 @@ references:
       day: 22
   language: en
   note: 'Presenters: _:n141'
+  tags:
+    - other presentations
   title: >-
     Challenges of Polyvalent Infrastructures: The Case of Syriac Studies and
     Syriaca.org
@@ -256,6 +262,8 @@ references:
       day: 19
   language: en
   note: 'Presenters: _:n123'
+  tags:
+    - other presentations
   title: >-
     The Christian Orient in Islamic Sources: Discovering Interdisciplinary
     Connections on the Digital Frontier
@@ -342,6 +350,20 @@ references:
   publisher: The Catholic University of America
   publisher-place: Washington, D.C.
   source: ProQuest
+  tags:
+    - Social sciences
+    - Philosophy
+    - religion and theology
+    - Language
+    - literature and linguistics
+    - Jahiz
+    - Caliph
+    - Abbasid
+    - Muslims
+    - Mutawakkil `Ala¿ Allah
+    - Argumentation
+    - Dhimmi
+    - Christians
   title: >-
     Closest in Friendship? Al-Jahiz' Profile of Christians in Abbasid Society in
     "The Refutation of Christians" ("Al-Radd 'ala al-Nasara")
@@ -399,6 +421,8 @@ references:
       month: 7
   language: en
   page: 196–218
+  tags:
+    - journals
   title: "Communities of Knowledge: Interreligious Networks of Scholars in Ibn Abī Uṣaybiʿa's\_History of the Physicians (Project Report)"
   type: article-journal
   URL: https://doi.org/10.1553/medievalworlds_no18_2023s196
@@ -419,6 +443,8 @@ references:
       day: 20
   language: en
   note: 'Presenters: _:n86'
+  tags:
+    - other presentations
   title: 'Communities of Knowledge (Usaybia.net): Tagging, Prosopography, and Networks'
   type: speech
 
@@ -469,6 +495,8 @@ references:
       day: 24
   language: en
   note: 'Presenters: _:n146'
+  tags:
+    - other presentations
   title: >-
     Toward a Cyberinfrastructure for Syriac Literature: Mapping a Text Corpus
     using TEI and RDF
@@ -492,6 +520,8 @@ references:
       day: 9
   language: en
   note: 'Presenters: _:n77'
+  tags:
+    - invited
   title: Distant Reading for Persons and Networks
   type: speech
 
@@ -554,6 +584,8 @@ references:
     BY 4.0).
   publisher-place: Washington, D.C.
   source: www.balisage.net
+  tags:
+    - Project Participant Publication
   title: Encoding Western and Non-Western Names for Ancient Syriac Authors
   type: paper-conference
   URL: >-
@@ -627,6 +659,16 @@ references:
       month: 9
       day: 20
   language: en
+  tags:
+    - Middle East
+    - Arabic
+    - Christian-Muslim-Jewish relations
+    - factoid prosopography
+    - Ibn Abi Usaybia
+    - Near East
+    - network analysis
+    - TEI-XML
+    - other presentations
   title: Five Centuries of History in a Network
   type: speech
   URL: https://doi.org/10.5281/zenodo.3452743
@@ -644,6 +686,8 @@ references:
     - literal: 2016-03-29/04-01
   language: en
   note: 'Presenters: _:n176'
+  tags:
+    - other presentations
   title: >-
     A Florilegium of Bad Translations: Al-Jahiz's Ninth-Century Excerpts of
     Jewish Arabic Bible Translations
@@ -676,6 +720,8 @@ references:
     literal: 2012-07-19/21
   language: en
   note: 'Presenters: _:n192'
+  tags:
+    - other presentations
   title: Gospel Citations on the Virgin Birth from Ninth Century Muslim Writers
   type: speech
 
@@ -692,6 +738,8 @@ references:
     literal: 2016-06-19/22
   language: en
   note: 'Presenters: _:n164'
+  tags:
+    - other presentations
   title: >-
     A Guide to Syriaca.org Reference Tools and Desiderata for Central and East
     Asia
@@ -708,6 +756,8 @@ references:
     literal: 2013-11-23/26
   language: en
   note: 'Presenters: _:n184'
+  tags:
+    - other presentations
   title: >-
     Inquiring of 'Beelzebub': Christians between the Caliph's Courts and the
     'Kingdom of God'
@@ -726,6 +776,8 @@ references:
       day: 12
   language: en
   note: 'Presenters: _:n137'
+  tags:
+    - other presentations
   title: >-
     Interreligious Contacts among Abbasid Scholars: A Digital Approach using
     Network Analysis
@@ -742,6 +794,8 @@ references:
     literal: 2016-04-11/12
   language: en
   note: 'Presenters: _:n168'
+  tags:
+    - other presentations
   title: >-
     An Islamic Scholar in a Pluralistic Society: The Biography of al-Jahiz
     Reconsidered
@@ -767,6 +821,8 @@ references:
   page: 59–72
   publisher: "Verlag der Ã\x96sterreichischen Akademie der Wissenschaften"
   publisher-place: Wien
+  tags:
+    - journals
   title: >-
     Knowledge Collaboration among Jews, Christians, Zoroastrians, and Muslims in
     the Abbasid Near East: Introduction
@@ -829,6 +885,8 @@ references:
       month: 12
       day: 11
   language: en
+  tags:
+    - other presentations
   title: >-
     Labeling Religious Affiliation in Ibn Abī Uṣaybiʿa's History of Physicians:
     A Quest
@@ -848,6 +906,8 @@ references:
       month: 7
   language: en
   page: 246–270
+  tags:
+    - journals
   title: >-
     Labeling Religious Affiliation in Ibn Abī Uṣaybiʿa's *History of
     Physicians*: A Quest
@@ -865,6 +925,8 @@ references:
   issued:
     literal: 2022-07-04/09
   language: en
+  tags:
+    - other presentations
   title: >-
     Linking Syriac and Christian Arabic Scholars to their Multi-Religious
     Networks
@@ -913,6 +975,8 @@ references:
       month: 5
       day: 30
   language: en
+  tags:
+    - article
   title: >-
     From Manuscript Catalogues to a Handbook of Syriac Literature: Modeling an
     Infrastructure for Syriaca.org
@@ -934,6 +998,8 @@ references:
     literal: 2013-03-15/18
   language: en
   note: 'Presenters: _:n188'
+  tags:
+    - other presentations
   title: >-
     The Miaphysite Arabian Triangle: Ghassānīya-Ḥirtā-Najrān in the Sixth
     Century C.E.
@@ -996,6 +1062,8 @@ references:
   page: 327–369
   publisher: Brill
   publisher-place: Leiden
+  tags:
+    - article
   title: A Mid-Ninth-Century Arabic Translation of Isaiah? Glimpses from al-Jāḥiẓ
   type: chapter
   URL: https://doi.org/10.1163/9789004347403_015
@@ -1111,6 +1179,8 @@ references:
     literal: 2016-09-26/30
   language: en
   note: 'Presenters: _:n151'
+  tags:
+    - other presentations
   title: >-
     Modeling a Body of Literature in TEI: Bibliotheca Hagiographica Syriaca
     Electronica
@@ -1128,6 +1198,8 @@ references:
     literal: 2011-06-26/29
   language: en
   note: 'Presenters: _:n200'
+  tags:
+    - other presentations
   title: 'Mountains and Plains: Geographical Exegesis in ''On Solitaries'''
   type: speech
 
@@ -1186,6 +1258,8 @@ references:
       day: 7
   language: en
   note: 'Presenters: _:n118'
+  tags:
+    - other presentations
   title: >-
     Networks of Biblical Scholarship: Jewish, Christian, and Muslim
     Collaboration in Biographical Literature
@@ -1221,6 +1295,8 @@ references:
     literal: 2016-08-19/21
   language: en
   note: 'Presenters: _:n160'
+  tags:
+    - other presentations
   title: >-
     The New Handbook of Syriac Literature: Bringing Syriac Literature into the
     Digital Landscape
@@ -1239,6 +1315,8 @@ references:
       day: 12
   language: en
   note: 'Presenters: _:n114'
+  tags:
+    - invited
   title: >-
     Physicians, Philosophers, and Polymaths: New Research on Christian
     Intellectuals during the 'Golden Age' of Islam
@@ -1259,6 +1337,8 @@ references:
       day: 13
   language: en
   note: 'Presenters: _:n180'
+  tags:
+    - other presentations
   title: >-
     Reading History from Polemic: Al-Jāḥiẓ's Portrayal of Christians in Abbasid
     Society
@@ -1279,6 +1359,8 @@ references:
       day: 25
   language: en
   note: 'Presenters: _:n133'
+  tags:
+    - other presentations
   title: >-
     Reading between the Lines: Mining History from Polemic using Argumentation
     Analysis
@@ -1295,6 +1377,8 @@ references:
     literal: 2016-04-08/09
   language: en
   note: 'Presenters: _:n172'
+  tags:
+    - other presentations
   title: >-
     Rhetoric as a Fulcrum of Power: How a Writer's Words Helped the Caliph Turn
     Program into Practice
@@ -1313,6 +1397,8 @@ references:
       day: 27
   language: en
   note: 'Presenters: _:n128'
+  tags:
+    - other presentations
   title: 'Robust Digital Approaches to Literary History: The Case of Syriac'
   type: speech
   URL: https://goo.gl/4MYc2X
@@ -1332,6 +1418,8 @@ references:
       day: 12
   language: en
   note: 'Presenters: _:n109'
+  tags:
+    - other presentations
   title: >-
     Scholar-Converts as Hubs of Knowledge Exchange in the Medieval Islamicate
     World
@@ -1367,6 +1455,8 @@ references:
       day: 5
   language: en
   note: 'Presenters: _:n104'
+  tags:
+    - invited
   title: State of Arabic Manuscript Description
   type: speech
   URL: https://tinyurl.com/ba181005
@@ -1384,6 +1474,8 @@ references:
       day: 10
   language: en
   note: 'Presenters: _:n100'
+  tags:
+    - other presentations
   title: TEI Manuscript Description Workflows for Small Projects
   type: speech
 
@@ -1400,6 +1492,8 @@ references:
       day: 8
   language: en
   note: 'Presenters: _:n90'
+  tags:
+    - invited
   title: >-
     Thinking in ⅃TЯ: Reorienting the Directional Assumptions of Global Digital
     Scholarship
@@ -1432,6 +1526,8 @@ references:
     Middle Ages
   issued:
     literal: 2016-03-07/08
+  tags:
+    - invited
   title: >-
     Turning Friends into Enemies and Enemies into Friends: Al-Jahiz's Attempt to
     Redefine Religious Identity in Ninth-Century Iraq
@@ -1462,6 +1558,8 @@ references:
     literal: 2016-08-21/24
   language: en
   note: 'Presenters: _:n156'
+  tags:
+    - other presentations
   title: >-
     What Did al-Jāḥiẓ Know about Christians? Terms, Doctrines, and Practices in
     the Works of a IXth c. Muslim
@@ -1706,6 +1804,8 @@ references:
   page: 59–216
   publisher: "Verlag der Ã\x96sterreichischen Akademie der Wissenschaften"
   publisher-place: Wien
+  tags:
+    - journals
   title: >-
     Knowledge Collaboration among Jews, Christians, Zoroastrians, and Muslims in
     the Abbasid Near East I [thematic section]
@@ -1734,6 +1834,8 @@ references:
   page: 137–270
   publisher: "Verlag der Ã\x96sterreichischen Akademie der Wissenschaften"
   publisher-place: Wien
+  tags:
+    - journals
   title: >-
     Knowledge Collaboration among Jews, Christians, Zoroastrians, and Muslims in
     the Abbasid Near East II [thematic section]
@@ -1788,6 +1890,12 @@ references:
       month: 10
       day: 27
   language: en
+  tags:
+    - Linked Open Data
+    - factoids
+    - prosopography
+    - stand-off markup
+    - Syriac studies
   title: Modeling a Born-Digital Factoid Prosopography using the TEI and Linked Data
   type: speech
   URL: https://zenodo.org/record/6539718

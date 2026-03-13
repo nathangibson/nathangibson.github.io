@@ -7,6 +7,12 @@ if (Translator.BetterCSL) {
   if (attachments.length > 0) {
     csl.attachments = attachments;
   }
+
+  // Extract and add tags
+  var tags = extractTags(zotero);
+  if (tags.length > 0) {
+    csl.tags = tags;
+  }
 }
 
 /**
@@ -54,4 +60,27 @@ function extractAttachments(zotero) {
   }
 
   return attachments;
+}
+
+/**
+ * Extract tags from Zotero item
+ */
+function extractTags(zotero) {
+  var tags = [];
+
+  if (zotero.tags && zotero.tags.length > 0) {
+    for (var i = 0; i < zotero.tags.length; i++) {
+      var tag = zotero.tags[i];
+      if (tag) {
+        // Handle different tag formats: could be a string or an object with 'tag' property
+        if (typeof tag === 'string') {
+          tags.push(tag);
+        } else if (tag.tag) {
+          tags.push(tag.tag);
+        }
+      }
+    }
+  }
+
+  return tags;
 }
