@@ -1,8 +1,21 @@
 {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
 
-{% if page.cover-img %}
-  <div id="header-big-imgs" data-num-img={% if page.cover-img.first %}{{ page.cover-img.size }}{% else %}1{% endif %}
-    {% for bigimg in page.cover-img %}
+{% if page.citation-key %}
+  {%- assign pub = site.data.publications.references | where: "citation-key", page.citation-key | first -%}
+  {%- if pub and pub.attachments -%}
+    {%- assign thumb = pub.attachments | where: "title", "thumbnail" | first -%}
+    {%- if thumb -%}
+      {%- assign page_cover_img = thumb.url -%}
+    {%- endif -%}
+  {%- endif -%}
+{% endif %}
+
+{% assign final_cover_img = page.cover-img | default: page_cover_img %}
+{% assign cover_gradient = page.cover-gradient | default: "dark" %}
+
+{% if final_cover_img %}
+  <div id="header-big-imgs" data-num-img={% if final_cover_img.first %}{{ final_cover_img.size }}{% else %}1{% endif %}
+    {% for bigimg in final_cover_img %}
     {% assign imgnum = forloop.index %}
     {% for imginfo in bigimg %}
     {% if imginfo[0] %}
@@ -16,9 +29,9 @@
   ></div>
 {% endif %}
 
-<header class="header-section {% if page.cover-img %}has-img{% endif %}">
-<div class="intro-header {% if page.cover-img %} big-img {% endif %}">
-  {% if page.cover-img or page.title %}
+<header class="header-section {% if final_cover_img %}has-img{% endif %}">
+<div class="intro-header {% if final_cover_img %} big-img cover-gradient-{{ cover_gradient }}{% endif %}">
+  {% if final_cover_img or page.title %}
   <div class="container-md">
     <div class="row col-8">
       <div class="col-xl-8 col-lg-10 py-5">
