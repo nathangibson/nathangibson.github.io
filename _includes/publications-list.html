@@ -1,14 +1,51 @@
-<!-- Publications List
-     Optional parameter: tag (filters to publications with this tag) -->
-
 {% if site.data.publications and site.data.publications.references %}
+
+<!-- Collect unique tags from all publications matching the filters -->
+{% assign unique_tags_str = "," %}
+{% for pub in site.data.publications.references %}
+  {% assign pub_matches_tag_filter = true %}
+  {% if include.tag %}
+    {% assign pub_matches_tag_filter = false %}
+    {% if pub.tags %}
+      {% for pub_tag in pub.tags %}
+        {% if pub_tag == include.tag %}
+          {% assign pub_matches_tag_filter = true %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  {% endif %}
+
+  {% if pub_matches_tag_filter and (pub.type == "book" or pub.type == "article-journal" or pub.type == "chapter") %}
+    {% if pub.tags %}
+      {% for pub_tag in pub.tags %}
+        {% assign tag_with_delims = pub_tag | prepend: "," | append: "," %}
+        {% unless unique_tags_str contains tag_with_delims %}
+          {% assign unique_tags_str = unique_tags_str | append: pub_tag | append: "," %}
+        {% endunless %}
+      {% endfor %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+{% assign unique_tags = unique_tags_str | split: "," | where_exp: "item", "item != ''" | sort %}
 
 <div class="publications-container">
   <!-- Filter buttons -->
-  <div class="publications-filters d-flex gap-3 flex-wrap mb-4">
-    <button class="btn btn-outline-dark mx-1 publication-filter fw-medium active" data-filter="all">All</button>
-    <button class="btn btn-outline-dark mx-1 publication-filter fw-medium" data-filter="book">Books</button>
-    <button class="btn btn-outline-dark mx-1 publication-filter fw-medium" data-filter="article-journal">Articles</button>
+  <div class="publications-filters">
+    <!-- Type filters -->
+    <div class="d-flex gap-3 flex-wrap mb-4">
+      <button class="btn btn-outline-dark mx-1 publication-filter fw-medium active" data-filter="all">All</button>
+      <button class="btn btn-outline-dark mx-1 publication-filter fw-medium" data-filter="book">Books</button>
+      <button class="btn btn-outline-dark mx-1 publication-filter fw-medium" data-filter="article-journal">Articles</button>
+    </div>
+
+    <!-- Tag filters (dynamically generated) -->
+    {% if unique_tags.size > 0 %}
+    <div class="d-flex gap-3 flex-wrap mb-4">
+      {% for tag in unique_tags %}
+        <button class="btn btn-outline-secondary mx-1 publication-tag fw-medium" data-tag="{{ tag }}">{{ tag }}</button>
+      {% endfor %}
+    </div>
+    {% endif %}
   </div>
 
   <!-- Publications grid -->
@@ -39,7 +76,7 @@
         {%- endfor -%}
       {%- endcapture -%}
         {%- assign pub_page = site.publications | where: "citation-key", pub['citation-key'] | first -%}
-        <div class="pub-item col-12 col-lg-6 py-3" data-type="{{ pub.type }}">
+        <div class="pub-item col-12 col-lg-6 py-3" data-type="{{ pub.type }}" data-tags="{% if pub.tags %}{{ pub.tags | join: ',' }}{% endif %}">
           <a href="{{ pub_page.url | default: pub.URL | default: '#' }}" class="text-decoration-none text-dark"{% unless pub_page %} target="_blank"{% endunless %}>
             <div class="card h-100 rounded-4 shadow" style="background-image: linear-gradient(to top left, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.9)), url('{{ cover-img | default: "/img/nhsl-banner.png" }}'); background-size: cover;">
               <div class="card-body d-flex flex-column">
@@ -54,7 +91,7 @@
 
                 {%- assign chicago_bib = site.data.citations[pub['citation-key']]['chicago-bibliography'] -%}
                 {%- include publication-body.html title_tag="h5" title_class="card-title fw-bold my-2" wrapper_class="small mt-1 mb-2" -%}
-                
+
                 <!-- Abstract (optional, expandable) -->
                 {%- if pub.abstract -%}
                 <details class="publication-abstract mb-3">
@@ -63,9 +100,9 @@
                 </details>
                 {%- endif -%}
 
-                
 
-                
+
+
               </div>
             </div>
           </a>
@@ -78,20 +115,47 @@
 </div>
 
 <script>
+  let activeTypeFilter = 'all';
+  let activeTagFilter = null;
+
+  function updatePublicationDisplay() {
+    let count = 0;
+    document.querySelectorAll('.pub-item').forEach(item => {
+      const itemType = item.dataset.type;
+      const itemTags = item.dataset.tags ? item.dataset.tags.split(',').map(t => t.trim()).filter(t => t) : [];
+
+      const typeMatch = activeTypeFilter === 'all' || itemType === activeTypeFilter;
+      const tagMatch = !activeTagFilter || itemTags.includes(activeTagFilter);
+
+      const show = typeMatch && tagMatch;
+      item.style.display = show ? '' : 'none';
+      if(show) count++;
+    });
+
+    document.getElementById('no-pubs').style.display = count === 0 ? 'block' : 'none';
+  }
+
   document.querySelectorAll('.publication-filter').forEach(btn => {
     btn.addEventListener('click', function() {
-      const filter = this.dataset.filter;
+      activeTypeFilter = this.dataset.filter;
       document.querySelectorAll('.publication-filter').forEach(b => b.classList.remove('active'));
       this.classList.add('active');
+      updatePublicationDisplay();
+    });
+  });
 
-      let count = 0;
-      document.querySelectorAll('.pub-item').forEach(item => {
-        const show = filter === 'all' || item.dataset.type === filter;
-        item.style.display = show ? '' : 'none';
-        if(show) count++;
-      });
-
-      document.getElementById('no-pubs').style.display = count === 0 ? 'block' : 'none';
+  document.querySelectorAll('.publication-tag').forEach(btn => {
+    btn.addEventListener('click', function() {
+      // Toggle: if this tag is active, deactivate it; otherwise activate it
+      if (activeTagFilter === this.dataset.tag) {
+        activeTagFilter = null;
+        this.classList.remove('active');
+      } else {
+        document.querySelectorAll('.publication-tag').forEach(b => b.classList.remove('active'));
+        activeTagFilter = this.dataset.tag;
+        this.classList.add('active');
+      }
+      updatePublicationDisplay();
     });
   });
 </script>
