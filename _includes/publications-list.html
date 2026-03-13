@@ -1,7 +1,8 @@
 {% if site.data.publications and site.data.publications.references %}
 
-<!-- Collect unique tags from all publications matching the filters -->
-{% assign unique_tags_str = "," %}
+<!-- Collect unique type tags and other tags from all publications matching the filters -->
+{% assign unique_type_tags_str = "," %}
+{% assign unique_other_tags_str = "," %}
 {% for pub in site.data.publications.references %}
   {% assign pub_matches_tag_filter = true %}
   {% if include.tag %}
@@ -19,31 +20,43 @@
     {% if pub.tags %}
       {% for pub_tag in pub.tags %}
         {% if pub_tag != include.tag %}
-          {% assign tag_with_delims = pub_tag | prepend: "," | append: "," %}
-          {% unless unique_tags_str contains tag_with_delims %}
-            {% assign unique_tags_str = unique_tags_str | append: pub_tag | append: "," %}
-          {% endunless %}
+          {% if pub_tag contains "type: " %}
+            {% assign tag_with_delims = pub_tag | prepend: "," | append: "," %}
+            {% unless unique_type_tags_str contains tag_with_delims %}
+              {% assign unique_type_tags_str = unique_type_tags_str | append: pub_tag | append: "," %}
+            {% endunless %}
+          {% else %}
+            {% assign tag_with_delims = pub_tag | prepend: "," | append: "," %}
+            {% unless unique_other_tags_str contains tag_with_delims %}
+              {% assign unique_other_tags_str = unique_other_tags_str | append: pub_tag | append: "," %}
+            {% endunless %}
+          {% endif %}
         {% endif %}
       {% endfor %}
     {% endif %}
   {% endif %}
 {% endfor %}
-{% assign unique_tags = unique_tags_str | split: "," | where_exp: "item", "item != ''" | sort %}
+{% assign unique_type_tags = unique_type_tags_str | split: "," | where_exp: "item", "item != ''" | sort %}
+{% assign unique_other_tags = unique_other_tags_str | split: "," | where_exp: "item", "item != ''" | sort %}
 
 <div class="publications-container">
   <!-- Filter buttons -->
   <div class="publications-filters">
-    <!-- Type filters -->
+    <!-- Type filters (from type: tags) -->
+    {% if unique_type_tags.size > 0 %}
     <div class="d-flex gap-3 flex-wrap mb-4">
       <button class="btn btn-outline-dark mx-1 publication-filter fw-medium active" data-filter="all">All</button>
-      <button class="btn btn-outline-dark mx-1 publication-filter fw-medium" data-filter="book">Books</button>
-      <button class="btn btn-outline-dark mx-1 publication-filter fw-medium" data-filter="article-journal">Articles</button>
+      {% for tag in unique_type_tags %}
+        {% assign type_display = tag | replace: "type: ", "" %}
+        <button class="btn btn-outline-dark mx-1 publication-filter fw-medium" data-filter="{{ tag }}">{{ type_display | capitalize }}</button>
+      {% endfor %}
     </div>
+    {% endif %}
 
-    <!-- Tag filters (dynamically generated) -->
-    {% if unique_tags.size > 0 %}
+    <!-- Other tag filters (dynamically generated) -->
+    {% if unique_other_tags.size > 0 %}
     <div class="d-flex gap-3 flex-wrap mb-4">
-      {% for tag in unique_tags %}
+      {% for tag in unique_other_tags %}
         <button class="btn btn-outline-secondary mx-1 publication-tag fw-medium" data-tag="{{ tag }}">{{ tag }}</button>
       {% endfor %}
     </div>
@@ -116,10 +129,9 @@
   function updatePublicationDisplay() {
     let count = 0;
     document.querySelectorAll('.pub-item').forEach(item => {
-      const itemType = item.dataset.type;
       const itemTags = item.dataset.tags ? item.dataset.tags.split(',').map(t => t.trim()).filter(t => t) : [];
 
-      const typeMatch = activeTypeFilter === 'all' || itemType === activeTypeFilter;
+      const typeMatch = activeTypeFilter === 'all' || itemTags.includes(activeTypeFilter);
       const tagMatch = !activeTagFilter || itemTags.includes(activeTagFilter);
 
       const show = typeMatch && tagMatch;
