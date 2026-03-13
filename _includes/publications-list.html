@@ -18,10 +18,12 @@
   {% if pub_matches_tag_filter %}
     {% if pub.tags %}
       {% for pub_tag in pub.tags %}
-        {% assign tag_with_delims = pub_tag | prepend: "," | append: "," %}
-        {% unless unique_tags_str contains tag_with_delims %}
-          {% assign unique_tags_str = unique_tags_str | append: pub_tag | append: "," %}
-        {% endunless %}
+        {% if pub_tag != include.tag %}
+          {% assign tag_with_delims = pub_tag | prepend: "," | append: "," %}
+          {% unless unique_tags_str contains tag_with_delims %}
+            {% assign unique_tags_str = unique_tags_str | append: pub_tag | append: "," %}
+          {% endunless %}
+        {% endif %}
       {% endfor %}
     {% endif %}
   {% endif %}
