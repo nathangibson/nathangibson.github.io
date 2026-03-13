@@ -15,7 +15,7 @@
     {% endif %}
   {% endif %}
 
-  {% if pub_matches_tag_filter and (pub.type == "book" or pub.type == "article-journal" or pub.type == "chapter") %}
+  {% if pub_matches_tag_filter %}
     {% if pub.tags %}
       {% for pub_tag in pub.tags %}
         {% assign tag_with_delims = pub_tag | prepend: "," | append: "," %}
@@ -65,8 +65,6 @@
           {% continue %}
         {% endunless %}
       {% endif %}
-      <!-- Only display certain types of publications -->
-      {% if pub.type == "book" or pub.type == "article-journal" or pub.type == "chapter"%}
       <!-- Capture cover image URL from attachment labeled "thumbnail" in Zotero if available -->
       {%- capture cover-img -%}
         {%- for attachment in pub.attachments -%}
@@ -99,15 +97,10 @@
                   <p class="card-text small mt-2">{{ pub.abstract }}</p>
                 </details>
                 {%- endif -%}
-
-
-
-
               </div>
             </div>
           </a>
         </div>
-      {% endif %}
     {% endfor %}
   </div>
 
