@@ -34,7 +34,7 @@
 
                 <!-- Badge for publication type -->
                 <div class="mb-2">
-                  <span class="badge bg-light text-dark">{{ pub_type | strip }}</span>
+                  <span class="badge badge-dark">{{ pub_type | strip }}</span>
                 </div>
 
                 {%- assign chicago_bib = site.data.citations[pub['citation-key']]['chicago-bibliography'] -%}
@@ -44,8 +44,8 @@
                 {%- capture title_close_post_period -%}{{title_close}}.{%- endcapture -%}
                 {%- capture title_close_pre_period -%}.{{title_close}}{%- endcapture -%}
                 {%- capture bibliography -%}{{ chicago_bib | replace: title_close_post_period, title_close_pre_period }}{%- endcapture -%}
-                {%- capture bibliography_wrapped -%}{{ bibliography | replace: title_open, '<h5 class="card-title fw-bold">' | replace: title_close, '</h5>' }}{%- endcapture -%}
-                <p class="small mt-1 mb-2">{{ bibliography_wrapped }}</p>
+                {%- capture bibliography_wrapped -%}{{ bibliography | replace: title_open, '<h5 class="card-title fw-bold my-2">' | replace: title_close, '</h5>' }}{%- endcapture -%}
+                <div class="small mt-1 mb-2">{{ bibliography_wrapped }}</div>
                 {%- endif -%}
 
                 <!-- DOI/URL link if available -->

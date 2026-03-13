@@ -26,7 +26,7 @@ layout: page
     {%- endcase -%}
   {%- endcapture -%}
   <div class="mb-3">
-    <span class="badge bg-secondary">{{ pub_type_label | strip }}</span>
+    <span class="badge badge-dark">{{ pub_type_label | strip }}</span>
   </div>
 
   {%- comment -%}Chicago citation — prefer citations.yaml, fall back to embedded field{%- endcomment -%}
@@ -37,52 +37,52 @@ layout: page
     {%- capture title_close_post_period -%}{{title_close}}.{%- endcapture -%}
     {%- capture title_close_pre_period -%}.{{title_close}}{%- endcapture -%}
     {%- capture bibliography -%}{{ chicago_bib | replace: title_close_post_period, title_close_pre_period }}{%- endcapture -%}
-    {%- capture bibliography_wrapped -%}{{ bibliography | replace: title_open, '<h5 class="card-title fw-bold text-dark my-2">' | replace: title_close, '</h5>' }}{%- endcapture -%}
+    {%- capture bibliography_wrapped -%}{{ bibliography | replace: title_open, '<h2 class="card-title fw-bold text-dark my-2">' | replace: title_close, '</h2>' }}{%- endcapture -%}
     <div class="fst-italic text-muted mb-2 small mt-1">{{ bibliography_wrapped }}</div>
   {%- endif -%}
 
+  <!-- DOI/URL link if available -->
+    {%- if pub.DOI or pub.URL -%}
+    <div>
+      {%- if pub.DOI -%}
+      <a href="https://doi.org/{{ pub.DOI }}" class="badge badge-dark mx-1" target="_blank" rel="noopener noreferrer">
+        DOI: {{ pub.DOI }}
+      </a><br/>
+      {%- endif -%}
+      
+    </div>
+    {%- endif -%}
+
+    <!-- Attachments (links) -->
+    {%- if pub.attachments or pub.url -%}
+    <div class="publication-attachments mt-auto pt-2">
+      <div class="d-flex flex-wrap gap-2">
+        {%- if pub.URL -%}
+        <a href="{{ pub.URL }}" class="btn btn-dark btn-outline-light btn-sm mx-1" target="_blank" rel="noopener noreferrer">
+        → view online
+        </a>
+        {%- endif -%}
+        {%- for attachment in pub.attachments -%}
+        <a href="{{ attachment.url }}" class="btn btn-sm btn-outline-dark mx-1" target="_blank" rel="noopener noreferrer">
+          {%- if attachment.type == 'pdf' -%}
+            📄 {{ attachment.title | default: 'PDF' }}
+          {%- else -%}
+            🔗 {{ attachment.title | default: 'Link' }}
+          {%- endif -%}
+        </a>
+        {%- endfor -%}
+      </div>
+    </div>
+    {%- endif -%}
+
   {%- comment -%}Abstract (collapsible){%- endcomment -%}
   {%- if pub.abstract -%}
-  <div class="px-3 py-2 rounded mb-3" style="background-color: #f8f9fa; border-left: 3px solid #dee2e6;">
+  <div class="px-3 py-2 rounded my-3" style="background-color: #f8f9fa; border-left: 3px solid #dee2e6;">
     <p class="mb-3 fw-semibold text-muted text-uppercase">Abstract</p>
     <p class="small mt-2">{{ pub.abstract }}</p>
   </div>
   {%- endif -%}
 
-  {%- comment -%}DOI and primary URL{%- endcomment -%}
-  {%- if pub.DOI or pub.URL -%}
-  <div class="mb-3">
-    {%- if pub.DOI -%}
-    <a href="https://doi.org/{{ pub.DOI }}"
-       class="btn btn-sm btn-outline-dark me-2"
-       target="_blank" rel="noopener noreferrer">DOI: {{ pub.DOI }}</a>
-    {%- endif -%}
-    {%- if pub.URL -%}
-    <a href="{{ pub.URL }}"
-       class="btn btn-sm btn-outline-secondary"
-       target="_blank" rel="noopener noreferrer">View Online</a>
-    {%- endif -%}
-  </div>
-  {%- endif -%}
-
-  {%- comment -%}Attachments, excluding the thumbnail used as cover image{%- endcomment -%}
-  {%- if pub.attachments -%}
-    {%- assign non_thumb = pub.attachments | where_exp: "a", "a.title != 'thumbnail'" -%}
-    {%- if non_thumb.size > 0 -%}
-  <div class="mb-3">
-    <p class="small fw-semibold mb-2">Resources:</p>
-    <div class="d-flex flex-wrap gap-2">
-      {%- for a in non_thumb -%}
-      <a href="{{ a.url }}" class="btn btn-sm btn-outline-dark"
-         target="_blank" rel="noopener noreferrer">
-        {%- if a.type == 'pdf' -%}📄 {{ a.title | default: 'PDF' }}
-        {%- else -%}🔗 {{ a.title | default: 'Link' }}{%- endif -%}
-      </a>
-      {%- endfor -%}
-    </div>
-  </div>
-    {%- endif -%}
-  {%- endif -%}
 
   <div class="mb-4">
     <a href="/publications/" class="btn btn-sm btn-link ps-0 text-muted">&larr; All Publications</a>
