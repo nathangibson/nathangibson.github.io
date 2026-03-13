@@ -11,6 +11,7 @@
 {% endif %}
 
 {% assign final_cover_img = page.cover-img | default: page_cover_img %}
+{% assign cover_gradient = page.cover-gradient | default: "dark" %}
 
 {% if final_cover_img %}
   <div id="header-big-imgs" data-num-img={% if final_cover_img.first %}{{ final_cover_img.size }}{% else %}1{% endif %}
@@ -29,11 +30,11 @@
 {% endif %}
 
 <header class="header-section {% if final_cover_img %}has-img{% endif %}">
-<div class="intro-header {% if final_cover_img %} big-img {% endif %}">
+<div class="intro-header {% if final_cover_img %} big-img cover-gradient-{{ cover_gradient }}{% endif %}">
   {% if final_cover_img or page.title %}
   <div class="container-md">
     <div class="row col-8">
-      <div class="col-lg-10 py-5">
+      <div class="col-xl-8 col-lg-10 py-5">
         <div class="{{ include.type }}-heading text-left">
           {% if page.prefix %}
               <h2 class="{{ include.type }}-subheading font-weight-bold">{{ page.prefix | strip_html }}</h2>
@@ -68,7 +69,7 @@
     </div>
   </div>
   {% endif %}
-  {% if final_cover_img %}<span class='img-desc'></span>{% endif %}
+  {% if page.cover-img %}<span class='img-desc'></span>{% endif %}
 </div>
 
 {% if page.header-extra %}
