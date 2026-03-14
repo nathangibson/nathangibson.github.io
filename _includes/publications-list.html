@@ -30,10 +30,10 @@
     <!-- Type filters (from type: tags) -->
     {% if unique_type_tags.size > 0 %}
     <div class="d-flex gap-3 flex-wrap mb-4">
-      <button class="btn btn-outline-dark mx-1 publication-filter fw-medium active" data-filter="all">All</button>
+      <button class="btn btn-outline-dark mx-1 my-1 publication-filter fw-medium active" data-filter="all">All</button>
       {% for tag in unique_type_tags %}
         {% assign type_display = tag | replace: "type: ", "" %}
-        <button class="btn btn-outline-dark mx-1 publication-filter fw-medium" data-filter="{{ tag }}">{{ type_display }}</button>
+        <button class="btn btn-outline-dark mx-1 my-1 publication-filter fw-medium" data-filter="{{ tag }}">{{ type_display }}</button>
       {% endfor %}
     </div>
     {% endif %}
