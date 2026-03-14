@@ -4,36 +4,21 @@
 {% assign unique_type_tags_str = "," %}
 {% assign unique_other_tags_str = "," %}
 {% for pub in site.data.publications.references %}
-  {% assign pub_matches_tag_filter = true %}
-  {% if include.tag %}
-    {% assign pub_matches_tag_filter = false %}
-    {% if pub.tags %}
-      {% for pub_tag in pub.tags %}
-        {% if pub_tag == include.tag %}
-          {% assign pub_matches_tag_filter = true %}
-        {% endif %}
-      {% endfor %}
-    {% endif %}
-  {% endif %}
-
-  {% if pub_matches_tag_filter %}
-    {% if pub.tags %}
-      {% for pub_tag in pub.tags %}
-        {% if pub_tag != include.tag %}
-          {% if pub_tag contains "type: " %}
-            {% assign tag_with_delims = pub_tag | prepend: "," | append: "," %}
-            {% unless unique_type_tags_str contains tag_with_delims %}
-              {% assign unique_type_tags_str = unique_type_tags_str | append: pub_tag | append: "," %}
-            {% endunless %}
-          {% else %}
-            {% assign tag_with_delims = pub_tag | prepend: "," | append: "," %}
-            {% unless unique_other_tags_str contains tag_with_delims %}
-              {% assign unique_other_tags_str = unique_other_tags_str | append: pub_tag | append: "," %}
-            {% endunless %}
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-    {% endif %}
+  {% if include.tag %}{% unless pub.tags contains include.tag %}{% continue %}{% endunless %}{% endif %}
+  {% if pub.tags %}
+    {% for pub_tag in pub.tags %}
+      {% if pub_tag == include.tag %}{% continue %}{% endif %}
+      {% assign tag_with_delims = pub_tag | prepend: "," | append: "," %}
+      {% if pub_tag contains "type: " %}
+        {% unless unique_type_tags_str contains tag_with_delims %}
+          {% assign unique_type_tags_str = unique_type_tags_str | append: pub_tag | append: "," %}
+        {% endunless %}
+      {% else %}
+        {% unless unique_other_tags_str contains tag_with_delims %}
+          {% assign unique_other_tags_str = unique_other_tags_str | append: pub_tag | append: "," %}
+        {% endunless %}
+      {% endif %}
+    {% endfor %}
   {% endif %}
 {% endfor %}
 {% assign unique_type_tags = unique_type_tags_str | split: "," | where_exp: "item", "item != ''" | sort %}
@@ -66,20 +51,7 @@
   <!-- Publications grid -->
   <div class="row g-4" id="pub-grid">
     {% for pub in site.data.publications.references %}
-      <!-- Filter by tag if specified -->
-      {% if include.tag %}
-        {% assign has_tag = false %}
-        {% if pub.tags %}
-          {% for pub_tag in pub.tags %}
-            {% if pub_tag == include.tag %}
-              {% assign has_tag = true %}
-            {% endif %}
-          {% endfor %}
-        {% endif %}
-        {% unless has_tag %}
-          {% continue %}
-        {% endunless %}
-      {% endif %}
+      {% if include.tag %}{% unless pub.tags contains include.tag %}{% continue %}{% endunless %}{% endif %}
       <!-- Capture cover image URL from attachment labeled "thumbnail" in Zotero if available -->
       {%- capture cover-img -%}
         {%- for attachment in pub.attachments -%}
@@ -89,7 +61,7 @@
         {%- endfor -%}
       {%- endcapture -%}
         {%- assign pub_page = site.publications | where: "citation-key", pub['citation-key'] | first -%}
-        <div class="pub-item col-12 col-lg-6 py-3" data-type="{{ pub.type }}" data-tags="{% if pub.tags %}{{ pub.tags | join: ',' }}{% endif %}">
+        <div class="pub-item col-12 col-lg-6 py-3" data-tags="{{ pub.tags | join: ',' }}">
           <a href="{{ pub_page.url | default: pub.URL | default: '#' }}" class="text-decoration-none text-dark"{% unless pub_page %} target="_blank"{% endunless %}>
             <div class="card h-100 rounded-4 shadow" style="background-image: linear-gradient(to top left, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.9)), url('{{ cover-img | default: "/img/nhsl-banner.png" }}'); background-size: cover;">
               <div class="card-body d-flex flex-column">
