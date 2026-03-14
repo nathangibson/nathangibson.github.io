@@ -130,10 +130,10 @@ references:
   publisher-place: Minneapolis
   tags:
     - Arabic
-    - digital humanities
-    - 'group: publications'
-    - methodology and practices
     - Syriac
+    - Digital humanities
+    - 'group: publications'
+    - Methodology and practices
     - 'type: Articles and book chapters'
   title: 'Right-to-Left (RTL) Text: Digital Humanists Plus Half a Billion Users'
   type: chapter
@@ -242,13 +242,13 @@ references:
   publisher: Pontifical Oriental Institute
   publisher-place: Rome
   tags:
+    - Jews
     - Arabic
     - Bible
+    - Muslims
     - Christians
     - 'group: publications'
-    - Jews
-    - methodology and practices
-    - Muslims
+    - Methodology and practices
     - 'type: Articles and book chapters'
   title: 'The Bible in Arabic: An Update on the State of Research'
   type: chapter
@@ -431,18 +431,18 @@ references:
   publisher: Usaybia.net
   publisher-place: Munich
   tags:
-    - Arabic
-    - Christians
-    - digital humanities
-    - 'group: publications'
-    - history of science
-    - interreligious
     - Jews
+    - Arabic
     - Muslims
-    - network analysis
-    - Samaritans
-    - 'type: Online reference works'
+    - Christians
+    - Digital humanities
     - Zoroastrians
+    - Samaritans
+    - 'group: publications'
+    - History of science
+    - Interreligious
+    - Network analysis
+    - 'type: Online reference works'
   title: >-
     Communities of Knowledge: Interreligious Networks of Scholars in Ibn Abi
     Usaybiʿa’s History of the Physicians
@@ -465,20 +465,20 @@ references:
   language: en
   page: 196–218
   tags:
-    - Arabic
-    - Christians
-    - digital humanities
-    - 'group: publications'
-    - history of science
-    - interreligious
     - Jews
+    - Arabic
     - Muslims
-    - network analysis
-    - prosopography
-    - Samaritans
+    - Christians
+    - Prosopography
+    - Digital humanities
     - TEI-XML
-    - 'type: Articles and book chapters'
     - Zoroastrians
+    - Samaritans
+    - 'group: publications'
+    - History of science
+    - Interreligious
+    - Network analysis
+    - 'type: Articles and book chapters'
   title: "Communities of Knowledge: Interreligious Networks of Scholars in Ibn Abī Uṣaybiʿa's\_History of the Physicians (Project Report)"
   type: article-journal
   URL: https://doi.org/10.1553/medievalworlds_no18_2023s196
@@ -536,15 +536,15 @@ references:
   publisher: Routledge
   publisher-place: London
   tags:
-    - Arabic
-    - Christians
-    - 'group: publications'
-    - history of science
-    - interreligious
     - Jews
+    - Arabic
     - Muslims
-    - Samaritans
     - Syriac
+    - Christians
+    - Samaritans
+    - 'group: publications'
+    - History of science
+    - Interreligious
     - 'type: Articles and book chapters'
   title: Cross-communal scholarly interactions
   type: chapter
@@ -657,11 +657,11 @@ references:
   publisher-place: Washington, D.C.
   source: www.balisage.net
   tags:
-    - digital humanities
-    - 'group: publications'
-    - methodology and practices
     - Syriac
+    - Digital humanities
     - TEI-XML
+    - 'group: publications'
+    - Methodology and practices
     - 'type: Conference proceedings'
   title: Encoding Western and Non-Western Names for Ancient Syriac Authors
   type: paper-conference
@@ -739,16 +739,16 @@ references:
       day: 20
   language: en
   tags:
+    - Middle East
     - Arabic
     - Christian-Muslim-Jewish relations
     - factoid prosopography
-    - 'group: other talks'
-    - 'group: talks'
     - Ibn Abi Usaybia
-    - Middle East
     - Near East
-    - network analysis
     - TEI-XML
+    - 'group: talks'
+    - 'group: other talks'
+    - Network analysis
   title: Five Centuries of History in a Network
   type: speech
   URL: https://doi.org/10.5281/zenodo.3452743
@@ -910,17 +910,17 @@ references:
   publisher: Verlag der Österreichischen Akademie der Wissenschaften
   publisher-place: Wien
   tags:
-    - Arabic
-    - Christians
-    - digital humanities
-    - 'group: publications'
-    - history of science
-    - interreligious
     - Jews
+    - Arabic
     - Muslims
-    - Samaritans
-    - 'type: Articles and book chapters'
+    - Christians
+    - Digital humanities
     - Zoroastrians
+    - Samaritans
+    - 'group: publications'
+    - History of science
+    - Interreligious
+    - 'type: Articles and book chapters'
   title: >-
     Knowledge Collaboration among Jews, Christians, Zoroastrians, and Muslims in
     the Abbasid Near East: Introduction
@@ -1006,20 +1006,20 @@ references:
   language: en
   page: 246–270
   tags:
-    - Arabic
-    - Christians
-    - digital humanities
-    - 'group: publications'
-    - history of science
-    - interreligious
     - Jews
+    - Arabic
     - Muslims
-    - network analysis
-    - prosopography
-    - Samaritans
+    - Christians
+    - Prosopography
+    - Digital humanities
     - TEI-XML
-    - 'type: Articles and book chapters'
     - Zoroastrians
+    - Samaritans
+    - 'group: publications'
+    - History of science
+    - Interreligious
+    - Network analysis
+    - 'type: Articles and book chapters'
   title: >-
     Labeling Religious Affiliation in Ibn Abī Uṣaybiʿa's *History of
     Physicians*: A Quest
@@ -1089,10 +1089,10 @@ references:
       day: 30
   language: en
   tags:
-    - digital humanities
-    - 'group: publications'
-    - history of literature
+    - Digital humanities
     - TEI-XML
+    - 'group: publications'
+    - History of literature
     - 'type: Articles and book chapters'
   title: >-
     From Manuscript Catalogues to a Handbook of Syriac Literature: Modeling an
@@ -1181,14 +1181,14 @@ references:
   publisher: Brill
   publisher-place: Leiden
   tags:
+    - Jews
     - Arabic
     - Bible
-    - Christians
-    - disputation literature
-    - 'group: publications'
-    - interreligious
-    - Jews
     - Muslims
+    - Christians
+    - 'group: publications'
+    - Disputation literature
+    - Interreligious
     - 'type: Articles and book chapters'
   title: A Mid-Ninth-Century Arabic Translation of Isaiah? Glimpses from al-Jāḥiẓ
   type: chapter
@@ -1235,10 +1235,10 @@ references:
   license: CC-BY 4.0
   source: hcommons.org
   tags:
-    - digital humanities
-    - 'group: publications'
-    - history of literature
+    - Digital humanities
     - TEI-XML
+    - 'group: publications'
+    - History of literature
     - 'type: Articles and book chapters'
   title: 'Modeling a Body of Literature in TEI: The New Handbook of Syriac Literature'
   title-short: Modeling a Body of Literature in TEI
@@ -1420,11 +1420,11 @@ references:
   publisher: The Syriac Reference Portal
   publisher-place: Syriaca.org
   tags:
-    - Christians
-    - digital humanities
-    - 'group: publications'
-    - history of literature
     - Syriac
+    - Christians
+    - Digital humanities
+    - 'group: publications'
+    - History of literature
     - 'type: Online reference works'
   title: The New Handbook of Syriac Literature
   type: book
@@ -1891,12 +1891,12 @@ references:
   publisher: The Syriac Reference Portal
   publisher-place: Syriaca.org
   tags:
-    - Christians
-    - digital humanities
-    - 'group: publications'
-    - history of literature
-    - prosopography
     - Syriac
+    - Christians
+    - Prosopography
+    - Digital humanities
+    - 'group: publications'
+    - History of literature
     - 'type: Online reference works'
   title: A Guide to Syriac Authors
   type: book
@@ -1919,12 +1919,12 @@ references:
   publisher: The Syriac Reference Portal
   publisher-place: Syriaca.org
   tags:
-    - Christians
-    - digital humanities
-    - 'group: publications'
-    - history of literature
-    - prosopography
     - Syriac
+    - Christians
+    - Prosopography
+    - Digital humanities
+    - 'group: publications'
+    - History of literature
     - 'type: Online reference works'
   title: The Syriac Biographical Dictionary
   type: book
@@ -1967,11 +1967,11 @@ references:
   tags:
     - Arabic
     - Bible
-    - Christians
-    - disputation literature
-    - 'group: publications'
-    - interreligious
     - Syriac
+    - Christians
+    - 'group: publications'
+    - Disputation literature
+    - Interreligious
     - 'type: Articles and book chapters'
   title: >-
     Inquiring of “Beelzebub”: Timothy and al-Jāḥiẓ on Christians in the ʿAbbāsid
@@ -2004,16 +2004,16 @@ references:
   publisher: "Verlag der Ã\x96sterreichischen Akademie der Wissenschaften"
   publisher-place: Wien
   tags:
-    - Arabic
-    - Christians
-    - 'group: publications'
-    - history of science
-    - interreligious
     - Jews
+    - Arabic
     - Muslims
-    - Samaritans
-    - 'type: Edited volumes and journal issues'
+    - Christians
     - Zoroastrians
+    - Samaritans
+    - 'group: publications'
+    - History of science
+    - Interreligious
+    - 'type: Edited volumes and journal issues'
   title: >-
     Knowledge Collaboration among Jews, Christians, Zoroastrians, and Muslims in
     the Abbasid Near East I [thematic section]
@@ -2043,16 +2043,16 @@ references:
   publisher: "Verlag der Ã\x96sterreichischen Akademie der Wissenschaften"
   publisher-place: Wien
   tags:
-    - Arabic
-    - Christians
-    - 'group: publications'
-    - history of science
-    - interreligious
     - Jews
+    - Arabic
     - Muslims
-    - Samaritans
-    - 'type: Edited volumes and journal issues'
+    - Christians
     - Zoroastrians
+    - Samaritans
+    - 'group: publications'
+    - History of science
+    - Interreligious
+    - 'type: Edited volumes and journal issues'
   title: >-
     Knowledge Collaboration among Jews, Christians, Zoroastrians, and Muslims in
     the Abbasid Near East II [thematic section]
@@ -2110,12 +2110,12 @@ references:
       day: 27
   language: en
   tags:
-    - factoids
-    - 'group: talks'
     - Linked Open Data
-    - prosopography
+    - Prosopography
+    - factoids
     - stand-off markup
     - Syriac studies
+    - 'group: talks'
   title: Modeling a Born-Digital Factoid Prosopography using the TEI and Linked Data
   type: speech
   URL: https://zenodo.org/record/6539718
@@ -2163,10 +2163,10 @@ references:
     - year: 2022
   language: en
   tags:
-    - digital humanities
-    - 'group: publications'
-    - prosopography
+    - Prosopography
+    - Digital humanities
     - TEI-XML
+    - 'group: publications'
     - 'type: Articles and book chapters'
   title: Modeling a Born-Digital Factoid Prosopography using the TEI and Linked Data
   type: article-journal
@@ -2229,16 +2229,16 @@ references:
   publisher: Biblia-Arabica.com
   publisher-place: Munich
   tags:
+    - Jews
     - Arabic
     - Bible
-    - bibliography
-    - Christians
-    - digital humanities
-    - 'group: publications'
-    - interreligious
-    - Jews
     - Muslims
+    - Bibliography
+    - Christians
+    - Digital humanities
     - Samaritans
+    - 'group: publications'
+    - Interreligious
     - 'type: Online reference works'
   title: >-
     Bibliography of the Arabic Bible: A Classified and Annotated History of
