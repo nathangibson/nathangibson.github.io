@@ -47,6 +47,8 @@ references:
       day: 19
   language: de
   publisher: H-Soz-Kult
+  tags:
+    - 'group: in the media'
   title: >-
     Connecting Late Antiquities | H-Soz-Kult. Kommunikation und Fachinformation
     für die Geschichtswissenschaften | Geschichte im Netz | History in the web
@@ -84,6 +86,8 @@ references:
   page: 32–33
   publisher: Goethe-Universität Frankfurt am Main. Fachbereich Evangelische Theologie
   source: publikationen.ub.uni-frankfurt.de
+  tags:
+    - 'group: in the media'
   title: >-
     "Je größer die Liebe und Nähe (zwischen Nachbarn), desto mehr Hass und
     Entfremdung kann es geben." : Interview zur Berufung von Prof. Dr. Nathan
@@ -124,6 +128,13 @@ references:
   page: 47–73
   publisher: University of Minnesota Press
   publisher-place: Minneapolis
+  tags:
+    - Arabic
+    - Syriac
+    - Digital humanities
+    - 'group: publications'
+    - Methodology and practices
+    - 'type: Articles and book chapters'
   title: 'Right-to-Left (RTL) Text: Digital Humanists Plus Half a Billion Users'
   type: chapter
   URL: >-
@@ -140,6 +151,9 @@ references:
     literal: 2012-07-16/18
   language: en
   note: 'Presenters: _:n196'
+  tags:
+    - 'group: other talks'
+    - 'group: talks'
   title: Abraham as a Point of Departure in the 'Monk of Bet Hale' Text
   type: speech
 
@@ -154,6 +168,8 @@ references:
     - year: 2022
       month: 11
       day: 18
+  tags:
+    - 'group: talks'
   title: Al-Jāḥiẓ on Divine Adoption
   type: speech
 
@@ -169,6 +185,8 @@ references:
       month: 1
       day: 23
   language: en
+  tags:
+    - 'group: talks'
   title: Arabic Literary Personages as Jewish Documentary Subjects
   type: speech
 
@@ -186,6 +204,9 @@ references:
       month: 10
       day: 28
   language: en
+  tags:
+    - 'group: invited talks'
+    - 'group: talks'
   title: >-
     Authority Records at the Frontiers of Research: How Can Small Projects
     Incorporate Large Providers into their Workflows?
@@ -220,6 +241,15 @@ references:
   page: 57–84
   publisher: Pontifical Oriental Institute
   publisher-place: Rome
+  tags:
+    - Jews
+    - Arabic
+    - Bible
+    - Muslims
+    - Christians
+    - 'group: publications'
+    - Methodology and practices
+    - 'type: Articles and book chapters'
   title: 'The Bible in Arabic: An Update on the State of Research'
   type: chapter
   URL: https://doi.org/10.5282/ubm/epub.49819
@@ -237,6 +267,9 @@ references:
       day: 22
   language: en
   note: 'Presenters: _:n141'
+  tags:
+    - 'group: other talks'
+    - 'group: talks'
   title: >-
     Challenges of Polyvalent Infrastructures: The Case of Syriac Studies and
     Syriaca.org
@@ -256,6 +289,9 @@ references:
       day: 19
   language: en
   note: 'Presenters: _:n123'
+  tags:
+    - 'group: other talks'
+    - 'group: talks'
   title: >-
     The Christian Orient in Islamic Sources: Discovering Interdisciplinary
     Connections on the Digital Frontier
@@ -273,6 +309,8 @@ references:
     - year: 2022
       month: 11
       day: 11
+  tags:
+    - 'group: talks'
   title: >-
     Circumnavigating Jewish and Christian Realities: What the Polemicist
     al-Jāḥiẓ Didn’t Want to Admit about His Society
@@ -342,6 +380,20 @@ references:
   publisher: The Catholic University of America
   publisher-place: Washington, D.C.
   source: ProQuest
+  tags:
+    - Social sciences
+    - Philosophy
+    - religion and theology
+    - Language
+    - literature and linguistics
+    - Jahiz
+    - Caliph
+    - Abbasid
+    - Muslims
+    - Mutawakkil `Ala¿ Allah
+    - Argumentation
+    - Dhimmi
+    - Christians
   title: >-
     Closest in Friendship? Al-Jahiz' Profile of Christians in Abbasid Society in
     "The Refutation of Christians" ("Al-Radd 'ala al-Nasara")
@@ -378,6 +430,19 @@ references:
     - year: 0
   publisher: Usaybia.net
   publisher-place: Munich
+  tags:
+    - Jews
+    - Arabic
+    - Muslims
+    - Christians
+    - Digital humanities
+    - Zoroastrians
+    - Samaritans
+    - 'group: publications'
+    - History of science
+    - Interreligious
+    - Network analysis
+    - 'type: Online reference works'
   title: >-
     Communities of Knowledge: Interreligious Networks of Scholars in Ibn Abi
     Usaybiʿa’s History of the Physicians
@@ -399,6 +464,21 @@ references:
       month: 7
   language: en
   page: 196–218
+  tags:
+    - Jews
+    - Arabic
+    - Muslims
+    - Christians
+    - Prosopography
+    - Digital humanities
+    - TEI-XML
+    - Zoroastrians
+    - Samaritans
+    - 'group: publications'
+    - History of science
+    - Interreligious
+    - Network analysis
+    - 'type: Articles and book chapters'
   title: "Communities of Knowledge: Interreligious Networks of Scholars in Ibn Abī Uṣaybiʿa's\_History of the Physicians (Project Report)"
   type: article-journal
   URL: https://doi.org/10.1553/medievalworlds_no18_2023s196
@@ -419,6 +499,9 @@ references:
       day: 20
   language: en
   note: 'Presenters: _:n86'
+  tags:
+    - 'group: other talks'
+    - 'group: talks'
   title: 'Communities of Knowledge (Usaybia.net): Tagging, Prosopography, and Networks'
   type: speech
 
@@ -452,6 +535,17 @@ references:
   page: 723–740
   publisher: Routledge
   publisher-place: London
+  tags:
+    - Jews
+    - Arabic
+    - Muslims
+    - Syriac
+    - Christians
+    - Samaritans
+    - 'group: publications'
+    - History of science
+    - Interreligious
+    - 'type: Articles and book chapters'
   title: Cross-communal scholarly interactions
   type: chapter
   URL: https://doi.org/10.4324/9781315170718-65
@@ -469,6 +563,9 @@ references:
       day: 24
   language: en
   note: 'Presenters: _:n146'
+  tags:
+    - 'group: other talks'
+    - 'group: talks'
   title: >-
     Toward a Cyberinfrastructure for Syriac Literature: Mapping a Text Corpus
     using TEI and RDF
@@ -492,6 +589,9 @@ references:
       day: 9
   language: en
   note: 'Presenters: _:n77'
+  tags:
+    - 'group: invited talks'
+    - 'group: talks'
   title: Distant Reading for Persons and Networks
   type: speech
 
@@ -508,6 +608,8 @@ references:
       month: 7
       day: 20
   language: en
+  tags:
+    - 'group: talks'
   title: 'Divine Adoption in Jewish, Christian, and Muslim Scriptures: Al-Jāḥiẓ''s View'
   type: speech
   URL: https://npgibson.com/s/adoption
@@ -554,6 +656,13 @@ references:
     BY 4.0).
   publisher-place: Washington, D.C.
   source: www.balisage.net
+  tags:
+    - Syriac
+    - Digital humanities
+    - TEI-XML
+    - 'group: publications'
+    - Methodology and practices
+    - 'type: Conference proceedings'
   title: Encoding Western and Non-Western Names for Ancient Syriac Authors
   type: paper-conference
   URL: >-
@@ -572,6 +681,8 @@ references:
       month: 6
       day: 24
   language: en
+  tags:
+    - 'group: talks'
   title: Entity tagging and network extraction in Arabic texts
   type: speech
   URL: >-
@@ -627,6 +738,17 @@ references:
       month: 9
       day: 20
   language: en
+  tags:
+    - Middle East
+    - Arabic
+    - Christian-Muslim-Jewish relations
+    - factoid prosopography
+    - Ibn Abi Usaybia
+    - Near East
+    - TEI-XML
+    - 'group: talks'
+    - 'group: other talks'
+    - Network analysis
   title: Five Centuries of History in a Network
   type: speech
   URL: https://doi.org/10.5281/zenodo.3452743
@@ -644,6 +766,9 @@ references:
     - literal: 2016-03-29/04-01
   language: en
   note: 'Presenters: _:n176'
+  tags:
+    - 'group: other talks'
+    - 'group: talks'
   title: >-
     A Florilegium of Bad Translations: Al-Jahiz's Ninth-Century Excerpts of
     Jewish Arabic Bible Translations
@@ -660,6 +785,8 @@ references:
     - year: 2024
       month: 2
       day: 19
+  tags:
+    - 'group: talks'
   title: >-
     "God alone knows what they hide in their hearts": Identifying religious
     affiliation in medieval Arabic texts
@@ -676,6 +803,9 @@ references:
     literal: 2012-07-19/21
   language: en
   note: 'Presenters: _:n192'
+  tags:
+    - 'group: other talks'
+    - 'group: talks'
   title: Gospel Citations on the Virgin Birth from Ninth Century Muslim Writers
   type: speech
 
@@ -692,6 +822,9 @@ references:
     literal: 2016-06-19/22
   language: en
   note: 'Presenters: _:n164'
+  tags:
+    - 'group: other talks'
+    - 'group: talks'
   title: >-
     A Guide to Syriaca.org Reference Tools and Desiderata for Central and East
     Asia
@@ -708,6 +841,9 @@ references:
     literal: 2013-11-23/26
   language: en
   note: 'Presenters: _:n184'
+  tags:
+    - 'group: other talks'
+    - 'group: talks'
   title: >-
     Inquiring of 'Beelzebub': Christians between the Caliph's Courts and the
     'Kingdom of God'
@@ -726,6 +862,9 @@ references:
       day: 12
   language: en
   note: 'Presenters: _:n137'
+  tags:
+    - 'group: other talks'
+    - 'group: talks'
   title: >-
     Interreligious Contacts among Abbasid Scholars: A Digital Approach using
     Network Analysis
@@ -742,6 +881,9 @@ references:
     literal: 2016-04-11/12
   language: en
   note: 'Presenters: _:n168'
+  tags:
+    - 'group: other talks'
+    - 'group: talks'
   title: >-
     An Islamic Scholar in a Pluralistic Society: The Biography of al-Jahiz
     Reconsidered
@@ -765,8 +907,20 @@ references:
   language: en
   note: '59'
   page: 59–72
-  publisher: "Verlag der Ã\x96sterreichischen Akademie der Wissenschaften"
+  publisher: Verlag der Österreichischen Akademie der Wissenschaften
   publisher-place: Wien
+  tags:
+    - Jews
+    - Arabic
+    - Muslims
+    - Christians
+    - Digital humanities
+    - Zoroastrians
+    - Samaritans
+    - 'group: publications'
+    - History of science
+    - Interreligious
+    - 'type: Articles and book chapters'
   title: >-
     Knowledge Collaboration among Jews, Christians, Zoroastrians, and Muslims in
     the Abbasid Near East: Introduction
@@ -829,6 +983,9 @@ references:
       month: 12
       day: 11
   language: en
+  tags:
+    - 'group: other talks'
+    - 'group: talks'
   title: >-
     Labeling Religious Affiliation in Ibn Abī Uṣaybiʿa's History of Physicians:
     A Quest
@@ -848,6 +1005,21 @@ references:
       month: 7
   language: en
   page: 246–270
+  tags:
+    - Jews
+    - Arabic
+    - Muslims
+    - Christians
+    - Prosopography
+    - Digital humanities
+    - TEI-XML
+    - Zoroastrians
+    - Samaritans
+    - 'group: publications'
+    - History of science
+    - Interreligious
+    - Network analysis
+    - 'type: Articles and book chapters'
   title: >-
     Labeling Religious Affiliation in Ibn Abī Uṣaybiʿa's *History of
     Physicians*: A Quest
@@ -865,6 +1037,9 @@ references:
   issued:
     literal: 2022-07-04/09
   language: en
+  tags:
+    - 'group: other talks'
+    - 'group: talks'
   title: >-
     Linking Syriac and Christian Arabic Scholars to their Multi-Religious
     Networks
@@ -913,6 +1088,12 @@ references:
       month: 5
       day: 30
   language: en
+  tags:
+    - Digital humanities
+    - TEI-XML
+    - 'group: publications'
+    - History of literature
+    - 'type: Articles and book chapters'
   title: >-
     From Manuscript Catalogues to a Handbook of Syriac Literature: Modeling an
     Infrastructure for Syriaca.org
@@ -934,6 +1115,9 @@ references:
     literal: 2013-03-15/18
   language: en
   note: 'Presenters: _:n188'
+  tags:
+    - 'group: other talks'
+    - 'group: talks'
   title: >-
     The Miaphysite Arabian Triangle: Ghassānīya-Ḥirtā-Najrān in the Sixth
     Century C.E.
@@ -996,6 +1180,16 @@ references:
   page: 327–369
   publisher: Brill
   publisher-place: Leiden
+  tags:
+    - Jews
+    - Arabic
+    - Bible
+    - Muslims
+    - Christians
+    - 'group: publications'
+    - Disputation literature
+    - Interreligious
+    - 'type: Articles and book chapters'
   title: A Mid-Ninth-Century Arabic Translation of Isaiah? Glimpses from al-Jāḥiẓ
   type: chapter
   URL: https://doi.org/10.1163/9789004347403_015
@@ -1040,6 +1234,12 @@ references:
     - literal: '[accepted, revisions in preparation]'
   license: CC-BY 4.0
   source: hcommons.org
+  tags:
+    - Digital humanities
+    - TEI-XML
+    - 'group: publications'
+    - History of literature
+    - 'type: Articles and book chapters'
   title: 'Modeling a Body of Literature in TEI: The New Handbook of Syriac Literature'
   title-short: Modeling a Body of Literature in TEI
   type: article-journal
@@ -1111,6 +1311,9 @@ references:
     literal: 2016-09-26/30
   language: en
   note: 'Presenters: _:n151'
+  tags:
+    - 'group: other talks'
+    - 'group: talks'
   title: >-
     Modeling a Body of Literature in TEI: Bibliotheca Hagiographica Syriaca
     Electronica
@@ -1128,6 +1331,9 @@ references:
     literal: 2011-06-26/29
   language: en
   note: 'Presenters: _:n200'
+  tags:
+    - 'group: other talks'
+    - 'group: talks'
   title: 'Mountains and Plains: Geographical Exegesis in ''On Solitaries'''
   type: speech
 
@@ -1146,6 +1352,8 @@ references:
     - year: 2021
       month: 5
       day: 18
+  tags:
+    - 'group: talks'
   title: >-
     Multireligious & Multilingual Knowledge Communities in Ibn Abī Uṣaybiʿa's
     History of Physicians An Exploration Using Digital Tools
@@ -1167,6 +1375,8 @@ references:
       month: 4
       day: 29
   language: en
+  tags:
+    - 'group: talks'
   title: >-
     Neighborhood Bibles: The Circulation of Tanakh/OT Versions Among Arabic
     Muslim Writers (8th–10th Century)
@@ -1186,6 +1396,9 @@ references:
       day: 7
   language: en
   note: 'Presenters: _:n118'
+  tags:
+    - 'group: other talks'
+    - 'group: talks'
   title: >-
     Networks of Biblical Scholarship: Jewish, Christian, and Muslim
     Collaboration in Biographical Literature
@@ -1206,6 +1419,13 @@ references:
     - year: 0
   publisher: The Syriac Reference Portal
   publisher-place: Syriaca.org
+  tags:
+    - Syriac
+    - Christians
+    - Digital humanities
+    - 'group: publications'
+    - History of literature
+    - 'type: Online reference works'
   title: The New Handbook of Syriac Literature
   type: book
   URL: http://syriaca.org/nhsl
@@ -1221,6 +1441,9 @@ references:
     literal: 2016-08-19/21
   language: en
   note: 'Presenters: _:n160'
+  tags:
+    - 'group: other talks'
+    - 'group: talks'
   title: >-
     The New Handbook of Syriac Literature: Bringing Syriac Literature into the
     Digital Landscape
@@ -1239,6 +1462,9 @@ references:
       day: 12
   language: en
   note: 'Presenters: _:n114'
+  tags:
+    - 'group: invited talks'
+    - 'group: talks'
   title: >-
     Physicians, Philosophers, and Polymaths: New Research on Christian
     Intellectuals during the 'Golden Age' of Islam
@@ -1259,6 +1485,9 @@ references:
       day: 13
   language: en
   note: 'Presenters: _:n180'
+  tags:
+    - 'group: other talks'
+    - 'group: talks'
   title: >-
     Reading History from Polemic: Al-Jāḥiẓ's Portrayal of Christians in Abbasid
     Society
@@ -1279,6 +1508,9 @@ references:
       day: 25
   language: en
   note: 'Presenters: _:n133'
+  tags:
+    - 'group: other talks'
+    - 'group: talks'
   title: >-
     Reading between the Lines: Mining History from Polemic using Argumentation
     Analysis
@@ -1295,6 +1527,9 @@ references:
     literal: 2016-04-08/09
   language: en
   note: 'Presenters: _:n172'
+  tags:
+    - 'group: other talks'
+    - 'group: talks'
   title: >-
     Rhetoric as a Fulcrum of Power: How a Writer's Words Helped the Caliph Turn
     Program into Practice
@@ -1313,6 +1548,9 @@ references:
       day: 27
   language: en
   note: 'Presenters: _:n128'
+  tags:
+    - 'group: other talks'
+    - 'group: talks'
   title: 'Robust Digital Approaches to Literary History: The Case of Syriac'
   type: speech
   URL: https://goo.gl/4MYc2X
@@ -1332,6 +1570,9 @@ references:
       day: 12
   language: en
   note: 'Presenters: _:n109'
+  tags:
+    - 'group: other talks'
+    - 'group: talks'
   title: >-
     Scholar-Converts as Hubs of Knowledge Exchange in the Medieval Islamicate
     World
@@ -1350,6 +1591,8 @@ references:
       month: 11
       day: 1
   language: en
+  tags:
+    - 'group: talks'
   title: The Social Lives of Polemicists
   type: speech
   URL: https://npgibson.com/s/social-lives
@@ -1367,6 +1610,9 @@ references:
       day: 5
   language: en
   note: 'Presenters: _:n104'
+  tags:
+    - 'group: invited talks'
+    - 'group: talks'
   title: State of Arabic Manuscript Description
   type: speech
   URL: https://tinyurl.com/ba181005
@@ -1384,6 +1630,9 @@ references:
       day: 10
   language: en
   note: 'Presenters: _:n100'
+  tags:
+    - 'group: other talks'
+    - 'group: talks'
   title: TEI Manuscript Description Workflows for Small Projects
   type: speech
 
@@ -1400,6 +1649,9 @@ references:
       day: 8
   language: en
   note: 'Presenters: _:n90'
+  tags:
+    - 'group: invited talks'
+    - 'group: talks'
   title: >-
     Thinking in ⅃TЯ: Reorienting the Directional Assumptions of Global Digital
     Scholarship
@@ -1417,6 +1669,8 @@ references:
     - year: 2023
       month: 2
       day: 8
+  tags:
+    - 'group: talks'
   title: Transculturation & Neoculturation among Jewish Physicians in Fatimid Cairo
   type: speech
   URL: http://npgibson.com/s/transculturation
@@ -1432,6 +1686,9 @@ references:
     Middle Ages
   issued:
     literal: 2016-03-07/08
+  tags:
+    - 'group: invited talks'
+    - 'group: talks'
   title: >-
     Turning Friends into Enemies and Enemies into Friends: Al-Jahiz's Attempt to
     Redefine Religious Identity in Ninth-Century Iraq
@@ -1448,6 +1705,8 @@ references:
     - year: 2023
       month: 1
       day: 17
+  tags:
+    - 'group: talks'
   title: 'Usaybia.net: Data Structure and Tools'
   type: speech
 
@@ -1462,6 +1721,9 @@ references:
     literal: 2016-08-21/24
   language: en
   note: 'Presenters: _:n156'
+  tags:
+    - 'group: other talks'
+    - 'group: talks'
   title: >-
     What Did al-Jāḥiẓ Know about Christians? Terms, Doctrines, and Practices in
     the Works of a IXth c. Muslim
@@ -1481,6 +1743,8 @@ references:
       month: 5
       day: 16
   source: YouTube
+  tags:
+    - 'group: in the media'
   title: Die Goethe-Uni stellt sich vor
   type: motion_picture
   URL: https://www.youtube.com/watch?v=7UJjxjlSKDU
@@ -1518,6 +1782,8 @@ references:
       month: 3
       day: 4
   source: YouTube
+  tags:
+    - 'group: in the media'
   title: 'Newly appointed: Prof. Dr. Nathan Gibson, Professor of Religious Studies'
   title-short: Newly appointed
   type: motion_picture
@@ -1544,6 +1810,8 @@ references:
       month: 9
       day: 14
   language: en
+  tags:
+    - 'group: in the media'
   title: Interview with Dr. Nathan P. Gibson about Syriaca.org, Part 1
   type: post-weblog
   URL: >-
@@ -1577,6 +1845,8 @@ references:
       month: 2
       day: 12
   language: de-DE
+  tags:
+    - 'group: in the media'
   title: >-
     Universität trifft Gesellschaft: Studierende präsentieren Poster zu
     interreligiösen Begegnungen in digitalen Räumen in der Evangelischen
@@ -1601,6 +1871,8 @@ references:
       month: 6
       day: 18
   language: en
+  tags:
+    - 'group: talks'
   title: 'Scholars, Servants and Caliphs: Encoding Social Encounters from Biographies'
   type: speech
   URL: https://prezi.com/view/jGuqpCUCKNtfUKB2YrXN/
@@ -1618,6 +1890,14 @@ references:
     - year: 2016
   publisher: The Syriac Reference Portal
   publisher-place: Syriaca.org
+  tags:
+    - Syriac
+    - Christians
+    - Prosopography
+    - Digital humanities
+    - 'group: publications'
+    - History of literature
+    - 'type: Online reference works'
   title: A Guide to Syriac Authors
   type: book
   URL: http://syriaca.org/authors
@@ -1638,6 +1918,14 @@ references:
     - year: 0
   publisher: The Syriac Reference Portal
   publisher-place: Syriaca.org
+  tags:
+    - Syriac
+    - Christians
+    - Prosopography
+    - Digital humanities
+    - 'group: publications'
+    - History of literature
+    - 'type: Online reference works'
   title: The Syriac Biographical Dictionary
   type: book
   URL: http://syriaca.org/persons
@@ -1676,6 +1964,15 @@ references:
   publisher: Brill
   publisher-place: Leiden
   source: Open WorldCat
+  tags:
+    - Arabic
+    - Bible
+    - Syriac
+    - Christians
+    - 'group: publications'
+    - Disputation literature
+    - Interreligious
+    - 'type: Articles and book chapters'
   title: >-
     Inquiring of “Beelzebub”: Timothy and al-Jāḥiẓ on Christians in the ʿAbbāsid
     Legal System
@@ -1706,6 +2003,17 @@ references:
   page: 59–216
   publisher: "Verlag der Ã\x96sterreichischen Akademie der Wissenschaften"
   publisher-place: Wien
+  tags:
+    - Jews
+    - Arabic
+    - Muslims
+    - Christians
+    - Zoroastrians
+    - Samaritans
+    - 'group: publications'
+    - History of science
+    - Interreligious
+    - 'type: Edited volumes and journal issues'
   title: >-
     Knowledge Collaboration among Jews, Christians, Zoroastrians, and Muslims in
     the Abbasid Near East I [thematic section]
@@ -1734,6 +2042,17 @@ references:
   page: 137–270
   publisher: "Verlag der Ã\x96sterreichischen Akademie der Wissenschaften"
   publisher-place: Wien
+  tags:
+    - Jews
+    - Arabic
+    - Muslims
+    - Christians
+    - Zoroastrians
+    - Samaritans
+    - 'group: publications'
+    - History of science
+    - Interreligious
+    - 'type: Edited volumes and journal issues'
   title: >-
     Knowledge Collaboration among Jews, Christians, Zoroastrians, and Muslims in
     the Abbasid Near East II [thematic section]
@@ -1755,6 +2074,8 @@ references:
       month: 4
       day: 20
   source: YouTube
+  tags:
+    - 'group: in the media'
   title: Ambivalente Beziehungen - Fachtag - Interviews
   type: motion_picture
   URL: https://www.youtube.com/watch?v=BhuS0hZfoSs
@@ -1788,6 +2109,13 @@ references:
       month: 10
       day: 27
   language: en
+  tags:
+    - Linked Open Data
+    - Prosopography
+    - factoids
+    - stand-off markup
+    - Syriac studies
+    - 'group: talks'
   title: Modeling a Born-Digital Factoid Prosopography using the TEI and Linked Data
   type: speech
   URL: https://zenodo.org/record/6539718
@@ -1834,6 +2162,12 @@ references:
   issued:
     - year: 2022
   language: en
+  tags:
+    - Prosopography
+    - Digital humanities
+    - TEI-XML
+    - 'group: publications'
+    - 'type: Articles and book chapters'
   title: Modeling a Born-Digital Factoid Prosopography using the TEI and Linked Data
   type: article-journal
   URL: https://journals.openedition.org/jtei/3979
@@ -1873,6 +2207,8 @@ references:
   citation-key: TurmoilDisplacesMiddle
   container-title: WUWM 89.7 FM - Milwaukee's NPR
   language: en
+  tags:
+    - 'group: in the media'
   title: >-
     As Turmoil Displaces Middle Eastern Christians, Scholars Work to Preserve
     Syriac Culture
@@ -1892,6 +2228,18 @@ references:
     - year: 0
   publisher: Biblia-Arabica.com
   publisher-place: Munich
+  tags:
+    - Jews
+    - Arabic
+    - Bible
+    - Muslims
+    - Bibliography
+    - Christians
+    - Digital humanities
+    - Samaritans
+    - 'group: publications'
+    - Interreligious
+    - 'type: Online reference works'
   title: >-
     Bibliography of the Arabic Bible: A Classified and Annotated History of
     Scholarship
@@ -1920,6 +2268,8 @@ references:
       month: 11
       day: 30
   language: de
+  tags:
+    - 'group: in the media'
   title: Heimliches Vorbild
   type: webpage
   URL: https://www.juedische-allgemeine.de/kultur/heimliches-vorbild/
