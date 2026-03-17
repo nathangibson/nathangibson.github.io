@@ -1,0 +1,58 @@
+{% comment %}
+  image-credits-list.html
+  Renders a collapsible <details> list of image credits for a page.
+  Only renders if at least one passed image has a credit entry.
+
+  Parameters:
+    images  (required) — array of image URL strings
+
+  Caption format (conditional, per image):
+    Image: [description]. By [creator]. [identifier]. Source: [publisher], [source_url]. [rights].
+
+  Usage in front matter + after-content hook (reads page.images):
+    after-content: image-credits-list.html
+    images:
+      - /img/bnf-ar-12.jpg
+      - /img/qalam.jpg
+
+  Usage inline with explicit list (include.images takes precedence):
+    {% assign my_images = "/img/bnf-ar-12.jpg,/img/qalam.jpg" | split: "," %}
+    {% include image-credits-list.html images=my_images %}
+{% endcomment %}
+
+{% assign _icl_images = include.images | default: page.images %}
+{% assign _icl_found = false %}
+{% for _icl_url in _icl_images %}
+  {% assign _icl_credit = _icl_url | image_credit %}
+  {% if _icl_credit.description or _icl_credit.creator or _icl_credit.identifier or _icl_credit.publisher or _icl_credit.source_url or _icl_credit.rights %}
+    {% assign _icl_found = true %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% if _icl_found %}
+<details class="image-credits mt-4">
+  <summary>Image credits</summary>
+  <ul class="image-credits-list mt-2 mb-0">
+    {% for _icl_url in _icl_images %}
+      {% assign _icl_credit = _icl_url | image_credit %}
+      {% if _icl_credit.description or _icl_credit.creator or _icl_credit.identifier or _icl_credit.publisher or _icl_credit.source_url or _icl_credit.rights %}
+      <li>
+        {%- capture _icl_caption -%}
+          {%- if _icl_credit.description %}Image: {{ _icl_credit.description }}.{% endif %}
+          {%- if _icl_credit.creator %} By {{ _icl_credit.creator }}.{% endif %}
+          {%- if _icl_credit.identifier %} {{ _icl_credit.identifier }}.{% endif %}
+          {%- if _icl_credit.publisher or _icl_credit.source_url %} Source:
+            {%- if _icl_credit.publisher %} {{ _icl_credit.publisher }}{% endif %}
+            {%- if _icl_credit.publisher and _icl_credit.source_url %},{% endif %}
+            {%- if _icl_credit.source_url %} <a href="{{ _icl_credit.source_url }}" target="_blank" rel="noopener">{{ _icl_credit.source_url | replace: 'https://', '' | replace: 'http://', '' | split: '/' | first }}</a>{% endif %}.
+          {%- endif %}
+          {%- if _icl_credit.rights %} {{ _icl_credit.rights }}.{% endif %}
+        {%- endcapture -%}
+        {{ _icl_caption | strip }}
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</details>
+{% endif %}

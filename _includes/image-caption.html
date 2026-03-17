@@ -1,0 +1,40 @@
+{% comment %}
+  image-caption.html
+  Renders an inline <figure>/<figcaption> for a single image with credits.
+
+  Parameters:
+    url  (required) — image URL
+    alt  (optional) — alt text for <img>
+
+  Caption format (conditional):
+    Image: [description]. By [creator]. [identifier]. Source: [publisher], [source_url]. [rights].
+
+  Each section only appears if its field exists. Prefixes ("By", "Source:") are omitted if their field is empty.
+  URLs are abbreviated to domain and rendered as clickable links.
+
+  Usage:
+    {% include image-caption.html url="/img/bnf-ar-12.jpg" alt="Manuscript folio" %}
+{% endcomment %}
+
+{% assign _ic_credit = include.url | image_credit %}
+{% if _ic_credit.description or _ic_credit.creator or _ic_credit.identifier or _ic_credit.publisher or _ic_credit.source_url or _ic_credit.rights %}
+<figure class="image-figure">
+  <img src="{{ include.url }}" alt="{{ include.alt | default: 'Image' }}" />
+  <figcaption class="image-credit">
+    {%- capture _ic_caption -%}
+      {%- if _ic_credit.description %}Image: {{ _ic_credit.description }}.{% endif %}
+      {%- if _ic_credit.creator %} By {{ _ic_credit.creator }}.{% endif %}
+      {%- if _ic_credit.identifier %} {{ _ic_credit.identifier }}.{% endif %}
+      {%- if _ic_credit.publisher or _ic_credit.source_url %} Source:
+        {%- if _ic_credit.publisher %} {{ _ic_credit.publisher }}{% endif %}
+        {%- if _ic_credit.publisher and _ic_credit.source_url %},{% endif %}
+        {%- if _ic_credit.source_url %} <a href="{{ _ic_credit.source_url }}" target="_blank" rel="noopener">{{ _ic_credit.source_url | replace: 'https://', '' | replace: 'http://', '' | split: '/' | first }}</a>{% endif %}.
+      {%- endif %}
+      {%- if _ic_credit.rights %} {{ _ic_credit.rights }}.{% endif %}
+    {%- endcapture -%}
+    {{ _ic_caption | strip }}
+  </figcaption>
+</figure>
+{% else %}
+<img src="{{ include.url }}" alt="{{ include.alt | default: 'Image' }}" />
+{% endif %}

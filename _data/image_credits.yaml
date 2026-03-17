@@ -1,0 +1,50 @@
+---
+bnf-ar-12-cr-x1000:
+  description: Genesis 1 in decorated Arabic Pentateuch, copied in 1353 C.E.
+  identifier: MS Bibliothèque nationale de France, Département des manuscrits, Arabe
+    12, fol. 2v-3r
+  publisher: gallica.bnf.fr / BnF
+  source_url: https://gallica.bnf.fr/ark:/12148/btv1b84192173/f14.item
+  rights: Public Domain
+bnf-ar-12-cr:
+  description: Genesis 1 in decorated Arabic Pentateuch, copied in 1353 C.E.
+  identifier: MS Bibliothèque nationale de France, Département des manuscrits, Arabe
+    12, fol. 2v-3r
+  publisher: gallica.bnf.fr / BnF
+  source_url: https://gallica.bnf.fr/ark:/12148/btv1b84192173/f14.item
+  rights: Public Domain
+bnf-ar-12-x1000:
+  description: Genesis 1 in decorated Arabic Pentateuch, copied in 1353 C.E.
+  identifier: MS Bibliothèque nationale de France, Département des manuscrits, Arabe
+    12, fol. 2v-3r
+  publisher: gallica.bnf.fr / BnF
+  source_url: https://gallica.bnf.fr/ark:/12148/btv1b84192173/f14.item
+  rights: Public Domain
+bnf-ar-12-x2000:
+  description: Genesis 1 in decorated Arabic Pentateuch, copied in 1353 C.E.
+  identifier: MS Bibliothèque nationale de France, Département des manuscrits, Arabe
+    12, fol. 2v-3r
+  publisher: gallica.bnf.fr / BnF
+  source_url: https://gallica.bnf.fr/ark:/12148/btv1b84192173/f14.item
+  rights: Public Domain
+bnf-ar-12:
+  description: Genesis 1 in decorated Arabic Pentateuch, copied in 1353 C.E.
+  identifier: MS Bibliothèque nationale de France, Département des manuscrits, Arabe
+    12, fol. 2v-3r
+  publisher: gallica.bnf.fr / BnF
+  source_url: https://gallica.bnf.fr/ark:/12148/btv1b84192173/f14.item
+  rights: Public Domain
+circle:
+  description: OLYMPUS DIGITAL CAMERA
+physician-elixir:
+  description: http://www.metmuseum.org/art/collection/search/446288
+  rights: https://creativecommons.org/publicdomain/zero/1.0/
+portrait-cr:
+  description: OLYMPUS DIGITAL CAMERA
+portrait-goethe:
+  creator: Uwe Dettmar
+  rights: 'Foto: Uwe Dettmar'
+portrait-square:
+  description: OLYMPUS DIGITAL CAMERA
+portrait:
+  description: OLYMPUS DIGITAL CAMERA

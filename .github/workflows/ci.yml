@@ -11,11 +11,16 @@ jobs:
           ruby-version: '3.3'
       - name: Install dependencies
         run: bundle install && bundle exec appraisal install
+      - name: Install exiftool
+        run: sudo apt-get install -y libimage-exiftool-perl
       - name: Fetch Chicago citations from Zotero
         run: bundle exec ruby scripts/fetch_zotero_citations.rb
         continue-on-error: true
       - name: Display citation fetch results
         run: cat .zotero_fetch_log.txt || echo "No citation fetch log available"
+      - name: Extract image credits from EXIF
+        run: ruby scripts/extract_image_credits.rb
+        continue-on-error: true
       - name: Setup Pages
         id: configure-pages
         uses: actions/configure-pages@v5

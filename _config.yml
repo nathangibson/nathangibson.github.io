@@ -322,6 +322,7 @@ exclude:
   - README.md
   - screenshot.png
   - docs/
+  - '**/*.xmp'
 
 plugins:
   - jekyll-paginate
