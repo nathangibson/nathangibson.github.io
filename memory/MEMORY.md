@@ -1,7 +1,7 @@
 # Site Memory
 
 ## Site overview
-Jekyll personal/academic site (nathangibson.github.io). Beautiful Jekyll 6 + Bootstrap 4.5.3. Custom GitHub Actions build pipeline.
+Jekyll personal/academic site (nathangibson.github.io). Beautiful Jekyll 6 + Bootstrap 4.5.3. Custom GitHub Actions build pipeline. See `CLAUDE.md` for project rules/conventions.
 
 ## Key systems
 - **Publications** — Zotero API → `_data/publications.yaml` + `_data/citations.yaml`. See `memory/publications.md`
