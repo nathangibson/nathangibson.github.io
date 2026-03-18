@@ -4,7 +4,7 @@
 Jekyll personal/academic site (nathangibson.github.io). Beautiful Jekyll 6 + Bootstrap 4.5.3. Custom GitHub Actions build pipeline.
 
 ## Key systems
-- **Publications** — Zotero API → `_data/publications.yaml` + `_data/citations.yaml`. See `.claude/context-card-system.md`
+- **Publications** — Zotero API → `_data/publications.yaml` + `_data/citations.yaml`. See `memory/publications.md`
 - **Image credits** — EXIF → `_data/image_credits.yaml`. See `memory/image-credits.md`
 
 ## Build pipeline (ci.yml)
