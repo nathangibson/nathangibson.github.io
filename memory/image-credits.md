@@ -12,7 +12,11 @@
 
 ## Pipeline
 1. Darktable edits `dc:*` fields in `.xmp` sidecar files
-2. Run `ruby scripts/extract_image_credits.rb` → `_data/image_credits.yaml`
+2. **Automatic extraction via Jekyll hook** (`_plugins/extract_image_credits_hook.rb`):
+   - Runs on every `jekyll build` / `jekyll server`
+   - Calls `ruby scripts/extract_image_credits.rb` → `_data/image_credits.yaml`
+   - Instant feedback during local development (no manual script needed)
+   - CI also runs extraction independently (redundancy)
 3. Jekyll reads YAML at build time via `image_credit` Liquid filter
 4. Includes render formatted captions (inline or page-level list)
 
@@ -42,6 +46,7 @@ Rendering logic:
 No doubled punctuation: each prefix/field only appears if that field exists.
 
 ## Key files
+- `_plugins/extract_image_credits_hook.rb` — Jekyll hook that auto-runs extraction on every build
 - `scripts/extract_image_credits.rb` — Parses XMP DC fields, joins arrays, maps to YAML
 - `_plugins/image_credit.rb` — Liquid filters: `image_credit_key` (URL→key) and `image_credit` (URL→credit hash)
 - `_includes/image-caption.html` — Inline figure/figcaption for single image
@@ -51,7 +56,25 @@ No doubled punctuation: each prefix/field only appears if that field exists.
 
 ## Usage
 
-### Inline caption
+### Automatic extraction (recommended)
+When you run `jekyll build` or `jekyll server`, the hook automatically:
+1. Extracts all XMP metadata from `.xmp` sidecars
+2. Regenerates `_data/image_credits.yaml`
+3. Pages are built with fresh credits
+
+**Workflow in Darktable**:
+1. Edit metadata for an image in Darktable (dc:description, dc:creator, etc.)
+2. Darktable saves changes to `.xmp` sidecar
+3. Run `jekyll server` (or rebuild)
+4. Hook extracts fresh metadata, updates YAML
+5. Preview updated captions instantly
+
+### Manual extraction
+If desired, run the script directly:
+```bash
+ruby scripts/extract_image_credits.rb
+```
+This is also what the Jekyll hook does behind the scenes.
 ```liquid
 {% include image-caption.html url="/img/bnf-ar-12.jpg" alt="Manuscript folio" %}
 ```

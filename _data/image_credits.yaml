@@ -40,11 +40,24 @@ physician-elixir:
   description: http://www.metmuseum.org/art/collection/search/446288
   rights: https://creativecommons.org/publicdomain/zero/1.0/
 portrait-cr:
-  description: OLYMPUS DIGITAL CAMERA
+  description: Portrait of Nathan P. Gibson
+  creator: Tiffany Gibson
+  rights: Used by permission
 portrait-goethe:
+  description: Portrait of Nathan P. Gibson
   creator: Uwe Dettmar
-  rights: 'Foto: Uwe Dettmar'
+  rights: Used by permission
 portrait-square:
-  description: OLYMPUS DIGITAL CAMERA
+  description: Portrait of Nathan P. Gibson
+  creator: Tiffany Gibson
+  rights: Used by permission
 portrait:
-  description: OLYMPUS DIGITAL CAMERA
+  description: Portrait of Nathan P. Gibson
+  creator: Tiffany Gibson
+  rights: Used by permission
+qalam:
+  description: Qalam pens, made from reeds
+  creator: <a href="//commons.wikimedia.org/wiki/User:Baba66" title="User:Baba66">Baba66</a>
+    (no machine-readable author provided, own work assumed based on copyright claims)
+  source_url: https://commons.wikimedia.org/w/index.php?curid=652324
+  rights: Creative Commons Attribution 2.5 (CC BY 2.5), https://creativecommons.org/licenses/by/2.5
