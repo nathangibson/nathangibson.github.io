@@ -36,3 +36,11 @@
     <script src="{{ js | relative_url }}"></script>
   {% endfor %}
 {% endif %}
+
+<!-- Popover initialization for image captions and other popovers -->
+<script>
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+</script>
+

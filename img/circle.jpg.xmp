@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<x:xmpmeta xmlns:x='adobe:ns:meta/' x:xmptk='Image::ExifTool 13.50'>
+<rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+
+ <rdf:Description rdf:about=''
+  xmlns:darktable='http://darktable.sf.net/'>
+  <darktable:auto_presets_applied>0</darktable:auto_presets_applied>
+  <darktable:change_timestamp>-1</darktable:change_timestamp>
+  <darktable:export_timestamp>-1</darktable:export_timestamp>
+  <darktable:history_end>0</darktable:history_end>
+  <darktable:import_timestamp>63909322696051342</darktable:import_timestamp>
+  <darktable:iop_order_version>4</darktable:iop_order_version>
+  <darktable:print_timestamp>-1</darktable:print_timestamp>
+  <darktable:raw_params>0</darktable:raw_params>
+  <darktable:xmp_version>5</darktable:xmp_version>
+ </rdf:Description>
+
+ <rdf:Description rdf:about=''
+  xmlns:dc='http://purl.org/dc/elements/1.1/'>
+  <dc:description>
+   <rdf:Alt>
+    <rdf:li xml:lang='x-default'>OLYMPUS DIGITAL CAMERA</rdf:li>
+   </rdf:Alt>
+  </dc:description>
+  <dc:subject>
+   <rdf:Bag>
+    <rdf:li>darktable</rdf:li>
+    <rdf:li>format</rdf:li>
+    <rdf:li>jpg</rdf:li>
+   </rdf:Bag>
+  </dc:subject>
+ </rdf:Description>
+
+ <rdf:Description rdf:about=''
+  xmlns:exif='http://ns.adobe.com/exif/1.0/'>
+  <exif:DateTimeOriginal>2017:01:27 17:19:14.000</exif:DateTimeOriginal>
+ </rdf:Description>
+
+ <rdf:Description rdf:about=''
+  xmlns:lr='http://ns.adobe.com/lightroom/1.0/'>
+  <lr:hierarchicalSubject>
+   <rdf:Bag>
+    <rdf:li>darktable|format|jpg</rdf:li>
+   </rdf:Bag>
+  </lr:hierarchicalSubject>
+ </rdf:Description>
+
+ <rdf:Description rdf:about=''
+  xmlns:xmp='http://ns.adobe.com/xap/1.0/'>
+  <xmp:Rating>1</xmp:Rating>
+ </rdf:Description>
+
+ <rdf:Description rdf:about=''
+  xmlns:xmpMM='http://ns.adobe.com/xap/1.0/mm/'>
+  <xmpMM:DerivedFrom>circle.jpg</xmpMM:DerivedFrom>
+ </rdf:Description>
+</rdf:RDF>
+</x:xmpmeta>

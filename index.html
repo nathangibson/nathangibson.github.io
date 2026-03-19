@@ -5,6 +5,11 @@ prefix: Prof. Dr.
 title: Nathan P. Gibson
 subtitle: digitally reconstructing Jewish-Christian-Muslim interaction from the medieval Near East
 full-width: true
+images: 
+ - /img/portrait-goethe.jpg
+ - /img/bnf-ar-12.jpg
+ - /img/tiny-history-card-vertical.png
+ - /img/qalam.jpg
 ---
 
 <div class="row g-4 py-5"> 
@@ -20,6 +25,7 @@ full-width: true
                         <a href="https://dynamiken-des-religioesen.uni-frankfurt.de/" class="btn btn-sm btn-outline-light mt-1 text-nowrap">Dynamiken des Religiösen <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         <a href="https://usaybia.net" class="btn btn-sm btn-outline-light mt-1 text-nowrap">Usaybia.net <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         <a href="#projects" class="btn btn-sm btn-outline-light mt-1 text-nowrap">more ...</a>
+                        {% include image-caption.html url="/img/bnf-ar-12.jpg" alt="Manuscript folio" caption_only=true %}
                     </div>
                 </div> 
             </div> 
@@ -63,3 +69,5 @@ full-width: true
         </a>
     </div> 
  </div>
+
+{% include image-credits-list.html images=page.images %}

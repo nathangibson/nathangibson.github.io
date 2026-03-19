@@ -2,10 +2,13 @@
   image-caption.html
   Renders an inline <figure>/<figcaption> for a single image with credits.
 
+  Captions are displayed as Bootstrap popovers triggered by a minimalist image icon
+  in the bottom-right corner of the image. Click the icon to show caption.
+
   Parameters:
     url           (required) — image URL
     alt           (optional) — alt text for <img>
-    caption_only  (optional) — if true, render only the caption text without <img>
+    caption_only  (optional) — if true, render only the caption button without <img>
 
   Caption format (conditional):
     Image: [description]. By [creator]. [identifier]. Source: [publisher], [source_url]. [rights].
@@ -33,14 +36,31 @@
   {%- endcapture -%}
 
   {% if include.caption_only %}
-    <figcaption class="image-credit">{{ _ic_caption | strip }}</figcaption>
+    <button class="btn btn-sm image-caption-popover-btn"
+            data-toggle="popover"
+            data-trigger="click"
+            data-placement="bottom"
+            data-html="true"
+            data-content="{{ _ic_caption | strip | escape }}"
+            title="Image Credit">
+      <i class="fa-regular fa-image"></i>
+    </button>
   {% else %}
     <figure class="image-figure">
       <img src="{{ include.url }}" alt="{{ include.alt | default: 'Image' }}" />
-      <figcaption class="image-credit">{{ _ic_caption | strip }}</figcaption>
+      <button class="btn btn-sm image-caption-popover-btn"
+              data-toggle="popover"
+              data-trigger="click"
+              data-placement="bottom"
+              data-html="true"
+              data-content="{{ _ic_caption | strip | escape }}"
+              title="Image Credit">
+        <i class="fa-regular fa-image"></i>
+      </button>
     </figure>
   {% endif %}
 {% elsif !include.caption_only %}
   <img src="{{ include.url }}" alt="{{ include.alt | default: 'Image' }}" />
 {% endif %}
+
 

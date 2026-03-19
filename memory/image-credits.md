@@ -12,10 +12,11 @@
 
 ## Pipeline
 1. Darktable edits `dc:*` fields in `.xmp` sidecar files
-2. **Automatic extraction via Jekyll hook** (`_plugins/extract_image_credits_hook.rb`):
-   - Runs on every `jekyll build` / `jekyll server`
-   - Calls `ruby scripts/extract_image_credits.rb` → `_data/image_credits.yaml`
-   - Instant feedback during local development (no manual script needed)
+2. **Smart automatic extraction via Jekyll hook** (`_plugins/extract_image_credits_hook.rb`):
+   - Runs on every `jekyll build` / `jekyll serve`
+   - **Only extracts if** `.xmp` files are newer than `_data/image_credits.yaml` (or YAML doesn't exist)
+   - Skips extraction when editing markdown/HTML (no metadata changes)
+   - Build time: ~0.9s for normal edits, ~3.8s when metadata changed
    - CI also runs extraction independently (redundancy)
 3. Jekyll reads YAML at build time via `image_credit` Liquid filter
 4. Includes render formatted captions (inline or page-level list)
@@ -58,27 +59,37 @@ No doubled punctuation: each prefix/field only appears if that field exists.
 
 ### Automatic extraction (recommended)
 When you run `jekyll build` or `jekyll server`, the hook automatically:
-1. Extracts all XMP metadata from `.xmp` sidecars
-2. Regenerates `_data/image_credits.yaml`
-3. Pages are built with fresh credits
+1. Checks if any `.xmp` files are newer than `_data/image_credits.yaml`
+2. If yes → extracts metadata and regenerates YAML
+3. If no → skips extraction (fast rebuild)
 
 **Workflow in Darktable**:
 1. Edit metadata for an image in Darktable (dc:description, dc:creator, etc.)
-2. Darktable saves changes to `.xmp` sidecar
-3. Run `jekyll server` (or rebuild)
-4. Hook extracts fresh metadata, updates YAML
-5. Preview updated captions instantly
+2. Darktable saves changes to `.xmp` sidecar (mtime updated)
+3. Run `jekyll server` (or next rebuild)
+4. Hook detects `.xmp` mtime > YAML mtime, extracts fresh metadata
+5. Pages rebuild with updated captions
+
+**Performance**: Editing markdown/HTML files triggers 0.9s rebuild (no extraction). Editing image metadata triggers 3.8s rebuild (extraction + render).
 
 ### Manual extraction
 If desired, run the script directly:
 ```bash
 ruby scripts/extract_image_credits.rb
 ```
-This is also what the Jekyll hook does behind the scenes.
+This is what the Jekyll hook calls behind the scenes.
+
+### Inline caption
 ```liquid
 {% include image-caption.html url="/img/bnf-ar-12.jpg" alt="Manuscript folio" %}
 ```
 Renders `<figure>/<figcaption>` if any credit field exists; plain `<img>` if not.
+
+#### Caption only (no image element)
+```liquid
+{% include image-caption.html url="/img/bnf-ar-12.jpg" caption_only=true %}
+```
+Renders only the `<figcaption>` text without `<img>`. Useful when the image is a CSS background image or styled separately. If no metadata exists, renders nothing.
 
 ### Page credits list (after-content hook)
 ```yaml
