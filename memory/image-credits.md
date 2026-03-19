@@ -50,8 +50,9 @@ No doubled punctuation: each prefix/field only appears if that field exists.
 - `_plugins/extract_image_credits_hook.rb` — Jekyll hook that auto-runs extraction on every build
 - `scripts/extract_image_credits.rb` — Parses XMP DC fields, joins arrays, maps to YAML
 - `_plugins/image_credit.rb` — Liquid filters: `image_credit_key` (URL→key) and `image_credit` (URL→credit hash)
-- `_includes/image-caption.html` — Inline figure/figcaption for single image
+- `_includes/image-caption.html` — Renders image with interactive popover trigger button (or button only if caption_only=true). Uses Bootstrap classes only: `btn btn-sm border-0 bg-transparent position-absolute` with minimal inline styles for positioning/opacity.
 - `_includes/image-credits-list.html` — `<details>` collapsible list for page-level credits
+- `_includes/footer-scripts.html` — Bootstrap popover initialization script
 - `_data/image_credits.yaml` — Generated from XMP (committed to git for offline builds)
 - `_config.yml` — Added `'**/*.xmp'` to exclude list
 
@@ -83,13 +84,21 @@ This is what the Jekyll hook calls behind the scenes.
 ```liquid
 {% include image-caption.html url="/img/bnf-ar-12.jpg" alt="Manuscript folio" %}
 ```
-Renders `<figure>/<figcaption>` if any credit field exists; plain `<img>` if not.
+Renders `<figure>` with image and interactive popover trigger button if any credit field exists; plain `<img>` if not.
+
+**Popover behavior**:
+- A minimalist image icon appears in the bottom-right corner of the image
+- Icon is low-opacity (0.5) by default, increases to 1.0 on hover
+- Click the icon to show caption as a Bootstrap popover below the image
+- Popover contains formatted caption: "Image: [description]. By [creator]. [identifier]. Source: [publisher], [source_url]. [rights]."
+- Click elsewhere or click again to close popover
+- Icon uses Font Awesome "fa-regular fa-image" (1rem size)
 
 #### Caption only (no image element)
 ```liquid
 {% include image-caption.html url="/img/bnf-ar-12.jpg" caption_only=true %}
 ```
-Renders only the `<figcaption>` text without `<img>`. Useful when the image is a CSS background image or styled separately. If no metadata exists, renders nothing.
+Renders only the popover trigger button without `<img>` or `<figure>`. Useful for CSS background images. If no metadata exists, renders nothing.
 
 ### Page credits list (after-content hook)
 ```yaml
@@ -111,6 +120,19 @@ images:
 - Extraction only processes images with an `.xmp` sidecar present
 - Arrays (creator, publisher) joined with `; ` in output
 - URLs use abbreviated (domain-only) link text
+
+## Popover Styling & Interaction
+Image captions are displayed as interactive Bootstrap popovers:
+- **Icon placement**: Absolute overlay in bottom-right corner of figure element
+- **Styling**: Uses only Bootstrap utility classes (`btn btn-sm border-0 bg-transparent position-absolute`) with minimal inline styles:
+  - Positioning: `bottom: 0.5rem; right: 0.5rem; z-index: 10` (inline)
+  - Opacity: `opacity: 0.5` (inline style, changes on hover for visual feedback)
+  - Padding: `padding: 0.25rem 0.375rem` (inline)
+  - No custom CSS file; all styling via Bootstrap classes and necessary inline properties
+  - Font Awesome image icon (`fa-regular fa-image`) at default size
+- **Interaction**: Click-triggered popovers (not hover)
+- **Popover content**: HTML allowed (via `data-html="true"`) so caption links work
+- **JavaScript**: Popover initialization in `_includes/footer-scripts.html` runs after Bootstrap/Popper.js load
 
 ## Troubleshooting
 - **Double period**: If EXIF field value ends with punctuation (e.g., "C.E."), you'll see ".." in output. Remove trailing punctuation from EXIF values.
