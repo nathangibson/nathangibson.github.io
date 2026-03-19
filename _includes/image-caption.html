@@ -36,8 +36,7 @@
   {%- endcapture -%}
 
   {% if include.caption_only %}
-    <button class="btn btn-sm border-0 bg-transparent"
-            style="opacity: 0.5; padding: 0.25rem 0.375rem;"
+    <button class="btn btn-sm border-0 text-muted position-absolute fixed-bottom text-right pr-2 pb-2"
             data-toggle="popover"
             data-trigger="click"
             data-placement="bottom"
@@ -49,8 +48,7 @@
   {% else %}
     <figure class="position-relative m-0">
       <img src="{{ include.url }}" alt="{{ include.alt | default: 'Image' }}" />
-      <button class="btn btn-sm border-0 bg-transparent position-absolute"
-              style="bottom: 0.5rem; right: 0.5rem; opacity: 0.5; z-index: 10; padding: 0.25rem 0.375rem;"
+      <button class="btn btn-sm border-0 text-muted position-absolute fixed-bottom text-right pr-2 pb-2"
               data-toggle="popover"
               data-trigger="click"
               data-placement="bottom"
