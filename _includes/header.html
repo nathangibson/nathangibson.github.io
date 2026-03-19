@@ -26,7 +26,8 @@
     {% endif %}
     {% endfor %}
     {% endfor %}
-  ></div>
+  >
+</div>
 {% endif %}
 
 <header class="header-section {% if final_cover_img %}has-img{% endif %}">
@@ -69,7 +70,8 @@
     </div>
   </div>
   {% endif %}
-  {% if page.cover-img %}<span class='img-desc'></span>{% endif %}
+  {% if page.cover-img %}<span class='img-desc'></span>{% endif %}  
+  {% include image-caption.html url=final_cover_img alt="" caption_only=true %}
 </div>
 
 {% if page.header-extra %}
