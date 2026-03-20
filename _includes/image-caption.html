@@ -37,7 +37,7 @@
 
   {% if include.caption_only %}
     <div class="d-flex justify-content-end">
-      <button class="btn border-0 text-light d-inline-block"
+      <button class="btn btn-lg border-0 text-muted d-inline-block"
           data-toggle="popover"
           data-trigger="click"
           data-placement="bottom"
@@ -51,7 +51,7 @@
     <figure class="position-relative m-0">
       <img src="{{ include.url }}" alt="{{ include.alt | default: 'Image' }}" />
       <div class="d-flex justify-content-end">
-        <button class="btn border-0 text-light d-inline-block"
+        <button class="btn btn-lg border-0 text-muted d-inline-block"
             data-toggle="popover"
             data-trigger="click"
             data-placement="bottom"
