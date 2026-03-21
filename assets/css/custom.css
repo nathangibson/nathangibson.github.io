@@ -42,3 +42,8 @@
 .intro-header.big-img .img-desc {
   z-index: 2;
 }
+
+/* Expand paragraph text for better readability */
+body > main p {
+    letter-spacing: 0.3px;
+}
