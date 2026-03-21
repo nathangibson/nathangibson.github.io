@@ -1,0 +1,61 @@
+---
+bnf-ar-12-cr-x1000:
+  description: Genesis 1 in decorated Arabic Pentateuch, copied in 1353 C.E.
+  identifier: MS Bibliothèque nationale de France, Département des manuscrits, Arabe
+    12, fol. 2v-3r
+  publisher: gallica.bnf.fr / BnF
+  source_url: https://gallica.bnf.fr/ark:/12148/btv1b84192173/f14.item
+  rights: Public Domain
+bnf-ar-12-cr:
+  description: Genesis 1 in decorated Arabic Pentateuch, copied in 1353 C.E.
+  identifier: MS Bibliothèque nationale de France, Département des manuscrits, Arabe
+    12, fol. 2v-3r
+  publisher: gallica.bnf.fr / BnF
+  source_url: https://gallica.bnf.fr/ark:/12148/btv1b84192173/f14.item
+  rights: Public Domain
+bnf-ar-12-x1000:
+  description: Genesis 1 in decorated Arabic Pentateuch, copied in 1353 C.E.
+  identifier: MS Bibliothèque nationale de France, Département des manuscrits, Arabe
+    12, fol. 2v-3r
+  publisher: gallica.bnf.fr / BnF
+  source_url: https://gallica.bnf.fr/ark:/12148/btv1b84192173/f14.item
+  rights: Public Domain
+bnf-ar-12-x2000:
+  description: Genesis 1 in decorated Arabic Pentateuch, copied in 1353 C.E.
+  identifier: MS Bibliothèque nationale de France, Département des manuscrits, Arabe
+    12, fol. 2v-3r
+  publisher: gallica.bnf.fr / BnF
+  source_url: https://gallica.bnf.fr/ark:/12148/btv1b84192173/f14.item
+  rights: Public Domain
+bnf-ar-12:
+  description: Genesis 1 in decorated Arabic Pentateuch, copied in 1353 C.E.
+  identifier: MS Bibliothèque nationale de France, Département des manuscrits, Arabe
+    12, fol. 2v-3r
+  publisher: gallica.bnf.fr / BnF
+  source_url: https://gallica.bnf.fr/ark:/12148/btv1b84192173/f14.item
+  rights: Public Domain
+circle:
+  description: OLYMPUS DIGITAL CAMERA
+physician-elixir:
+  description: http://www.metmuseum.org/art/collection/search/446288
+  rights: https://creativecommons.org/publicdomain/zero/1.0/
+portrait-cr:
+  description: Portrait of Nathan P. Gibson
+  creator: Tiffany Gibson
+  rights: Used by permission
+portrait-goethe:
+  description: Portrait of Nathan P. Gibson
+  creator: Uwe Dettmar
+  rights: Used by permission
+portrait-square:
+  description: Portrait of Nathan P. Gibson
+  creator: Tiffany Gibson
+  rights: Used by permission
+portrait:
+  description: Portrait of Nathan P. Gibson
+  creator: Tiffany Gibson
+  rights: Used by permission
+qalam:
+  description: Qalam pens, made from reeds
+  source_url: https://commons.wikimedia.org/w/index.php?curid=652324
+  rights: Creative Commons Attribution 2.5 (CC BY 2.5), https://creativecommons.org/licenses/by/2.5

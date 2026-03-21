@@ -84,6 +84,7 @@
                 {%- assign chicago_bib = site.data.citations[pub['citation-key']]['chicago-bibliography'] -%}
                 {%- include publication-body.html title_tag="h5" title_class="card-title fw-bold my-2" wrapper_class="small mt-1 mb-2" -%}
               </div>
+              {% include image-caption.html url=cover-img alt="" caption_only=true %}
             </div>
           </a>
         </div>
