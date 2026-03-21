@@ -25,6 +25,19 @@ layout: base
         </div>
       {% endif %}
 
+      {% comment %}Auto-detect image URLs from page body (img src, CSS url(), caption_only buttons){% endcomment %}
+      {% assign _auto_imgs = content | extract_image_urls %}
+      {% comment %}cover-img is rendered by header.html (not in content), so add it explicitly{% endcomment %}
+      {% if page['cover-img'] %}
+        {% if page['cover-img'].first %}
+          {% assign _auto_imgs = page['cover-img'] | concat: _auto_imgs %}
+        {% else %}
+          {% assign _cover_arr = page['cover-img'] | split: "|" %}
+          {% assign _auto_imgs = _cover_arr | concat: _auto_imgs %}
+        {% endif %}
+      {% endif %}
+      {% include image-credits-list.html images=_auto_imgs %}
+
       {% include comments.html %}
     </div>
   </div>

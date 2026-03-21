@@ -48,9 +48,10 @@ No doubled punctuation: each prefix/field only appears if that field exists.
 
 ## Key files
 - `_plugins/extract_image_credits_hook.rb` — Jekyll hook that auto-runs extraction on every build
+- `_plugins/extract_image_urls_filter.rb` — Liquid filter `extract_image_urls`: scans rendered HTML for `<img src>`, CSS `url()`, and `data-image-credit-src` attrs; returns unique URL array
 - `scripts/extract_image_credits.rb` — Parses XMP DC fields, joins arrays, maps to YAML
 - `_plugins/image_credit.rb` — Liquid filters: `image_credit_key` (URL→key) and `image_credit` (URL→credit hash)
-- `_includes/image-caption.html` — Renders image with interactive popover trigger button (or button only if caption_only=true). Uses Bootstrap classes only: `btn btn-sm border-0 bg-transparent position-absolute` with minimal inline styles for positioning/opacity.
+- `_includes/image-caption.html` — Renders image with interactive popover trigger button (or button only if caption_only=true). Emits `data-image-credit-src="{{ include.url }}"` on the button so auto-detection can find caption_only references.
 - `_includes/image-credits-list.html` — `<details>` collapsible list for page-level credits
 - `_includes/footer-scripts.html` — Bootstrap popover initialization script
 - `_data/image_credits.yaml` — Generated from XMP (committed to git for offline builds)
@@ -100,19 +101,22 @@ Renders `<figure>` with image and interactive popover trigger button if any cred
 ```
 Renders only the popover trigger button without `<img>` or `<figure>`. Useful for CSS background images. If no metadata exists, renders nothing.
 
-### Page credits list (after-content hook)
-```yaml
-after-content: image-credits-list.html
-images:
-  - /img/bnf-ar-12.jpg
-  - /img/portrait-goethe.jpg
-```
+### Page credits list (automatic — preferred)
+`page.html` (and layouts that extend it via `home.html`) automatically:
+1. Scans `{{ content }}` for image URLs via `extract_image_urls` filter (`<img src>`, CSS `url()`, `data-image-credit-src`)
+2. Prepends `page['cover-img']` if set (cover-img is rendered by `header.html`, not in `content`)
+3. Calls `{% include image-credits-list.html images=_auto_imgs %}`
 
-### Page credits list (inline)
+No front matter needed — just use `{% include image-caption.html %}` and CSS backgrounds normally.
+
+### Page credits list (manual override, if needed)
+If you need to specify an exact list (e.g., override auto-detection):
 ```liquid
 {% assign imgs = "/img/a.jpg,/img/b.jpg" | split: "," %}
 {% include image-credits-list.html images=imgs %}
 ```
+
+> **Note**: `after-content: image-credits-list.html` with an `images:` front matter list is superseded by auto-detection. Don't use it on new pages.
 
 ## Architecture notes
 - XMP sidecars are NOT served to web (excluded from _site/)
@@ -120,6 +124,8 @@ images:
 - Extraction only processes images with an `.xmp` sidecar present
 - Arrays (creator, publisher) joined with `; ` in output
 - URLs use abbreviated (domain-only) link text
+- **Auto-detection in `page.html`**: `cover-img` is set as a CSS background via JS from `data-img-src-*` attrs in `header.html` — not an `<img>` tag and not in `content` — so it's handled explicitly via `page['cover-img']`. `caption_only=true` buttons emit `data-image-credit-src` so the filter can find them.
+- CSS background crops (e.g., `bnf-ar-12-cr-x1000.jpg`) are auto-detected from inline styles; if they have an xmp sidecar they'll appear in the credits list; if not, silently skipped.
 
 ## Popover Styling & Interaction
 Image captions are displayed as interactive Bootstrap popovers:

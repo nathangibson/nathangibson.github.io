@@ -5,11 +5,6 @@ prefix: Prof. Dr.
 title: Nathan P. Gibson
 subtitle: digitally reconstructing Jewish-Christian-Muslim interaction from the medieval Near East
 full-width: true
-images: 
- - /img/portrait-goethe.jpg
- - /img/bnf-ar-12.jpg
- - /img/tiny-history-card-vertical.png
- - /img/qalam.jpg
 ---
 
 <div class="row g-4 py-5"> 
@@ -65,9 +60,8 @@ images:
                         <a href="#publications" class="btn btn-sm btn-outline-light mt-1 text-nowrap">more ...</a>
                     </div>
                 </div> 
+                {% include image-caption.html url="/img/qalam.jpg" alt="Qalam pens" caption_only=true %}
             </div> 
         </a>
     </div> 
  </div>
-
-{% include image-credits-list.html images=page.images %}
