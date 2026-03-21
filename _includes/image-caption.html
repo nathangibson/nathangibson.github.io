@@ -1,0 +1,70 @@
+{% comment %}
+  image-caption.html
+  Renders an inline <figure>/<figcaption> for a single image with credits.
+
+  Captions are displayed as Bootstrap popovers triggered by a minimalist image icon
+  in the bottom-right corner of the image. Click the icon to show caption.
+
+  Parameters:
+    url           (required) — image URL
+    alt           (optional) — alt text for <img>
+    caption_only  (optional) — if true, render only the caption button without <img>
+
+  Caption format (conditional):
+    Image: [description]. By [creator]. [identifier]. Source: [publisher], [source_url]. [rights].
+
+  Each section only appears if its field exists. Prefixes ("By", "Source:") are omitted if their field is empty.
+  URLs are abbreviated to domain and rendered as clickable links.
+
+  Usage:
+    {% include image-caption.html url="/img/bnf-ar-12.jpg" alt="Manuscript folio" %}
+    {% include image-caption.html url="/img/bnf-ar-12.jpg" caption_only=true %}
+{% endcomment %}
+
+{% assign _ic_credit = include.url | image_credit %}
+{% if _ic_credit.description or _ic_credit.creator or _ic_credit.identifier or _ic_credit.publisher or _ic_credit.source_url or _ic_credit.rights %}
+  {%- capture _ic_caption -%}
+    {%- if _ic_credit.description %}Image: {{ _ic_credit.description }}.{% endif %}
+    {%- if _ic_credit.creator %} By {{ _ic_credit.creator }}.{% endif %}
+    {%- if _ic_credit.identifier %} {{ _ic_credit.identifier }}.{% endif %}
+    {%- if _ic_credit.publisher or _ic_credit.source_url %} Source:
+      {%- if _ic_credit.publisher %} {{ _ic_credit.publisher }}{% endif %}
+      {%- if _ic_credit.publisher and _ic_credit.source_url %},{% endif %}
+      {%- if _ic_credit.source_url %} <a href="{{ _ic_credit.source_url }}" target="_blank" rel="noopener">{{ _ic_credit.source_url | replace: 'https://', '' | replace: 'http://', '' | split: '/' | first }}</a>{% endif %}.
+    {%- endif %}
+    {%- if _ic_credit.rights %} {{ _ic_credit.rights }}.{% endif %}
+  {%- endcapture -%}
+
+  {% if include.caption_only %}
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-lg border-0 text-muted d-inline-block"
+          data-toggle="popover"
+          data-trigger="click"
+          data-placement="bottom"
+          data-html="true"
+          data-content="{{ _ic_caption | strip | escape }}"
+          data-image-credit-src="{{ include.url }}"
+          title="Image Credit">
+      <i class="fa-regular fa-image"></i>
+      </button>
+    </div>
+  {% else %}
+    <figure class="position-relative m-0">
+      <img src="{{ include.url }}" alt="{{ include.alt | default: 'Image' }}" />
+      <div class="d-flex justify-content-end">
+        <button class="btn btn-lg border-0 text-muted d-inline-block"
+            data-toggle="popover"
+            data-trigger="click"
+            data-placement="bottom"
+            data-html="true"
+            data-content="{{ _ic_caption | strip | escape }}"
+            data-image-credit-src="{{ include.url }}"
+            title="Image Credit">
+          <i class="fa-regular fa-image"></i>
+        </button>
+      </div>
+    </figure>
+  {% endif %}
+{% endif %}
+
+
