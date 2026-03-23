@@ -50,7 +50,11 @@ layout: page
 
 <hr class="mb-4">
 
-{{ content }}
+{% if page['paragraph-numbers'] %}
+  {{ content | add_paragraph_numbers }}
+{% else %}
+  {{ content }}
+{% endif %}
 
 {% else %}
 
