@@ -306,6 +306,7 @@ defaults:
       type: "publications"
     values:
       layout: "publication"
+      footnote-popovers: true
 
 collections:
   publications:
