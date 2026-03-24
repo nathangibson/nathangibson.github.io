@@ -1,87 +1,46 @@
+require 'nokogiri'
+
 module Jekyll
   module ParagraphNumbersFilter
-    # Block containers whose <p> children should NOT be numbered
-    SKIP_TAGS = %w[blockquote div ol ul li].freeze
-
     def add_paragraph_numbers(html)
-      result = []
+      doc = Nokogiri::HTML::DocumentFragment.parse(html)
       counter = 0
-      depth = 0        # nesting depth inside skip containers
-      para_buffer = nil  # non-nil when buffering a top-level <p>
 
-      html.scan(/(<[^>]+>|[^<]+)/m) do |match|
-        token = match[0]
+      # Only direct <p> children — skips blockquote, li, footnote div, etc.
+      doc.children.each do |node|
+        next unless node.name == 'p'
 
-        # ── inside a top-level paragraph: buffer until </p> ──────────────
-        if para_buffer
-          para_buffer << token
-          next unless token.start_with?('</') &&
-                      token.match(/<\/?(\w+)/i)&.[](1)&.downcase == 'p'
+        # Skip paragraphs whose only content is badge spans (e.g. page markers)
+        stripped = node.clone
+        stripped.css('span.badge').remove
+        next if stripped.text.strip.empty?
 
-          # Reached </p>. Decide whether to number this paragraph.
-          open_tag  = para_buffer.first
-          close_tag = para_buffer.last
-          inner     = para_buffer[1..-2].join
+        counter += 1
+        id = "p-#{counter}"
 
-          if badge_only_content?(inner)
-            result.concat(para_buffer)
-          else
-            counter += 1
-            id = "p-#{counter}"
-            result << %(<div class="d-flex align-items-baseline mb-3" id="#{id}">)
-            result << %(<span class="flex-shrink-0 text-right text-muted small mr-3"><a href="##{id}" class="text-muted" aria-label="Paragraph #{counter}">#{counter}</a></span>)
-            if open_tag.include?('class=')
-              result << open_tag.sub(/class="([^"]*)"/, 'class="\1 mb-0 flex-grow-1"')
-            else
-              result << open_tag.sub(/<p\b/, '<p class="mb-0 flex-grow-1"')
-            end
-            result.concat(para_buffer[1..-2])
-            result << close_tag
-            result << '</div>'
-          end
-          para_buffer = nil
-          next
-        end
+        wrapper = Nokogiri::XML::Node.new('div', doc)
+        wrapper['class'] = 'd-flex align-items-baseline mb-3'
+        wrapper['id'] = id
 
-        # ── normal scanning ───────────────────────────────────────────────
-        if token.start_with?('<')
-          tag_name = token.match(/<\/?(\w+)/i)&.[](1)&.downcase
+        num_span = Nokogiri::XML::Node.new('span', doc)
+        num_span['class'] = 'flex-shrink-0 text-right text-muted small mr-3'
 
-          if SKIP_TAGS.include?(tag_name)
-            if token.start_with?('</')
-              depth -= 1 if depth > 0
-            elsif !token.end_with?('/>')
-              depth += 1
-            end
-            result << token
+        num_link = Nokogiri::XML::Node.new('a', doc)
+        num_link['href'] = "##{id}"
+        num_link['class'] = 'text-muted'
+        num_link['aria-label'] = "Paragraph #{counter}"
+        num_link.content = counter.to_s
 
-          elsif tag_name == 'p' && !token.start_with?('</')
-            if depth.zero?
-              para_buffer = [token]  # start buffering; decision deferred to </p>
-            else
-              result << token
-            end
+        existing = node['class'].to_s.split
+        node['class'] = (existing + ['mb-0', 'flex-grow-1']).uniq.join(' ')
 
-          else
-            result << token
-          end
-        else
-          result << token
-        end
+        num_span.add_child(num_link)
+        node.replace(wrapper)
+        wrapper.add_child(num_span)
+        wrapper.add_child(node)
       end
 
-      result.join
-    end
-
-    private
-
-    # Returns true if the paragraph's inner HTML contains nothing
-    # but badge spans (and whitespace) — i.e., no prose content.
-    def badge_only_content?(inner)
-      inner.gsub(/<span[^>]*class="[^"]*\bbadge\b[^"]*"[^>]*>.*?<\/span>/m, '')
-           .gsub(/<[^>]+>/, '')
-           .strip
-           .empty?
+      doc.to_html
     end
   end
 end
