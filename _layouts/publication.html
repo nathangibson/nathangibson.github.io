@@ -50,11 +50,14 @@ layout: page
 
 <hr class="mb-4">
 
-{% if page['paragraph-numbers'] %}
-  {{ content | add_paragraph_numbers }}
-{% else %}
-  {{ content }}
-{% endif %}
+{%- assign rendered = content -%}
+{%- if page['footnote-popovers'] -%}
+  {%- assign rendered = rendered | add_footnote_popovers -%}
+{%- endif -%}
+{%- if page['paragraph-numbers'] -%}
+  {%- assign rendered = rendered | add_paragraph_numbers -%}
+{%- endif -%}
+{{ rendered }}
 
 {% else %}
 
