@@ -39,7 +39,7 @@ module Jekyll
 
         a.remove_attribute('class')
         a.remove_attribute('rel')
-        a['class']          = 'badge badge-secondary footnote-popover'
+        a['class']          = 'badge badge-light footnote-popover'
         a['tabindex']       = '0'
         a['role']           = 'button'
         a['data-toggle']    = 'popover'
