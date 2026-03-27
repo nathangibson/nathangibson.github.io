@@ -19,7 +19,7 @@ Knowledge is personal. It is, further, _inter_&#8203;personal in its every movem
 
 ʿAbd al-Laṭīf lived just before the Mongol invasions, toward the end of the period of the Abbasids, defined broadly as 132-656/750-1258, if one includes the later centuries when the Abbasid rulers wielded little real power. It is a period well known for its remarkable production and circulation of knowledge. In terms of intellectual history, the period spans the activity of Jūrjis ibn Jibrīl (active late second/eighth century), founder of the Bukhtīshūʿ dynasty of physicians, to that of luminaries like Maimonides and the Syriac polymath Barhebraeus (Gregorius bar ʿEbroyo, 623-685/1225 or 1226-1286).
 
-<aside>* This is the introduction of the thematic section _Knowledge Collaboration among Jews, Christians, Zoroastrians, and Muslims in the Abbasid Near East_, guest editor: Nathan Gibson. To read all related articles, please access: [dx.doi.org/10.1553/medievalworlds_no17_2022](https://dx.doi.org/10.1553/medievalworlds_no17_2022).</aside>
+> This is the introduction of the thematic section _Knowledge Collaboration among Jews, Christians, Zoroastrians, and Muslims in the Abbasid Near East_, guest editor: Nathan Gibson. To read all related articles, please access: [dx.doi.org/10.1553/medievalworlds_no17_2022](https://dx.doi.org/10.1553/medievalworlds_no17_2022).
 
 [^1]: Translation adapted from Ibn Abī Uṣaybiʿa, _ʿUyūn al-anbāʾ_, ed. Savage-Smith _et al_., §15.40.8 no. 2.
 
@@ -169,7 +169,7 @@ The connection between multilingual practices and the religious communities to w
 
 governance, some of which were based on the Quran. Palombo concludes by stressing that the interreligious collaboration that helped to build Islamic administration involved not just the secretary-scholars who might have debated theology in the caliph’s court but also the literate local personnel whose technical skills helped to run the empire.
 
-It is my hope that the above articles do not just reflect the state of research but will also serve as waypoints toward research that better illuminates the concrete circum­ stances in which Jews, Christians, Zoroastrians, and Muslims collaborated. From the individual encounters these researchers discuss – in their interpersonal, interlinear, inter-genre, and inter­ religious dimensions – it is still a long way to piecing together a comprehensive picture even of a particular region or half-century, l_et al_one that of the Abbasid Near East across five centuries. Reflecting again on the words of ʿAbd al-Laṭīf al-Baghdādī, this collection may nevertheless help us in our short lives to become closer contemporaries of bygone peoples.
+It is my hope that the above articles do not just reflect the state of research but will also serve as waypoints toward research that better illuminates the concrete circum­ stances in which Jews, Christians, Zoroastrians, and Muslims collaborated. From the individual encounters these researchers discuss – in their interpersonal, interlinear, inter-genre, and inter­ religious dimensions – it is still a long way to piecing together a comprehensive picture even of a particular region or half-century, let alone that of the Abbasid Near East across five centuries. Reflecting again on the words of ʿAbd al-Laṭīf al-Baghdādī, this collection may nevertheless help us in our short lives to become closer contemporaries of bygone peoples.
 
 ### Acknowledgments 
 
