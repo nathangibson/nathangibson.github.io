@@ -6,15 +6,6 @@
     <a class="ml-3 pl-5 navbar-brand" href="{{ '/' | absolute_url }}">{{ site.title }}</a>
   {%- endif -%}
 
-  {% comment %}Contents dropdown — JS clones the sidebar TOC into this at DOMContentLoaded; hidden at lg+ where the sticky sidebar is shown instead{% endcomment %}
-  {% if page.toc %}
-    <div class="d-lg-none flex-grow-1 dropdown mx-2">
-      <span class="badge dropdown-toggle w-100 text-left" type="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span id="toc-dropdown-label" class="text-truncate d-inline-block" style="max-width:calc(100% - 1.5rem)">Contents</span></span>
-      <div class="dropdown-menu p-2 overflow-auto" id="toc-dropdown-menu" style="max-height:75vh;min-width:240px"></div>
-    </div>
-  {% endif %}
-
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -62,6 +53,19 @@
         <img alt="Navigation bar avatar" class="avatar-img" src="{{ site.avatar | relative_url }}" />
       </a>
     </div>
+  {% endif %}
+
+  {% comment %}TOC second row — w-100 breaks to new flex row; visible only on < lg where the sticky sidebar is not shown{% endcomment %}
+  {% if page.toc %}
+  <div class="w-100 d-lg-none border-top py-1">
+    <div class="dropdown ml-3 pl-5">
+      <button class="btn btn-sm btn-link px-0 text-secondary dropdown-toggle" type="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="mr-1" aria-hidden="true"><rect x="3" y="4" width="8" height="2"/><rect x="5" y="9" width="16" height="2"/><rect x="5" y="14" width="12" height="2"/><rect x="5" y="19" width="14" height="2"/></svg><span id="toc-dropdown-label">Contents</span>
+      </button>
+      <div class="dropdown-menu p-2 overflow-auto" id="toc-dropdown-menu" style="max-height:75vh;min-width:240px"></div>
+    </div>
+  </div>
   {% endif %}
 
 </nav>
