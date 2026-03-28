@@ -81,7 +81,7 @@ Regarding the first, it is clear that in the Abbasid Near East a large number of
 [^12]: Compare Savage-Smith’s argument against this historical European approach and her comments about its origins, as well as her summary of scholars’ reevaluation of the »conflict model« in regard to the history of European science; Universality and neutrality of science, 177-179. See also Carlson, Garden of the reasonable, 100.
 
 
-<span class="badge badge-pill badge-secondary">page page 64</span>
+<span class="badge badge-pill badge-secondary">page 64</span>
 
 On the second question, the »Islamicization« of medical training and practitioners, some of the statistics from biographical dictionaries (including Ibn Abī Uṣaybiʿa’s) that were previously thought to indicate declining numbers of Christian and Jewish doctors by the beginning of the fifth/eleventh century should now be understood as historiographical artifacts.[^13] But how _should_ we understand the later Mamluk and Ayyubid debates regarding the compatibility of medical practice with Islamic doctrines or regarding the acceptability of non-Muslims treating Muslim patients? Moreover, how should we understand the rise of medical institutions exclusively for Muslims?[^14]
 
