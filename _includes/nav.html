@@ -1,59 +1,73 @@
 <nav class="pl-5 navbar navbar-expand-xl navbar-light fixed-top navbar-custom {% if page.nav-short %}top-nav-short-permanent{% else %}top-nav-regular{% endif %}">
 
-  {%- if site.title-img -%}
-    <a class="ml-3 pl-5 navbar-brand navbar-brand-logo" href="{{ '/' | absolute_url }}"><img alt="{{ site.title }} Logo" src="{{ site.title-img | relative_url}}"/></a>
-  {%- elsif site.title -%}
-    <a class="ml-3 pl-5 navbar-brand" href="{{ '/' | absolute_url }}">{{ site.title }}</a>
-  {%- endif -%}
+  {% comment %}First-row wrapper is position-relative so the avatar (position:absolute; bottom:-1.5rem)
+              is anchored to the first-row height, not the full navbar height (which grows with the
+              TOC second row on small screens).{% endcomment %}
+  <div class="w-100 d-flex align-items-center justify-content-between">
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    {%- if site.title-img -%}
+      <a class="ml-3 pl-5 navbar-brand navbar-brand-logo" href="{{ '/' | absolute_url }}"><img alt="{{ site.title }} Logo" src="{{ site.title-img | relative_url}}"/></a>
+    {%- elsif site.title -%}
+      {%- if page.toc and site.avatar and page.show-avatar != false -%}
+        {%- comment -%}Small-screen TOC pages: avatar inline to left of title, tops aligned, no pl-5{%- endcomment -%}
+        <a class="ml-3 navbar-brand d-flex align-items-start d-lg-none" href="{{ '/' | absolute_url }}">
+          <img src="{{ site.avatar | relative_url }}" alt="" class="mt-2 mr-2 flex-shrink-0" style="width:1.5rem;height:1.5rem;margin-top:0.625rem">{{ site.title }}</a>
+        <a class="ml-3 pl-5 navbar-brand d-none d-lg-block" href="{{ '/' | absolute_url }}">{{ site.title }}</a>
+      {%- else -%}
+        <a class="ml-3 pl-5 navbar-brand" href="{{ '/' | absolute_url }}">{{ site.title }}</a>
+      {%- endif -%}
+    {%- endif -%}
 
-  <div class="collapse navbar-collapse" id="main-navbar">
-    <ul class="navbar-nav ml-auto">
-      {%- for link in site.navbar-links -%}
-        {%- if link[1].first %}
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ link[0] }}</a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-              {%- for childlink in link[1] -%}
-                {%- for linkparts in childlink %}
-                  <a class="dropdown-item" href="{{ linkparts[1] | relative_url }}">{{ linkparts[0] }}</a>
-                {%- endfor -%}
-              {%- endfor %}
-            </div>
-          </li>
-        {% else %}
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="navbar-nav ml-auto">
+        {%- for link in site.navbar-links -%}
+          {%- if link[1].first %}
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ link[0] }}</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                {%- for childlink in link[1] -%}
+                  {%- for linkparts in childlink %}
+                    <a class="dropdown-item" href="{{ linkparts[1] | relative_url }}">{{ linkparts[0] }}</a>
+                  {%- endfor -%}
+                {%- endfor %}
+              </div>
+            </li>
+          {% else %}
+            <li class="nav-item">
+              <a class="nav-link" href="{{ link[1] | relative_url }}">{{ link[0] }}</a>
+            </li>
+          {%- endif -%}
+        {%- endfor -%}
+        {% if site.post_search %}
           <li class="nav-item">
-            <a class="nav-link" href="{{ link[1] | relative_url }}">{{ link[0] }}</a>
+            <a class="nav-link" id="nav-search-link" href="#" title="Search">
+              <span id="nav-search-icon" class="fa fa-search"></span>
+              <span id="nav-search-text">Search</span>
+            </a>
           </li>
         {%- endif -%}
-      {%- endfor -%}
-      {% if site.post_search %}
-        <li class="nav-item">
-          <a class="nav-link" id="nav-search-link" href="#" title="Search">
-            <span id="nav-search-icon" class="fa fa-search"></span>
-            <span id="nav-search-text">Search</span>
-          </a>
-        </li>
-      {%- endif -%}
-    </ul>
-  </div>
-
-  {% if site.navbar-extra %}
-    {% for file in site.navbar-extra %}
-      {% include {{ file }} %}
-    {% endfor %}
-  {% endif %}
-
-  {% if site.avatar and page.show-avatar != false %}
-    <div class="avatar-container pl-3">
-      <a href="{{ '/' | absolute_url }}">
-        <img alt="Navigation bar avatar" class="avatar-img" src="{{ site.avatar | relative_url }}" />
-      </a>
+      </ul>
     </div>
-  {% endif %}
+
+    {% if site.navbar-extra %}
+      {% for file in site.navbar-extra %}
+        {% include {{ file }} %}
+      {% endfor %}
+    {% endif %}
+
+    {% if site.avatar and page.show-avatar != false %}
+      <div class="avatar-container pl-3{% if page.toc %} d-none d-lg-block{% endif %}">
+        <a href="{{ '/' | absolute_url }}">
+          <img alt="Navigation bar avatar" class="avatar-img" src="{{ site.avatar | relative_url }}" />
+        </a>
+      </div>
+    {% endif %}
+
+  </div>
 
   {% comment %}TOC second row — w-100 breaks to new flex row; visible only on < lg where the sticky sidebar is not shown{% endcomment %}
   {% if page.toc %}
