@@ -19,3 +19,4 @@ Jekyll personal/academic site (nathangibson.github.io). Beautiful Jekyll 6 + Boo
 - `_data/*.yaml` are committed to git (offline-safe builds)
 - `_plugins/` — custom Liquid filters go here
 - `_includes/` — reusable partials; `page.html` supports `before-content`/`after-content` hooks
+- `custom.css` loads LAST in `_layouts/base.html` (after `beautifuljekyll.css`) so it overrides by cascade — no `!important` needed

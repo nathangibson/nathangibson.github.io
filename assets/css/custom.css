@@ -1,9 +1,24 @@
-.avatar-container {
-  left: 0% !important;
+/* Avatar: left-aligned, overlapping hero, fades on scroll (fade handled by beautifuljekyll.css) */
+.navbar-custom .avatar-container {
+  left: 1rem;
+  width: 4.5rem;
+  top: 0.65rem;
+  padding: 0.5rem;  /* constrains img to 5.25rem, matching visual size before nav.html cleanup */
 }
-.navbar-custom.top-nav-regular .avatar-container {
-    width: 6.25rem !important;
-    bottom: -1.9375rem !important;
+
+.navbar-custom .navbar-brand {
+    margin-left: 5rem; /* 1rem (nav padding) + 4.5rem (avatar) + 0.5rem gap */
+  }
+
+@media (min-width: 1200px) {
+  .navbar-custom.top-nav-regular .avatar-container {
+    width: 6.25rem;
+    top: 31px;
+  }
+  /* Push brand text past the avatar */
+  .navbar-custom .navbar-brand {
+    margin-left: 6.75rem; /* 1rem (nav padding) + 6.25rem (avatar) + 0.5rem gap */
+  }
 }
 
 /* Cover gradient overlays */
