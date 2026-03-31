@@ -1,4 +1,12 @@
-<nav class="pl-5 navbar navbar-expand-xl navbar-light fixed-top navbar-custom {% if page.nav-short %}top-nav-short-permanent{% else %}top-nav-regular{% endif %}">
+<nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom {% if page.nav-short %}top-nav-short-permanent{% else %}top-nav-regular{% endif %}">
+
+  {% if site.avatar and page.show-avatar != false %}
+    <div class="avatar-container">
+      <a href="{{ '/' | absolute_url }}">
+        <img alt="Navigation bar avatar" class="avatar-img" src="{{ site.avatar | relative_url }}" />
+      </a>
+    </div>
+  {% endif %}
 
   {% comment %}First-row wrapper is position-relative so the avatar (position:absolute; bottom:-1.5rem)
               is anchored to the first-row height, not the full navbar height (which grows with the
@@ -6,15 +14,15 @@
   <div class="w-100 d-flex align-items-center justify-content-between">
 
     {%- if site.title-img -%}
-      <a class="ml-3 pl-5 navbar-brand navbar-brand-logo" href="{{ '/' | absolute_url }}"><img alt="{{ site.title }} Logo" src="{{ site.title-img | relative_url}}"/></a>
+      <a class="navbar-brand navbar-brand-logo" href="{{ '/' | absolute_url }}"><img alt="{{ site.title }} Logo" src="{{ site.title-img | relative_url}}"/></a>
     {%- elsif site.title -%}
       {%- if page.toc and site.avatar and page.show-avatar != false -%}
         {%- comment -%}Small-screen TOC pages: avatar inline to left of title, tops aligned, no pl-5{%- endcomment -%}
-        <a class="ml-3 navbar-brand d-flex align-items-start d-lg-none" href="{{ '/' | absolute_url }}">
+        <a class="navbar-brand d-flex align-items-start d-lg-none" href="{{ '/' | absolute_url }}">
           <img src="{{ site.avatar | relative_url }}" alt="" class="mt-2 mr-2 flex-shrink-0" style="width:1.5rem;height:1.5rem;margin-top:0.625rem">{{ site.title }}</a>
-        <a class="ml-3 pl-5 navbar-brand d-none d-lg-block" href="{{ '/' | absolute_url }}">{{ site.title }}</a>
+        <a class="navbar-brand d-none d-lg-block" href="{{ '/' | absolute_url }}">{{ site.title }}</a>
       {%- else -%}
-        <a class="ml-3 pl-5 navbar-brand" href="{{ '/' | absolute_url }}">{{ site.title }}</a>
+        <a class="navbar-brand" href="{{ '/' | absolute_url }}">{{ site.title }}</a>
       {%- endif -%}
     {%- endif -%}
 
