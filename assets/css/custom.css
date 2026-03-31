@@ -62,3 +62,16 @@
 body > main p {
     letter-spacing: 0.3px;
 }
+
+/* TOC second navbar row — hidden until first heading is scrolled past */
+#toc-nav-row {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+#toc-nav-row.toc-nav-row--visible {
+  max-height: 4rem;
+  opacity: 1;
+  border-top: 1px solid #dee2e6;
+}
