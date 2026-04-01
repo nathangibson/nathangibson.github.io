@@ -11,7 +11,7 @@
   {% comment %}First-row wrapper is position-relative so the avatar (position:absolute; bottom:-1.5rem)
               is anchored to the first-row height, not the full navbar height (which grows with the
               TOC second row on small screens).{% endcomment %}
-  <div class="w-100 d-flex align-items-center justify-content-between">
+  <div class="w-100 d-flex align-items-center flex-wrap">
 
     {%- if site.title-img -%}
       <a class="navbar-brand navbar-brand-logo" href="{{ '/' | absolute_url }}"><img alt="{{ site.title }} Logo" src="{{ site.title-img | relative_url}}"/></a>
@@ -25,7 +25,7 @@
       {%- endif -%}
     {%- endif -%}
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
