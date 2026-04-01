@@ -90,24 +90,25 @@ layout: base
 
     // TOC second row — fade in when first heading is scrolled past
     var $tocNavRow = $('#toc-nav-row');
-    var updateTocRowVisibility = function () {};
-    if ($tocNavRow.length) {
-      var _firstAnchorEl;
-      function getFirstAnchor() {
-        if (_firstAnchorEl === undefined) {
-          var firstLink = document.querySelector('#toc-nav .nav-link[href]');
-          _firstAnchorEl = firstLink ? document.querySelector(firstLink.getAttribute('href')) : null;
-        }
-        return _firstAnchorEl;
+    var _firstAnchorTop; // cached absolute doc offset; invalidated on resize
+    var getFirstAnchorTop = function () {
+      if (_firstAnchorTop === undefined) {
+        var firstLink = document.querySelector('#toc-nav .nav-link[href]');
+        var anchor = firstLink && document.querySelector(firstLink.getAttribute('href'));
+        _firstAnchorTop = anchor
+          ? anchor.getBoundingClientRect().top + window.pageYOffset
+          : null;
       }
-      updateTocRowVisibility = function () {
-        var anchor = getFirstAnchor();
-        if (!anchor) return;
-        var headingTop = anchor.getBoundingClientRect().top + window.pageYOffset;
-        $tocNavRow.toggleClass('toc-nav-row--visible', window.pageYOffset + offset >= headingTop);
-      };
-      $(window).on('scroll', updateTocRowVisibility);
-    }
+      return _firstAnchorTop;
+    };
+    var updateTocRowVisibility = function () {
+      if (!$tocNavRow.length) return;
+      var headingTop = getFirstAnchorTop();
+      if (headingTop === null) return;
+      $tocNavRow.toggleClass('toc-nav-row--visible', window.pageYOffset + offset >= headingTop);
+    };
+    $(window).on('scroll', updateTocRowVisibility);
+    $(window).on('resize', function () { _firstAnchorTop = undefined; });
 
     // Refresh offsets after full page load (fonts/images can shift heading positions)
     window.addEventListener('load', function () {
