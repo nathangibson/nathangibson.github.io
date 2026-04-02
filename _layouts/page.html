@@ -4,9 +4,24 @@ layout: base
 
 {% include header.html type="page" %}
 
+{% comment %}Generate TOC if opted in and not full-width{% endcomment %}
+{% assign _toc_html = "" %}
+{% if page.toc and page.full-width != true %}
+  {% capture _toc_html %}{% include toc.html html=content h_min=3 h_max=6 class="nav flex-column nav-pills small" item_class="nav-item" submenu_class="nav flex-column pl-3" anchor_class="nav-link py-1" sanitize=true skip_no_ids=true %}{% endcapture %}
+{% endif %}
+{% assign _has_toc = _toc_html | strip %}
+
 <main class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}">
   <div class="row">
-    <div class="{% if page.full-width %} col {% else %} col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 {% endif %}">
+    {% if _has_toc != "" %}
+      <aside class="col-xl-2 col-lg-2 d-none d-lg-block">
+        <nav id="toc-nav" class="sticky-top pt-5">
+          <h5 class="mt-4 mb-3 text-muted">Contents</h5>
+          {{ _toc_html }}
+        </nav>
+      </aside>
+    {% endif %}
+    <div class="{% if page.full-width %}col{% elsif _has_toc != "" %}col-xl-8 col-lg-10{% else %}col-xl-8 offset-xl-2 col-lg-10 offset-lg-1{% endif %}">
       {% if page.before-content %}
         <div class="before-content">
           {% for file in page.before-content %}
@@ -42,3 +57,65 @@ layout: base
     </div>
   </div>
 </main>
+
+{% if _has_toc != "" %}
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Clone sidebar TOC into the navbar dropdown (sidebar is always in DOM even when hidden)
+    var tocMenu = document.getElementById('toc-dropdown-menu');
+    var tocList = document.querySelector('#toc-nav ul');
+    if (tocMenu && tocList) { tocMenu.appendChild(tocList.cloneNode(true)); }
+
+    function updateTocLabel() {
+      var $active = $('#toc-nav .nav-link.active').last();
+      var label = $active.text().trim();
+      var activeHref = $active.attr('href');
+      $('#toc-dropdown-label').text(label || 'Contents');
+      // Mirror active state onto the cloned dropdown links
+      $('#toc-dropdown-menu .nav-link').removeClass('active');
+      if (activeHref) {
+        $('#toc-dropdown-menu .nav-link[href="' + activeHref + '"]').addClass('active');
+      }
+    }
+
+    // Scrollspy fires on window (its _scrollElement) when body is the spy target — not on body
+    $(window).on('activate.bs.scrollspy', updateTocLabel);
+
+    // Sync active state whenever the dropdown opens (user may not have scrolled yet)
+    $('#toc-dropdown-menu').closest('.dropdown').on('show.bs.dropdown', updateTocLabel);
+
+    // Initialise Scrollspy
+    var offset = ($('nav.navbar').outerHeight(true) || 70) + 5;
+    $('body').scrollspy({ target: '#toc-nav', offset: offset });
+
+    // TOC second row — fade in when first heading is scrolled past
+    var $tocNavRow = $('#toc-nav-row');
+    var _firstAnchorTop; // cached absolute doc offset; invalidated on resize
+    var getFirstAnchorTop = function () {
+      if (_firstAnchorTop === undefined) {
+        var firstLink = document.querySelector('#toc-nav .nav-link[href]');
+        var anchor = firstLink && document.querySelector(firstLink.getAttribute('href'));
+        _firstAnchorTop = anchor
+          ? anchor.getBoundingClientRect().top + window.pageYOffset
+          : null;
+      }
+      return _firstAnchorTop;
+    };
+    var updateTocRowVisibility = function () {
+      if (!$tocNavRow.length) return;
+      var headingTop = getFirstAnchorTop();
+      if (headingTop === null) return;
+      $tocNavRow.toggleClass('toc-nav-row--visible', window.pageYOffset + offset >= headingTop);
+    };
+    $(window).on('scroll', updateTocRowVisibility);
+    $(window).on('resize', function () { _firstAnchorTop = undefined; });
+
+    // Refresh offsets after full page load (fonts/images can shift heading positions)
+    window.addEventListener('load', function () {
+      $('body').scrollspy('refresh');
+      updateTocLabel();
+      updateTocRowVisibility();
+    });
+  });
+</script>
+{% endif %}

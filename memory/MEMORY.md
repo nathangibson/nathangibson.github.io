@@ -6,6 +6,10 @@ Jekyll personal/academic site (nathangibson.github.io). Beautiful Jekyll 6 + Boo
 ## Key systems
 - **Publications** — Zotero API → `_data/publications.yaml` + `_data/citations.yaml`. See `memory/publications.md`
 - **Image credits** — EXIF → `_data/image_credits.yaml`. See `memory/image-credits.md`
+- **Article text features** — opt-in per stub via front matter; `nokogiri` gem required
+  - `paragraph-numbers: true` → `add_paragraph_numbers` filter (`_plugins/paragraph_numbers_filter.rb`): wraps top-level `<p>` in Bootstrap flex divs with linked numbers; skips badge-only paragraphs
+  - `footnote-popovers: true` (default via `_config.yml`) → `add_footnote_popovers` filter (`_plugins/footnote_popovers_filter.rb`): replaces inline footnote refs with Bootstrap popovers; footnote list at bottom unchanged; opt out with `footnote-popovers: false`
+  - Both filters applied in `_layouts/publication.html` via chained `assign`; order: popovers first, then paragraph numbers
 
 ## Build pipeline (ci.yml)
 1. Install exiftool

@@ -306,6 +306,9 @@ defaults:
       type: "publications"
     values:
       layout: "publication"
+      footnote-popovers: true
+      paragraph-numbers: true
+      toc: true
 
 collections:
   publications:
