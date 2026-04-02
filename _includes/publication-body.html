@@ -11,6 +11,10 @@
     include.wrapper_class — CSS classes for the citation wrapper <div>
 {%- endcomment -%}
 
+{%- if pub.attachments -%}
+  {%- assign pdf = pub.attachments | where: "title", "pdf" | first -%}
+{%- endif -%}
+
 {%- if chicago_bib -%}
   {%- capture _sentinel_open -%}|BEGIN_TITLE|{%- endcapture -%}
   {%- capture _sentinel_close -%}|END_TITLE|{%- endcapture -%}
@@ -35,7 +39,7 @@
 {%- endif -%}
 
 <!-- Attachments (links) -->
-{%- if pub.attachments or pub.URL -%}
+{%- if pub.attachments or pub.URL or pdf -%}
 <div class="publication-attachments mt-auto pt-2">
   <div class="d-flex flex-wrap gap-2">
     {%- if pub.URL -%}
@@ -43,9 +47,14 @@
     → view online
     </a>
     {%- endif -%}
+    {%- if pdf -%}
+    <a href="{{ pdf.url }}" class="btn btn-dark btn-outline-light btn-sm mx-1" target="_blank" rel="noopener noreferrer" download>
+      <i class="fa-solid fa-download"></i> download
+    </a>
+    {%- endif -%}
     {%- for attachment in pub.attachments -%}
     {%- assign _attachment_title = attachment.title | default: '' | downcase -%}
-    {%- unless _attachment_title == 'thumbnail' -%}
+    {%- unless _attachment_title == 'thumbnail' or _attachment_title == 'pdf' -%}
     <a href="{{ attachment.url }}" class="btn btn-sm btn-outline-dark mx-1" target="_blank" rel="noopener noreferrer">
       {%- if attachment.type == 'pdf' -%}
       📄 {{ attachment.title | default: 'PDF' }}

@@ -944,6 +944,10 @@ references:
     - year: 2022
       month: 12
       day: 1
+  attachments:
+    - title: pdf
+      url: https://npgibson.com/assets/pdf/gibsonKnowledgeCollaborationJews2022.pdf
+      type: pdf
   author:
     - family: Gibson
       given: Nathan P.
