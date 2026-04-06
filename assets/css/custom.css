@@ -58,6 +58,12 @@
   z-index: 2;
 }
 
+/* Prevent body-level overflow-wrap: break-word from splitting words mid-character in header titles */
+.intro-header h1 {
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
 /* Expand paragraph text for better readability */
 body > main p {
     letter-spacing: 0.3px;
