@@ -59,3 +59,9 @@ qalam:
   description: Qalam pens, made from reeds
   source_url: https://commons.wikimedia.org/w/index.php?curid=652324
   rights: Creative Commons Attribution 2.5 (CC BY 2.5), https://creativecommons.org/licenses/by/2.5
+astrolabe:
+  description: Brass astrolabe made by Ibrahim of Damascus, 1270–1271
+  identifier: British Museum, no. 1890,0315.3
+  publisher: The Trustees of the British Museum
+  source_url: https://www.britishmuseum.org/collection/image/345206001
+  rights: CC BY-NC-SA 4.0

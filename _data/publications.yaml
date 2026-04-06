@@ -944,6 +944,13 @@ references:
     - year: 2022
       month: 12
       day: 1
+  attachments:
+    - title: pdf
+      url: https://npgibson.com/assets/pdf/gibsonKnowledgeCollaborationJews2022.pdf
+      type: pdf
+    - title: thumbnail
+      url: https://npgibson.com/img/astrolabe.jpg
+      type: webpage
   author:
     - family: Gibson
       given: Nathan P.
@@ -1123,7 +1130,7 @@ references:
       url: http://arxiv.org/abs/1603.01207
       type: webpage
     - title: Thumbnail
-      url: https://npgibson.com/img/circle.jpg
+      url: https://nathangibson.github.io/img/circle.jpg
       type: webpage
   author:
     - family: Gibson
