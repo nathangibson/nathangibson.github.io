@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="XMP Core 4.4.0-Exiv2">
+ <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about=""
+    xmlns:exif="http://ns.adobe.com/exif/1.0/"
+    xmlns:xapMM="http://ns.adobe.com/xap/1.0/mm/"
+    xmlns:xap="http://ns.adobe.com/xap/1.0/"
+    xmlns:darktable="http://darktable.sf.net/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:lr="http://ns.adobe.com/lightroom/1.0/"
+   exif:DateTimeOriginal="2026:04:06 01:55:54.000"
+   xapMM:DerivedFrom="astrolabe.jpg"
+   xap:Rating="1"
+   darktable:import_timestamp="63911037768601176"
+   darktable:change_timestamp="-1"
+   darktable:export_timestamp="-1"
+   darktable:print_timestamp="-1"
+   darktable:xmp_version="5"
+   darktable:raw_params="0"
+   darktable:auto_presets_applied="0"
+   darktable:history_end="0"
+   darktable:iop_order_version="4"
+   dc:source="https://www.britishmuseum.org/collection/image/345206001"
+   dc:identifier="British Museum, no. 1890,0315.3">
+   <darktable:masks_history>
+    <rdf:Seq/>
+   </darktable:masks_history>
+   <darktable:history>
+    <rdf:Seq/>
+   </darktable:history>
+   <dc:publisher>
+    <rdf:Bag>
+     <rdf:li>The Trustees of the British Museum</rdf:li>
+    </rdf:Bag>
+   </dc:publisher>
+   <dc:description>
+    <rdf:Alt>
+     <rdf:li xml:lang="x-default">Brass astrolabe made by Ibrahim of Damascus, 1270–1271</rdf:li>
+    </rdf:Alt>
+   </dc:description>
+   <dc:rights>
+    <rdf:Alt>
+     <rdf:li xml:lang="x-default">CC BY-NC-SA 4.0</rdf:li>
+    </rdf:Alt>
+   </dc:rights>
+   <dc:subject>
+    <rdf:Bag>
+     <rdf:li>darktable</rdf:li>
+     <rdf:li>format</rdf:li>
+     <rdf:li>jpg</rdf:li>
+    </rdf:Bag>
+   </dc:subject>
+   <lr:hierarchicalSubject>
+    <rdf:Bag>
+     <rdf:li>darktable|format|jpg</rdf:li>
+    </rdf:Bag>
+   </lr:hierarchicalSubject>
+  </rdf:Description>
+ </rdf:RDF>
+</x:xmpmeta>

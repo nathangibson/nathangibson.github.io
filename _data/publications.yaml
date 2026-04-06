@@ -948,6 +948,9 @@ references:
     - title: pdf
       url: https://npgibson.com/assets/pdf/gibsonKnowledgeCollaborationJews2022.pdf
       type: pdf
+    - title: thumbnail
+      url: https://npgibson.com/img/astrolabe.jpg
+      type: webpage
   author:
     - family: Gibson
       given: Nathan P.
