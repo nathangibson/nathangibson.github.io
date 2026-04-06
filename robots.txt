@@ -3,3 +3,9 @@
 # Allow crawling of all content
 User-agent: *
 Disallow: /
+
+# Allow only the site root
+Allow: /$
+
+# Allow specific pages linked from the home page — add each link you want crawled
+# Allow: /projects

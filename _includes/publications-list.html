@@ -1,0 +1,144 @@
+{% if site.data.publications and site.data.publications.references %}
+
+<!-- Collect unique type tags and other tags from all publications matching the filters -->
+{% assign unique_type_tags_str = "," %}
+{% assign unique_other_tags_str = "," %}
+{% for pub in site.data.publications.references %}
+  {% if include.tag %}{% unless pub.tags contains include.tag %}{% continue %}{% endunless %}{% endif %}
+  {% if pub.tags %}
+    {% for pub_tag in pub.tags %}
+      {% if pub_tag == include.tag %}{% continue %}{% endif %}
+      {% assign tag_with_delims = pub_tag | prepend: "," | append: "," %}
+      {% if pub_tag contains "type: " %}
+        {% unless unique_type_tags_str contains tag_with_delims %}
+          {% assign unique_type_tags_str = unique_type_tags_str | append: pub_tag | append: "," %}
+        {% endunless %}
+      {% else %}
+        {% unless unique_other_tags_str contains tag_with_delims %}
+          {% assign unique_other_tags_str = unique_other_tags_str | append: pub_tag | append: "," %}
+        {% endunless %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+{% assign unique_type_tags = unique_type_tags_str | split: "," | where_exp: "item", "item != ''" | sort %}
+{% assign unique_other_tags = unique_other_tags_str | split: "," | where_exp: "item", "item != ''" | sort %}
+
+<div class="publications-container">
+  <!-- Filter buttons -->
+  <div class="publications-filters">
+    <!-- Type filters (from type: tags) -->
+    {% if unique_type_tags.size > 0 %}
+    <div class="d-flex gap-3 flex-wrap mb-4">
+      <button class="btn btn-outline-dark mx-1 my-1 publication-filter fw-medium active" data-filter="all">All</button>
+      {% for tag in unique_type_tags %}
+        {% assign type_display = tag | replace: "type: ", "" %}
+        <button class="btn btn-outline-dark mx-1 my-1 publication-filter fw-medium" data-filter="{{ tag }}">{{ type_display }}</button>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    <!-- Other tag filters (dynamically generated) -->
+    {% if unique_other_tags.size > 0 %}
+    <div class="d-flex gap-3 flex-wrap mb-4">
+      {% for tag in unique_other_tags %}
+        <button class="btn btn-outline-secondary mx-1 my-1 publication-tag fw-medium" data-tag="{{ tag }}">{{ tag }}</button>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+
+  <!-- Publications grid -->
+  <div class="row g-4" id="pub-grid">
+    {% for pub in site.data.publications.references %}
+      {% if include.tag %}{% unless pub.tags contains include.tag %}{% continue %}{% endunless %}{% endif %}
+      <!-- Capture cover image URL from attachment labeled "thumbnail" in Zotero if available -->
+      {%- capture cover-img -%}
+        {%- for attachment in pub.attachments -%}
+          {%- if attachment.title == "thumbnail" -%}
+            {{ attachment.url }}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endcapture -%}
+        {%- assign pub_page = site.publications | where: "citation-key", pub['citation-key'] | first -%}
+        <div class="pub-item col-12 col-lg-6 py-3" data-tags="{{ pub.tags | join: ',' }}">
+          <a href="{{ pub_page.url | default: pub.URL | default: '#' }}" class="text-decoration-none text-dark"{% unless pub_page %} target="_blank"{% endunless %}>
+            <div class="card h-100 rounded-4 shadow" style="background-image: linear-gradient(to top left, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.9)), url('{{ cover-img | default: "/img/nhsl-banner.png" }}'); background-size: cover;">
+              <div class="card-body d-flex flex-column">
+                <!-- Badge for publication type (from type: tag) -->
+                {% assign pub_type_tag = nil %}
+                {% if pub.tags %}
+                  {% for tag in pub.tags %}
+                    {% if tag contains "type: " %}
+                      {% assign pub_type_tag = tag | replace: "type: ", "" %}
+                      {% break %}
+                    {% endif %}
+                  {% endfor %}
+                {% endif %}
+                {% if pub_type_tag %}
+                <div class="mb-2">
+                  <span class="badge badge-dark">{{ pub_type_tag }}</span>
+                </div>
+                {% endif %}
+
+                {%- assign chicago_bib = site.data.citations[pub['citation-key']]['chicago-bibliography'] -%}
+                {%- include publication-body.html title_tag="h5" title_class="card-title fw-bold my-2" wrapper_class="small mt-1 mb-2" -%}
+              </div>
+              {% include image-caption.html url=cover-img alt="" caption_only=true %}
+            </div>
+          </a>
+        </div>
+    {% endfor %}
+  </div>
+
+  <div id="no-pubs" class="alert alert-info mt-4" style="display:none;">No publications match this filter.</div>
+</div>
+
+<script>
+  let activeTypeFilter = 'all';
+  let activeTagFilter = null;
+
+  function updatePublicationDisplay() {
+    let count = 0;
+    document.querySelectorAll('.pub-item').forEach(item => {
+      const itemTags = item.dataset.tags ? item.dataset.tags.split(',').map(t => t.trim()).filter(t => t) : [];
+
+      const typeMatch = activeTypeFilter === 'all' || itemTags.includes(activeTypeFilter);
+      const tagMatch = !activeTagFilter || itemTags.includes(activeTagFilter);
+
+      const show = typeMatch && tagMatch;
+      item.style.display = show ? '' : 'none';
+      if(show) count++;
+    });
+
+    document.getElementById('no-pubs').style.display = count === 0 ? 'block' : 'none';
+  }
+
+  document.querySelectorAll('.publication-filter').forEach(btn => {
+    btn.addEventListener('click', function() {
+      activeTypeFilter = this.dataset.filter;
+      document.querySelectorAll('.publication-filter').forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      updatePublicationDisplay();
+    });
+  });
+
+  document.querySelectorAll('.publication-tag').forEach(btn => {
+    btn.addEventListener('click', function() {
+      // Toggle: if this tag is active, deactivate it; otherwise activate it
+      if (activeTagFilter === this.dataset.tag) {
+        activeTagFilter = null;
+        this.classList.remove('active');
+      } else {
+        document.querySelectorAll('.publication-tag').forEach(b => b.classList.remove('active'));
+        activeTagFilter = this.dataset.tag;
+        this.classList.add('active');
+      }
+      updatePublicationDisplay();
+    });
+  });
+</script>
+
+{% else %}
+  <div class="alert alert-warning">Publications data not found.</div>
+{% endif %}

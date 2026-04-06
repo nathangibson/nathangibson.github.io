@@ -1,0 +1,56 @@
+name: Beautiful Jekyll CI
+on: [push, pull_request]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build Jekyll
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+      - name: Install dependencies
+        run: bundle install && bundle exec appraisal install
+      - name: Install exiftool
+        run: sudo apt-get install -y libimage-exiftool-perl
+      - name: Fetch Chicago citations from Zotero
+        run: bundle exec ruby scripts/fetch_zotero_citations.rb
+        continue-on-error: true
+      - name: Display citation fetch results
+        run: cat .zotero_fetch_log.txt || echo "No citation fetch log available"
+      - name: Extract image credits from EXIF
+        run: ruby scripts/extract_image_credits.rb
+        continue-on-error: true
+      - name: Setup Pages
+        id: configure-pages
+        uses: actions/configure-pages@v5
+      - name: Setup CI config
+        run: |
+          echo "---" > _config_ci.yml
+          echo "baseurl: ${{ steps.configure-pages.outputs.base_path }}" >> _config_ci.yml
+      - name: Build site
+        env:
+          JEKYLL_ENV: production
+        run: bundle exec appraisal jekyll build --future --config _config_ci.yml,_config.yml
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

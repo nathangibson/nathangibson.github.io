@@ -1,0 +1,82 @@
+Starting Zotero citation fetch (FULL RUN)
+Found 77 publications to process
+Fetching items with bibliography from Zotero API...
+Built URL map with 72 entries
+  [CACHE] bantuGlobalChristianTexts2027
+  [CACHE] ConnectingLateAntiquities2025
+  [CACHE] duckerJeGrosserLiebe2023
+  [CACHE] ghorbaninejadRighttoLeftRTLText2023
+  [NO URL] gibsonAbrahamPointDeparture2012 - skipping, no URL field
+  [NO URL] gibsonAlJahizDivineAdoption2022 - skipping, no URL field
+  [NO URL] gibsonArabicLiteraryPersonages2023 - skipping, no URL field
+  [CACHE] gibsonAuthorityRecordsFrontiers2021
+  [CACHE] gibsonBibleArabicUpdate2018
+  [CACHE] gibsonChallengesPolyvalentInfrastructures2017
+  [CACHE] gibsonChristianOrientIslamic2017
+  [CACHE] gibsonCircumnavigatingJewishChristian2022
+  [CACHE] gibsonClosestFriendshipAlJahiz2015
+  [CACHE] gibsonCommunitiesKnowledgeInterreligious2020
+  [CACHE] gibsonCommunitiesKnowledgeInterreligious2023a
+  [NO URL] gibsonCommunitiesKnowledgeUsaybianet2020 - skipping, no URL field
+  [CACHE] gibsonCrosscommunalScholarlyInteractions2022
+  [CACHE] gibsonCyberinfrastructureSyriacLiterature2017
+  [NO URL] gibsonDistantReadingPersons2020 - skipping, no URL field
+  [CACHE] gibsonDivineAdoptionJewish2023
+  [CACHE] gibsonEncodingWesternNonWestern2015
+  [CACHE] gibsonEntityTaggingNetwork2024
+  [CACHE] gibsonFiveCenturiesHistory2019
+  [NO URL] gibsonFlorilegiumBadTranslations2016 - skipping, no URL field
+  [NO URL] gibsonGodAloneKnows2024 - skipping, no URL field
+  [NO URL] gibsonGospelCitationsVirgin2012 - skipping, no URL field
+  [NO URL] gibsonGuideSyriacaorgReference2016 - skipping, no URL field
+  [NO URL] gibsonInquiringBeelzebubChristians2013 - skipping, no URL field
+  [NO URL] gibsonInterreligiousContactsAbbasid2017 - skipping, no URL field
+  [NO URL] gibsonIslamicScholarPluralistic2016 - skipping, no URL field
+  [CACHE] gibsonKnowledgeCollaborationJews2022
+  [CACHE] gibsonLabelingReligiousAffiliation2020
+  [CACHE] gibsonLabelingReligiousAffiliation2023
+  [CACHE] gibsonLinkingSyriacChristian2022
+  [CACHE] gibsonManuscriptCataloguesHandbook17
+  [NO URL] gibsonMiaphysiteArabianTriangle2013 - skipping, no URL field
+  [CACHE] gibsonMidNinthCenturyArabicTranslation2017
+  [CACHE] gibsonModelingBodyLiterature[acceptedrevisionsinpreparation]
+  [CACHE] gibsonModelingBodyLiterature2016
+  [CACHE] gibsonModelingBodyLiterature2016a
+  [NO URL] gibsonMountainsPlainsGeographical2011 - skipping, no URL field
+  [CACHE] gibsonMultireligiousMultilingualKnowledge2021
+  [CACHE] gibsonNeighborhoodBiblesCirculation2024
+  [CACHE] gibsonNetworksBiblicalScholarship2017
+  [CACHE] gibsonNewHandbookSyriac2016
+  [NO URL] gibsonNewHandbookSyriac2016a - skipping, no URL field
+  [NO URL] gibsonPhysiciansPhilosophersPolymaths2017 - skipping, no URL field
+  [NO URL] gibsonReadingHistoryPolemic2015 - skipping, no URL field
+  [NO URL] gibsonReadingLinesMining2017 - skipping, no URL field
+  [NO URL] gibsonRhetoricFulcrumPower2016 - skipping, no URL field
+  [CACHE] gibsonRobustDigitalApproaches2017
+  [CACHE] gibsonScholarConvertsHubsKnowledge2018
+  [CACHE] gibsonSocialLivesPolemicists2023
+  [CACHE] gibsonStateArabicManuscript2018
+  [NO URL] gibsonTEIManuscriptDescription2019 - skipping, no URL field
+  [CACHE] gibsonThinkingTYaReorienting2019
+  [CACHE] gibsonTransculturationNeoculturationJewish2023
+  [NO URL] gibsonTurningFriendsEnemies2016 - skipping, no URL field
+  [NO URL] gibsonUsaybianetDataStructure2023 - skipping, no URL field
+  [NO URL] gibsonWhatDidAlJahiz2016 - skipping, no URL field
+  [CACHE] goetheuniversitaetGoetheUniStelltSich2025
+  [CACHE] goetheuniversitaetNewlyAppointedProf2024
+  [CACHE] InterviewDrNathan2021
+  [CACHE] j.jacobUniversitaetTrifftGesellschaft2025
+  [CACHE] lohrScholarsServantsCaliphs2021
+  [CACHE] michelsonGuideSyriacAuthors2016
+  [CACHE] michelsonSyriacBiographicalDictionary2016
+  [CACHE] plattInquiringBeelzebubTimothy2018
+  [CACHE] pohlKnowledgeCollaborationJews2022
+  [CACHE] pohlKnowledgeCollaborationJews2023
+  [CACHE] sane-digitalAmbivalenteBeziehungenFachtag2023
+  [CACHE] schwartzModelingBornDigitalFactoid2021
+  [CACHE] schwartzModelingBornDigitalFactoid2022a
+  [CACHE] textandtransmissionjointresearchseminarTeTraNathanGibson2022
+  [CACHE] TurmoilDisplacesMiddle
+  [CACHE] vollandtBibliographyArabicBible2018
+  [CACHE] wolframHeimlichesVorbild2022
+Saved updated publications to _data/publications.yaml
