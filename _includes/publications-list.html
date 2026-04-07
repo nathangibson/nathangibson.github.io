@@ -52,13 +52,10 @@
   <div class="row g-4" id="pub-grid">
     {% for pub in site.data.publications.references %}
       {% if include.tag %}{% unless pub.tags contains include.tag %}{% continue %}{% endunless %}{% endif %}
-      <!-- Capture cover image URL from attachment labeled "thumbnail" in Zotero if available -->
+      <!-- Capture cover image filename from note field (Zotero Extra): thumbnail: filename.jpg -->
+      {%- assign _note = pub | note_fields -%}
       {%- capture cover-img -%}
-        {%- for attachment in pub.attachments -%}
-          {%- if attachment.title == "thumbnail" -%}
-            {{ attachment.url }}
-          {%- endif -%}
-        {%- endfor -%}
+        {%- if _note["thumbnail"] -%}/img/{{ _note["thumbnail"] }}{%- endif -%}
       {%- endcapture -%}
         {%- assign pub_page = site.publications | where: "citation-key", pub['citation-key'] | first -%}
         <div class="pub-item col-12 col-lg-6 py-3" data-tags="{{ pub.tags | join: ',' }}">

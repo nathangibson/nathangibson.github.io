@@ -39,11 +39,24 @@ css/
 - Layout renders: cover image (thumbnail attachment), type badge, authors, year/venue, Chicago citation, abstract (`<details>`), DOI/URL buttons, attachments, back link, `<hr>`, `{{ content }}`
 - `page.html` already renders `page.title` as `<h1>` — layout does NOT repeat the title
 
-### Publication header images
-- `_includes/header.html` checks for `page.citation-key` and automatically looks up `pub.attachments` with `title: "thumbnail"`
-- Sets `page_cover_img` variable from `thumb.url`, used as fallback to `page.cover-img` (for non-publication pages)
-- Rendered in header big-img section with `data-img-src-*` attributes; works without front matter modification
-- Logic: `{% assign final_cover_img = page.cover-img | default: page_cover_img %}`
+## Thumbnail and PDF via Zotero Extra field
+
+Thumbnails and PDFs are specified in the Zotero **Extra** field (maps to `note` in CSL-JSON/YAML):
+
+```
+thumbnail: astrolabe.jpg
+pdf: gibsonKnowledgeCollaborationJews2022.pdf
+```
+
+- Thumbnail URL constructed as `/img/{filename}`; PDF URL as `/assets/pdf/{filename}`
+- Parsed by the `note_fields` Liquid filter (`_plugins/note_fields_filter.rb`): extracts lowercase-keyed lines from `pub.note` into a hash
+- Template usage: `{%- assign _note = pub | note_fields -%}` then `_note["thumbnail"]` / `_note["pdf"]`
+
+### Template locations
+- `header.html`: thumbnail → `page_cover_img` for header big-img
+- `publications-list.html`: thumbnail → card CSS background
+- `publication-body.html`: pdf → PDF download button; also assigns `_note` once at top
+- `publication-card.html`: pdf → PDF download button
 
 ### Stub generation
 - Script slug rule: `citation-key.gsub(/[^a-zA-Z0-9\-]/, '-').gsub(/-{2,}/, '-')`

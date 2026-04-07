@@ -961,10 +961,12 @@ references:
   issued:
     - year: 2022
   language: en
-  note: '59'
+  license: CC BY-NC-ND 4.0
+  note: |-
+    thumbnail: astrolabe.jpg
+    pdf: gibsonKnowledgeCollaborationJews2022.pdf
   page: 59–72
   publisher: Verlag der Österreichischen Akademie der Wissenschaften
-  publisher-place: Wien
   tags:
     - Jews
     - Arabic
