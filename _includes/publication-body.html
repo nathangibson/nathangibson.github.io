@@ -54,7 +54,6 @@
     </a>
     {%- endif -%}
     {%- for attachment in pub.attachments -%}
-    {%- assign _att_title = attachment.title | default: '' | downcase -%}
     <a href="{{ attachment.url }}" class="btn btn-sm btn-outline-dark mx-1" target="_blank" rel="noopener noreferrer">
       {%- if attachment.type == 'pdf' -%}
       📄 {{ attachment.title | default: 'PDF' }}
