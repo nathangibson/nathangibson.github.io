@@ -315,6 +315,11 @@ collections:
     output: true
     permalink: /publications/:name/
 
+# Directory you want store publication thumbnails/cover images in. For each publication, put the filename of the thumbnail in Zotero's "Extra" field using the format `thumbnail: filename.jpg`. Then store the thumbnail image in the directory specified here. 
+publication_thumbnail_dir: /img
+# Directory you want store publication PDFs in. For each publication, put the filename of the PDF in Zotero's "Extra" field using the format `pdf: filename.pdf`. Then store the PDF in the directory specified here. 
+publication_pdf_dir: /assets/pdf
+
 # Exclude these files from production site
 exclude:
   - CHANGELOG.md

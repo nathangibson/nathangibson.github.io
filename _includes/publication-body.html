@@ -13,7 +13,7 @@
 
 {%- assign _note = pub | note_fields -%}
 {%- if _note["pdf"] -%}
-  {%- assign _pdf_url = "/assets/pdf/" | append: _note["pdf"] -%}
+  {%- assign _pdf_url = site.publication_pdf_dir | append: '/' | append: _note["pdf"] -%}
 {%- endif -%}
 
 {%- if chicago_bib -%}

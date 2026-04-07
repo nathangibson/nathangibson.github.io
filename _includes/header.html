@@ -5,7 +5,7 @@
   {%- if pub -%}
     {%- assign _note = pub | note_fields -%}
     {%- if _note["thumbnail"] -%}
-      {%- assign page_cover_img = "/img/" | append: _note["thumbnail"] -%}
+      {%- assign page_cover_img = site.publication_thumbnail_dir | append: '/' | append: _note["thumbnail"] -%}
     {%- endif -%}
   {%- endif -%}
 {% endif %}

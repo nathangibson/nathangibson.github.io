@@ -55,7 +55,7 @@
       <!-- Capture cover image filename from note field (Zotero Extra): thumbnail: filename.jpg -->
       {%- assign _note = pub | note_fields -%}
       {%- capture cover-img -%}
-        {%- if _note["thumbnail"] -%}/img/{{ _note["thumbnail"] }}{%- endif -%}
+        {%- if _note["thumbnail"] -%}{{ site.publication_thumbnail_dir }}/{{ _note["thumbnail"] }}{%- endif -%}
       {%- endcapture -%}
         {%- assign pub_page = site.publications | where: "citation-key", pub['citation-key'] | first -%}
         <div class="pub-item col-12 col-lg-6 py-3" data-tags="{{ pub.tags | join: ',' }}">
