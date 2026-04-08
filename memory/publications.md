@@ -90,9 +90,10 @@ pdf: gibsonKnowledgeCollaborationJews2022.pdf
 Displayed via `pub.license` (native CSL-JSON field, set in Zotero's **License field**).
 
 - **Canonical format**: short label e.g. `CC BY 4.0`, `CC BY-NC-ND 4.0` (normalize all entries to this)
-- **Lookup table**: `_data/cc_licenses.yaml` maps label → `url`, `badge` (filename), `alt`
-- **Badge images**: `/assets/img/cc-badges/*.png` (88×31 PNGs, hosted locally)
-- **Rendering**: `publication-body.html` looks up `_lic = site.data.cc_licenses[pub.license]` and renders a linked `<img>` inside the flex attachments div
+- **Lookup table**: `_data/cc_licenses.yaml` maps label → `url`, `icons` (list of SVG filenames), `alt`
+- **Icon SVGs**: `/assets/img/cc-icons/*.svg` — individual element icons (cc, by, nc, nd, sa, zero), hosted locally
+- **Rendering**: `publication-body.html` — in the DOI block, looks up `_lic = site.data.cc_licenses[pub.license]` and renders a `badge badge-dark` link iterating over `_lic.icons`; icons sized with `style="height: 1em; vertical-align: middle;"`; `aria-label` on the `<a>` for accessibility
+- **Condition**: `{%- if pub.DOI or _lic -%}` — block renders when either DOI or license is present
 - Publications with no `license` field: unaffected (graceful degradation)
 
 ## Workflow
