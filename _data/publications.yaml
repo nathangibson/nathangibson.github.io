@@ -82,7 +82,7 @@ references:
   issued:
     - year: 2023
   language: deu
-  license: http://creativecommons.org/licenses/by-nc-nd/4.0/de/deed.de
+  license: CC BY-NC-ND 4.0
   page: 32–33
   publisher: Goethe-Universität Frankfurt am Main. Fachbereich Evangelische Theologie
   source: publikationen.ub.uni-frankfurt.de
@@ -661,10 +661,7 @@ references:
     - year: 2015
       month: 8
       day: 10
-  license: >-
-    Copyright © 2015, Nathan P. Gibson, Winona Salesky, & David A. Michelson.
-    Released under a Creative Commons Attribution 4.0 International License (CC
-    BY 4.0).
+  license: CC BY 4.0
   publisher-place: Washington, D.C.
   source: www.balisage.net
   tags:
@@ -1294,7 +1291,7 @@ references:
   ISSN: 2162-5603
   issued:
     - literal: '[accepted, revisions in preparation]'
-  license: CC-BY 4.0
+  license: CC BY 4.0
   source: hcommons.org
   tags:
     - Digital humanities

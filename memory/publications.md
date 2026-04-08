@@ -85,6 +85,16 @@ pdf: gibsonKnowledgeCollaborationJews2022.pdf
 {%- elsif pub.issued[0].literal -%}  → forthcoming, e.g. "[forthcoming 2027]"
 ```
 
+## CC License badges
+
+Displayed via `pub.license` (native CSL-JSON field, set in Zotero's **License field**).
+
+- **Canonical format**: short label e.g. `CC BY 4.0`, `CC BY-NC-ND 4.0` (normalize all entries to this)
+- **Lookup table**: `_data/cc_licenses.yaml` maps label → `url`, `badge` (filename), `alt`
+- **Badge images**: `/assets/img/cc-badges/*.png` (88×31 PNGs, hosted locally)
+- **Rendering**: `publication-body.html` looks up `_lic = site.data.cc_licenses[pub.license]` and renders a linked `<img>` inside the flex attachments div
+- Publications with no `license` field: unaffected (graceful degradation)
+
 ## Workflow
 ```bash
 ./scripts/update_publications.sh          # fetch citations + generate new stubs

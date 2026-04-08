@@ -40,9 +40,13 @@
 {%- endif -%}
 
 <!-- Attachments (links) -->
-{%- if pub.attachments or pub.URL or _pdf_url -%}
+{%- assign _lic = nil -%}
+{%- if pub.license -%}
+  {%- assign _lic = site.data.cc_licenses[pub.license] -%}
+{%- endif -%}
+{%- if pub.attachments or pub.URL or _pdf_url or _lic -%}
 <div class="publication-attachments mt-auto pt-2">
-  <div class="d-flex flex-wrap gap-2">
+  <div class="d-flex flex-wrap gap-2 align-items-center">
     {%- if pub.URL -%}
     <a href="{{ pub.URL }}" class="btn btn-dark btn-outline-light btn-sm mx-1" target="_blank" rel="noopener noreferrer">
     → view online
@@ -62,6 +66,11 @@
       {%- endif -%}
     </a>
     {%- endfor -%}
+    {%- if _lic -%}
+    <a href="{{ _lic.url }}" target="_blank" rel="license noopener noreferrer">
+      <img src="/assets/img/cc-badges/{{ _lic.badge }}" alt="{{ _lic.alt }}" height="31">
+    </a>
+    {%- endif -%}
   </div>
 </div>
 {%- endif -%}
