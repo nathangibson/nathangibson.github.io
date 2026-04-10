@@ -70,11 +70,6 @@ body > main p {
 }
 
 /* Abstract collapsible details */
-.abstract-details {
-  background-color: #f8f9fa;
-  border-left: 3px solid #dee2e6;
-}
-
 .abstract-details > summary {
   list-style: none;
   cursor: pointer;
@@ -84,12 +79,8 @@ body > main p {
   display: none;
 }
 
-.abstract-preview {
-  position: relative;
-}
-
 .abstract-details:not([open]) .abstract-preview {
-  max-height: 4.5em;
+  max-height: 6.5em;
   overflow: hidden;
 }
 
