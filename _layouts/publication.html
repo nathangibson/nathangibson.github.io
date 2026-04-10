@@ -35,10 +35,15 @@ layout: page
 
   {%- comment -%}Abstract (collapsible){%- endcomment -%}
   {%- if pub.abstract -%}
-  <div class="px-3 py-2 rounded my-3" style="background-color: #f8f9fa; border-left: 3px solid #dee2e6;">
-    <p class="mb-3 fw-semibold text-muted text-uppercase">Abstract</p>
-    <p class="small mt-2">{{ pub.abstract }}</p>
-  </div>
+  <details class="abstract-details px-3 py-2 rounded my-3">
+    <summary class="abstract-summary">
+      <p class="fw-semibold text-muted text-uppercase small mb-1">Abstract</p>
+      <div class="abstract-preview">
+        <p class="abstract-text small mb-0">{{ pub.abstract }}</p>
+      </div>
+      <p class="abstract-toggle-hint text-muted small mb-0 mt-1">Show more ↓</p>
+    </summary>
+  </details>
   {%- endif -%}
 
 

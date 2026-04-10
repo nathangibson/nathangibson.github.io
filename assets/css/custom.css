@@ -69,6 +69,45 @@ body > main p {
     letter-spacing: 0.3px;
 }
 
+/* Abstract collapsible details */
+.abstract-details {
+  background-color: #f8f9fa;
+  border-left: 3px solid #dee2e6;
+}
+
+.abstract-details > summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.abstract-details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.abstract-preview {
+  position: relative;
+}
+
+.abstract-details:not([open]) .abstract-preview {
+  max-height: 4.5em;
+  overflow: hidden;
+}
+
+.abstract-details:not([open]) .abstract-preview::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1.5em;
+  background: linear-gradient(to bottom, transparent, #f8f9fa);
+  pointer-events: none;
+}
+
+.abstract-details[open] .abstract-toggle-hint {
+  display: none;
+}
+
 /* TOC second navbar row — hidden until first heading is scrolled past */
 #toc-nav-row {
   max-height: 0;
