@@ -33,7 +33,7 @@
 {%- if pub.license -%}
   {%- assign _lic = site.data.cc_licenses[pub.license] -%}
 {%- endif -%}
-{%- if pub.DOI or _lic -%}
+{%- if pub.DOI or _lic or page['full-text'] or page['version'] -%}
 <div class="d-flex align-items-center flex-wrap">
   {%- if pub.DOI -%}
   <a href="https://doi.org/{{ pub.DOI }}" class="badge badge-dark mx-1" target="_blank" rel="noopener noreferrer">
@@ -44,6 +44,16 @@
   <a href="{{ _lic.url }}" class="badge badge-dark mx-1" target="_blank" rel="license noopener noreferrer" aria-label="{{ _lic.alt }}" style="display: inline-flex; align-items: center;">
     {%- for _icon in _lic.icons -%}<img src="/assets/img/cc-icons/{{ _icon }}" alt="" style="height: 1em;">{%- endfor -%}
   </a>
+  {%- endif -%}
+  {%- if page['full-text'] -%}
+  <span class="badge badge-dark mx-1" style="display: inline-flex; align-items: center;">
+    <i class="fa-solid fa-check me-1"></i>&nbsp;Full Text
+  </span>
+  {%- endif -%}
+  {%- if page['version'] -%}
+  <span class="badge badge-dark mx-1" style="display: inline-flex; align-items: center;">
+    <i class="fa-solid fa-file me-1"></i>&nbsp;{{ page['version'] }}
+  </span>
   {%- endif -%}
 </div>
 {%- endif -%}
