@@ -26,7 +26,7 @@ layout: page
     {%- endcase -%}
   {%- endcapture -%}
   <div class="mb-3">
-    <span class="badge badge-dark">{{ pub_type_label | strip }}</span>
+    <span class="badge badge-dark">{{ pub_type_label | strip }}</span><a href="/publications/" class="btn btn-sm btn-link ps-0 text-muted">&larr; All Publications</a>
   </div>
 
   {%- comment -%}Chicago citation — prefer citations.yaml, fall back to embedded field{%- endcomment -%}
@@ -47,18 +47,21 @@ layout: page
   {%- endif -%}
 
 
-  <div class="mb-4">
-    <a href="/publications/" class="btn btn-sm btn-link ps-0 text-muted">&larr; All Publications</a>
-  </div>
 
 </div>
 
-<hr class="mb-4">
 
 {%- assign rendered = content -%}
 {%- if page['footnote-popovers'] -%}
-  {%- assign rendered = rendered | add_footnote_popovers -%}
+{%- assign rendered = rendered | add_footnote_popovers -%}
 {%- endif -%}
+
+{%- if page['full-text'] -%}
+<h2 class="text-muted" id="full-text">Full-Text HTML</h2>
+<hr class="mb-4">
+{%- endif -%}
+
+
 {%- if page['paragraph-numbers'] -%}
   {%- assign rendered = rendered | add_paragraph_numbers -%}
 {%- endif -%}
@@ -69,6 +72,8 @@ layout: page
 <div class="alert alert-warning">
   Publication data not found for citation key: <code>{{ ck }}</code>
 </div>
+
+
 {{ content }}
 
 {% endif %}
