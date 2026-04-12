@@ -1,3 +1,13 @@
+---
+layout: null
+---
+
+:root {
+  /* config file CSS variables */
+  --toc-navbar-text-col: {{ site.toc-navbar-text-col | default: site.navbar-text-col }};
+  --toc-navbar-hover-col: {{ site.toc-navbar-hover-col | default: "#f8f9fa" }};
+  --toc-navbar-background-col: {{ site.toc-navbar-background-col | default: site.navbar-text-col }};
+  
 /* Avatar: left-aligned, overlapping hero, fades on scroll (fade handled by beautifuljekyll.css) */
 .navbar-custom .avatar-container {
   left: 1rem;
@@ -109,4 +119,15 @@ body > main p {
   max-height: 8rem;   /* generous ceiling for btn-sm row at any font scale */
   opacity: 1;
   border-top: 1px solid #dee2e6;
+}
+
+/* TOC nav styling for lg+ screens */
+#toc-nav .nav-link {
+  color: var(--toc-navbar-text-col);
+}
+
+#toc-nav .nav-link:hover,
+#toc-nav .nav-link.active {
+  color: var(--toc-navbar-hover-col);
+  background-color: var(--toc-navbar-background-col);
 }
