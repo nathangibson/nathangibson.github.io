@@ -61,16 +61,18 @@ layout: page
 
 {%- if page['full-text'] or _pdf_url -%}
 <h2 class="text-muted" id="full-text">Full Text</h2>
-{%- if page['full-text'] and _pdf_url -%}
 <div class="btn-group btn-group-sm btn-group-toggle mb-3" data-toggle="buttons">
+  {%- if page['full-text'] -%}
   <label class="btn btn-secondary active">
     <input type="radio" name="full-text-options" id="full-text-html-btn" autocomplete="off" checked> HTML
   </label>
+  {%- endif -%}
+  {%- if _pdf_url -%}
   <label class="btn btn-secondary">
     <input type="radio" name="full-text-options" id="full-text-pdf-btn" autocomplete="off"> PDF
   </label>
+  {%- endif -%}
 </div>
-{%- endif -%}
 <hr class="mb-4">
 {%- if page['full-text'] and _pdf_url -%}
 <div id="full-text-html">
