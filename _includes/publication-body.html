@@ -55,11 +55,11 @@
     <i class="fa-solid fa-check me-1"></i>&nbsp;full-text PDF
   </a>
   {%- endif -%}
-  {%- if page['version'] -%}
+<!--   {%- if page['version'] -%}
   <span class="badge badge-dark m-1" style="display: inline-flex; align-items: center;">
     <i class="fa-solid fa-file me-1"></i>&nbsp;{{ page['version'] }}
   </span>
-  {%- endif -%}
+  {%- endif -%} -->
 </div>
 {%- endif -%}
 
@@ -70,11 +70,6 @@
     {%- if pub.URL -%}
     <a href="{{ pub.URL }}" class="btn btn-dark btn-outline-light btn-sm mx-1" target="_blank" rel="noopener noreferrer">
     → view at publisher
-    </a>
-    {%- endif -%}
-    {%- if _pdf_url -%}
-    <a href="{{ _pdf_url }}" class="btn btn-dark btn-outline-light btn-sm mx-1" target="_blank" rel="noopener noreferrer" download>
-      <i class="fa-solid fa-paperclip"></i> PDF
     </a>
     {%- endif -%}
     {%- for attachment in pub.attachments -%}
