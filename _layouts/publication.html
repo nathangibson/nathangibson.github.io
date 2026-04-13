@@ -53,19 +53,60 @@ layout: page
 
 {%- assign rendered = content -%}
 {%- if page['footnote-popovers'] -%}
-{%- assign rendered = rendered | add_footnote_popovers -%}
+  {%- assign rendered = rendered | add_footnote_popovers -%}
 {%- endif -%}
-
-{%- if page['full-text'] -%}
-<h2 class="text-muted" id="full-text">Full-Text HTML</h2>
-<hr class="mb-4">
-{%- endif -%}
-
-
 {%- if page['paragraph-numbers'] -%}
   {%- assign rendered = rendered | add_paragraph_numbers -%}
 {%- endif -%}
+
+{%- if page['full-text'] or _pdf_url -%}
+<h2 class="text-muted" id="full-text">Full Text</h2>
+{%- if page['full-text'] and _pdf_url -%}
+<div class="btn-group btn-group-sm btn-group-toggle mb-3" data-toggle="buttons">
+  <label class="btn btn-secondary active">
+    <input type="radio" name="full-text-options" id="full-text-html-btn" autocomplete="off" checked> HTML
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="full-text-options" id="full-text-pdf-btn" autocomplete="off"> PDF
+  </label>
+</div>
+{%- endif -%}
+<hr class="mb-4">
+{%- if page['full-text'] and _pdf_url -%}
+<div id="full-text-html">
 {{ rendered }}
+</div>
+<div id="full-text-pdf" style="display:none">
+  <object data="{{ _pdf_url }}" type="application/pdf" width="100%" style="min-height:80vh">
+    <p>Unable to display PDF file. <a href="{{ _pdf_url }}" download>Download</a> instead.</p>
+  </object>
+</div>
+<script>
+(function () {
+  var htmlBtn = document.getElementById('full-text-html-btn');
+  var pdfBtn  = document.getElementById('full-text-pdf-btn');
+  var htmlDiv = document.getElementById('full-text-html');
+  var pdfDiv  = document.getElementById('full-text-pdf');
+  htmlBtn.parentElement.addEventListener('click', function () {
+    htmlDiv.style.display = '';
+    pdfDiv.style.display  = 'none';
+  });
+  pdfBtn.parentElement.addEventListener('click', function () {
+    htmlDiv.style.display = 'none';
+    pdfDiv.style.display  = '';
+  });
+}());
+</script>
+{%- elsif page['full-text'] -%}
+{{ rendered }}
+{%- elsif _pdf_url -%}
+<object data="{{ _pdf_url }}" type="application/pdf" width="100%" style="min-height:80vh">
+  <p>Unable to display PDF file. <a href="{{ _pdf_url }}" download>Download</a> instead.</p>
+</object>
+{%- endif -%}
+{%- else -%}
+{{ rendered }}
+{%- endif -%}
 
 {% else %}
 
