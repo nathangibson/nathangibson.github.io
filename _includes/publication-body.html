@@ -89,3 +89,8 @@
   </div>
 </div>
 {%- endif -%}
+
+{%- assign _coins = site.data.citations[pub['citation-key']]['coins'] -%}
+{%- if _coins -%}
+<span class="Z3988 d-none" title="{{ _coins }}"></span>
+{%- endif -%}

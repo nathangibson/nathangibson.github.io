@@ -38,6 +38,7 @@ css/
   ```
 - Layout renders: cover image (thumbnail attachment), type badge, authors, year/venue, Chicago citation, abstract (`<details>`), DOI/URL buttons, attachments, back link, `<hr>`, `{{ content }}`
 - `page.html` already renders `page.title` as `<h1>` — layout does NOT repeat the title
+- `publication-body.html` renders a hidden `<span class="Z3988 d-none" title="{{ coins }}">` for Zotero Connector detection (looked up from `site.data.citations[pub['citation-key']]['coins']`)
 
 ## Thumbnail and PDF via Zotero Extra field
 
@@ -68,7 +69,10 @@ pdf: gibsonKnowledgeCollaborationJews2022.pdf
 
 ## Zotero / citations system
 - `fetch_zotero_citations.rb` fetches Zotero group 1114225, matches by URL normalization, writes `_data/citations.yaml`
-- Caches in `.zotero_citations_cache.yml`; `--clear-cache` forces full refresh; `--test` runs first 5 items
+- Fetches `include=bib,data,coins` from API; stores each entry as `{chicago-bibliography: ..., coins: ...}` hash
+- `coins` field holds the OpenURL title-attribute string from `<span class="Z3988" title="...">` (HTML-encoded `&amp;`); nil if API returns none
+- Caches in `.zotero_citations_cache.yml`; cache entries must be Hashes (`is_a?(Hash)`) to be used — old string-format entries are treated as misses (auto-migrates on next run)
+- `--clear-cache` forces full refresh; `--test` runs first 5 items
 - Build is offline-safe: citations committed to git, no API dependency at build time
 - Custom CSL style wraps titles with `|BEGIN_TITLE|`/`|END_TITLE|` sentinels
   - Cards replace sentinels with `<h5 class="card-title fw-bold">` tags

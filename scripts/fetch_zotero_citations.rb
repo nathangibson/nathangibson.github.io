@@ -42,19 +42,19 @@ class ZoteroCitationFetcher
     log_message("Found #{publications['references'].size} publications to process")
 
     log_message("Fetching items with bibliography from Zotero API...")
-    url_to_bib = fetch_url_bib_map
+    url_to_data, doi_to_data = fetch_url_data_map
 
-    if url_to_bib.nil?
+    if url_to_data.nil?
       log_message("ERROR: Failed to fetch Zotero items. Aborting.")
       return
     end
 
-    log_message("Built URL map with #{url_to_bib.size} entries")
+    log_message("Built URL map with #{url_to_data.size} entries, DOI map with #{doi_to_data.size} entries")
 
     refs = @test_mode ? publications['references'].first(5) : publications['references']
 
     refs.each do |publication|
-      match_citation(publication, url_to_bib)
+      match_citation(publication, url_to_data, doi_to_data)
     end
 
     save_citations
@@ -65,9 +65,13 @@ class ZoteroCitationFetcher
 
   private
 
-  # Fetches all Zotero items (paginated) and returns a Hash of normalized URL => bib string.
-  def fetch_url_bib_map
-    url_to_bib = {}
+  # Fetches all Zotero items (paginated) and returns two hashes:
+  #   url_to_data: normalized URL => data hash
+  #   doi_to_data: normalized DOI  => data hash
+  # Each data hash has 'chicago-bibliography' (plain text with sentinels) and 'coins' (OpenURL title value).
+  def fetch_url_data_map
+    url_to_data = {}
+    doi_to_data = {}
     start = 0
 
     loop do
@@ -76,7 +80,7 @@ class ZoteroCitationFetcher
         format: 'json',
         limit: PAGE_LIMIT,
         start: start
-      ) + "&include=bib,data&style=#{STYLE}"
+      ) + "&include=bib,data,coins&style=#{STYLE}"
 
       response = make_request(uri)
       return nil if response.nil?
@@ -85,15 +89,22 @@ class ZoteroCitationFetcher
       break if items.empty?
 
       items.each do |item|
-        url   = item.dig('data', 'url').to_s.strip
-        bib   = item.dig('bib')
+        url = item.dig('data', 'url').to_s.strip
+        doi = item.dig('data', 'DOI').to_s.strip
+        bib = item.dig('bib')
 
-        next if url.empty? || bib.nil?
+        next if bib.nil?
 
         bib_text = extract_bib_text(bib)
         next unless bib_text
 
-        url_to_bib[normalize_url(url)] = bib_text
+        data = {
+          'chicago-bibliography' => bib_text,
+          'coins'                => extract_coins_title(item.dig('coins'))
+        }
+
+        url_to_data[normalize_url(url)] = data unless url.empty?
+        doi_to_data[doi.downcase]       = data unless doi.empty?
       end
 
       total = response['Total-Results'].to_i
@@ -101,37 +112,39 @@ class ZoteroCitationFetcher
       break if start >= total
     end
 
-    url_to_bib
+    [url_to_data, doi_to_data]
   end
 
-  def match_citation(publication, url_to_bib)
+  def match_citation(publication, url_to_data, doi_to_data)
     citation_key = publication['citation-key']
     return if citation_key.nil? || citation_key.empty?
 
-    if @cache[citation_key]
-      @citations[citation_key] = @cache[citation_key]
+    cached = @cache[citation_key]
+    if cached.is_a?(Hash)
+      @citations[citation_key] = cached
       @cached_count += 1
       log_message("  [CACHE] #{citation_key}")
       return
     end
+    # Old string-format cache entries are treated as misses so they refetch in the new hash format.
 
+    doi = publication['DOI'].to_s.strip
     url = publication['URL'].to_s.strip
-    if url.empty?
-      @failed_count += 1
-      log_message("  [NO URL] #{citation_key} - skipping, no URL field")
-      return
-    end
 
-    bib = url_to_bib[normalize_url(url)]
+    data = (!doi.empty? && doi_to_data[doi.downcase]) ||
+           (!url.empty? && url_to_data[normalize_url(url)])
 
-    if bib
-      @citations[citation_key] = bib
-      @cache[citation_key] = bib
+    if data
+      @citations[citation_key] = data.dup
+      @cache[citation_key] = data.dup
       @fetched_count += 1
       log_message("  [FETCHED] #{citation_key}")
+    elsif doi.empty? && url.empty?
+      @failed_count += 1
+      log_message("  [NO URL] #{citation_key} - skipping, no URL or DOI field")
     else
       @failed_count += 1
-      log_message("  [NOT FOUND] #{citation_key} - no Zotero item matched URL: #{url}")
+      log_message("  [NOT FOUND] #{citation_key} - no Zotero item matched URL: #{url} / DOI: #{doi}")
     end
   end
 
@@ -149,6 +162,15 @@ class ZoteroCitationFetcher
     text = text.gsub(/<[^>]*>/, '')
     text = text.gsub(/\s+/, ' ').strip
     text.empty? ? nil : text
+  end
+
+  # Extracts the title= attribute value from the <span class="Z3988"> Zotero returns.
+  # Preserves &amp; encoding — valid verbatim as an HTML attribute value.
+  def extract_coins_title(html)
+    return nil if html.nil? || html.strip.empty?
+
+    match = html.match(/title=["']([^"']*)["']/)
+    match ? match[1].strip : nil
   end
 
   def make_request(uri)
