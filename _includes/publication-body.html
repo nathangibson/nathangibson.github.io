@@ -70,6 +70,9 @@
     {%- if pub.URL -%}
     <a href="{{ pub.URL }}" class="btn btn-dark btn-outline-light btn-sm mx-1" target="_blank" rel="noopener noreferrer">
     → view at publisher
+      {%- if pub.publisher -%}
+        &nbsp;({{ pub.publisher }})
+      {%- endif -%}
     </a>
     {%- endif -%}
     {%- for attachment in pub.attachments -%}
