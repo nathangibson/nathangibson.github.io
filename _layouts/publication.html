@@ -65,49 +65,33 @@ layout: page
   &nbsp;({{ page['version'] }})
   {%- endif -%}
 </h2>
-<div class="btn-group btn-group-sm btn-group-toggle mb-3" data-toggle="buttons">
+<div class="nav d-inline-flex btn-group btn-group-sm mb-3" role="tablist">
   {%- if page['full-text'] -%}
-  <label class="btn btn-secondary active">
-    <input type="radio" name="full-text-options" id="full-text-html-btn" autocomplete="off" checked>
+  <a class="btn btn-secondary active" data-toggle="tab" href="#full-text-html" role="tab">
     <i class="fa-solid fa-align-justify"></i> HTML
-  </label>
+  </a>
   {%- endif -%}
   {%- if _pdf_url -%}
-  <label class="btn btn-secondary">
-    <input type="radio" name="full-text-options" id="full-text-pdf-btn" autocomplete="off">
+  <a class="btn btn-secondary" data-toggle="tab" href="#full-text-pdf" role="tab">
     <i class="fa-solid fa-paperclip"></i> PDF
-  </label>
+  </a>
   {%- endif -%}
 </div>
 <hr class="mb-4">
 {%- if page['full-text'] and _pdf_url -%}
-<div id="full-text-html">
+<div class="tab-content">
+  <div class="tab-pane show active" id="full-text-html" role="tabpanel">
 {{ rendered }}
+  </div>
+  <div class="tab-pane" id="full-text-pdf" role="tabpanel">
+    <a href="{{ _pdf_url }}" class="btn btn-dark btn-outline-light btn-sm mb-3 text-center w-100" target="_blank" rel="noopener noreferrer" download>
+      <i class="fa-solid fa-download"></i> Download PDF
+    </a>
+    <object data="{{ _pdf_url }}" type="application/pdf" width="100%" style="min-height:80vh">
+      <p>Unable to display PDF file. <a href="{{ _pdf_url }}" download>Download</a> instead.</p>
+    </object>
+  </div>
 </div>
-<div id="full-text-pdf" style="display:none">
-  <a href="{{ _pdf_url }}" class="btn btn-dark btn-outline-light btn-sm mb-3 text-center w-100" target="_blank" rel="noopener noreferrer" download>
-    <i class="fa-solid fa-download"></i> Download PDF
-  </a>
-  <object data="{{ _pdf_url }}" type="application/pdf" width="100%" style="min-height:80vh">
-    <p>Unable to display PDF file. <a href="{{ _pdf_url }}" download>Download</a> instead.</p>
-  </object>
-</div>
-<script>
-(function () {
-  var htmlBtn = document.getElementById('full-text-html-btn');
-  var pdfBtn  = document.getElementById('full-text-pdf-btn');
-  var htmlDiv = document.getElementById('full-text-html');
-  var pdfDiv  = document.getElementById('full-text-pdf');
-  htmlBtn.parentElement.addEventListener('click', function () {
-    htmlDiv.style.display = '';
-    pdfDiv.style.display  = 'none';
-  });
-  pdfBtn.parentElement.addEventListener('click', function () {
-    htmlDiv.style.display = 'none';
-    pdfDiv.style.display  = '';
-  });
-}());
-</script>
 {%- elsif page['full-text'] -%}
 {{ rendered }}
 {%- elsif _pdf_url -%}
