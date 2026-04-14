@@ -78,12 +78,17 @@ layout: page
   {%- endif -%}
 </div>
 <hr class="mb-4">
-{%- if page['full-text'] and _pdf_url -%}
 <div class="tab-content">
+  {%- if page['full-text'] -%}
   <div class="tab-pane show active" id="full-text-html" role="tabpanel">
 {{ rendered }}
   </div>
-  <div class="tab-pane" id="full-text-pdf" role="tabpanel">
+  {%- endif -%}
+  {%- if _pdf_url -%}
+  {%- capture pdf-tab-class -%}
+    {%- unless page['full-text'] -%}show active{%- endunless -%}
+  {%- endcapture -%}
+  <div class="tab-pane {{ pdf-tab-class }}" id="full-text-pdf" role="tabpanel">
     <a href="{{ _pdf_url }}" class="btn btn-dark btn-outline-light btn-sm mb-3 text-center w-100" target="_blank" rel="noopener noreferrer" download>
       <i class="fa-solid fa-download"></i> Download PDF
     </a>
@@ -91,14 +96,8 @@ layout: page
       <p>Unable to display PDF file. <a href="{{ _pdf_url }}" download>Download</a> instead.</p>
     </object>
   </div>
+  {%- endif -%}
 </div>
-{%- elsif page['full-text'] -%}
-{{ rendered }}
-{%- elsif _pdf_url -%}
-<object data="{{ _pdf_url }}" type="application/pdf" width="100%" style="min-height:80vh">
-  <p>Unable to display PDF file. <a href="{{ _pdf_url }}" download>Download</a> instead.</p>
-</object>
-{%- endif -%}
 {%- else -%}
 {{ rendered }}
 {%- endif -%}
