@@ -11,22 +11,11 @@ layout: page
 <div class="publication-detail mb-4">
 
   {%- comment -%}Type badge{%- endcomment -%}
-  {%- capture pub_type_label -%}
-    {%- case pub.type -%}
-      {%- when 'book' -%}Book
-      {%- when 'article-journal' -%}Journal Article
-      {%- when 'chapter' -%}Book Chapter
-      {%- when 'speech' -%}Talk / Presentation
-      {%- when 'thesis' -%}Thesis / Dissertation
-      {%- when 'paper-conference' -%}Conference Paper
-      {%- when 'motion_picture' -%}Video
-      {%- when 'webpage' -%}Web Resource
-      {%- when 'post-weblog' -%}Blog Post
-      {%- else -%}Publication
-    {%- endcase -%}
-  {%- endcapture -%}
+  {%- assign pub_type = pub | extract_pub_type -%}
   <div class="mb-3">
-    <span class="badge badge-dark">{{ pub_type_label | strip }}</span><a href="/publications/" class="btn btn-sm btn-link ps-0 text-muted">&larr; All Publications</a>
+    {% if pub_type %}
+    <span class="badge badge-dark">{{ pub_type }}</span>
+    {% endif %}<a href="/publications/" class="btn btn-sm btn-link ps-0 text-muted">&larr; All Publications</a>
   </div>
 
   {%- comment -%}Chicago citation — prefer citations.yaml, fall back to embedded field{%- endcomment -%}
