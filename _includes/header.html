@@ -2,10 +2,10 @@
 
 {% if page.citation-key %}
   {%- assign pub = site.data.publications.references | where: "citation-key", page.citation-key | first -%}
-  {%- if pub and pub.attachments -%}
-    {%- assign thumb = pub.attachments | where: "title", "thumbnail" | first -%}
-    {%- if thumb -%}
-      {%- assign page_cover_img = thumb.url -%}
+  {%- if pub -%}
+    {%- assign _note = pub | note_fields -%}
+    {%- if _note["thumbnail"] -%}
+      {%- assign page_cover_img = site.publication_thumbnail_dir | append: '/' | append: _note["thumbnail"] -%}
     {%- endif -%}
   {%- endif -%}
 {% endif %}

@@ -11,22 +11,11 @@ layout: page
 <div class="publication-detail mb-4">
 
   {%- comment -%}Type badge{%- endcomment -%}
-  {%- capture pub_type_label -%}
-    {%- case pub.type -%}
-      {%- when 'book' -%}Book
-      {%- when 'article-journal' -%}Journal Article
-      {%- when 'chapter' -%}Book Chapter
-      {%- when 'speech' -%}Talk / Presentation
-      {%- when 'thesis' -%}Thesis / Dissertation
-      {%- when 'paper-conference' -%}Conference Paper
-      {%- when 'motion_picture' -%}Video
-      {%- when 'webpage' -%}Web Resource
-      {%- when 'post-weblog' -%}Blog Post
-      {%- else -%}Publication
-    {%- endcase -%}
-  {%- endcapture -%}
+  {%- assign pub_type = pub | extract_pub_type -%}
   <div class="mb-3">
-    <span class="badge badge-dark">{{ pub_type_label | strip }}</span>
+    {% if pub_type %}
+    <span class="badge badge-dark">{{ pub_type }}</span>
+    {% endif %}<a href="/publications/" class="btn btn-sm btn-link ps-0 text-muted">&larr; All Publications</a>
   </div>
 
   {%- comment -%}Chicago citation — prefer citations.yaml, fall back to embedded field{%- endcomment -%}
@@ -35,20 +24,21 @@ layout: page
 
   {%- comment -%}Abstract (collapsible){%- endcomment -%}
   {%- if pub.abstract -%}
-  <div class="px-3 py-2 rounded my-3" style="background-color: #f8f9fa; border-left: 3px solid #dee2e6;">
-    <p class="mb-3 fw-semibold text-muted text-uppercase">Abstract</p>
-    <p class="small mt-2">{{ pub.abstract }}</p>
-  </div>
+  <details class="abstract-details bg-light border-left rounded p-3 my-3">
+    <summary class="abstract-summary">
+      <h3 class="text-muted">Abstract</h3>
+      <div class="abstract-preview position-relative">
+        <p class="abstract-text small mb-0">{{ pub.abstract }}</p>
+      </div>
+      <p class="abstract-toggle-hint text-muted small mb-0 mt-1">Show more ↓</p>
+    </summary>
+  </details>
   {%- endif -%}
 
 
-  <div class="mb-4">
-    <a href="/publications/" class="btn btn-sm btn-link ps-0 text-muted">&larr; All Publications</a>
-  </div>
 
 </div>
 
-<hr class="mb-4">
 
 {%- assign rendered = content -%}
 {%- if page['footnote-popovers'] -%}
@@ -57,13 +47,57 @@ layout: page
 {%- if page['paragraph-numbers'] -%}
   {%- assign rendered = rendered | add_paragraph_numbers -%}
 {%- endif -%}
+
+{%- if page['full-text'] or _pdf_url -%}
+<h2 class="text-muted" id="full-text">Full Text 
+  {%- if page['version'] -%}
+  &nbsp;({{ page['version'] }})
+  {%- endif -%}
+</h2>
+<div class="nav d-inline-flex btn-group btn-group-sm mb-3" role="tablist">
+  {%- if page['full-text'] -%}
+  <a class="btn btn-secondary active" data-toggle="tab" href="#full-text-html" role="tab">
+    <i class="fa-solid fa-align-justify"></i> HTML
+  </a>
+  {%- endif -%}
+  {%- if _pdf_url -%}
+  <a class="btn btn-secondary" data-toggle="tab" href="#full-text-pdf" role="tab">
+    <i class="fa-solid fa-paperclip"></i> PDF
+  </a>
+  {%- endif -%}
+</div>
+<hr class="mb-4">
+<div class="tab-content">
+  {%- if page['full-text'] -%}
+  <div class="tab-pane show active" id="full-text-html" role="tabpanel">
 {{ rendered }}
+  </div>
+  {%- endif -%}
+  {%- if _pdf_url -%}
+  {%- capture pdf-tab-class -%}
+    {%- unless page['full-text'] -%}show active{%- endunless -%}
+  {%- endcapture -%}
+  <div class="tab-pane {{ pdf-tab-class }}" id="full-text-pdf" role="tabpanel">
+    <a href="{{ _pdf_url }}" class="btn btn-dark btn-outline-light btn-sm mb-3 text-center w-100" target="_blank" rel="noopener noreferrer" download>
+      <i class="fa-solid fa-download"></i> Download PDF
+    </a>
+    <object data="{{ _pdf_url }}" type="application/pdf" width="100%" style="min-height:80vh">
+      <p>Unable to display PDF file. <a href="{{ _pdf_url }}" download>Download</a> instead.</p>
+    </object>
+  </div>
+  {%- endif -%}
+</div>
+{%- else -%}
+{{ rendered }}
+{%- endif -%}
 
 {% else %}
 
 <div class="alert alert-warning">
   Publication data not found for citation key: <code>{{ ck }}</code>
 </div>
+
+
 {{ content }}
 
 {% endif %}

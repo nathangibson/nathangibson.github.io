@@ -82,7 +82,7 @@ references:
   issued:
     - year: 2023
   language: deu
-  license: http://creativecommons.org/licenses/by-nc-nd/4.0/de/deed.de
+  license: CC BY-NC-ND 4.0
   page: 32–33
   publisher: Goethe-Universität Frankfurt am Main. Fachbereich Evangelische Theologie
   source: publikationen.ub.uni-frankfurt.de
@@ -100,10 +100,6 @@ references:
   volume: '3'
 
 - id: ghorbaninejadRighttoLeftRTLText2023
-  attachments:
-    - title: thumbnail
-      url: https://npgibson.com/assets/img/arrow.jpg
-      type: webpage
   author:
     - family: Ghorbaninejad
       given: Masoud
@@ -124,16 +120,18 @@ references:
   issued:
     - year: 2023
   language: en
-  note: 'Book DOI: https://doi.org/10.5749/9781452969565'
+  note: |-
+    Book DOI: https://doi.org/10.5749/9781452969565
+    thumbnail: arrow.jpg
   page: 47–73
   publisher: University of Minnesota Press
   publisher-place: Minneapolis
   tags:
     - Arabic
-    - Syriac
     - Digital humanities
     - 'group: publications'
     - Methodology and practices
+    - Syriac
     - 'type: Articles and book chapters'
   title: 'Right-to-Left (RTL) Text: Digital Humanists Plus Half a Billion Users'
   type: chapter
@@ -214,10 +212,6 @@ references:
   URL: http://npgibson.com/s/authority-frontiers
 
 - id: gibsonBibleArabicUpdate2018
-  attachments:
-    - title: thumbnail
-      url: https://npgibson.com/img/bnf-ar-12-x2000.jpg
-      type: webpage
   author:
     - family: Gibson
       given: Nathan P.
@@ -242,17 +236,18 @@ references:
   issued:
     - year: 2018
   language: en
+  note: 'thumbnail: bnf-ar-12-x2000.jpg'
   page: 57–84
   publisher: Pontifical Oriental Institute
   publisher-place: Rome
   tags:
-    - Jews
     - Arabic
     - Bible
-    - Muslims
     - Christians
     - 'group: publications'
+    - Jews
     - Methodology and practices
+    - Muslims
     - 'type: Articles and book chapters'
   title: 'The Bible in Arabic: An Update on the State of Research'
   type: chapter
@@ -406,10 +401,6 @@ references:
   URL: http://search.proquest.com/docview/1691345901
 
 - id: gibsonCommunitiesKnowledgeInterreligious2020
-  attachments:
-    - title: thumbnail
-      url: https://npgibson.com/img/network.svg
-      type: webpage
   citation-key: gibsonCommunitiesKnowledgeInterreligious2020
   contributor:
     - family: Birkhahn
@@ -436,6 +427,7 @@ references:
   issued:
     - year: 2020
     - year: 0
+  note: 'thumbnail: network.svg'
   publisher: Usaybia.net
   publisher-place: Munich
   tags:
@@ -472,21 +464,22 @@ references:
       month: 7
   language: en
   page: 196–218
+  publisher: Österreichische Akademie der Wissenschaften
   tags:
-    - Jews
     - Arabic
-    - Muslims
     - Christians
-    - Prosopography
     - Digital humanities
-    - TEI-XML
-    - Zoroastrians
-    - Samaritans
     - 'group: publications'
     - History of science
     - Interreligious
+    - Jews
+    - Muslims
     - Network analysis
+    - Prosopography
+    - Samaritans
+    - TEI-XML
     - 'type: Articles and book chapters'
+    - Zoroastrians
   title: "Communities of Knowledge: Interreligious Networks of Scholars in Ibn Abī Uṣaybiʿa's\_History of the Physicians (Project Report)"
   type: article-journal
   URL: https://doi.org/10.1553/medievalworlds_no18_2023s196
@@ -515,9 +508,6 @@ references:
 
 - id: gibsonCrosscommunalScholarlyInteractions2022
   attachments:
-    - title: thumbnail
-      url: https://npgibson.com/img/physician-elixir.jpg
-      type: webpage
     - title: urn:nbn:de:bvb:19-epub-75471-6
       url: https://nbn-resolving.org/urn:nbn:de:bvb:19-epub-75471-6
       type: webpage
@@ -543,19 +533,20 @@ references:
   issued:
     - year: 2022
   language: en
+  note: 'thumbnail: physician-elixir.jpg'
   page: 723–740
   publisher: Routledge
   publisher-place: London
   tags:
-    - Jews
     - Arabic
-    - Muslims
-    - Syriac
     - Christians
-    - Samaritans
     - 'group: publications'
     - History of science
     - Interreligious
+    - Jews
+    - Muslims
+    - Samaritans
+    - Syriac
     - 'type: Articles and book chapters'
   title: Cross-communal scholarly interactions
   type: chapter
@@ -661,10 +652,7 @@ references:
     - year: 2015
       month: 8
       day: 10
-  license: >-
-    Copyright © 2015, Nathan P. Gibson, Winona Salesky, & David A. Michelson.
-    Released under a Creative Commons Attribution 4.0 International License (CC
-    BY 4.0).
+  license: CC BY 4.0
   publisher-place: Washington, D.C.
   source: www.balisage.net
   tags:
@@ -903,7 +891,7 @@ references:
 - id: gibsonKnowledgeCollaborationJews2022
   abstract: >-
     This thematic section unearths several ways professionals from a variety of
-    religious communi-ties in the Near East collaborated with one another during
+    religious communities in the Near East collaborated with one another during
     the medieval period. Modern scholars of intellectual history have often
     attempted to trace connections in medieval texts across the religious
     spectrum, but it has been difficult to pin down the interpersonal
@@ -944,13 +932,6 @@ references:
     - year: 2022
       month: 12
       day: 1
-  attachments:
-    - title: pdf
-      url: https://npgibson.com/assets/pdf/gibsonKnowledgeCollaborationJews2022.pdf
-      type: pdf
-    - title: thumbnail
-      url: https://npgibson.com/img/astrolabe.jpg
-      type: webpage
   author:
     - family: Gibson
       given: Nathan P.
@@ -961,10 +942,12 @@ references:
   issued:
     - year: 2022
   language: en
-  note: '59'
+  license: CC BY-NC-ND 4.0
+  note: |-
+    thumbnail: astrolabe.jpg
+    pdf: gibsonKnowledgeCollaborationJews2022.pdf
   page: 59–72
-  publisher: Verlag der Österreichischen Akademie der Wissenschaften
-  publisher-place: Wien
+  publisher: Österreichische Akademie der Wissenschaften
   tags:
     - Jews
     - Arabic
@@ -1049,10 +1032,6 @@ references:
   URL: https://tinyurl.com/gibson201211
 
 - id: gibsonLabelingReligiousAffiliation2023
-  attachments:
-    - title: thumbnail
-      url: https://npgibson.com/img/tiles.jpg
-      type: webpage
   author:
     - family: Gibson
       given: Nathan P.
@@ -1064,22 +1043,24 @@ references:
     - year: 2023
       month: 7
   language: en
+  note: 'thumbnail: tiles.jpg'
   page: 246–270
+  publisher: Österreichische Akademie der Wissenschaften
   tags:
-    - Jews
     - Arabic
-    - Muslims
     - Christians
-    - Prosopography
     - Digital humanities
-    - TEI-XML
-    - Zoroastrians
-    - Samaritans
     - 'group: publications'
     - History of science
     - Interreligious
+    - Jews
+    - Muslims
     - Network analysis
+    - Prosopography
+    - Samaritans
+    - TEI-XML
     - 'type: Articles and book chapters'
+    - Zoroastrians
   title: >-
     Labeling Religious Affiliation in Ibn Abī Uṣaybiʿa's *History of
     Physicians*: A Quest
@@ -1129,9 +1110,6 @@ references:
     - title: arXiv.org
       url: http://arxiv.org/abs/1603.01207
       type: webpage
-    - title: Thumbnail
-      url: https://nathangibson.github.io/img/circle.jpg
-      type: webpage
   author:
     - family: Gibson
       given: Nathan P.
@@ -1148,11 +1126,12 @@ references:
       month: 5
       day: 30
   language: en
+  note: 'thumbnail: circle.jpg'
   tags:
     - Digital humanities
-    - TEI-XML
     - 'group: publications'
     - History of literature
+    - TEI-XML
     - 'type: Articles and book chapters'
   title: >-
     From Manuscript Catalogues to a Handbook of Syriac Literature: Modeling an
@@ -1219,9 +1198,6 @@ references:
     - title: Google Books
       url: https://books.google.de/books?id=boJ1DwAAQBAJ&pg=327
       type: webpage
-    - title: thumbnail
-      url: https://npgibson.com/img/al-jahiz.jpg
-      type: webpage
   author:
     - family: Gibson
       given: Nathan P.
@@ -1237,18 +1213,19 @@ references:
   issued:
     - year: 2017
   language: en
+  note: 'thumbnail: al-jahiz.jpg'
   page: 327–369
   publisher: Brill
   publisher-place: Leiden
   tags:
-    - Jews
     - Arabic
     - Bible
-    - Muslims
     - Christians
-    - 'group: publications'
     - Disputation literature
+    - 'group: publications'
     - Interreligious
+    - Jews
+    - Muslims
     - 'type: Articles and book chapters'
   title: A Mid-Ninth-Century Arabic Translation of Isaiah? Glimpses from al-Jāḥiẓ
   type: chapter
@@ -1292,7 +1269,7 @@ references:
   ISSN: 2162-5603
   issued:
     - literal: '[accepted, revisions in preparation]'
-  license: CC-BY 4.0
+  license: CC BY 4.0
   source: hcommons.org
   tags:
     - Digital humanities
@@ -1466,10 +1443,6 @@ references:
   URL: https://tinyurl.com/gibson171107
 
 - id: gibsonNewHandbookSyriac2016
-  attachments:
-    - title: thumbnail
-      url: https://npgibson.com/img/nhsl-banner.png
-      type: webpage
   citation-key: gibsonNewHandbookSyriac2016
   editor:
     - family: Gibson
@@ -1481,14 +1454,15 @@ references:
   issued:
     - year: 2016
     - year: 0
+  note: 'thumbnail: nhsl-banner.png'
   publisher: The Syriac Reference Portal
   publisher-place: Syriaca.org
   tags:
-    - Syriac
     - Christians
     - Digital humanities
     - 'group: publications'
     - History of literature
+    - Syriac
     - 'type: Online reference works'
   title: The New Handbook of Syriac Literature
   type: book
@@ -1942,10 +1916,6 @@ references:
   URL: https://prezi.com/view/jGuqpCUCKNtfUKB2YrXN/
 
 - id: michelsonGuideSyriacAuthors2016
-  attachments:
-    - title: thumbnail
-      url: https://npgibson.com/img/authors-banner.jpg
-      type: webpage
   citation-key: michelsonGuideSyriacAuthors2016
   collection-number: '2'
   collection-title: The Syriac Biographical Dictionary
@@ -1956,25 +1926,22 @@ references:
       given: Nathan P.
   issued:
     - year: 2016
+  note: 'thumbnail: authors-banner.jpg'
   publisher: The Syriac Reference Portal
   publisher-place: Syriaca.org
   tags:
-    - Syriac
     - Christians
-    - Prosopography
     - Digital humanities
     - 'group: publications'
     - History of literature
+    - Prosopography
+    - Syriac
     - 'type: Online reference works'
   title: A Guide to Syriac Authors
   type: book
   URL: http://syriaca.org/authors
 
 - id: michelsonSyriacBiographicalDictionary2016
-  attachments:
-    - title: thumbnail
-      url: https://npgibson.com/img/persons-banner.jpg
-      type: webpage
   citation-key: michelsonSyriacBiographicalDictionary2016
   editor:
     - family: Michelson
@@ -1988,15 +1955,16 @@ references:
   issued:
     - year: 2016
     - year: 0
+  note: 'thumbnail: persons-banner.jpg'
   publisher: The Syriac Reference Portal
   publisher-place: Syriaca.org
   tags:
-    - Syriac
     - Christians
-    - Prosopography
     - Digital humanities
     - 'group: publications'
     - History of literature
+    - Prosopography
+    - Syriac
     - 'type: Online reference works'
   title: The Syriac Biographical Dictionary
   type: book
@@ -2073,7 +2041,7 @@ references:
   language: en
   note: '59'
   page: 59–216
-  publisher: "Verlag der Ã\x96sterreichischen Akademie der Wissenschaften"
+  publisher: Österreichische Akademie der Wissenschaften
   publisher-place: Wien
   tags:
     - Arabic
@@ -2112,7 +2080,7 @@ references:
   language: en
   note: '59'
   page: 137–270
-  publisher: "Verlag der Ã\x96sterreichischen Akademie der Wissenschaften"
+  publisher: Österreichische Akademie der Wissenschaften
   publisher-place: Wien
   tags:
     - Arabic
@@ -2289,10 +2257,6 @@ references:
     https://www.wuwm.com/podcast/lake-effect-segments/2017-05-24/as-turmoil-displaces-middle-eastern-christians-scholars-work-to-preserve-syriac-culture
 
 - id: vollandtBibliographyArabicBible2018
-  attachments:
-    - title: thumbnails
-      url: https://npgibson.com/img/bibl-banner.jpg
-      type: webpage
   citation-key: vollandtBibliographyArabicBible2018
   editor:
     - family: Vollandt
@@ -2302,19 +2266,20 @@ references:
   issued:
     - year: 2018
     - year: 0
+  note: 'thumbnail: bibl-banner.jpg'
   publisher: Biblia-Arabica.com
   publisher-place: Munich
   tags:
-    - Jews
     - Arabic
     - Bible
-    - Muslims
     - Bibliography
     - Christians
     - Digital humanities
-    - Samaritans
     - 'group: publications'
     - Interreligious
+    - Jews
+    - Muslims
+    - Samaritans
     - 'type: Online reference works'
   title: >-
     Bibliography of the Arabic Bible: A Classified and Annotated History of

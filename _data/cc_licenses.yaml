@@ -1,0 +1,37 @@
+# Lookup table for Creative Commons licenses.
+# Keys must match the canonical label used in Zotero's License field exactly.
+# icons: list of SVG filenames in /assets/img/cc-icons/, in display order
+"CC BY 4.0":
+  url: https://creativecommons.org/licenses/by/4.0/
+  icons: [cc.svg, by.svg]
+  alt: Creative Commons Attribution 4.0 International License
+
+"CC BY-SA 4.0":
+  url: https://creativecommons.org/licenses/by-sa/4.0/
+  icons: [cc.svg, by.svg, sa.svg]
+  alt: Creative Commons Attribution-ShareAlike 4.0 International License
+
+"CC BY-ND 4.0":
+  url: https://creativecommons.org/licenses/by-nd/4.0/
+  icons: [cc.svg, by.svg, nd.svg]
+  alt: Creative Commons Attribution-NoDerivatives 4.0 International License
+
+"CC BY-NC 4.0":
+  url: https://creativecommons.org/licenses/by-nc/4.0/
+  icons: [cc.svg, by.svg, nc.svg]
+  alt: Creative Commons Attribution-NonCommercial 4.0 International License
+
+"CC BY-NC-SA 4.0":
+  url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+  icons: [cc.svg, by.svg, nc.svg, sa.svg]
+  alt: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
+
+"CC BY-NC-ND 4.0":
+  url: https://creativecommons.org/licenses/by-nc-nd/4.0/
+  icons: [cc.svg, by.svg, nc.svg, nd.svg]
+  alt: Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License
+
+"CC0 1.0":
+  url: https://creativecommons.org/publicdomain/zero/1.0/
+  icons: [cc.svg, zero.svg]
+  alt: CC0 1.0 Universal Public Domain Dedication

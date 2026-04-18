@@ -38,12 +38,26 @@ css/
   ```
 - Layout renders: cover image (thumbnail attachment), type badge, authors, year/venue, Chicago citation, abstract (`<details>`), DOI/URL buttons, attachments, back link, `<hr>`, `{{ content }}`
 - `page.html` already renders `page.title` as `<h1>` — layout does NOT repeat the title
+- `publication-body.html` renders a hidden `<span class="Z3988 d-none" title="{{ coins }}">` for Zotero Connector detection (looked up from `site.data.citations[pub['citation-key']]['coins']`)
 
-### Publication header images
-- `_includes/header.html` checks for `page.citation-key` and automatically looks up `pub.attachments` with `title: "thumbnail"`
-- Sets `page_cover_img` variable from `thumb.url`, used as fallback to `page.cover-img` (for non-publication pages)
-- Rendered in header big-img section with `data-img-src-*` attributes; works without front matter modification
-- Logic: `{% assign final_cover_img = page.cover-img | default: page_cover_img %}`
+## Thumbnail and PDF via Zotero Extra field
+
+Thumbnails and PDFs are specified in the Zotero **Extra** field (maps to `note` in CSL-JSON/YAML):
+
+```
+thumbnail: astrolabe.jpg
+pdf: gibsonKnowledgeCollaborationJews2022.pdf
+```
+
+- Thumbnail URL constructed as `/img/{filename}`; PDF URL as `/assets/pdf/{filename}`
+- Parsed by the `note_fields` Liquid filter (`_plugins/note_fields_filter.rb`): extracts lowercase-keyed lines from `pub.note` into a hash
+- Template usage: `{%- assign _note = pub | note_fields -%}` then `_note["thumbnail"]` / `_note["pdf"]`
+
+### Template locations
+- `header.html`: thumbnail → `page_cover_img` for header big-img
+- `publications-list.html`: thumbnail → card CSS background
+- `publication-body.html`: pdf → PDF download button; also assigns `_note` once at top
+- `publication-card.html`: pdf → PDF download button
 
 ### Stub generation
 - Script slug rule: `citation-key.gsub(/[^a-zA-Z0-9\-]/, '-').gsub(/-{2,}/, '-')`
@@ -55,7 +69,10 @@ css/
 
 ## Zotero / citations system
 - `fetch_zotero_citations.rb` fetches Zotero group 1114225, matches by URL normalization, writes `_data/citations.yaml`
-- Caches in `.zotero_citations_cache.yml`; `--clear-cache` forces full refresh; `--test` runs first 5 items
+- Fetches `include=bib,data,coins` from API; stores each entry as `{chicago-bibliography: ..., coins: ...}` hash
+- `coins` field holds the OpenURL title-attribute string from `<span class="Z3988" title="...">` (HTML-encoded `&amp;`); nil if API returns none
+- Caches in `.zotero_citations_cache.yml`; cache entries must be Hashes (`is_a?(Hash)`) to be used — old string-format entries are treated as misses (auto-migrates on next run)
+- `--clear-cache` forces full refresh; `--test` runs first 5 items
 - Build is offline-safe: citations committed to git, no API dependency at build time
 - Custom CSL style wraps titles with `|BEGIN_TITLE|`/`|END_TITLE|` sentinels
   - Cards replace sentinels with `<h5 class="card-title fw-bold">` tags
@@ -71,6 +88,17 @@ css/
 {%- if pub.issued[0].year -%}        → most publications
 {%- elsif pub.issued[0].literal -%}  → forthcoming, e.g. "[forthcoming 2027]"
 ```
+
+## CC License badges
+
+Displayed via `pub.license` (native CSL-JSON field, set in Zotero's **License field**).
+
+- **Canonical format**: short label e.g. `CC BY 4.0`, `CC BY-NC-ND 4.0` (normalize all entries to this)
+- **Lookup table**: `_data/cc_licenses.yaml` maps label → `url`, `icons` (list of SVG filenames), `alt`
+- **Icon SVGs**: `/assets/img/cc-icons/*.svg` — individual element icons (cc, by, nc, nd, sa, zero), hosted locally
+- **Rendering**: `publication-body.html` — in the DOI block, looks up `_lic = site.data.cc_licenses[pub.license]` and renders a `badge badge-dark` link iterating over `_lic.icons`; icons sized with `style="height: 1em; vertical-align: middle;"`; `aria-label` on the `<a>` for accessibility
+- **Condition**: `{%- if pub.DOI or _lic -%}` — block renders when either DOI or license is present
+- Publications with no `license` field: unaffected (graceful degradation)
 
 ## Workflow
 ```bash

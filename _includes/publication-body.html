@@ -11,6 +11,11 @@
     include.wrapper_class — CSS classes for the citation wrapper <div>
 {%- endcomment -%}
 
+{%- assign _note = pub | note_fields -%}
+{%- if _note["pdf"] -%}
+  {%- assign _pdf_url = site.publication_pdf_dir | append: '/' | append: _note["pdf"] -%}
+{%- endif -%}
+
 {%- if chicago_bib -%}
   {%- capture _sentinel_open -%}|BEGIN_TITLE|{%- endcapture -%}
   {%- capture _sentinel_close -%}|END_TITLE|{%- endcapture -%}
@@ -24,28 +29,53 @@
 {%- endif -%}
 
 <!-- DOI/URL link if available -->
-{%- if pub.DOI or pub.URL -%}
-<div>
+{%- assign _lic = nil -%}
+{%- if pub.license -%}
+  {%- assign _lic = site.data.cc_licenses[pub.license] -%}
+{%- endif -%}
+{%- if pub.DOI or _lic or page['full-text'] or page['version'] -%}
+<div class="d-flex align-items-center flex-wrap">
   {%- if pub.DOI -%}
-  <a href="https://doi.org/{{ pub.DOI }}" class="badge badge-dark mx-1" target="_blank" rel="noopener noreferrer">
+  <a href="https://doi.org/{{ pub.DOI }}" class="badge badge-dark m-1" target="_blank" rel="noopener noreferrer">
     DOI: {{ pub.DOI }}
-  </a><br/>
+  </a>
   {%- endif -%}
+  {%- if _lic -%}
+  <a href="{{ _lic.url }}" class="badge badge-dark d-inline-flex text-center m-1" target="_blank" rel="license noopener noreferrer" aria-label="{{ _lic.alt }}">
+    {%- for _icon in _lic.icons -%}<img src="/assets/img/cc-icons/{{ _icon }}" alt="" style="height: 1em;">{%- endfor -%}
+  </a>
+  {%- endif -%}
+  {%- if page['full-text'] -%}
+  <a href="#full-text-html" class="badge badge-dark d-inline-flex text-center m-1">
+    <i class="fa-solid fa-check me-1"></i>&nbsp;full-text HTML
+  </a>
+  {%- endif -%}
+  {%- if _pdf_url -%}
+  <a href="{{ _pdf_url }}" class="badge badge-dark d-inline-flex text-center m-1" target="_blank" rel="noopener noreferrer" download>
+    <i class="fa-solid fa-check me-1"></i>&nbsp;full-text PDF
+  </a>
+  {%- endif -%}
+<!--   {%- if page['version'] -%}
+  <span class="badge badge-dark d-inline-flex text-center m-1">
+    <i class="fa-solid fa-file me-1"></i>&nbsp;{{ page['version'] }}
+  </span>
+  {%- endif -%} -->
 </div>
 {%- endif -%}
 
 <!-- Attachments (links) -->
-{%- if pub.attachments or pub.URL -%}
+{%- if pub.attachments or pub.URL or _pdf_url -%}
 <div class="publication-attachments mt-auto pt-2">
-  <div class="d-flex flex-wrap gap-2">
+  <div class="d-flex flex-wrap gap-2 align-items-center">
     {%- if pub.URL -%}
     <a href="{{ pub.URL }}" class="btn btn-dark btn-outline-light btn-sm mx-1" target="_blank" rel="noopener noreferrer">
-    → view online
+    → view at publisher
+      {%- if pub.publisher -%}
+        &nbsp;({{ pub.publisher }})
+      {%- endif -%}
     </a>
     {%- endif -%}
     {%- for attachment in pub.attachments -%}
-    {%- assign _attachment_title = attachment.title | default: '' | downcase -%}
-    {%- unless _attachment_title == 'thumbnail' -%}
     <a href="{{ attachment.url }}" class="btn btn-sm btn-outline-dark mx-1" target="_blank" rel="noopener noreferrer">
       {%- if attachment.type == 'pdf' -%}
       📄 {{ attachment.title | default: 'PDF' }}
@@ -53,8 +83,12 @@
       🔗 {{ attachment.title | default: 'Link' }}
       {%- endif -%}
     </a>
-    {%- endunless -%}
     {%- endfor -%}
   </div>
 </div>
+{%- endif -%}
+
+{%- assign _coins = site.data.citations[pub['citation-key']]['coins'] -%}
+{%- if _coins -%}
+<span class="Z3988 d-none" title="{{ _coins }}"></span>
 {%- endif -%}

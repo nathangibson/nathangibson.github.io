@@ -6,6 +6,7 @@ Jekyll personal/academic site (nathangibson.github.io). Beautiful Jekyll 6 + Boo
 ## Key systems
 - **Publications** — Zotero API → `_data/publications.yaml` + `_data/citations.yaml`. See `memory/publications.md`
 - **Image credits** — EXIF → `_data/image_credits.yaml`. See `memory/image-credits.md`
+- **TOC + Navbar** — Scrollspy sidebar (`≥ lg`) + fade-in navbar dropdown (`< lg`); conditional brand + avatar rendering on TOC pages. See `memory/toc-navbar.md`
 - **Article text features** — opt-in per stub via front matter; `nokogiri` gem required
   - `paragraph-numbers: true` → `add_paragraph_numbers` filter (`_plugins/paragraph_numbers_filter.rb`): wraps top-level `<p>` in Bootstrap flex divs with linked numbers; skips badge-only paragraphs
   - `footnote-popovers: true` (default via `_config.yml`) → `add_footnote_popovers` filter (`_plugins/footnote_popovers_filter.rb`): replaces inline footnote refs with Bootstrap popovers; footnote list at bottom unchanged; opt out with `footnote-popovers: false`

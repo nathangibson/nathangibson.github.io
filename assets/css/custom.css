@@ -1,3 +1,13 @@
+---
+layout: null
+---
+
+:root {
+  /* config file CSS variables */
+  --toc-navbar-text-col: {{ site.toc-navbar-text-col | default: site.navbar-text-col }};
+  --toc-navbar-hover-col: {{ site.toc-navbar-hover-col | default: "#f8f9fa" }};
+  --toc-navbar-background-col: {{ site.toc-navbar-background-col | default: site.navbar-text-col }};
+  
 /* Avatar: left-aligned, overlapping hero, fades on scroll (fade handled by beautifuljekyll.css) */
 .navbar-custom .avatar-container {
   left: 1rem;
@@ -58,9 +68,45 @@
   z-index: 2;
 }
 
+/* Prevent body-level overflow-wrap: break-word from splitting words mid-character in header titles */
+.intro-header h1 {
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
 /* Expand paragraph text for better readability */
 body > main p {
     letter-spacing: 0.3px;
+}
+
+/* Abstract collapsible details */
+.abstract-details > summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.abstract-details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.abstract-details:not([open]) .abstract-preview {
+  max-height: 6.5em;
+  overflow: hidden;
+}
+
+.abstract-details:not([open]) .abstract-preview::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1.5em;
+  background: linear-gradient(to bottom, transparent, #f8f9fa);
+  pointer-events: none;
+}
+
+.abstract-details[open] .abstract-toggle-hint {
+  display: none;
 }
 
 /* TOC second navbar row — hidden until first heading is scrolled past */
@@ -73,4 +119,15 @@ body > main p {
   max-height: 8rem;   /* generous ceiling for btn-sm row at any font scale */
   opacity: 1;
   border-top: 1px solid #dee2e6;
+}
+
+/* TOC nav styling for lg+ screens */
+#toc-nav .nav-link {
+  color: var(--toc-navbar-text-col);
+}
+
+#toc-nav .nav-link:hover,
+#toc-nav .nav-link.active {
+  color: var(--toc-navbar-hover-col);
+  background-color: var(--toc-navbar-background-col);
 }

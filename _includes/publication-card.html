@@ -82,10 +82,19 @@
       </details>
 
       <!-- Attachments (links) -->
-      {%- if pub.attachments -%}
+      {%- assign _note = pub | note_fields -%}
+      {%- if _note["pdf"] -%}
+        {%- assign _pdf_url = site.publication_pdf_dir | append: '/' | append: _note["pdf"] -%}
+      {%- endif -%}
+      {%- if pub.attachments or _pdf_url -%}
       <div class="publication-attachments mt-auto pt-2 border-top border-light-subtle">
         <p class="small text-light mb-2 fw-bold text-uppercase fs-7 letter-spacing">Resources:</p>
         <div class="d-flex flex-wrap gap-2">
+          {%- if _pdf_url -%}
+          <a href="{{ _pdf_url }}" class="btn btn-sm btn-outline-light" target="_blank" rel="noopener noreferrer" download>
+            📄 PDF
+          </a>
+          {%- endif -%}
           {%- for attachment in pub.attachments -%}
           <a href="{{ attachment.url }}" class="btn btn-sm btn-outline-light" target="_blank" rel="noopener noreferrer">
             {%- if attachment.type == 'pdf' -%}
