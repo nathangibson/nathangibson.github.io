@@ -334,6 +334,7 @@ exclude:
   - screenshot.png
   - docs/
   - '**/*.xmp'
+  - .claude/
 
 plugins:
   - jekyll-paginate

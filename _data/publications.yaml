@@ -463,6 +463,7 @@ references:
     - year: 2023
       month: 7
   language: en
+  license: CC BY-NC-ND 4.0
   page: 196–218
   publisher: Österreichische Akademie der Wissenschaften
   tags:
@@ -1043,24 +1044,25 @@ references:
     - year: 2023
       month: 7
   language: en
+  license: CC BY-NC-ND 4.0
   note: 'thumbnail: tiles.jpg'
   page: 246–270
   publisher: Österreichische Akademie der Wissenschaften
   tags:
+    - Jews
     - Arabic
+    - Muslims
     - Christians
+    - Prosopography
     - Digital humanities
+    - TEI-XML
+    - Zoroastrians
+    - Samaritans
     - 'group: publications'
     - History of science
     - Interreligious
-    - Jews
-    - Muslims
     - Network analysis
-    - Prosopography
-    - Samaritans
-    - TEI-XML
     - 'type: Articles and book chapters'
-    - Zoroastrians
   title: >-
     Labeling Religious Affiliation in Ibn Abī Uṣaybiʿa's *History of
     Physicians*: A Quest
@@ -2039,21 +2041,22 @@ references:
   issued:
     - year: 2022
   language: en
+  license: CC BY-NC-ND 4.0
   note: '59'
   page: 59–216
   publisher: Österreichische Akademie der Wissenschaften
   publisher-place: Wien
   tags:
+    - Jews
     - Arabic
+    - Muslims
     - Christians
+    - Zoroastrians
+    - Samaritans
     - 'group: publications'
     - History of science
     - Interreligious
-    - Jews
-    - Muslims
-    - Samaritans
     - 'type: Edited books and journal issues'
-    - Zoroastrians
   title: >-
     Knowledge Collaboration among Jews, Christians, Zoroastrians, and Muslims in
     the Abbasid Near East I [thematic section]
@@ -2078,6 +2081,7 @@ references:
     - year: 2023
       month: 7
   language: en
+  license: CC BY-NC-ND 4.0
   note: '59'
   page: 137–270
   publisher: Österreichische Akademie der Wissenschaften

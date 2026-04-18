@@ -216,7 +216,7 @@ Nathan P. Gibson (PhD, The Catholic University of America) researches Jewish-­C
 
 - Lewicka, Paulina, Medicine for Muslims? Islamic theologians, non-Muslim physicians and the medical culture of the Mamluk Near East, in: Stephan Conermann (ed.), _History and Society during the Mamluk Period (1250-1517)_ (Göttingen, 2014) 83-106.
 
-- Mahoney, Daniel, Obituaries in service of the Rasūlid Sultanate in Yemen at the turn of the 9th/15th century, _Medieval Worlds_ 15 special issue (2022) 175-194, [doi.org/10.1553/](https://doi.org/10.1553/) medievalworlds_no15si_2022s175.
+- Mahoney, Daniel, Obituaries in service of the Rasūlid Sultanate in Yemen at the turn of the 9th/15th century, _Medieval Worlds_ 15 special issue (2022) 175-194, [doi.org/10.1553/](https://doi.org/10.1553/medievalworlds_no15si_2022s175).
 
 
 <span class="badge badge-pill badge-secondary">page 72</span>
