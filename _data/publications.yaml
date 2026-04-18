@@ -464,21 +464,22 @@ references:
       month: 7
   language: en
   page: 196–218
+  publisher: Österreichische Akademie der Wissenschaften
   tags:
-    - Jews
     - Arabic
-    - Muslims
     - Christians
-    - Prosopography
     - Digital humanities
-    - TEI-XML
-    - Zoroastrians
-    - Samaritans
     - 'group: publications'
     - History of science
     - Interreligious
+    - Jews
+    - Muslims
     - Network analysis
+    - Prosopography
+    - Samaritans
+    - TEI-XML
     - 'type: Articles and book chapters'
+    - Zoroastrians
   title: "Communities of Knowledge: Interreligious Networks of Scholars in Ibn Abī Uṣaybiʿa's\_History of the Physicians (Project Report)"
   type: article-journal
   URL: https://doi.org/10.1553/medievalworlds_no18_2023s196
@@ -890,7 +891,7 @@ references:
 - id: gibsonKnowledgeCollaborationJews2022
   abstract: >-
     This thematic section unearths several ways professionals from a variety of
-    religious communi-ties in the Near East collaborated with one another during
+    religious communities in the Near East collaborated with one another during
     the medieval period. Modern scholars of intellectual history have often
     attempted to trace connections in medieval texts across the religious
     spectrum, but it has been difficult to pin down the interpersonal
@@ -1044,6 +1045,7 @@ references:
   language: en
   note: 'thumbnail: tiles.jpg'
   page: 246–270
+  publisher: Österreichische Akademie der Wissenschaften
   tags:
     - Arabic
     - Christians
@@ -2039,7 +2041,7 @@ references:
   language: en
   note: '59'
   page: 59–216
-  publisher: "Verlag der Ã\x96sterreichischen Akademie der Wissenschaften"
+  publisher: Österreichische Akademie der Wissenschaften
   publisher-place: Wien
   tags:
     - Arabic
@@ -2078,7 +2080,7 @@ references:
   language: en
   note: '59'
   page: 137–270
-  publisher: "Verlag der Ã\x96sterreichischen Akademie der Wissenschaften"
+  publisher: Österreichische Akademie der Wissenschaften
   publisher-place: Wien
   tags:
     - Arabic
