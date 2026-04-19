@@ -1045,7 +1045,9 @@ references:
       month: 7
   language: en
   license: CC BY-NC-ND 4.0
-  note: 'thumbnail: tiles.jpg'
+  note: |-
+    thumbnail: tiles.jpg
+    pdf: gibsonLabelingReligiousAffiliation2023.pdf
   page: 246–270
   publisher: Österreichische Akademie der Wissenschaften
   tags:
@@ -2082,26 +2084,27 @@ references:
       month: 7
   language: en
   license: CC BY-NC-ND 4.0
-  note: '59'
+  note: |-
+    thumbnail: clerk-and-woman-illumination.jpg
+    pdf: pohlKnowledgeCollaborationJews2023.pdf
   page: 137–270
   publisher: Österreichische Akademie der Wissenschaften
-  publisher-place: Wien
   tags:
+    - Jews
     - Arabic
+    - Muslims
     - Christians
+    - Zoroastrians
+    - Samaritans
     - 'group: publications'
     - History of science
     - Interreligious
-    - Jews
-    - Muslims
-    - Samaritans
     - 'type: Edited books and journal issues'
-    - Zoroastrians
   title: >-
     Knowledge Collaboration among Jews, Christians, Zoroastrians, and Muslims in
     the Abbasid Near East II [thematic section]
   type: article-journal
-  URL: https://doi.org/10.1553/medievalworlds_no18_2023
+  URL: https://medievalworlds.net/medievalworlds_no18_2023
   volume: '18'
 
 - id: sane-digitalAmbivalenteBeziehungenFachtag2023
